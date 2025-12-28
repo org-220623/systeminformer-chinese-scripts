@@ -9,7 +9,7 @@ errno_data = [
 ]
 
 data = [
-    ("SystemInformer/SystemInformer.rc", "utf-8", {
+    ("SystemInformer/SystemInformer.rc", "utf-8", {     # File processing...
         "Terminate": "终止",
         "General": "常规",
         "Permissions": "权限",
@@ -109,9 +109,78 @@ data = [
         "Set": "设置",
         "Reset": "重置",
         "Pulse": "脉冲",
-        # line 459
+        "Mutant": "互斥体", 
+        "Count:": "计数:", 
+        "Abandoned:": "已弃用:", 
+        "Semaphore": "信号量", 
+        "Current count:": "当前值:", 
+        "Maximum count:": "最大值:", 
+        "Acquire": "获取", 
+        "Release": "释放", 
+        "Timer": "计时器", 
+        "Statistics": "统计数据", 
+        "Active processes": "活动进程数", 
+        "Total processes": "进程总数", 
+        "Terminated due to job limits": "因作业限制已终止", 
+        "Time": "时间", 
+        "User time": "用户时间", 
+        "Kernel time": "内核时间", 
+        "User time (period)": "用户时间 (周期)", 
+        "Kernel time (period)": "内核时间 (周期)", 
+        "Memory": "内存", 
+        "Page faults": "页面错误", 
+        "Peak process usage": "进程使用量峰值", 
+        "Peak job usage": "作业使用量峰值", 
+        "Reads": "读取", 
+        "Read bytes": "读取字节", 
+        "Writes": "写入", 
+        "Write bytes": "写入字节", 
+        "Other": "其他", 
+        "Other bytes": "其他字节", 
+        "Event Pair": "事件配对", 
+        "Set low": "设置低值", 
+        "Set high": "设置高值", 
+        "Affinity": "处理器相关性", 
+        "Affinity controls which CPUs threads are allowed to execute on.": "处理器相关性控制线程可以在哪些 CPU 上执行。", 
+        "Select all": "全选", 
+        "Deselect all": "全不选", 
+        "System Information": "系统信息", 
+        "Message": "消息", 
+        "Title:": "标题:", 
+        "Text:": "文字:", 
+        "Icon:": "图标:", 
+        "Timeout (s):": "超时 (秒):", 
+        "Session Properties": "会话属性", 
+        "Option": "选项", 
+        # line 683
     }),
-
+    #################################################################################
+    ("SystemInformer/mdump.c", "utf-8", {       # File complete.
+        "Dump files (*.dmp)": "转储文件 (*.dmp)", 
+        "All files (*.*)": "所有文件 (*.*)", 
+        "Unable to open the process": "无法打开进程", 
+        "Unable to access the dump file": "无法访问转储文件", 
+        "Processing module ": "正在处理模块 ", 
+        "Processing thread ": "正在处理线程 ", 
+        "Processing memory regions": "正在处理内存区域", 
+        "Processing kernel minidump": "正在处理内核小型转储文件", 
+        "The 32-bit version of System Informer could not be located.":
+            "找不到 32 位版本的 System Informer。", 
+        "A 64-bit dump will be created instead. Do you want to continue?":
+            "将改为创建 64 位转储文件。是否继续？", 
+        "Unable to create kernel minidump.": 
+            "无法创建内核小型转储文件。", 
+        "Kernel minidump of processes require administrative privileges. ": 
+            "进程内核小型转储文件需要管理员权限。", 
+        "Make sure System Informer is running with administrative privileges.":
+            "请确保 System Informer 以管理员权限运行。", 
+        "Creating the dump file...": "正在创建转储文件...", 
+        "Unable to create the minidump": "无法创建小型转储文件", 
+        "Unable to create the minidump.": "无法创建小型转储文件。", 
+        "Unknown error.": "未知错误。", 
+        "Cancelling...": "正在取消...", 
+        "Creating the minidump file...": "正在创建小型转储文件...", 
+    })
 ] # type: list[tuple[str,         str,         data_dict_type]]
   #                   |            |                 |
   #               file_path     encoding         data_dict
