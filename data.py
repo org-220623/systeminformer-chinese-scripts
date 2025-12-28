@@ -254,7 +254,7 @@ data = [
         "L1 cache": "L1 缓存", 
         "L2 cache": "L2 缓存", 
         "L3 cache": "L3 缓存", 
-        # line 726
+        # line 1093
     }),
     #################################################################################
     ("SystemInformer/mdump.c", "utf-8", {       # File complete.
