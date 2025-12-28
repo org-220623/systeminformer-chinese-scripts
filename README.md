@@ -34,3 +34,5 @@ git clone https://gitlab.com/anonymous9075331734/systeminformer-chinese
 cd systeminformer-chinese
 python main.py
 ```
+
+然后重新构建程序即可。
