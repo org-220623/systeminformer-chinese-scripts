@@ -5,7 +5,8 @@ errno_data = [
     "SysListView32",
     "PhTreeNew",
     "MS Shell Dlg",
-    "SysLink"
+    "SysLink", 
+    "PhColorBox"
 ]
 
 data = [
@@ -152,7 +153,28 @@ data = [
         "Timeout (s):": "超时 (秒):", 
         "Session Properties": "会话属性", 
         "Option": "选项", 
-        # line 683
+        "Search engine:": "搜索引擎:", 
+        "PE viewer:": "PE 查看器:", 
+        "Max. size unit:": "最大大小单元:", 
+        "Icon processes:": "图标处理:", 
+        "Font...": "字体...", 
+        "Monospace...": "等宽字体...", 
+        "Make default...": "设置默认值...", 
+        "Graph history length:": "图像历史长度:", 
+        "Automatic": "自动", 
+        "Application font:": "应用程序字体:", 
+        "System Informer is the default Task Manager:": "System Informer 是默认的任务管理器:", 
+        "Symbol path:": "符号路径:", 
+        "Highlighting": "高亮显示", 
+        "New objects:": "新对象:", 
+        "New objects": "新对象", 
+        "Removed objects:": "已删除对象:", 
+        "Removed objects": "已删除对象", 
+        "Highlighting duration:": "高亮显示时长:", 
+        "Double-click an item to change it.": "双击项目以更改。", 
+        "Enable all": "全部启用", 
+        "Disable all": "全部禁用", 
+        # line 726
     }),
     #################################################################################
     ("SystemInformer/mdump.c", "utf-8", {       # File complete.
