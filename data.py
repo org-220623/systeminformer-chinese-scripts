@@ -180,7 +180,8 @@ data = [
         "Unknown error.": "未知错误。", 
         "Cancelling...": "正在取消...", 
         "Creating the minidump file...": "正在创建小型转储文件...", 
-    })
+    }), 
+    #################################################################################
 ] # type: list[tuple[str,         str,         data_dict_type]]
   #                   |            |                 |
   #               file_path     encoding         data_dict
