@@ -36,3 +36,7 @@ python main.py
 ```
 
 然后重新构建程序即可。
+
+### 已追踪提交情况
+
+请见 [GitLab Wiki](https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits)。
