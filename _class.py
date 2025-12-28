@@ -1,4 +1,4 @@
-from data import data_dict_type
+from data import data_dict_type, errno_data
 
 class TranslateFileObject:
     def __init__(self,
@@ -24,6 +24,9 @@ class TranslateFileObject:
         with open(self.file_path, "r+", encoding=self.encoding) as file:
             file_data = file.read()
             for old_item in self.data_dict:
+                if old_item in errno_data:
+                    print(f"发现无法处理的条目：{old_item}")
+                    continue
                 new_item = self.data_dict[old_item]
                 self.check_symbols(old_item, new_item)
                 file_data = file_data.replace(

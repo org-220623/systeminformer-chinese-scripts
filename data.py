@@ -1,5 +1,13 @@
 data_dict_type = dict[str, str]
 
+errno_data = [
+    "Button",
+    "SysListView32",
+    "PhTreeNew",
+    "MS Shell Dlg",
+    "SysLink"
+]
+
 data = [
     ("SystemInformer/SystemInformer.rc", "utf-8", {
         "Terminate": "终止",
@@ -52,6 +60,56 @@ data = [
         "Password:": "密码:",
         "Service DLL:": "服务 DLL:",
         "Delayed start": "延迟启动",
+        "Information": "信息",
+        "Save...": "保存...",
+        "Find Handles or DLLs": "查找句柄或 DLL",
+        "Find": "查找",
+        "Thread Stacks": "线程栈",
+        "Users List": "用户列表",
+        "Token": "令牌",
+        "User:": "用户:",
+        "User SID:": "用户 SID:",
+        "Session:": "会话:",
+        "Unknown": "未知",
+        "Elevated:": "提升:",
+        "Virtualized:": "虚拟化:",
+        "Integrity": "完整性",
+        "Advanced": "高级",
+        "Default token": "默认令牌",
+        "Zombie Processes": "僵尸进程",
+        "Processes highlighted red are hidden while those highlighted grey have terminated.":
+            "红色高亮的进程已被隐藏，灰色高亮的进程已终止。",
+        "&Scan": "扫描",
+        "Run As": "以指定用户身份运行",
+        "Enter the command to start as the specified user.": "输入命令以指定用户身份运行。",
+        "Program:": "程序:",
+        "User name:": "用户名:",
+        "Toggle elevation": "更改海拔高度",
+        "Session ID:": "会话 ID:",
+        "Desktop:": "桌面:",
+        "Cancel": "取消",
+        "Browse": "选择",
+        "Create suspended": "创建并挂起",
+        "Create UIAccess": "创建 UIAccess",
+        "Please wait...": "请稍等...",
+        "Progress": "正在进行",
+        "Pagefiles": "页面文件",
+        "Owner:": "所有者:",
+        "Primary group:": "主组:",
+        "Virtualization:": "虚拟化:",
+        "Linked token": "关联的令牌:",
+        "Source": "源",
+        "Name:": "名称:",
+        "Job": "作业",
+        "Processes in job:": "作业中的进程:",
+        "Add...": "添加...",
+        "Limits:": "限制:",
+        "Event": "事件",
+        "Signaled:": "有信号:",
+        "Set": "设置",
+        "Reset": "重置",
+        "Pulse": "脉冲",
+        # line 459
     }),
 
 ] # type: list[tuple[str,         str,         data_dict_type]]
