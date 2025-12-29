@@ -18,9 +18,14 @@ class TranslateFileObject:
     @staticmethod
     def check_symbols(old: str, new: str):
         if old[-1] == ":" and new[-1] != ":":
-            print(f"发现不符合格式的项目：【{old}】，【{new}】")
+            print(f"\t新字符串末尾未使用英文冒号：【{old}】，【{new}】")
+        if old[:len(old) - 3] == "..." and new[:len(new) - 3] != "...":
+            print(f"\t新字符串末尾未使用英文省略号：【{old}】，【{new}】")
+        if "（" in new or "）" in new:
+            print(f"\t新字符串包含中文圆括号：【{old}】，【{new}】")
 
     def start(self):
+        print(f"正在处理文件：{self.file_path}，编码：{self.encoding}")
         with open(self.file_path, "r+", encoding=self.encoding) as file:
             file_data = file.read()
             for old_item in self.data_dict:

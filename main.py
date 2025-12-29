@@ -1,9 +1,12 @@
-from data import data
+from data import data, debug, debug_file
 from _class import TranslateFileObject
-for (file_path, encoding, translate_data) in data:
-    obj = TranslateFileObject(
-        file_path = "../" + file_path,
-        encoding=encoding,
-        data_dict=translate_data
-    )
-    obj.start()
+
+if __name__ == '__main__':
+    for (file_path, encoding, translate_data) in data:
+        if (debug and debug_file == file_path) or not debug:
+            obj = TranslateFileObject(
+                file_path = "../" + file_path,
+                encoding=encoding,
+                data_dict=translate_data
+            )
+            obj.start()
