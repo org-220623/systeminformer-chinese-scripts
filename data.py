@@ -1,3 +1,6 @@
+# 本文件存储 System Informer 源码汉化数据。
+# 作者：anonymous9075 (anonymous9075331734@proton.me)
+
 data_dict_type = dict[str, str]
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
