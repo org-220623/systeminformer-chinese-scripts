@@ -1,9 +1,10 @@
 data_dict_type = dict[str, str]
 
+# 当开启调试模式时，将只处理 debug_file 变量指定的文件。
 debug = True
-
 debug_file = "SystemInformer/SystemInformer.rc"
 
+# errno_data 列表包含窗口控件信息、字体信息等不应翻译的内容，即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
 errno_data = [
     "Button",
     "SysListView32",
