@@ -1,4 +1,4 @@
-from data import data_dict_type, errno_data
+from data import data_dict_type, SHOULD_NOT_TRANSLATE_STRING_LIST
 from misc import format_string
 
 # 定义字符串常量 (CONST_STRING_*)
@@ -53,7 +53,7 @@ class TranslateFileObject:
         with open(self.file_path, "r+", encoding=self.encoding) as file:
             file_data = file.read()
             for old_item in self.data_dict:
-                if old_item in errno_data:
+                if old_item in SHOULD_NOT_TRANSLATE_STRING_LIST:
                     print(f"发现无法处理的条目：{old_item}")
                     continue
                 new_item = self.data_dict[old_item]

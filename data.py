@@ -3,14 +3,24 @@
 
 from misc import pre_format_string
 
+# 定义类型常量
 data_dict_type = dict[str, str]
+
+# 定义目录路径常量 (CONST_PATH_*)
+CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
+CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
 debug = True
-debug_file = "SystemInformer/about.c"
+debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c"
 
-# errno_data 列表包含窗口控件信息、字体信息等不应翻译的内容，即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
-errno_data = [
+###############################################################################
+# 主数据开始
+###############################################################################
+
+# SHOULD_NOT_TRANSLATE_STRING_LIST 列表包含窗口控件信息、字体信息等不应翻译的内容，
+# 即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
+SHOULD_NOT_TRANSLATE_STRING_LIST = [
     "Button",
     "SysListView32",
     "SysTreeView32",
@@ -23,12 +33,13 @@ errno_data = [
     "Segoe UI",         # Font name
 ]
 
-data: list[tuple[str,      str,  data_dict_type]] = [
-    # meanings:   |         |          |
-    #       [(file_path, encoding, data_dict), ...]
+TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type]] = [
+    # meanings:               |         |          |
+    #                   [(file_path, encoding, data_dict), ...]
     #################################################################################
     # System Informer source files
-    ("SystemInformer/SystemInformer.rc", "utf-8", {     # File complete.
+    # (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/{FILE_NAME}", ENCODING, {...}), ...
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/SystemInformer.rc", "utf-8", {     # File complete.
         "Terminate": "终止",
         "General": "常规",
         "Permissions": "权限",
@@ -413,7 +424,7 @@ data: list[tuple[str,      str,  data_dict_type]] = [
         "Remove": "移除",
         "Auditing": "审核",
     }),
-    ("SystemInformer/mdump.c", "utf-8", {       # File complete.
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mdump.c", "utf-8", {       # File complete.
         "Dump files (*.dmp)": "转储文件 (*.dmp)", 
         "All files (*.*)": "所有文件 (*.*)", 
         "Unable to open the process": "无法打开进程", 
@@ -439,7 +450,7 @@ data: list[tuple[str,      str,  data_dict_type]] = [
         "Cancelling...": "正在取消...", 
         "Creating the minidump file...": "正在创建小型转储文件...", 
     }),
-    ("SystemInformer/about.c", "utf-8", {
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/about.c", "utf-8", {
         "Thanks to:\n": "鸣谢: \n",
         pre_format_string("    <a href=\"https://github.com/winsiderss/systeminformer/graphs/contributors\">Contributors</a> - thank you for your additions!\n"):
             pre_format_string("    感谢各位<a href=\"https://github.com/winsiderss/systeminformer/graphs/contributors\">贡献者</a>对本项目的付出!\n"),
@@ -461,9 +472,13 @@ data: list[tuple[str,      str,  data_dict_type]] = [
         ": %lu objects\r\n": ": %lu 个对象\r\n",
         "STATISTIC INFORMATION\r\n": "统计数据信息\r\n",      # todo: 为什么大写？
     }),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c", "utf-8", {
+        "Continue": "继续",
+
+    }),
     #################################################################################
     # System Informer PEView Tool source files
-    ("tools/peview/peview.rc", "utf-8", {
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {
         "Properties": "属性",
         "Close": "关闭",
         "Options": "选项",
