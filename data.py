@@ -1,11 +1,13 @@
 # 本文件存储 System Informer 源码汉化数据。
 # 作者：anonymous9075 (anonymous9075331734@proton.me)
 
+from misc import pre_format_string
+
 data_dict_type = dict[str, str]
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
 debug = True
-debug_file = "tools/peview/peview.rc"
+debug_file = "SystemInformer/about.c"
 
 # errno_data 列表包含窗口控件信息、字体信息等不应翻译的内容，即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
 errno_data = [
@@ -436,7 +438,29 @@ data: list[tuple[str,      str,  data_dict_type]] = [
         "Unknown error.": "未知错误。", 
         "Cancelling...": "正在取消...", 
         "Creating the minidump file...": "正在创建小型转储文件...", 
-    }), 
+    }),
+    ("SystemInformer/about.c", "utf-8", {
+        "Thanks to:\n": "鸣谢: \n",
+        pre_format_string("    <a href=\"https://github.com/winsiderss/systeminformer/graphs/contributors\">Contributors</a> - thank you for your additions!\n"):
+            pre_format_string("    感谢各位<a href=\"https://github.com/winsiderss/systeminformer/graphs/contributors\">贡献者</a>对本项目的付出!\n"),
+        "    Donors - thank you for your support!\n\n": "    感谢各位捐赠者对本项目的支持!\n\n",
+        pre_format_string("    <a href=\"https://github.com/GameTechDev/PresentMon\">PresentMon</a> by Intel Corporation\n"):
+            pre_format_string("    <a href=\"https://github.com/GameTechDev/PresentMon\">PresentMon</a> - Intel 公司\n"),
+        pre_format_string("    <a href=\"https://github.com/michaelrsweet/mxml\">Mini-XML</a> by Michael Sweet\n"):
+            pre_format_string("    <a href=\"https://github.com/michaelrsweet/mxml\">Mini-XML</a> - Michael Sweet\n"),
+        pre_format_string("    <a href=\"https://github.com/PCRE2Project/pcre2\">PCRE2</a> by Philip Hazel\n"):
+            pre_format_string("    <a href=\"https://github.com/PCRE2Project/pcre2\">PCRE2</a> - Philip Hazel\n"),
+        pre_format_string("    <a href=\"https://github.com/json-c/json-c\">json-c</a> by Michael Clark\n"):
+            pre_format_string("    <a href=\"https://github.com/json-c/json-c\">json-c</a> - Michael Clark\n"),
+        "    MD5 code by Jouni Malinen\n": "    Jouni Malinen 编写的 MD5 编码\n",
+        "    SHA1 code by Filip Navara, based on code by Steve Reid\n":
+            "    Filip Navara 编写的 SHA1 编码，基于 Steve Reid 的代码\n",
+        "System Informer uses the following components:\n":
+            "System Informer 使用以下组件:\n",
+        "OBJECT INFORMATION\r\n": "对象信息\r\n",           # todo: 为什么大写？
+        ": %lu objects\r\n": ": %lu 个对象\r\n",
+        "STATISTIC INFORMATION\r\n": "统计数据信息\r\n",      # todo: 为什么大写？
+    }),
     #################################################################################
     # System Informer PEView Tool source files
     ("tools/peview/peview.rc", "utf-8", {

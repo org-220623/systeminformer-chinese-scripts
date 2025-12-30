@@ -1,4 +1,13 @@
 from data import data_dict_type, errno_data
+from misc import format_string
+
+# 定义字符串常量 (CONST_STRING_*)
+CONST_STRING_ELLIPSIS = "..."
+CONST_STRING_COLON = ":"
+CONST_STRING_LF_NEWLINE = "\n"
+CONST_STRING_CRLF_NEWLINE = "\r\n"
+CONST_STRING_LEFT_BRACKET = "[ "
+CONST_STRING_RIGHT_BRACKET = " ]"
 
 class TranslateFileObject:
     def __init__(self,
@@ -11,18 +20,33 @@ class TranslateFileObject:
 
     @staticmethod
     def format_string(string: str):
-        return "\"" + string.replace("\n", "\\n") \
-                     .replace("\t", "\\t") \
-                     .replace("\0", "\\0") + "\""
+        return format_string(string)
 
     @staticmethod
     def check_symbols(old: str, new: str):
         if old[-1] == ":" and new[-1] != ":":
-            print(f"\t新字符串末尾未使用英文冒号：【{old}】，【{new}】")
+            print(f"\t新字符串末尾未使用英文冒号："
+                  f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                  f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
+        # {
+        if old[-1] == "\n" and new [-1] != "\n":
+            print(f"\t新字符串末尾未换行："
+                  f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                  f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
+        elif (old[:len(old) - len(CONST_STRING_CRLF_NEWLINE)] == CONST_STRING_CRLF_NEWLINE and
+              new[:len(new) - len(CONST_STRING_CRLF_NEWLINE)] != CONST_STRING_CRLF_NEWLINE):
+            print(f"\t新字符串末尾未使用 CR+LF 换行符："
+                  f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                  f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
+        # }
         if old[:len(old) - 3] == "..." and new[:len(new) - 3] != "...":
-            print(f"\t新字符串末尾未使用英文省略号：【{old}】，【{new}】")
+            print(f"\t新字符串末尾未使用英文省略号："
+                  f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                  f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
         if "（" in new or "）" in new:
-            print(f"\t新字符串包含中文圆括号：【{old}】，【{new}】")
+            print(f"\t新字符串包含中文圆括号："
+                  f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                  f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
 
     def start(self):
         print(f"正在处理文件：{self.file_path}，编码：{self.encoding}")
