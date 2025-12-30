@@ -482,7 +482,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type, raw_data_dict_type]
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c", "utf-8", {
         "Continue": "继续",
         "You will need to provide administrator permission. ": "您需要提供管理员权限。 ",
-        "Click Continue to complete this operation.": "点击\"继续\"完成此操作。",
+        "Click Continue to complete this operation.": pre_format_string("点击\"继续\"完成此操作。"),
         "Unable to lock the computer.": "无法锁定计算机。",
         "Unable to log off the computer.": "无法注销计算机。",
         "Unable to sleep the computer.": "无法使计算机进入睡眠状态。",
