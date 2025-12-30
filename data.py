@@ -5,7 +5,7 @@ data_dict_type = dict[str, str]
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
 debug = True
-debug_file = "SystemInformer/SystemInformer.rc"
+debug_file = "tools/peview/peview.rc"
 
 # errno_data 列表包含窗口控件信息、字体信息等不应翻译的内容，即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
 errno_data = [
@@ -21,8 +21,12 @@ errno_data = [
     "Segoe UI",         # Font name
 ]
 
-data = [
-    ("SystemInformer/SystemInformer.rc", "utf-8", {     # File processing...
+data: list[tuple[str,      str,  data_dict_type]] = [
+    # meanings:   |         |          |
+    #       [(file_path, encoding, data_dict), ...]
+    #################################################################################
+    # System Informer source files
+    ("SystemInformer/SystemInformer.rc", "utf-8", {     # File complete.
         "Terminate": "终止",
         "General": "常规",
         "Permissions": "权限",
@@ -383,9 +387,30 @@ data = [
         "Scan inaccessible partial pages": "扫描部分无法访问的页面",
         "Filter write-combined memory": "筛选写合并内存",
         "Save": "保存",
-        # line 1497
+        "Live kernel dump": "活动内核转储",
+        "Use dump storage stack": "使用转储文件存储栈",
+        "Compress memory pages": "压缩内存页面",
+        "Capture user pages": "捕获用户页面",
+        "Capture Hypervisor pages": "捕获虚拟机监控程序页面",
+        "Include nonessential Hypervisor pages": "包含非必要虚拟机监控程序页面",
+        "Only kernel thread stacks": "仅包含内核线程栈",
+        "Heaps": "堆",
+        "Sizes in bytes": "字节大小",
+        "Select a package": "选择应用包",
+        "Select the identity for access to the package file system and registry.":
+            "选择用于访问软件包文件系统和注册表的身份。",
+        "Enter the command to start as the specified package.":
+            "输入要以指定软件包身份启动的命令。",
+        "Mappings": "映射",
+        "Modified pages": "已修改页面",
+        "Status": "状态",
+        "&Ok": "确定",
+        "Input Prompt": "输入提示",
+        "Socket": "套接字",
+        "Add": "添加",
+        "Remove": "移除",
+        "Auditing": "审核",
     }),
-    #################################################################################
     ("SystemInformer/mdump.c", "utf-8", {       # File complete.
         "Dump files (*.dmp)": "转储文件 (*.dmp)", 
         "All files (*.*)": "所有文件 (*.*)", 
@@ -413,6 +438,75 @@ data = [
         "Creating the minidump file...": "正在创建小型转储文件...", 
     }), 
     #################################################################################
-] # type: list[tuple[str,         str,         data_dict_type]]
-  #                   |            |                 |
-  #               file_path     encoding         data_dict
+    # System Informer PEView Tool source files
+    ("tools/peview/peview.rc", "utf-8", {
+        "Properties": "属性",
+        "Close": "关闭",
+        "Options": "选项",
+        "Permissions": "权限",
+        "General": "常规",
+        "File": "文件",
+        "Version:": "版本:",
+        "<a>Company Name Link</a>": "<a>发行商名称链接</a>",
+        "Imports": "导入",
+        "Exports": "导出",
+        "Runtime version:": "运行时版本:",
+        "Flags:": "标志:",
+        "Sections:": "节区:",
+        "PublicKeyToken:": "公共密钥令牌:",
+        "Target version:": "目标版本:",
+        "Entry point:": "入口点:",
+        "Load config": "加载配置",
+        "Symbols": "符号",
+        "Resources": "资源",
+        "Strings": "字符串",
+        "String Search": "搜索字符串",
+        "Minimum length:": "最小长度:",
+        "OK": "确定",
+        "Cancel": "取消",
+        "Target machine:": "目标平台:",
+        "Image base:": "映像基址:",
+        "Image type:": "映像类型:",
+        "Attributes": "详细信息",           # "Attributes" 与 "Properties" 在语义上重复，故修改翻译。
+        "Streams": "流",
+        "Links": "链接",
+        "Pids": "PID",
+        "Dynamic": "动态",
+        "Tls": "TLS",
+        "Max. size unit:": "最大大小单元:",
+        "Font...": "字体...",
+        "Application font:": "应用程序字体:",
+        "Symbol path:": "符号路径:",
+        "Reset": "重置",
+        "Cleanup": "清空",
+        "Preview": "预览",
+        "Directories": "文件夹",
+        "ProdID": "产品 ID",             # todo: 查明此条目的含义
+        "Checksum:": "校验和:",
+        "Hash (raw):": "哈希值 (二进制):",
+        "Hash:": "哈希值:",
+        "Production ID": "产品 ID",
+        "Debug": "调试",
+        "Sections": "节区",
+        "Refresh": "刷新",
+        "EH Continuation":          # See: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessdynamicehcontinuationtargets
+                                    #      https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-process_dynamic_eh_continuation_target
+            "异常处理延续",
+        "Layout": "布局",
+        "Hashes": "哈希",
+        "Exceptions": "异常",
+        "Relocations": "重定位",
+        "Choose Columns": "选择列",
+        "Inactive columns:": "未显示的列:",
+        "Show >": "显示 >",
+        "< Hide": "< 隐藏",
+        "Move up": "上移",
+        "Move down": "下移",
+        "Active columns:": "显示的列:",
+        "Select the columns that will appear in the list.": "选择要在列表中显示的列。",
+        "Headers": "头部",
+        "CLR Imports": "CLR 导入项",
+        "Volatile Metadata": "易失性元数据",
+        "CLR Tables": "CLR 表",
+    }),
+]
