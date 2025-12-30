@@ -3,8 +3,15 @@
 
 from misc import pre_format_string
 
+# 定义类型类
+class RawDataDictEntryType:
+    def __init__(self, old: str, new: str):
+        self.old = old
+        self.new = new
+
 # 定义类型常量
 data_dict_type = dict[str, str]
+raw_data_dict_type = list[RawDataDictEntryType]
 
 # 定义目录路径常量 (CONST_PATH_*)
 CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
@@ -33,7 +40,7 @@ SHOULD_NOT_TRANSLATE_STRING_LIST = [
     "Segoe UI",         # Font name
 ]
 
-TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type]] = [
+TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type, raw_data_dict_type]] = [
     # meanings:               |         |          |
     #                   [(file_path, encoding, data_dict), ...]
     #################################################################################
@@ -423,7 +430,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type]] = [
         "Add": "添加",
         "Remove": "移除",
         "Auditing": "审核",
-    }),
+    }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mdump.c", "utf-8", {       # File complete.
         "Dump files (*.dmp)": "转储文件 (*.dmp)", 
         "All files (*.*)": "所有文件 (*.*)", 
@@ -449,7 +456,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type]] = [
         "Unknown error.": "未知错误。", 
         "Cancelling...": "正在取消...", 
         "Creating the minidump file...": "正在创建小型转储文件...", 
-    }),
+    }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/about.c", "utf-8", {
         "Thanks to:\n": "鸣谢: \n",
         pre_format_string("    <a href=\"https://github.com/winsiderss/systeminformer/graphs/contributors\">Contributors</a> - thank you for your additions!\n"):
@@ -471,11 +478,136 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type]] = [
         "OBJECT INFORMATION\r\n": "对象信息\r\n",           # todo: 为什么大写？
         ": %lu objects\r\n": ": %lu 个对象\r\n",
         "STATISTIC INFORMATION\r\n": "统计数据信息\r\n",      # todo: 为什么大写？
-    }),
+    }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c", "utf-8", {
         "Continue": "继续",
-
-    }),
+        "You will need to provide administrator permission. ": "您需要提供管理员权限。 ",
+        "Click Continue to complete this operation.": "点击\"继续\"完成此操作。",
+        "Unable to lock the computer.": "无法锁定计算机。",
+        "Unable to log off the computer.": "无法注销计算机。",
+        "Unable to sleep the computer.": "无法使计算机进入睡眠状态。",
+        "Unable to hibernate the computer.": "无法使计算机进入休眠状态。",
+        "Unable to restart the computer.": "无法重启计算机。",
+        "Unable to configure the advanced boot options.": "无法配置高级启动选项。",
+        "Unable to restart to firmware options.": "无法重启进入固件选项。",
+        "Make sure System Informer is running with administrative privileges.":
+            "请确保 System Informer 以管理员权限运行。",
+        "This machine does not have UEFI support.": "该计算机不支持 UEFI。",
+        "Unable to shut down the computer.": "无法关闭计算机",
+        "shut down": "关闭",
+        "the computer": "计算机",
+        "restart": "重启",
+        "update and restart": "更新并重启",
+        "the computer for Windows Defender Offline Scan": "计算机以进行 Windows Defender 离线扫描",
+        "update and shutdown": "更新并关闭",
+        "Restart to boot application": "重启至启动菜单程序",
+        "Restart to firmware application": "重启至固件程序",
+        "Unable to configure the boot application.": "无法配置启动程序。",
+        "&Connect": "连接(&C)",
+        "&Disconnect": "断开(&D)",
+        "&Logoff": "注销(&L)",
+        "Rem&ote control": "远程控制(&O)",
+        "Send &message...": "发送消息(&M)...",
+        "P&roperties": "属性(&R)",
+        "Connect to session": "连接至会话",
+        "Password:": "密码:",
+        "Unable to connect to the session": "无法连接至会话",
+        "Unable to disconnect the session": "无法断开与会话的连接",
+        "logoff": "注销",
+        "the user": "用户账户",
+        "Unable to logoff the session": "无法注销会话",
+        " and ": " 和 ",
+        "the selected processes": "已选中的进程",
+        "You are about to ": "你即将",
+        " one or more system processes.": "一个或多个系统进程。",
+        "terminate": "结束",
+        " one or more critical processes. This will shut down the operating system immediately.":
+            "一个或多个关键进程，这将立即关闭操作系统。",
+        " one or more critical processes.": "一个或多个关键进程。",
+        "Unable to %s %s (PID %lu)": "无法%s %s (PID %lu)",
+        "Unable to %s %s": "无法%s %s",
+        "Terminating a process will cause unsaved data to be lost.":
+            "结束进程会导致未保存的数据丢失。",
+        "Unable to terminate ": "无法结束 ",
+        " and its descendants": " 及其子进程",
+        "Terminating a process tree will cause the process and its descendants to be terminated.":
+            "结束进程树将导致该进程及其所有子进程被终止。",
+        "Unable to enumerate processes": "无法枚举进程",
+        "suspend": "挂起",
+        "Unable to suspend ": "无法挂起 ",
+        "Suspending a process tree will cause the process and its descendants to be suspend.":
+            "挂起进程树将导致该进程及其所有子进程都被挂起。",
+        "resume": "恢复",
+        "Unable to resume ": "无法恢复 ",
+        "Resuming a process tree will cause the process and its descendants to be resumed.":
+            "恢复进程树将导致该进程及其子进程恢复运行。",
+        "freeze": "冻结",
+        "Freezing does not persist after exiting System Informer.":
+            "退出 System Informer 后，冻结过程会终止。",
+        "thaw": "解冻",
+        "The process will be restarted with the same command line, ":
+            "该进程将使用相同的命令行重新启动， ",
+        "working directory and privileges.": "工作目录和权限。",
+        "debug": "调试",
+        "Debugging a process may result in loss of data.": "调试进程可能会导致数据丢失。",
+        # todo: line 2767
+        "Unable to locate the debugger.": "无法定位调试器。",
+        "reduce the working set of": "减少以下进程的工作集占用：",
+        "empty the working set of": "清空以下进程的工作集占用：",
+        # static CONST TASKDIALOG_BUTTON TaskDialogRadioButtonArray[] =
+        # {
+            # SystemActivityModerationStateSystemManaged
+            "System managed": "系统托管",
+            # SystemActivityModerationStateUserManagedAllowThrottling
+            "Allow activity moderation throttling": "启用活动调节限制",
+            # SystemActivityModerationStateUserManagedDisableThrottling
+            "Disable activity moderation throttling": "禁用活动调节限制",
+        # }
+        # static CONST TASKDIALOG_BUTTON TaskDialogButtonArray[] =
+        # {
+            "Save": "保存",       # IDYES
+            "Cancel": "取消",     # IDCANCEL
+        # }
+        "Select the process activity moderation throttling state.":
+            "选择进程活动调节节流状态。",
+        "System-managed activity moderation settings are automatically removed by Windows when the executable is "
+            "deleted or was last executed more than 7 days ago.\r\n\r\n":
+            "当可执行文件被删除或上次执行时间超过 7 天时，Windows 会自动移除系统管理的活动审核设置。\r\n\r\n",
+        "Image: %s\r\nUpdated: %s": "映像: %s\r\n已更新: %s",
+        "%s ago (%s)": "%s 前 (%s)",
+        "set background activity moderation for": "为以下进程设置后台活动调节：",
+        # line 3011
+    }, [
+        RawDataDictEntryType(
+            '                L"This option %s %s in a disorderly manner and may cause file corruption or system instability.",\n'
+                '                L"performs a hard",\n'
+                '                L"restart"',
+            '                L"%s%s选项会以无序的方式执行，并可能导致文件损坏或系统不稳定。",\n'
+                '                L"执行硬",\n'
+                '                L"重启"'
+        ), RawDataDictEntryType(
+            '                L"This option %s %s in an disorderly manner and may cause corrupted files or instability in the system.",\n'
+'                L"forces a critical",\n'
+'                L"restart"',
+            '                L"%s%s选项以无序的方式运行，可能会导致文件损坏或系统不稳定。"\n'
+'                L"强制"\n'
+'                L"重启"'
+        ), RawDataDictEntryType(
+            '                L"This option %s %s in an disorderly manner and may cause corrupted files or instability in the system.",\n'
+'                L"performs a hard",\n'
+'                L"shut down"',
+            '                L"%s%s选项以无序的方式运行，可能会导致文件损坏或系统不稳定。"\n'
+'                L"执行硬"\n'
+'                L"关机"'
+        ), RawDataDictEntryType(
+            '                L"This option %s %s in an disorderly manner and may cause corrupted files or instability in the system.",\n'
+'                L"forces a critical",\n'
+'                L"shut down"',
+            '                L"%s%s选项以无序的方式运行，可能会导致文件损坏或系统不稳定。"\n'
+'                L"强制"\n'
+'                L"关机"'
+        )
+    ]),
     #################################################################################
     # System Informer PEView Tool source files
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {
@@ -547,5 +679,5 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type]] = [
         "CLR Imports": "CLR 导入项",
         "Volatile Metadata": "易失性元数据",
         "CLR Tables": "CLR 表",
-    }),
+    }, []),
 ]

@@ -1,4 +1,4 @@
-from data import data_dict_type, SHOULD_NOT_TRANSLATE_STRING_LIST
+from data import data_dict_type, SHOULD_NOT_TRANSLATE_STRING_LIST, raw_data_dict_type
 from misc import format_string
 
 # 定义字符串常量 (CONST_STRING_*)
@@ -13,10 +13,12 @@ class TranslateFileObject:
     def __init__(self,
                  file_path: str,
                  encoding: str,
-                 data_dict: data_dict_type):
+                 data_dict: data_dict_type,
+                 raw_data_dict: raw_data_dict_type):
         self.file_path = file_path
         self.encoding = encoding
         self.data_dict = data_dict
+        self.raw_dict = raw_data_dict
 
     @staticmethod
     def format_string(string: str):
@@ -24,6 +26,8 @@ class TranslateFileObject:
 
     @staticmethod
     def check_symbols(old: str, new: str):
+        if old == "" or new == "":
+            print("发现为空的翻译项。")
         if old[-1] == ":" and new[-1] != ":":
             print(f"\t新字符串末尾未使用英文冒号："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
@@ -52,16 +56,30 @@ class TranslateFileObject:
         print(f"正在处理文件：{self.file_path}，编码：{self.encoding}")
         with open(self.file_path, "r+", encoding=self.encoding) as file:
             file_data = file.read()
-            for old_item in self.data_dict:
-                if old_item in SHOULD_NOT_TRANSLATE_STRING_LIST:
-                    print(f"发现无法处理的条目：{old_item}")
-                    continue
-                new_item = self.data_dict[old_item]
-                self.check_symbols(old_item, new_item)
-                file_data = file_data.replace(
-                    self.format_string(old_item),
-                    self.format_string(new_item)
-                )
+            ##########################################################
+            # 处理跨行或上下文相关的文本内容
+            if len(self.raw_dict) != 0:
+                for _object in self.raw_dict:
+                    old_item = _object.old
+                    new_item = _object.new
+                    file_data = file_data.replace(
+                        old_item, # 不需要格式化
+                        new_item
+                    )
+            ##########################################################
+            # 处理上下文无关的文本内容
+            if len(self.data_dict) != 0:
+                for old_item in self.data_dict:
+                    if old_item in SHOULD_NOT_TRANSLATE_STRING_LIST:
+                        print(f"发现无法处理的条目：{old_item}")
+                        continue
+                    new_item = self.data_dict[old_item]
+                    self.check_symbols(old_item, new_item)
+                    file_data = file_data.replace(
+                        self.format_string(old_item),
+                        self.format_string(new_item)
+                    )
+            ##########################################################
             file.seek(0)
             file.write(file_data)
             file.truncate()
