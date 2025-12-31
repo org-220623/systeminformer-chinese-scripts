@@ -10,8 +10,8 @@ class RawDataDictEntryType:
         self.new = new
 
 # 定义类型常量
-data_dict_type = dict[str, str]
-raw_data_dict_type = list[RawDataDictEntryType]
+data_list_type = dict[str, str]
+raw_data_list_type = list[tuple[str, str]]
 
 # 定义目录路径常量 (CONST_PATH_*)
 CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
@@ -40,7 +40,7 @@ SHOULD_NOT_TRANSLATE_STRING_LIST = [
     "Segoe UI",         # Font name
 ]
 
-TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type, raw_data_dict_type]] = [
+TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]] = [
     # meanings:               |         |          |
     #                   [(file_path, encoding, data_dict), ...]
     #################################################################################
@@ -576,36 +576,190 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_dict_type, raw_data_dict_type]
         "Image: %s\r\nUpdated: %s": "映像: %s\r\n已更新: %s",
         "%s ago (%s)": "%s 前 (%s)",
         "set background activity moderation for": "为以下进程设置后台活动调节：",
-        # line 3011
-    }, [
-        RawDataDictEntryType(
+        "set virtualization for": "为以下进程启用虚拟化：",
+        "set critical status for": "为以下进程启用关键状态：",
+        "set Eco mode for": "为以下进程启用节能模式：",
+        "create execution required state for": "为以下进程创建执行所需状态",
+        "Unable to detach the debugger.": "无法断开与调试器的连接。",
+        "The process is not being debugged.": "该进程未进行调试。",
+        "detach debugger from": "断开调试器与以下进程的连接",
+        "DLL files (*.dll)": "DLL 文件 (*.dll)",
+        "All files (*.*)": "所有文件 (*.*)",
+        "load the DLL into": "加载 DLL 至以下进程：",
+        "Unable to set the I/O priority of ": "无法为以下进程设置 I/O 优先级：",
+        "set the I/O priority of": "为以下进程设置 I/O 优先级：",
+        "set the page priority of": "为以下进程设置页面优先级：",
+        "Unable to set the priority class of ": "无法为以下进程设置优先级类：",
+        "set the priority class of": "为以下进程设置优先级类：",
+        "change boost priority of": "为以下进程更改优先级提升值：",
+        "set the boost priority of": "为以下进程设置优先级提升值：",
+        "the selected service": "已选中的服务",
+        "the selected services": "已选中的服务",
+        "Close": "关闭",
+        "Unable to %s services:": "无法%s服务:",
+        "Attempting to ": "正在尝试",
+        " Are you sure you want to continue?": " 你确定要继续吗?",
+        "Initializing...": "初始化中...",
+        "Unable to %s %s.": "无法%s %s.",
+        "Unable to start ": "无法启动 ",
+        "Unable to continue ": "无法继续运行 ",
+        "Unable to pause ": "无法挂起 ",
+        "Unable to stop ": "无法停止 ",
+        "Unable to delete ": "无法删除 ",
+        "Restarting a service might prevent the system from functioning properly.":
+            "重启服务可能会导致系统无法正常运行。",
+        "Unable to restart ": "无法重启 ",
+        "Unable to close the TCP connection": "无法关闭 TCP 连接",
+        "Unable to close the TCP connection.": "无法关闭 TCP 连接",
+        "the selected thread": "已选中的线程",
+        "the selected threads": "已选中的线程",
+        "Unable to %s thread %lu": "无法%s线程 %lu",
+        "Terminating a thread may cause the process to stop working.":
+            "结束线程可能会导致进程停止运行。",
+        "Unable to terminate thread %lu": "无法结束线程 %lu",
+        # line 5670
+    },
+        [
+        (
             '                L"This option %s %s in a disorderly manner and may cause file corruption or system instability.",\n'
                 '                L"performs a hard",\n'
                 '                L"restart"',
             '                L"%s%s选项会以无序的方式执行，并可能导致文件损坏或系统不稳定。",\n'
                 '                L"执行硬",\n'
                 '                L"重启"'
-        ), RawDataDictEntryType(
+        ), (
             '                L"This option %s %s in an disorderly manner and may cause corrupted files or instability in the system.",\n'
 '                L"forces a critical",\n'
 '                L"restart"',
             '                L"%s%s选项以无序的方式运行，可能会导致文件损坏或系统不稳定。"\n'
 '                L"强制"\n'
 '                L"重启"'
-        ), RawDataDictEntryType(
+        ), (
             '                L"This option %s %s in an disorderly manner and may cause corrupted files or instability in the system.",\n'
 '                L"performs a hard",\n'
 '                L"shut down"',
             '                L"%s%s选项以无序的方式运行，可能会导致文件损坏或系统不稳定。"\n'
 '                L"执行硬"\n'
 '                L"关机"'
-        ), RawDataDictEntryType(
+        ), (
             '                L"This option %s %s in an disorderly manner and may cause corrupted files or instability in the system.",\n'
 '                L"forces a critical",\n'
 '                L"shut down"',
             '                L"%s%s选项以无序的方式运行，可能会导致文件损坏或系统不稳定。"\n'
 '                L"强制"\n'
 '                L"关机"'
+        ), (
+            '''L"set",
+            L"virtualization for the process",
+            L"Enabling or disabling virtualization for a process may "
+            L"alter its functionality and produce undesirable effects."''',
+            '''L"为进程",
+            L"启用虚拟化",
+            L"为进程启用或禁用虚拟化可能"
+            L"改变其功能并产生不良影响。"'''
+        ), ('''L"enable",
+                L"critical status on the process",
+                L"If the process ends, the operating system will shut down immediately."''',
+            '''L"为该进程",
+                L"启用关键状态",
+                L"如果此类进程结束，操作系统将立即关闭。"'''
+        ), ('''L"disable",
+                L"critical status on the process"''',
+            '''L"为该进程",
+                L"禁用关键状态"'''
+        ), (
+            '''L"enable",
+                    L"Eco mode for this process",
+                    L"Eco mode will lower process priority and improve power efficiency but may cause instability in some processes."''',
+            '''L"为该进程",
+                    L"启用节能模式",
+                    L"节能模式会降低进程优先级并提高电源效率，但可能会导致某些进程不稳定。"'''
+        ), (
+            '''L"change the execution required state",
+            PhaConcatStrings2(L"of ", Process->ProcessName->Buffer)->Buffer,
+            L"The process continues to run instead of being suspended or terminated by process lifetime management (PLM)."''',
+            '''L"更改进程 ",
+            PhaConcatStrings2(Process->ProcessName->Buffer, L" 的执行所需状态")->Buffer,
+            L"该进程会继续运行，而不是被进程生命周期管理模块 (PLM) 挂起或终止。"'''
+        ), (
+            'config.pszMainInstruction = PhaConcatStrings(3, L"Do you want to ", action->Buffer, L"?")->Buffer',
+            'config.pszMainInstruction = PhaConcatStrings(3, L"你想要", action->Buffer, L"吗?")->Buffer'
+        ), (
+            '''L"start",
+            L"Starting a service might prevent the system from functioning properly."''',
+            '''L"启动",
+            L"启动服务可能会导致系统无法正常运行。"'''
+        ), (
+            '''L"start",
+        L"Starting a service might prevent the system from functioning properly."''',
+            '''L"启动",
+        L"启动服务可能会导致系统无法正常运行。"'''
+        ), (
+            'PhpShowErrorService(WindowHandle, L"start", Services[i], status, 0)',
+            'PhpShowErrorService(WindowHandle, L"启动", Services[i], status, 0)'
+        ), (
+            'PhpShowErrorService(WindowHandle, L"start", Service, status, 0)',
+            'PhpShowErrorService(WindowHandle, L"启动", Service, status, 0)'
+        ), (
+            '''L"continue",
+            L"Continuing a service might prevent the system from functioning properly."''',
+            '''L"继续运行",
+            L"继续运行该服务可能会导致系统无法正常运行。"'''
+        ), (
+            '''L"continue",
+        L"Continuing a service might prevent the system from functioning properly."''',
+            '''L"继续运行",
+        L"继续运行该服务可能会导致系统无法正常运行。"'''
+        ), (
+            'PhpShowErrorService(WindowHandle, L"continue", Services[i], status, 0)',
+            'PhpShowErrorService(WindowHandle, L"继续运行", Services[i], status, 0)'
+        ), (
+            'PhpShowErrorService(WindowHandle, L"continue", Service, status, 0)',
+            'PhpShowErrorService(WindowHandle, L"继续运行", Service, status, 0)'
+        ), (
+            '''L"pause",
+            L"Pausing a service might prevent the system from functioning properly."''',
+            '''L"挂起",
+            L"挂起服务可能会导致系统无法正常运行。"'''
+        ), (
+            '''L"pause",
+        L"Pausing a service might prevent the system from functioning properly."''',
+            '''L"挂起",
+        L"挂起服务可能会导致系统无法正常运行。"'''
+        ), (
+            'PhpShowErrorService(WindowHandle, L"pause", Services[i], status, 0)',
+            'PhpShowErrorService(WindowHandle, L"挂起", Services[i], status, 0)'
+        ), (
+            'PhpShowErrorService(WindowHandle, L"pause", Service, status, 0)',
+            'PhpShowErrorService(WindowHandle, L"挂起", Service, status, 0)'
+        ), (
+            '''L"stop",
+            L"Stopping a service might prevent the system from functioning properly."''',
+            '''L"停止",
+            L"停止运行服务可能会导致系统无法正常运行。"'''
+        ), (
+            '''L"stop",
+        L"Stopping a service might prevent the system from functioning properly."''',
+            '''L"停止",
+        L"停止运行服务可能会导致系统无法正常运行。"'''
+        ), (
+            'PhpShowErrorService(WindowHandle, L"stop", Services[i], status, 0)',
+            'PhpShowErrorService(WindowHandle, L"停止", Services[i], status, 0)'
+        ), (
+            'PhpShowErrorService(WindowHandle, L"stop", Service, status, 0)',
+            'PhpShowErrorService(WindowHandle, L"停止", Service, status, 0)'
+        ), (
+            '''L"delete",
+        Service->Name->Buffer,
+        L"Deleting a service can prevent the system from starting "
+        L"or functioning properly."''',
+            '''L"删除",
+        Service->Name->Buffer,
+        L"删除服务可能会导致系统无法启动或"
+        L"无法正常运行。"'''
+        ), (
+            'PhpShowErrorService(WindowHandle, L"delete", Service, status, 0)',
+            'PhpShowErrorService(WindowHandle, L"删除", Service, status, 0)'
         )
     ]),
     #################################################################################

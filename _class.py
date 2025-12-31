@@ -1,4 +1,4 @@
-from data import data_dict_type, SHOULD_NOT_TRANSLATE_STRING_LIST, raw_data_dict_type
+from data import data_list_type, SHOULD_NOT_TRANSLATE_STRING_LIST, raw_data_list_type
 from misc import format_string
 
 # 定义字符串常量 (CONST_STRING_*)
@@ -13,8 +13,8 @@ class TranslateFileObject:
     def __init__(self,
                  file_path: str,
                  encoding: str,
-                 data_dict: data_dict_type,
-                 raw_data_dict: raw_data_dict_type):
+                 data_dict: data_list_type,
+                 raw_data_dict: raw_data_list_type):
         self.file_path = file_path
         self.encoding = encoding
         self.data_dict = data_dict
@@ -60,8 +60,8 @@ class TranslateFileObject:
             # 处理跨行或上下文相关的文本内容
             if len(self.raw_dict) != 0:
                 for _object in self.raw_dict:
-                    old_item = _object.old
-                    new_item = _object.new
+                    old_item = _object[0]
+                    new_item = _object[1]
                     file_data = file_data.replace(
                         old_item, # 不需要格式化
                         new_item
