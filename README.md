@@ -35,6 +35,9 @@
 - `setup.h` (没有要翻译的条目)
 - `startpage.c`
 - `uninstall.c`
+- `util.c` (没有要翻译的条目)
+- `version.rc` (未计划翻译)
+- `update.c` 
 
 ## 依赖
 

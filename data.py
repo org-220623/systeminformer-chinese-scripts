@@ -13,7 +13,7 @@ CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
 CONST_PATH_SETUP_TOOL_SRC = "tools/CustomSetupTool"
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
-debug_file = f"{CONST_PATH_SETUP_TOOL_SRC}/uninstall.c"
+debug_file = f"{CONST_PATH_SETUP_TOOL_SRC}/update.c"
 
 ###############################################################################
 # 主数据开始
@@ -973,5 +973,13 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Uninstall": "卸载",
         "Are you sure you want to uninstall System Informer?": "您确定要卸载 System Informer 吗?",
         "Remove application settings": "删除应用程序配置",
+    }, []),
+    (f"{CONST_PATH_SETUP_TOOL_SRC}/update.c", "utf-8", {
+        "Updating to version %lu.%lu.%lu.%lu...": "正在更新到版本 %lu.%lu.%lu.%lu...",
+        "Update complete.": "更新完毕。",
+        "Select Close to exit.": pre_format_string("单击\"关闭\"退出安装程序。"),
+        "Retry": "重试",
+        "Close": "关闭",
+        "Error updating to the latest version.": "更新到最新版本时出错。",
     }, []),
 ]
