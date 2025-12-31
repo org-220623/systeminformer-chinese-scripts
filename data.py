@@ -617,6 +617,63 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]
         "Terminating a thread may cause the process to stop working.":
             "结束线程可能会导致进程停止运行。",
         "Unable to terminate thread %lu": "无法结束线程 %lu",
+        "Unable to suspend thread %lu": "无法挂起线程 %lu",
+        "Unable to resume thread %lu": "无法恢复线程 %lu",
+        "Unable to set the I/O priority of thread %lu": "无法设置线程 %lu 的 I/O 优先级",
+        "unload": "卸载",
+        "Unloading a module may cause the process to crash.":
+            "卸载模块可能会导致进程崩溃。",
+        "Unloading a module may cause the process to crash. "
+            "NOTE: This feature may not work correctly on your "
+                "version of Windows and some programs may restrict "
+                "access or ban your account.":
+            "卸载模块可能会导致进程崩溃。注意：此功能可能无法在您的 Windows "
+            "版本上正常运行，某些程序可能会限制访问或封禁您的帐户。",
+        "Unloading a driver may cause system instability.":
+            "卸载驱动程序可能会导致系统不稳定。",
+        "unmap": "取消映射",
+        "Unmapping a section view may cause the process to crash.":
+            "取消映射节区视图可能会导致进程崩溃。",
+        "Unable to unload the module": "无法卸载模块",
+        "Unable to unload ": "无法卸载 ",
+        "Unable to unmap the section view at 0x%p": "无法取消映射 0x%p 处的节区视图",
+        "Freeing memory regions may cause the process to crash.\r\n\r\n"
+            "Some programs may also restrict access or ban your account when "
+                "freeing the memory of the process.":
+            "释放内存区域可能会导致进程崩溃。\r\n\r\n"
+            "某些程序在释放进程内存时也可能会限制访问或封禁您的帐户。",
+        "decommit": "撤销提交",
+        "Decommitting memory regions may cause the process to crash.\r\n\r\n"
+            "Some programs may also restrict access or ban your account when "
+                "decommitting the memory of the process.":
+            "撤销提交内存区域可能会导致进程崩溃。\r\n\r\n"
+            "某些程序在撤销提交进程内存时也可能会限制访问或封禁您的帐户。",
+        "Unmapping a section view may cause the process to crash.\r\n\r\n"
+            "Some programs may also restrict access or ban your account when "
+                "unmapping the memory of the process.":
+            "取消映射节区视图可能会导致进程崩溃。\r\n\r\n"
+            "某些程序在取消映射进程内存时也可能会限制访问或封禁您的帐户。",
+        "the memory region": "内存区域",
+        "Unable to free the memory region": "无法释放内存区域",
+        "Unable to decommit the memory region": "无法撤销提交内存区域",
+        "Unable to unmap the section view": "无法取消映射节区视图",
+        "Unable to empty the region working set.": "无法清空内存区域工作集。",
+        pre_format_string("Unable to %s handle \"%s\" (%s)%s"): pre_format_string("无法%s句柄 \"%s\" (%s)%s"),
+        "Unable to %s handle %s%s": "无法%s句柄 %s%s",
+        "close": "关闭",
+        "the selected handle": "已选中的句柄",
+        "the selected handles": "已选中的句柄",
+        "Closing handles may cause system instability and data corruption.":
+            "关闭句柄可能会导致系统不稳定和数据损坏。",
+        "critical process handle(s)": "关键进程句柄",
+        "You are about to close one or more handles for a critical process "
+            "with strict handle checks enabled. This will shut down the operating "
+                "system immediately.\r\n\r\n":
+            "您即将关闭一个或多个启用了严格句柄检查的关键进程的句柄。这将立即关闭操作系统。\r\n\r\n",
+        "Unable to open the process": "无法打开进程",
+        "Setting handle attributes requires a connection to the kernel driver.":
+            "设置句柄属性需要连接到内核驱动程序。",
+
         # line 5670
     },
         [
@@ -760,6 +817,26 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]
         ), (
             'PhpShowErrorService(WindowHandle, L"delete", Service, status, 0)',
             'PhpShowErrorService(WindowHandle, L"删除", Service, status, 0)'
+        ), (
+            'PhpShowErrorThread(WindowHandle, L"change priority of", Threads[i], status, 0)',
+            'PhpShowErrorThread(WindowHandle, L"为以下线程更改优先级：", Threads[i], status, 0)'
+        ), (
+            'PhpShowErrorThread(WindowHandle, L"set the priority of", Thread, status, 0)',
+            'PhpShowErrorThread(WindowHandle, L"为以下线程设置优先级", Thread, status, 0)'
+        ), (
+            '''L". Make sure System Informer is running with "
+                    L"administrative privileges."''',
+            '''L"。请确保 System Informer "
+                    L"以管理员权限运行。"'''
+        ), (
+            'verb = L"free"',
+            'verb = L"释放"'
+        ), (
+            'PhpShowErrorHandle(WindowHandle, L"set attributes of", NULL, Handle, status, 0)',
+            'PhpShowErrorHandle(WindowHandle, L"设置以下句柄的属性：", NULL, Handle, status, 0)'
+        ), (
+            'PhpShowErrorProcess(WindowHandle, L"flush the process heap(s) of", Processes[i], status, 0)',
+            'PhpShowErrorProcess(WindowHandle, L"刷新以下进程的堆：", Processes[i], status, 0)'
         )
     ]),
     #################################################################################
