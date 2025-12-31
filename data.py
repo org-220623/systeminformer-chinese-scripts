@@ -13,7 +13,7 @@ CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
 CONST_PATH_SETUP_TOOL_SRC = "tools/CustomSetupTool"
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
-debug_file = f"{CONST_PATH_SETUP_TOOL_SRC}/update.c"
+debug_file = f"{CONST_PATH_SETUP_TOOL_SRC}/affinity.c"
 
 ###############################################################################
 # 主数据开始
@@ -840,7 +840,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/affinity.c", "utf-8", {
         "Unable to change affinity of process %lu": "无法更改进程 %lu 的处理器相关性",
         "Unable to change affinity of thread %lu": "无法更改线程 %lu 的处理器相关性",
-        
+
     }, []),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
