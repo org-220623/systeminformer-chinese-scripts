@@ -667,8 +667,6 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Unable to open the process": "无法打开进程",
         "Setting handle attributes requires a connection to the kernel driver.":
             "设置句柄属性需要连接到内核驱动程序。",
-
-        # line 5670
     },
                                                                     [
         (
