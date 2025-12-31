@@ -2,6 +2,15 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。
 
+## todo
+
+```text
+SystemInformer
+ ╠══ affinity.c
+ ╠══ anawait.c
+ ╠══ appsup.c
+```
+
 ## 依赖
 
 ### System Informer 项目依赖

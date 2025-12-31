@@ -18,7 +18,7 @@ CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
 CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
-debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c"
+debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/admintask.c"
 
 ###############################################################################
 # 主数据开始
@@ -37,6 +37,7 @@ SHOULD_NOT_TRANSLATE_STRING_LIST = [
     "PhGraph", 
     "PhHexEdit",
     "Segoe UI",         # Font name
+    "taskschd.dll",     # {CONST_PATH_SYSTEM_INFORMER_SRC}/admintask.c
 ]
 
 TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]] = [
@@ -837,6 +838,12 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]
             'PhpShowErrorProcess(WindowHandle, L"刷新以下进程的堆：", Processes[i], status, 0)'
         )
     ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/admintask.c", "utf-8", {
+        "Run as admin task": "以管理员身份运行任务",
+        "Run as admin task: %!STATUS!": "以管理员身份运行任务: %!STATUS!",
+        "Run as admin task UI access": "以管理员身份运行任务 UI 访问权限",
+        "Run as admin task UI access: %!STATUS!": "以管理员身份运行任务 UI 访问权限: %!STATUS!",
+    }, []),
     #################################################################################
     # System Informer PEView Tool source files
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {
