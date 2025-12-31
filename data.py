@@ -423,7 +423,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]
         "Mappings": "映射",
         "Modified pages": "已修改页面",
         "Status": "状态",
-        "&Ok": "确定",
+        "&Ok": "确定(&O)",
         "Input Prompt": "输入提示",
         "Socket": "套接字",
         "Add": "添加",
