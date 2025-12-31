@@ -674,8 +674,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type, raw_data_list_type]
             "设置句柄属性需要连接到内核驱动程序。",
 
         # line 5670
-    },
-        [
+    }, [
         (
             '                L"This option %s %s in a disorderly manner and may cause file corruption or system instability.",\n'
                 '                L"performs a hard",\n'
