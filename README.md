@@ -2,14 +2,28 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。
 
-## todo
+## 进度信息
 
-```text
-SystemInformer
- ╠══ affinity.c
- ╠══ anawait.c
- ╠══ appsup.c
-```
+### todo
+
+- `SystemInformer/affinity.c`
+- `SystemInformer/anawait.c`
+- `SystemInformer/appsup.c`
+- And more...
+
+### 已完成的文件
+
+#### 主程序 (`SystemInformer/*`)
+
+- `SystemInformer/colmgr.c` (没有要翻译的条目)
+- `SystemInformer/about.c`
+- `SystemInformer/actions.c`
+- `SystemInformer/admintask.c`
+- `SystemInformer/SystemInformer.rc`
+
+#### PEView 工具 (`tools/peview/*`)
+
+- `peview.rc`
 
 ## 依赖
 
