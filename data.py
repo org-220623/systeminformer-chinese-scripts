@@ -18,7 +18,6 @@ CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
 CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
-debug = True
 debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c"
 
 ###############################################################################

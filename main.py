@@ -1,5 +1,6 @@
-from data import TRANSLATION_DATA, debug, debug_file
+from data import TRANSLATION_DATA, debug_file
 from _class import TranslateFileObject
+from config import debug
 
 if __name__ == '__main__':
     for (file_path, encoding, translate_data, raw_translate_data) in TRANSLATION_DATA:
