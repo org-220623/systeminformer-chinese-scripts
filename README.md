@@ -25,6 +25,17 @@
 
 - `peview.rc`
 
+#### SetupTool (`tools/CustomSetupTool/*`)
+
+- `extract.c`
+- `install.c` (没有要翻译的条目)
+- `main.c`
+- `resource.h` (没有要翻译的条目)
+- `resource.rc` (没有要翻译的条目)
+- `setup.h` (没有要翻译的条目)
+- `startpage.c`
+- `uninstall.c`
+
 ## 依赖
 
 ### System Informer 项目依赖
