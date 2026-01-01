@@ -422,6 +422,10 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Remove": "移除",
         "Auditing": "审核",
     }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/version.rc", "utf-8-sig", {
+        "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
+            "版权所有 (c) Winsider Seminars & Solutions, Inc. 保留所有权利。"
+    }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mdump.c", "utf-8", {       # File complete.
         "Dump files (*.dmp)": "转储文件 (*.dmp)", 
         "All files (*.*)": "所有文件 (*.*)", 
