@@ -1166,7 +1166,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     (f"{CONST_PATH_SETUP_TOOL_SRC}/startpage.c", "utf-8", {
         "Setup failed with an error.": "安装程序出现错误。",
         "%s\r\n\r\nSelect Close to exit setup.": pre_format_string("%s\r\n\r\n点击\"关闭\"退出安装程序"),
-        "Select Close to exit setup.": pre_format_string("点击\"关闭\"退出安装程序"),
+        "Select Close to exit setup.": pre_format_string("点击 \"关闭\" 退出安装程序"),
         "Install": "安装",
         "A free, powerful, multi-purpose tool that helps you monitor system resources, "
             "debug software and detect malware.":
@@ -1191,11 +1191,11 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     (f"{CONST_PATH_SETUP_TOOL_SRC}/uninstall.c", "utf-8", {
         "System Informer has been uninstalled.": "已卸载 System Informer。",
         "A reboot is required to complete the uninstall.": "卸载完成后需重启计算机。",
-        "Click close to exit setup.": pre_format_string("单击\"关闭\"退出卸载程序。"),
+        "Click close to exit setup.": pre_format_string("单击 \"关闭\" 退出卸载程序。"),
         "Uninstalling System Informer...": "正在卸载 System Informer...",
         "Uninstall failed with an error.": "卸载过程中出现错误。",
         "Click retry to try again or close to exit setup.":
-            pre_format_string("单击\"重试\"重新尝试卸载，或单击\"关闭\"退出卸载程序。"),
+            pre_format_string("单击 \"重试\" 重新尝试卸载，或单击 \"关闭\" 退出卸载程序。"),
         "Uninstall": "卸载",
         "Are you sure you want to uninstall System Informer?": "您确定要卸载 System Informer 吗?",
         "Remove application settings": "删除应用程序配置",
@@ -1203,7 +1203,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     (f"{CONST_PATH_SETUP_TOOL_SRC}/update.c", "utf-8", {
         "Updating to version %lu.%lu.%lu.%lu...": "正在更新到版本 %lu.%lu.%lu.%lu...",
         "Update complete.": "更新完毕。",
-        "Select Close to exit.": pre_format_string("单击\"关闭\"退出安装程序。"),
+        "Select Close to exit.": pre_format_string("单击 \"关闭\" 退出安装程序。"),
         "Retry": "重试",
         "Close": "关闭",
         "Error updating to the latest version.": "更新到最新版本时出错。",
