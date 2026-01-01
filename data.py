@@ -883,6 +883,180 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         pre_format_string("Window 0x%Ix (%s): %s \"%s\""): pre_format_string("窗口 0x%Ix (%s): %s \"%s\""),
         "ALPC Port: %.*s (%s)": "ALPC 端口: %.*s (%s)",
     }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/appsup.c", "utf-8", {
+        # static CONST PH_KEY_VALUE_PAIR ProcessPriorityClassTypePairs[] =
+        # {
+            "Unknown": "未知", # PROCESS_PRIORITY_CLASS_UNKNOWN
+            "Idle": "空闲", # PROCESS_PRIORITY_CLASS_IDLE
+            "Normal": "正常", # PROCESS_PRIORITY_CLASS_NORMAL
+            "High": "高", # PROCESS_PRIORITY_CLASS_HIGH
+            "Real time": "实时", # PROCESS_PRIORITY_CLASS_REALTIME
+            "Below normal": "低于正常", # PROCESS_PRIORITY_CLASS_BELOW_NORMAL
+            "Above normal": "高于正常", # PROCESS_PRIORITY_CLASS_ABOVE_NORMAL
+        # };
+        # // switch ... case ...
+        " (Audit)": " (审核)",
+        "Secure (IUM)": "安全 (IUM)",
+        "Unable to locate the application directory.": "无法找到应用程序目录。",
+        "Unable to execute the command.": "无法执行命令。",
+        "An unknown error occurred.": "发生未知错误。",
+        " (64-bit)": " (64 位)",
+        " (32-bit)": " (32 位)",
+        # -------------------------------------------------------------------------------
+        # Main Windows -> Processes Table -> Menu Items
+        "Size column to fit": "调整列宽以适应屏幕", # sizeColumnToFitMenuItem
+        "Size all columns to fit": "调整所有列宽以适应屏幕", # sizeAllColumnsToFitMenuItem
+        "Hide column": "隐藏列", # hideColumnMenuItem
+        "Choose columns...": "选择列...", # chooseColumnsMenuItem
+        "Reset sort": "重置排序", # resetSortMenuItem
+        # -------------------------------------------------------------------------------
+        pre_format_string("Copy \""): pre_format_string("复制 \""),
+        "Unable to execute the program.": "无法执行程序。",
+    },
+                                                                   [
+        ('''static CONST PH_KEY_VALUE_PAIR PhProtectedTypeStrings[] =
+{
+    SIP(L"None", NULL), // PsProtectedTypeNone
+    SIP(L"Light", PsProtectedTypeProtectedLight),
+    SIP(L"Full", PsProtectedTypeProtected),
+};''',
+         '''static CONST PH_KEY_VALUE_PAIR PhProtectedTypeStrings[] =
+{
+    SIP(L"无", NULL), // PsProtectedTypeNone
+    SIP(L"轻量", PsProtectedTypeProtectedLight),
+    SIP(L"完全", PsProtectedTypeProtected),
+};'''),
+        ('PhpProtectionNoneString = PhCreateString(L"None");', 'PhpProtectionNoneString = PhCreateString(L"无");'),
+        ('PhInitFormatS(&format[count++], L"Secure ");', 'PhInitFormatS(&format[count++], L"安全");'),
+        (
+            '''    switch (PhGetIntegerSetting(SETTING_RELEASE_CHANNEL))
+    {
+    case PhReleaseChannel:
+        return L"Release";
+    case PhPreviewChannel:
+        return L"Preview";
+    case PhCanaryChannel:
+        return L"Canary";
+    case PhDeveloperChannel:
+        return L"Developer";
+    }
+
+    return L"Unknown";''',
+            '''    switch (PhGetIntegerSetting(SETTING_RELEASE_CHANNEL))
+    {
+    case PhReleaseChannel:
+        return L"正式版";
+    case PhPreviewChannel:
+        return L"预览版";
+    case PhCanaryChannel:
+        return L"测试版";
+    case PhDeveloperChannel:
+        return L"开发者版";
+    }
+
+    return L"未知版本";'''
+        )
+    ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/chcol.c", "utf-8", {
+        "Inactive columns...": "隐藏的列...",
+        "Active columns...": "显示的列...",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/chproc.c", "utf-8", {
+        "Unable to enumerate processes": "无法枚举进程",
+        # column head title
+        "Name": "名称",
+        "User name": "用户名",
+        # "PID": "进程 ID",           # 貌似不太必要
+        # column head title entries end
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/colsetmgr.c", "utf-8", {
+        "Name": "名称",       # PhAddListViewColumn(context->ListViewHandle, ...)
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/dbgcon.c", "utf-8", {
+        "\tCount: %u": "\t计数: %u",
+        "Type: %s\n": "类型: %s\n",
+        "Reference count: %ld\n": "引用计数: %ld\n",
+        "Flags: %x\n": "标志: %x\n",
+        "Name: %s\n": "名称: %s\n",
+        "Number of objects: %lu\n": "对象数量: %lu\n",
+        "Flags: %u\n": "标志: %u\n",
+        "Type index: %u\n": "类型索引: %u\n",
+        "Free list count: %lu\n": "空闲列表计数: %lu\n",
+        "Error.\n": "错误。\n",
+        "Count: %u\n": "计数: %u\n",
+        "Allocated buckets: %u\n": "已分配桶: %u\n",    # Windows 低碎片堆？
+        "Allocated entries: %u\n": "已分配条目: %u\n",
+        "Next free entry: %d\n": "下一个空闲条目: %d\n",
+        "Next usable entry: %d\n": "下一个可用条目: %d\n",
+        "Equal function: %s\n": "等价函数: %s\n",
+        "Hash function: %s\n": "哈希函数: %s\n",
+        "\nBuckets:\n": "\n桶:\n",
+        "\nExpected lookup misses: %lu\n": "\n预期查找未命中: %lu\n",
+        "Leak at 0x%Ix (%Iu bytes). Stack trace:\n": "泄漏发生在 0x%Ix (%Iu 字节)，堆栈跟踪:\n",
+        "[fail]: writers active in read zone!\n": "[失败]：读取区域中有处于活动状态的写入区域!\n",  # todo
+        "[fail]: readers active in write zone!\n": "[失败]：写入区域中有处于活动状态的读取区域!\n", # todo
+        "[null] %s: %ums\n": "[空] %s: %ums\n", # and line 586: L"[strs] %s: %ums\n"
+        pre_format_string("Press Ctrl+C or type \"exit\" to close the debug console. "
+                          "Type \"help\" for a list of commands.\n"):
+            pre_format_string("按 Ctrl+C 或输入 \"exit\" 关闭调试控制台。输入 \"help\" 查看命令列表。\n"),
+        "This command is not available on non-debug builds.\n": "此命令在非调试版本中不可用。\n",
+        "Commands:\n": "可用的命令:\n",
+        "Referencing: %ums\n": "正在引用: %ums\n",
+        "Critical section: %ums\n": "关键节区: %ums\n",
+        "Fast lock: %ums\n": "快速锁: %ums\n",
+        "Queued lock: %ums\n": "队列锁: %ums\n",
+        "Object small free list count: %u\n": "对象小型空闲列表计数:%u\n",
+        "Statistics:\n": "统计数据:\n",
+        "Total number: %lu\n": "总计: %lu\n",
+        "Total overhead (header): %s\n": "总开销 (header): %s\n",
+        "Missing object address.\n": "丢失对象地址。\n",
+        "Error: %s\n": "错误: %s\n",
+        "Invalid object address.\n": "对象地址无效。\n",
+        "No snapshot.\n": "无快照。\n",
+        "Static count: %u\n": "静态计数: %u\n",
+        "Dynamic count: %u\n": "动态计数: %u\n",
+        "Dynamic allocated: %u\n": "动态分配: %u\n",
+        "Static objects:\n": "静态对象:\n",
+        "Dynamic objects:\n": "动态对象:\n",
+        "Thread %u\n": "线程 %u\n",
+        "\tStart Address: %s\n": "\t起始地址: %s\n",
+        "\tParameter: %Ix\n": "\t参数: %Ix\n",
+        "\tCurrent auto-pool: %Ix\n": "\t当前 auto-pool: %Ix\n",
+        "Thread not running\n": "线程未运行\n",
+        "\tProvider registration at %Ix\n": "\t服务提供商注册 %Ix\n",
+        "\t\tEnabled: %s\n": "\t\t已启用: %s\n",
+        "Yes": "是",
+        "No": "否",
+        "\t\tFunction: %s\n": "\t\t函数: %s\n",
+        "\t\tObject:\n": "\t\t对象:\n",
+        "Work queue at %s\n": "工作队列 %s\n",
+        "Maximum threads: %lu\n": "最大线程数: %lu\n",
+        "Minimum threads: %lu\n": "最小线程数: %lu\n",
+        "No work timeout: %lu\n": "无工作超时: %lu\n",
+        "Current threads: %lu\n": "当前线程: %lu\n",
+        "Busy count: %lu\n": "忙碌计数: %lu\n",
+        "\tWork queue item at %Ix\n": "\t工作队列项 %Ix\n",
+        "\t\tContext: %Ix\n": "\t\t上下文: %Ix\n",
+        "Records for %s %s:\n": "%s %s 的记录:\n",
+        "\tRecord at %Ix: %s (%lu) (refs: %ld)\n": "\t记录 %Ix: %s (%lu) (引用: %ld)\n",
+        "Process item at %Ix: %s (%u)\n": "进程项 %Ix: %s (%u)\n",
+        "\tRecord at %Ix\n": "\t记录 %Ix\n",
+        "\tQuery handle %Ix\n": "\t队列句柄 %Ix\n",
+        "\tFile name at %Ix: %s\n": "\t文件名 %Ix: %s\n",
+        "\tCommand line at %Ix: %s\n": "\t命令行 %Ix: %s\n",
+        "\tFlags: %u\n": "\t标志: %u\n",
+        "\nTotal unique strings: %u\n": "\n唯一字符串总计: %u\n",
+        "Unable to initialize heap debugging. Make sure that you are using Windows 7 or above.":
+            "无法初始化堆调试。请确保您使用的是 Windows 7 或更高版本。",
+        "Warning: user-mode stack trace database is not enabled. Stack traces will not be displayed.\n":
+            "警告：用户模式堆栈跟踪数据库未启用。堆栈跟踪将不会显示。\n",
+        "\nNumber of leaks: %lu (%lu displayed)\n": "\n泄漏数量: %lu (%lu 已显示)\n",
+        "Number of bytes must be 256 or smaller.\n": "字节数必须小于或等于 256。\n",
+        "Error reading address near %Ix.\n": "读取地址 %Ix 附近时出错。\n",
+        "Usage: mem address [numberOfBytes]\n": "语法: mem address [numberOfBytes]\n",
+        "Example: mem 12345678 16\n": "示例: mem 12345678 16\n",
+        "Unrecognized command.\n": "无法识别的命令。\n",
+    }, []),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {

@@ -8,10 +8,8 @@
 
 ### todo
 
-- `SystemInformer/appsup.c`
-- `SystemInformer/chcol.c`
-- `SystemInformer/chdlg.c`
-- And more...
+- `SystemInformer/delayhook.c`
+- `SystemInformer/delayload.c`
 - `SystemInformer/devprv.c` (从 Line 2838 开始)
 - And more...
 
@@ -27,6 +25,13 @@
 - `admintask.c`
 - `affinity.c`
 - `anawait.c`
+- `appsup.c`
+- `chcol.c` (没有要翻译的条目)
+- `chdlg.c` (没有要翻译的条目)
+- `chproc.c`
+- `colmgr.c` (没有要翻译的条目)
+- `colsetmgr.c`
+- `dbgcon.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
