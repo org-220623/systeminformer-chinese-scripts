@@ -37,6 +37,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     #                     file path; encoding; data dict; data without quotes & formatting
     #################################################################################
     # System Informer source files: CONST_PATH_SYSTEM_INFORMER_SRC
+    # Status: Processing
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/SystemInformer.rc", "utf-8", {     # File complete.
         "Terminate": "终止",
         "General": "常规",
@@ -1063,6 +1064,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     }, []),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
+    # Status: Pending
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {
         "Properties": "属性",
         "Close": "关闭",
@@ -1135,6 +1137,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
     }, []),
     #################################################################################
     # Install & update & uninstall tool: CONST_PATH_SETUP_TOOL_SRC
+    # Status: Completed
     (f"{CONST_PATH_SETUP_TOOL_SRC}/extract.c", "utf-8", {
         "Extracting: ": "正在复制: ",
         "Progress: ": "进度: ",
