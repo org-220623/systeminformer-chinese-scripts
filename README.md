@@ -19,6 +19,8 @@
 
 #### 主程序 (`SystemInformer/*`)
 
+- `SystemInformer/phsvc/*` (没有要翻译的条目)
+- `SystemInformer/sdk/*` (没有要翻译的条目)
 - `colmgr.c` (没有要翻译的条目)
 - `about.c`
 - `actions.c`
