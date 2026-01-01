@@ -1,13 +1,10 @@
-from data import data_list_type, SHOULD_NOT_TRANSLATE_STRING_LIST, raw_data_list_type
+from config import (CONST_STRING_LEFT_BRACKET,
+                    CONST_STRING_CRLF_NEWLINE,
+                    CONST_STRING_RIGHT_BRACKET)
+from data import SHOULD_NOT_TRANSLATE_STRING_LIST
+from data import data_list_type, raw_data_list_type
 from misc import format_string
 
-# 定义字符串常量 (CONST_STRING_*)
-CONST_STRING_ELLIPSIS = "..."
-CONST_STRING_COLON = ":"
-CONST_STRING_LF_NEWLINE = "\n"
-CONST_STRING_CRLF_NEWLINE = "\r\n"
-CONST_STRING_LEFT_BRACKET = "[ "
-CONST_STRING_RIGHT_BRACKET = " ]"
 
 class TranslateFileObject:
     def __init__(self,

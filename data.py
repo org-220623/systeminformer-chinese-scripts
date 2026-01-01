@@ -2,18 +2,15 @@
 # 作者：anonymous9075 (anonymous9075331734@proton.me)
 
 from misc import pre_format_string
+from config import (
+    CONST_PATH_PEVIEW_TOOL_SRC,
+    CONST_PATH_SETUP_TOOL_SRC,
+    CONST_PATH_SYSTEM_INFORMER_SRC,
+)
 
 # 定义类型常量
 data_list_type = dict[str, str]
 raw_data_list_type = list[tuple[str, str]]
-
-# 定义目录路径常量 (CONST_PATH_*)
-CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
-CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
-CONST_PATH_SETUP_TOOL_SRC = "tools/CustomSetupTool"
-
-# 当开启调试模式时，将只处理 debug_file 变量指定的文件。
-debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/anawait.c"
 
 ###############################################################################
 # 主数据开始
