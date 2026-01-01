@@ -9,3 +9,4 @@ git commit -m "update submodule"
 git push origin
 git push gitee
 git push gitlab
+git restore .
