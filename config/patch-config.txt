@@ -20,3 +20,6 @@
 [remote "github"]
 	url = https://github.com/org-220623/systeminformer-chinese-scripts
 	fetch = +refs/heads/*:refs/remotes/github/*
+[remote "gitea"]
+	url = https://gitea.com/anonymous9075331734/systeminformer-chinese
+	fetch = +refs/heads/*:refs/remotes/gitea/*
