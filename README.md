@@ -11,6 +11,7 @@
 - `SystemInformer/appsup.c`
 - `SystemInformer/chcol.c`
 - `SystemInformer/chdlg.c`
+- And more...
 - `SystemInformer/devprv.c` (从 Line 2838 开始)
 - And more...
 
@@ -44,7 +45,7 @@
 - `startpage.c`
 - `uninstall.c`
 - `util.c` (没有要翻译的条目)
-- `version.rc` (未计划翻译)
+- `version.rc` (延迟翻译)
 - `update.c` 
 
 #### 插件
