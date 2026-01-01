@@ -13,7 +13,7 @@ CONST_PATH_PEVIEW_TOOL_SRC = "tools/peview"
 CONST_PATH_SETUP_TOOL_SRC = "tools/CustomSetupTool"
 
 # 当开启调试模式时，将只处理 debug_file 变量指定的文件。
-debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/affinity.c"
+debug_file = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/anawait.c"
 
 ###############################################################################
 # 主数据开始
@@ -846,6 +846,45 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Group %hu": "组 %hu",
         "%s (%lu threads)": "%s (%lu 个线程)",
         "Unable to query the current affinity.": "无法查询当前处理器相关性。",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/anawait.c", "utf-8", {
+        "Unable to open the process.": "无法打开进程。",
+        "Unable to open the thread.": "无法打开线程。",
+        "Unable to analyze the thread.": "无法分析线程。",
+        "The thread does not appear to be waiting.": "线程似乎没有处于等待状态。",
+        "Unable to determine whether the thread is waiting.": "无法确定线程是否处于等待状态。",
+        "Thread is waiting on system call: ": "线程正在等待系统调用: ",
+        "Thread is waiting for:\r\n": "线程正在等待:\r\n",
+        "Thread is waiting for multiple (%lu) objects.": "线程正在等待多个 (%lu) 个对象。",
+        "Thread is waiting for file I/O:\r\n": "线程正在等待文件 I/O:\r\n",
+        "Thread is sending a USER message:\r\n": "线程正在发送用户消息:\r\n",
+        "Thread is waiting for an ALPC port:\r\n": "线程正在等待 ALPC 端口:\r\n",
+        "Unable to determine why the thread is waiting.": "无法确定线程为何处于等待状态。",
+        "Thread is sleeping. Timeout: %lu milliseconds.": "线程正在休眠。超时时间: %lu 毫秒。",
+        "Thread is sleeping. Timeout: %llu milliseconds.": "线程正在休眠。超时时间: %llu 毫秒。",
+        "Thread is sleeping.": "线程正在休眠。",
+        "Thread is waiting for an I/O control request:\r\n": "线程正在等待 I/O 控制请求:\r\n",
+        "Thread is waiting for a FS control request:\r\n": "线程正在等待文件系统控制请求:\r\n",
+        "Thread is querying an object:\r\n": "线程正在查询对象\r\n",
+        "Thread is waiting for an I/O completion port:\r\n": "线程正在等待 I/O 完成端口:\r\n",
+        "Thread is waiting (%s) for an event pair:\r\n": "线程正在等待 (%s) 事件对:\r\n",
+        "Thread is waiting for a USER message.\r\n": "线程正在等待用户消息。\r\n",
+        "Unknown.": "未知。",
+        "Thread is waiting for a debug event:\r\n": "线程正在等待调试事件:\r\n",
+        "Thread is waiting (%s) for a keyed event (key 0x%Ix):\r\n": "线程正在等待 (%s) 键控事件 (键 0x%Ix):\r\n",
+        "Thread is waiting (%s) for:\r\n": "线程正在等待 (%s):\r\n",
+        "alertable": "可提醒",
+        "non-alertable": "不可提醒",
+        "Thread is waiting for work from a worker factory:\r\n": "线程正在等待工作者工厂:\r\n",
+        "Handle 0x%lx (%s): %s": "句柄 0x%lx (%s): %s",
+        "(unnamed object)": "(未命名对象)",
+        "Handle 0x%lx: (error querying handle)": "句柄 0x%lx: (无法查询句柄)",
+        "Thread is waiting (%s, %s) for:\r\n": "线程正在等待 (%s, %s):\r\n",
+        "wait all": "等待全部",
+        "wait any": "等待其中一个",
+        "Thread is waiting for multiple objects.": "线程正在等待多个对象。",
+        pre_format_string("Window 0x%Ix (%s): %s \"%s\""): pre_format_string("窗口 0x%Ix (%s): %s \"%s\""),
+        "ALPC Port: %.*s (%s)": "ALPC 端口: %.*s (%s)",
     }, []),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
