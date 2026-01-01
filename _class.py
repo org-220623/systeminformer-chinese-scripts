@@ -15,6 +15,13 @@ class TranslateFileObject:
                  encoding: str,
                  data_dict: data_list_type,
                  raw_data_dict: raw_data_list_type):
+        """
+        初始化过程
+        :param file_path: 文件路径
+        :param encoding: 编码方式（System Informer 中大多采用 UTF-8）
+        :param data_dict: 封装在引号内的翻译条目（单行，上下文无关）
+        :param raw_data_dict: 非封装翻译条目（多行或上下文相关）
+        """
         self.file_path = file_path
         self.encoding = encoding
         self.data_dict = data_dict
@@ -26,6 +33,12 @@ class TranslateFileObject:
 
     @staticmethod
     def check_symbols(old: str, new: str):
+        """
+        检查翻译条目并给出警告和建议
+        :param old: 原字符串
+        :param new: 新字符串
+        :return: None
+        """
         if old == "" or new == "":
             print("发现为空的翻译项。")
         if old[-1] == ":" and new[-1] != ":":
@@ -53,6 +66,10 @@ class TranslateFileObject:
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
 
     def start(self):
+        """
+        Main procedure
+        :return: None
+        """
         print(f"正在处理文件：{self.file_path}，编码：{self.encoding}")
         with open(self.file_path, "r+", encoding=self.encoding) as file:
             file_data = file.read()
