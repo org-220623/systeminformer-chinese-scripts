@@ -4,6 +4,8 @@
 
 ## 进度信息
 
+提示：`static_assert` 提示信息一律不翻译。
+
 ### todo
 
 - `SystemInformer/appsup.c`
