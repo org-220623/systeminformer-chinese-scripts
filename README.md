@@ -6,26 +6,31 @@
 
 ### todo
 
-- `SystemInformer/affinity.c`
-- `SystemInformer/anawait.c`
 - `SystemInformer/appsup.c`
+- `SystemInformer/chcol.c`
+- `SystemInformer/chdlg.c`
 - And more...
 
 ### 已完成的文件
 
 #### 主程序 (`SystemInformer/*`)
 
-- `SystemInformer/colmgr.c` (没有要翻译的条目)
-- `SystemInformer/about.c`
-- `SystemInformer/actions.c`
-- `SystemInformer/admintask.c`
-- `SystemInformer/SystemInformer.rc`
+- `colmgr.c` (没有要翻译的条目)
+- `about.c`
+- `actions.c`
+- `admintask.c`
+- `affinity.c`
+- `anawait.c`
+- `mdump.c`
+- `SystemInformer.rc`
 
-#### PEView 工具 (`tools/peview/*`)
+#### 工具
+
+##### PEView 工具 (`tools/peview/*`)
 
 - `peview.rc`
 
-#### SetupTool (`tools/CustomSetupTool/*`)
+##### SetupTool (`tools/CustomSetupTool/*`)（已初步完成）
 
 - `extract.c`
 - `install.c` (没有要翻译的条目)
@@ -38,6 +43,10 @@
 - `util.c` (没有要翻译的条目)
 - `version.rc` (未计划翻译)
 - `update.c` 
+
+#### 插件
+
+（尚未开始）
 
 ## 依赖
 
