@@ -1204,4 +1204,9 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Close": "关闭",
         "Error updating to the latest version.": "更新到最新版本时出错。",
     }, []),
+    (f"{CONST_PATH_SETUP_TOOL_SRC}/version.rc", "utf-8", {
+        "System Informer - Setup": "System Informer 安装程序",
+        "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
+            "版权所有 (c) Winsider Seminars & Solutions, Inc. 保留所有权利。"
+    }, []),
 ]
