@@ -1606,8 +1606,9 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         'Unable to open the process': "无法打开进程",
         'Unable to enumerate process handles': "无法枚举进程句柄",
         'Count': "计数",
+        '(unknown: %lu)': '(未知: %lu)',
     },
-     [
+                                                                    [
          ('PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 140, L"Type")',
             'PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 140, L"类型")'),
     ]),
