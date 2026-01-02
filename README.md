@@ -8,7 +8,12 @@
 
 ### todo
 
-- hidnproc.c
+- hndllist.c
+- hndlmenu.c
+- hndlprp.c
+- hndlprv.c
+- hndlstat.c
+- And more...
 
 ### 已完成的文件
 
@@ -36,6 +41,7 @@
 - `findobj.c`
 - `gdihndl.c`
 - `heapinfo.c`
+- `hidnproc.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
