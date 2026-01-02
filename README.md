@@ -8,8 +8,6 @@
 
 ### todo
 
-- hndlprp.c （Line 525 Processing...）
-- hndlprv.c
 - hndlstat.c
 - And more...
 
@@ -42,6 +40,8 @@
 - `hidnproc.c`
 - `hndllist.c`
 - `hndlmenu.c`
+- `hndlprp.c`
+- `hndlprv.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
