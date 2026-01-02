@@ -1299,7 +1299,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Information": "信息",
         "&Copy": "复制(&C)",
     },
-     [
+                                                                    [
          (
              'PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 100, L"Type")',
              'PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 100, L"类型")'
@@ -1307,6 +1307,89 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
          'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"Handle")',
          'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"句柄")'
      ),
+     ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/heapinfo.c", "utf-8", {
+        # PPH_STRING PhGetProcessHeapFlagsText(
+        #     _In_ ULONG Flags
+        #     )
+        # {
+        "No serialize, ": "未序列化, ", # HEAP_NO_SERIALIZE
+        "Growable, ": "可增长, ", # HEAP_GROWABLE
+        "Generate exceptions, ": "生成异常, ", # HEAP_GENERATE_EXCEPTIONS
+        "Zero memory, ": "零化内存, ", # HEAP_ZERO_MEMORY
+        "Realloc in-place, ": "原地重分配, ", # HEAP_REALLOC_IN_PLACE_ONLY
+        "Tail checking, ": "尾部检查, ", # HEAP_TAIL_CHECKING_ENABLED
+        "Free checking, ": "空闲检查, ", # HEAP_FREE_CHECKING_ENABLED
+        "Coalesce on free, ": "释放时合并, ", # HEAP_DISABLE_COALESCE_ON_FREE
+        "Align 16, ": "对齐 16 位, ", # HEAP_CREATE_ALIGN_16
+        "Traceable, ": "可跟踪, ", # HEAP_CREATE_ENABLE_TRACING
+        "Executable, ": "可执行, ", # HEAP_CREATE_ENABLE_EXECUTE
+        "Segment heap, ": "段堆, ", # HEAP_CREATE_SEGMENT_HEAP
+        "Segment hardened, ": "堆硬化, ", # HEAP_CREATE_HARDENED
+        # }
+        # PCWSTR PhGetProcessHeapClassText(
+        #     _In_ ULONG HeapClass
+        #     )
+        # {
+        "Process Heap": "进程堆",
+        "Private Heap": "私有堆",
+        "Kernel Heap": "内核堆",
+        "GDI Heap": "GDI 堆",
+        "User Heap": "用户堆",
+        "Console Heap": "控制台堆",
+        "Desktop Heap": "桌面堆",
+        "CSRSS Shared Heap": "CSRSS 共享堆",
+        "CSRSS Port Heap": "CSRSS 端口堆",
+        "Unknown Heap": "未知堆", # ...
+        # }
+        "Unable to query heap information.": "无法查询堆信息。",
+        "NT Heap (Lookaside)": "NT 堆 (旁视列表)",
+        "NT Heap (LFH)": "NT 堆 (LFH)",
+        "NT Heap": "NT 堆",
+        "Segment Heap (Lookaside)": "段堆 (旁视列表)",
+        "Segment Heap (LFH)": "段堆 (LFH)",
+        "Segment Heap": "段堆",
+        "Unable to query 32bit heap information.": "无法查询 32 位堆信息。",
+        "The 32-bit version of System Informer could not be located.": "找不到 32 位版本的 System Informer。",
+        "Heaps - ": "堆 - ",
+        "Address": "地址",
+        "Used": "已使用",
+        "Committed": "已提交",
+        "Entries": "条目",
+        "Flags": "标志",
+        "Class": "类",
+        "Copy\bCtrl+C": "复制\bCtrl+C",
+        "Segment Heap\n": "段堆\n",
+        "NT-%lu - 0x%I64x - committed: %lu - allocated: %lu - count: %lu\n":
+            "NT-%lu - 0x%I64x - 已提交: %lu - 已分配: %lu - 计数: %lu\n",
+        "destroy": "销毁",
+        "the selected heap": "已选中的堆",
+        "Destroying heaps may cause the process to crash.": "销毁堆可能会导致进程崩溃。",
+        "Unable to destroy the heap": "无法销毁堆",
+        "\nHeap ID: %lu\n": "\n堆 ID: %lu\n",
+        "Block size: %lu\n": "块大小: %lu\n",
+        "Critical section": "关键节区",
+        "Resource": "资源",
+        "Unable to query lock information.": "无法查询锁信息。",
+        "Locks - ": "锁 - ",
+        "Filename": "文件名",
+        "Lock count": "锁计数",
+        "Entry count": "条目计数",
+        "Recursion count": "递归计数",
+        "Waiting shared count": "等待共享计数",
+        "Waiting exclusive count": "等待递归计数",
+    },
+                                                                     [
+         (
+             'PhAddListViewColumn(context->ListViewHandle, 7, 7, 7, LVCFMT_LEFT, 80, L"Type")',
+             'PhAddListViewColumn(context->ListViewHandle, 7, 7, 7, LVCFMT_LEFT, 80, L"类型")'
+         ), (
+         'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 50, L"Type")',
+         'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 50, L"类型")'
+     ), (
+         'PhAddListViewColumn(context->ListViewHandle, 4, 4, 4, LVCFMT_LEFT, 120, L"Thread")',
+         'PhAddListViewColumn(context->ListViewHandle, 4, 4, 4, LVCFMT_LEFT, 120, L"线程")'
+     )
      ]),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
