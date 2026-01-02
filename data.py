@@ -1391,6 +1391,42 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
          'PhAddListViewColumn(context->ListViewHandle, 4, 4, 4, LVCFMT_LEFT, 120, L"线程")'
      )
      ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/hidnproc.c", "utf-8", {
+        "%u zombie process(es), %u terminated process(es).": "%u 个僵尸进程, %u 个已终止进程。",
+        "Brute force": "暴力破解",
+        "CSR handles": "CSR 句柄",
+        "ETW handles": "ETW 句柄",
+        "Process handles": "进程句柄",
+        "Registry handles": "注册表句柄",
+        "Ntdll handles": "NTDLL 句柄",
+        "terminate": "结束",
+        "the selected process(es)": "已选中进程",
+        "Unable to terminate the process": "无法结束进程",
+        "Text files (*.txt)": "文本文档 (*.txt)",
+        "All files (*.*)": "所有文件 (*.*)",
+        "Zombie Processes.txt": "僵尸进程.txt",
+        "Method: ": "方法: ",
+        "Brute Force\r\n": "暴力破解\r\n",
+        "CSR Handles\r\n": "CSR 句柄\r\n",
+        "Zombie: %u\r\nTerminated: %u\r\n\r\n": "僵尸进程: %u\r\n已结束进程: %u\r\n\r\n",
+        "[Zombie] ": "[僵尸进程] ",
+        "[Terminated] ": "[已终止] ",
+        "Unable to create the file": "无法创建文件",
+        "Unable to create a process structure for the selected process.": "无法为所选进程创建进程结构。",
+        "&Copy": "复制(&C)",
+        "Unable to perform the scan": "无法执行扫描",
+        "(unknown)": "(未知)",
+    },
+                                                                     [
+        (
+            'PhAddListViewColumn(lvHandle, 0, 0, 0, LVCFMT_LEFT, 320, L"Process")',
+            'PhAddListViewColumn(lvHandle, 0, 0, 0, LVCFMT_LEFT, 320, L"进程")'
+        ), (
+            '''L"Terminating a Zombie process may cause the system to become unstable "
+                            L"or crash."''',
+            '''L"终止僵尸进程可能会导致系统不稳定或崩溃。"'''
+        )
+    ]),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
     # Status: Pending

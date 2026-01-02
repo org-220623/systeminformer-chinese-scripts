@@ -8,7 +8,6 @@
 
 ### todo
 
-- heapinfo.c (Line 319)
 - hidnproc.c
 
 ### 已完成的文件
@@ -36,6 +35,7 @@
 - `extmgr.c` (没有要翻译的条目)
 - `findobj.c`
 - `gdihndl.c`
+- `heapinfo.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
