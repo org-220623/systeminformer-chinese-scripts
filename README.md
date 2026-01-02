@@ -8,7 +8,10 @@
 
 ### todo
 
-- hndlstat.c
+- infodlg.c
+- informer.c
+- itemtips.c
+- jobprp.c
 - And more...
 
 ### 已完成的文件
@@ -42,6 +45,7 @@
 - `hndlmenu.c`
 - `hndlprp.c`
 - `hndlprv.c`
+- `hndlstat.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
