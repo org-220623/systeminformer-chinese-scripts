@@ -13,7 +13,8 @@ def format_string(string: str):
     :param string: 原字符串
     :return: 格式化后的字符串
     """
-    return "\"" + string.replace("\n", "\\n") \
-        .replace("\t", "\\t") \
-        .replace("\r", "\\r") \
-        .replace("\0", "\\0") + "\""
+    return ("\"" + string.replace("\n", "\\n")
+            .replace("\t", "\\t")
+            .replace("\r", "\\r")
+            .replace("\0", "\\0")
+            .replace("\b", "\\b") + "\"")

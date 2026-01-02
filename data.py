@@ -1226,6 +1226,51 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
             "User assigned name": "用户分配的名称",
         # };
     }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/findobj.c", "utf-8", {
+        "Name": "名称",
+        "Object address": "对象地址",
+        "Original name": "原始名称",
+        "Granted access": "已授予访问权限",
+        "Everything": "所有对象",
+        "Mapped file": "已映射文件",
+        "Mapped image": "已映射映像",
+        "Unidentified third party object.": "不明第三方定义对象。",
+        "Find Handles or DLLs": "查找句柄或 DLL",
+        "Cancel": "取消",
+        "C&lose\bDel": "关闭(&L)\bDel",
+        "Go to &process...": "转到进程(&P)...",
+        "Prope&rties": "属性(&R)",
+        "&Copy\bCtrl+C": "复制(&C)\bCtrl+C",
+        "close": "关闭",
+        "the selected handle": "已选中的句柄",
+        "the selected handles": "已选中的句柄",
+        "Closing handles may cause system instability and data corruption.": "关闭句柄可能会导致系统不稳定和数据损坏。",
+        "critical handle(s)": "关键进程句柄",
+        "You are about to close one or more handles for a critical process with strict handle "
+                "checks enabled. This will shut down the operating system immediately.\r\n\r\n":
+            "您即将关闭一个或多个启用了严格句柄检查的关键进程的句柄。这将立即关闭操作系统。\r\n\r\n",
+        pre_format_string("Unable to close \"%s\""): pre_format_string("无法关闭 \"%s\""),
+        "The process does not exist.": "进程不存在。",
+        "%s (%lu results)": "%s (%lu 个结果)",
+        "Find": "查找",
+        "Unable to search for handles because the total number of handles on the system is too large.":
+            "由于系统上的句柄总数过大，无法搜索句柄。",
+        "Please check if there are any processes with an extremely large number of handles open.":
+            "请检查是否存在打开句柄数量异常庞大的进程。",
+        "Unable to create the window.": "无法创建窗口。"
+    },
+                                                                    [
+        (
+            'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_PROCESS, TRUE, L"Process"',
+            'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_PROCESS, TRUE, L"进程"'
+        ), (
+            'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_TYPE, TRUE, L"Type"',
+            'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_TYPE, TRUE, L"类型"'
+        ), (
+            'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_HANDLE, TRUE, L"Handle"',
+            'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_HANDLE, TRUE, L"句柄"'
+        )
+    ]),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
     # Status: Pending
