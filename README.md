@@ -8,7 +8,9 @@
 
 ### todo
 
-- More after devprv.c...
+- gdihndl.c
+- heapinfo.c
+- hidnproc.c
 
 ### 已完成的文件
 
@@ -33,7 +35,7 @@
 - `delayload.c` (没有要翻译的条目)
 - `devprv.c`
 - `extmgr.c` (没有要翻译的条目)
-- `findobj.c` Line 563
+- `findobj.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
