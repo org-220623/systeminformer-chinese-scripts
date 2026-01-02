@@ -32,6 +32,8 @@
 - `delayhook.c`
 - `delayload.c` (没有要翻译的条目)
 - `devprv.c`
+- `extmgr.c` (没有要翻译的条目)
+- `findobj.c` Line 563
 - `mdump.c`
 - `SystemInformer.rc`
 

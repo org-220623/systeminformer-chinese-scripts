@@ -1,5 +1,5 @@
 # 调试选项
-DEBUG_OPTION = True
+DEBUG_OPTION = False
 
 # 定义字符串常量 (CONST_STRING_*)
 CONST_STRING_ELLIPSIS = "..."
