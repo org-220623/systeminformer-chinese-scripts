@@ -8,7 +8,6 @@
 
 ### todo
 
-- hndllist.c
 - hndlmenu.c
 - hndlprp.c
 - hndlprv.c
