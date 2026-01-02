@@ -1489,7 +1489,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         ('showMemoryEditor->Title = sectionName ? PhConcatStrings2(L"Section - ", sectionName->Buffer) : PhCreateString(L"Section");',
         'showMemoryEditor->Title = sectionName ? PhConcatStrings2(L"节区 - ", sectionName->Buffer) : PhCreateString(L"节区");')
     ]),
-    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/hndlprp.c", "utf-8", { # Line 525
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/hndlprp.c", "utf-8", { # Line 525 Processing...
         'Asynchronous': "异步",
         'Write through': "直写",
         'Sequential': '顺序',
@@ -1507,6 +1507,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         'Wake policy (3)': "唤醒策略 (3)",
         'No shared section (direct)': "无共享节区 (直接)",
         'Allow multi-handle attributes': "允许多句柄属性",
+        "N/A (snapshot)": "N/A (快照)"
     }, [
         ('propSheetHeader.pszCaption = L"Handle"', 'propSheetHeader.pszCaption = L"句柄"'),
     ]),
