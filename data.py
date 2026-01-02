@@ -1298,7 +1298,6 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Object": "对象",
         "Information": "信息",
         "&Copy": "复制(&C)",
-
     },
      [
          (
