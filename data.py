@@ -16,6 +16,11 @@ raw_data_list_type = list[tuple[str, str]]
 # 主数据开始
 ###############################################################################
 
+GLOBAL_DICT: data_list_type = {
+    "Mapped file": "映射文件",
+    "Mapped image": "映射映像",
+}
+
 # SHOULD_NOT_TRANSLATE_STRING_LIST 列表包含窗口控件信息、字体信息等不应翻译的内容，
 # 即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
 SHOULD_NOT_TRANSLATE_STRING_LIST = [
@@ -1233,8 +1238,8 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Original name": "原始名称",
         "Granted access": "已授予访问权限",
         "Everything": "所有对象",
-        "Mapped file": "已映射文件",
-        "Mapped image": "已映射映像",
+        "Mapped file": GLOBAL_DICT["Mapped file"],
+        "Mapped image": GLOBAL_DICT["Mapped image"],
         "Unidentified third party object.": "不明第三方定义对象。",
         "Find Handles or DLLs": "查找句柄或 DLL",
         "Cancel": "取消",
@@ -1459,8 +1464,52 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         )
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/hndlmenu.c", "utf-8", {
-        
-    }, []),
+        "Mapped file": GLOBAL_DICT["Mapped file"],
+        "Mapped image": GLOBAL_DICT["Mapped image"],
+        "File propert&ies": "文件属性(&I)",
+        "Open &file location": "打开文件所在位置(&F)",
+        "Open &key": "打开键(&K)",
+        "Go to process...": "转到进程...",
+        "Process propert&ies": "进程属性(&I)",
+        "Read/Write &memory": "读取/写入内存",
+        "Go to t&hread...": "转到线程(&H)...",
+        "Make sure the Explorer executable file is present.": "请确保资源管理器可执行文件存在。",
+        "Unable to open the file location.": "无法打开文件所在位置。",
+        "The object is unnamed.": "对象未命名。",
+        "Unable to open key.": "无法打开键。",
+        "Unable to show the process properties.": "无法显示进程属性。",
+        "The process does not exist.": "进程不存在。",
+        "Unable to map a view of the section.": "无法映射节区视图。",
+        "The section size is greater than 32 MB. Only the first 32 MB will be available.":
+            "该节区大小超过 32 MB，仅可用前 32 MB。",
+        "Unable to query the section.": "无法查询节区。",
+        "Unable to open the file properties.": "无法打开文件属性。",
+    },
+                                                                     [
+        ('showMemoryEditor->Title = sectionName ? PhConcatStrings2(L"Section - ", sectionName->Buffer) : PhCreateString(L"Section");',
+        'showMemoryEditor->Title = sectionName ? PhConcatStrings2(L"节区 - ", sectionName->Buffer) : PhCreateString(L"节区");')
+    ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/hndlprp.c", "utf-8", { # Line 525
+        'Asynchronous': "异步",
+        'Write through': "直写",
+        'Sequential': '顺序',
+        'No buffering': '无缓冲',
+        'Synchronous alert': '同步警报',
+        'Synchronous non-alert': '同步非警报',
+        'LPC mode': 'LPC 模式',
+        'Allow impersonation': "允许模拟",
+        'Allow LPC requests': "允许 LPC 请求",
+        'Waitable': "可等待",
+        'Allow object duplication': "允许对象复制",
+        'System process only': "仅系统线程",
+        'Wake policy (1)': "唤醒策略 (1)",
+        'Wake policy (2)': "唤醒策略 (2)",
+        'Wake policy (3)': "唤醒策略 (3)",
+        'No shared section (direct)': "无共享节区 (直接)",
+        'Allow multi-handle attributes': "允许多句柄属性",
+    }, [
+        ('propSheetHeader.pszCaption = L"Handle"', 'propSheetHeader.pszCaption = L"句柄"'),
+    ]),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
     # Status: Pending

@@ -8,7 +8,6 @@
 
 ### todo
 
-- hndlmenu.c
 - hndlprp.c
 - hndlprv.c
 - hndlstat.c
@@ -41,6 +40,8 @@
 - `gdihndl.c`
 - `heapinfo.c`
 - `hidnproc.c`
+- `hndllist.c`
+- `hndlmenu.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
