@@ -500,7 +500,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
                 # xref: "{CONST_PATH_SETUP_TOOL_SRC}/version.rc" down
             "版权所有 (c) Winsider Seminars & Solutions, Inc. 保留所有权利。"
-    }, []),
+    }, []), # UTF-8-BOM
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mdump.c", "utf-8", {       # File complete.
         "Dump files (*.dmp)": "转储文件 (*.dmp)", 
         "All files (*.*)": "所有文件 (*.*)", 
@@ -1271,6 +1271,44 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
             'PhAddTreeNewColumn(Context->TreeNewHandle, PH_OBJECT_SEARCH_TREE_COLUMN_HANDLE, TRUE, L"句柄"'
         )
     ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/gdihndl.c", "utf-8", {
+        # switch (GDI_CLIENT_TYPE_FROM_UNIQUE(Unique)) { case ... : ... , ......}
+            "Alt. DC": "备用 DC", # GDI_CLIENT_ALTDC_TYPE
+            "Bitmap": "位图", # GDI_CLIENT_BITMAP_TYPE
+            "Brush": "画刷", # GDI_CLIENT_BRUSH_TYPE
+            "Client Object": "客户端对象", # GDI_CLIENT_CLIENTOBJ_TYPE
+            "DIB Section": "DIB 节区", # GDI_CLIENT_DIBSECTION_TYPE
+            # ignore GDI_CLIENT_DC_TYPE
+            # not ignore GDI_CLIENT_EXTPEN_TYPE (next line)
+            "ExtPen": "扩展画笔", # GDI_CLIENT_EXTPEN_TYPE
+            "Font": "字体", # GDI_CLIENT_FONT_TYPE
+            "Metafile DC": "元文件 DC", # GDI_CLIENT_METADC16_TYPE
+            "Enhanced Metafile": "增强元文件", # GDI_CLIENT_METAFILE_TYPE
+            "Metafile": "元文件", # GDI_CLIENT_METAFILE16_TYPE
+            "Palette": "调色板", # GDI_CLIENT_PALETTE_TYPE
+            "Pen": "画笔", # GDI_CLIENT_PEN_TYPE
+            "Region": "区域", # GDI_CLIENT_REGION_TYPE
+        # switch ... case ... end.
+        "Width: %u, Height: %u, Depth: %u": "宽度: %u, 高度: %u, 深度: %u",
+        "Style: %u, Color: 0x%08x, Hatch: 0x%Ix": "样式: %u, 颜色: 0x%08x, 阴影: 0x%Ix",
+        "Style: 0x%x, Width: %u, Color: 0x%08x": "样式: 0x%x, 宽度: %u, 颜色: 0x%08x",
+        "Face: %s, Height: %d": "表面: %s, 高度: %d",
+        "Entries: %u": "条目数: %u",
+        "Style: %u, Width: %u, Color: 0x%08x": "样式: %u, 宽度: %u, 颜色: 0x%08x",
+        "Object": "对象",
+        "Information": "信息",
+        "&Copy": "复制(&C)",
+
+    },
+     [
+         (
+             'PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 100, L"Type")',
+             'PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 100, L"类型")'
+         ), (
+         'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"Handle")',
+         'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"句柄")'
+     ),
+     ]),
     #################################################################################
     # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
     # Status: Pending
