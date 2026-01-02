@@ -8,10 +8,7 @@
 
 ### todo
 
-- `SystemInformer/delayhook.c` (从 Line 1145 开始)
-- `SystemInformer/delayload.c`
-- `SystemInformer/devprv.c` (从 Line 2838 开始)
-- And more...
+- More after devprv.c...
 
 ### 已完成的文件
 
@@ -32,6 +29,9 @@
 - `colmgr.c` (没有要翻译的条目)
 - `colsetmgr.c`
 - `dbgcon.c`
+- `delayhook.c`
+- `delayload.c` (没有要翻译的条目)
+- `devprv.c`
 - `mdump.c`
 - `SystemInformer.rc`
 
