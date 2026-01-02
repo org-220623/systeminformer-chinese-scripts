@@ -484,7 +484,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "Remove": "移除",
         "Auditing": "审核",
     },
-     [
+                                                                            [
         ('CAPTION "Job"', 'CAPTION "作业"'),
         ('"File",IDC_FILE', '"文件",IDC_FILE'),
         ('"Process",IDC_PROCESS', '"进程",IDC_PROCESS'),
@@ -1297,7 +1297,8 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
         "CLR Imports": "CLR 导入项",
         "Volatile Metadata": "易失性元数据",
         "CLR Tables": "CLR 表",
-    }, [
+    },
+                                                                [
         ('"File",IDC_FILE', '"文件",IDC_FILE'),
     ]),
     #################################################################################
