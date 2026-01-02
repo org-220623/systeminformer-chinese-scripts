@@ -1,7 +1,16 @@
-from data import TRANSLATION_DATA
-from config import DEBUG_FILE
+from Config.const_values import DEBUG_FILE
 from objtype import TranslateFileObject
 from sys import argv
+
+# import data
+import _data_systeminformer_c
+import Tools
+
+# create global data structure
+TRANSLATION_DATA = (
+        Tools.DATA +
+        _data_systeminformer_c.DATA
+)
 
 if __name__ == '__main__':
     if len(argv) == 2:

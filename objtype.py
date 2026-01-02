@@ -1,9 +1,6 @@
-from data import (
-    data_list_type,
-    raw_data_list_type,
-    SHOULD_NOT_TRANSLATE_STRING_LIST,
-)
-from misc import format_string, check_symbols
+from Config.static_data_type import data_list_type, raw_data_list_type
+from misc_functions import format_string, check_symbols
+from Config.not_translate_data import SHOULD_NOT_TRANSLATE_STRING_LIST
 
 
 class TranslateFileObject:

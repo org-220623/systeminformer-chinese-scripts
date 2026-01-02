@@ -1,4 +1,4 @@
-from config import (
+from Config.const_values import (
     CONST_STRING_LEFT_BRACKET,
     CONST_STRING_RIGHT_BRACKET,
     CONST_STRING_CRLF_NEWLINE,

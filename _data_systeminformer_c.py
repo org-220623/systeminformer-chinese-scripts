@@ -1,120 +1,13 @@
 # 本文件存储 System Informer 源码汉化数据。
 # 作者：anonymous9075 (anonymous9075331734@proton.me)
 
-from misc import pre_format_string
-from config import (
-    CONST_PATH_PEVIEW_TOOL_SRC,
-    CONST_PATH_SETUP_TOOL_SRC,
-    CONST_PATH_SYSTEM_INFORMER_SRC,
-)
+from Config.const_values import CONST_PATH_SYSTEM_INFORMER_SRC
+from Config.global_dict import GLOBAL_DICT
+from Config.static_data_type import translation_data_type
+from misc_functions import pre_format_string
 
-# 定义类型常量
-data_list_type = dict[str, str]
-raw_data_list_type = list[tuple[str, str]]
-
-###############################################################################
-# 主数据开始
-###############################################################################
-
-GLOBAL_DICT: data_list_type = {
-    "Mapped file": "映射文件",
-    "Mapped image": "映射映像",
-}
-
-# SHOULD_NOT_TRANSLATE_STRING_LIST 列表包含窗口控件信息、字体信息等不应翻译的内容，
-# 即使窗口控件显示的文字或字符串表的其中一项恰好是这些内容，也不应被翻译。
-SHOULD_NOT_TRANSLATE_STRING_LIST = [
-    "Button",
-    "SysListView32",
-    "SysTreeView32",
-    "PhTreeNew",
-    "MS Shell Dlg",     # Default font name
-    "SysLink", 
-    "PhColorBox", 
-    "PhGraph", 
-    "PhHexEdit",
-    "Segoe UI",         # Font name
-    "taskschd.dll",     # {CONST_PATH_SYSTEM_INFORMER_SRC}/admintask.c
-    "explorer",
-    # -------------------------------------------------------------------
-    # Windows Kernel Object Types, from WinObjEx64 -> \ObjectTypes\*
-    "ActivationObject",
-    "ActivityReference",
-    "Adapter",
-    "ALPC Port",
-    "Callback",
-    "Composition",
-    "Controller",
-    "CoreMessaging",
-    "CoverageSampler",
-    "DebugObject",
-    "Desktop",
-    "Device",
-    "Directory",
-    "DmaAdapter",
-    "Driver",
-    "DxgkCompositionObject",
-    "DxgkCurrentDxgThreadObject",
-    "DxgkDisplayManagerObject",
-    "DxgkSharedBundleObject",
-    "DxgkSharedKeyedMutexObject",
-    "DxgkSharedProtectedSessionObject",
-    "DxgkSharedResource",
-    "DxgkSharedSwapChainObject",
-    "DxgkSharedSyncObject",
-    "EnergyTracker",
-    "EtwConsumer",
-    "EtwRegistration",
-    "EtwSessionDemuxEntry",
-    "Event",
-    "File",
-    "FilterCommunicationPort",
-    "FilterConnectionPort",
-    "IoCompletion",
-    "IoCompletionReserve",
-    "IRTimer",
-    "Job",
-    "Key",
-    "KeyedEvent",
-    "Mutant",
-    "NdisCmState",
-    "Partition",
-    "PcwObject",
-    "PowerRequest",
-    "Process",
-    "Profile",
-    "PsSiloContextNonPaged",
-    "PsSiloContextPaged",
-    "RawInputManager",
-    "RegistryTransaction",
-    "Section",
-    "Semaphore",
-    "Session",
-    "SymbolicLink",
-    "Thread",
-    "Timer",
-    "TmEn",
-    "TmRm",
-    "TmTm",
-    "TmTx",
-    "Token",
-    "TpWorkerFactory",
-    "Type",
-    "UserApcReserve",
-    "VRegConfigurationContext",
-    "WaitCompletionPacket",
-    "WindowStation",
-    "WmiGuid",
-    # Kernel Objects End
-]
-
-TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_type]] = [
-    # meanings:               |         |          |                   |
-    #                     file path; encoding; data dict; data without quotes & formatting
-    #################################################################################
-    # System Informer source files: CONST_PATH_SYSTEM_INFORMER_SRC
-    # Status: Processing
-    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/SystemInformer.rc", "utf-8", {     # File complete.
+DATA: translation_data_type = [
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/SystemInformer.rc", "utf-8", {
         "Terminate": "终止",
         "General": "常规",
         "Permissions": "权限",
@@ -813,8 +706,8 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
             PhaConcatStrings2(Process->ProcessName->Buffer, L" 的执行所需状态")->Buffer,
             L"该进程会继续运行，而不是被进程生命周期管理模块 (PLM) 挂起或终止。"'''
         ), (
-            'config.pszMainInstruction = PhaConcatStrings(3, L"Do you want to ", action->Buffer, L"?")->Buffer',
-            'config.pszMainInstruction = PhaConcatStrings(3, L"你想要", action->Buffer, L"吗?")->Buffer'
+            'Config.pszMainInstruction = PhaConcatStrings(3, L"Do you want to ", action->Buffer, L"?")->Buffer',
+            'Config.pszMainInstruction = PhaConcatStrings(3, L"你想要", action->Buffer, L"吗?")->Buffer'
         ), (
             '''L"start",
             L"Starting a service might prevent the system from functioning properly."''',
@@ -1194,7 +1087,7 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
             "Query remove pending": "查询/移除挂起",
             "Query remove active": "查询/移除活动",
             "Being removed": "将被移除",
-            "Received config": "已接收配置",
+            "Received Config": "已接收配置",
             "To be freed": "待释放",
             "Rebalance candidate": "重平衡候选设备",
             "Bad partial": "局部错误",
@@ -1612,157 +1505,4 @@ TRANSLATION_DATA: list[tuple[str,      str,  data_list_type,   raw_data_list_typ
          ('PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 140, L"Type")',
             'PhAddListViewColumn(context->ListViewHandle, 0, 0, 0, LVCFMT_LEFT, 140, L"类型")'),
     ]),
-    #################################################################################
-    # System Informer PEView Tool source files: CONST_PATH_PEVIEW_TOOL_SRC
-    # Status: Pending
-    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {
-        "Properties": "属性",
-        "Close": "关闭",
-        "Options": "选项",
-        "Permissions": "权限",
-        "General": "常规",
-        "Version:": "版本:",
-        "<a>Company Name Link</a>": "<a>发行商名称链接</a>",
-        "Imports": "导入",
-        "Exports": "导出",
-        "Runtime version:": "运行时版本:",
-        "Flags:": "标志:",
-        "Sections:": "节区:",
-        "PublicKeyToken:": "公共密钥令牌:",
-        "Target version:": "目标版本:",
-        "Entry point:": "入口点:",
-        "Load config": "加载配置",
-        "Symbols": "符号",
-        "Resources": "资源",
-        "Strings": "字符串",
-        "String Search": "搜索字符串",
-        "Minimum length:": "最小长度:",
-        "OK": "确定",
-        "Cancel": "取消",
-        "Target machine:": "目标平台:",
-        "Image base:": "映像基址:",
-        "Image type:": "映像类型:",
-        "Attributes": "详细信息",           # "Attributes" 与 "Properties" 在语义上重复，故修改翻译。
-        "Streams": "流",
-        "Links": "链接",
-        "Pids": "PID",
-        "Dynamic": "动态",
-        "Tls": "TLS",
-        "Max. size unit:": "最大大小单元:",
-        "Font...": "字体...",
-        "Application font:": "应用程序字体:",
-        "Symbol path:": "符号路径:",
-        "Reset": "重置",
-        "Cleanup": "清空",
-        "Preview": "预览",
-        "Directories": "文件夹",
-        "ProdID": "产品 ID",             # todo: 查明此条目的含义
-        "Checksum:": "校验和:",
-        "Hash (raw):": "哈希值 (二进制):",
-        "Hash:": "哈希值:",
-        "Production ID": "产品 ID",
-        "Debug": "调试",
-        "Sections": "节区",
-        "Refresh": "刷新",
-        "EH Continuation":          # See: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessdynamicehcontinuationtargets
-                                    #      https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-process_dynamic_eh_continuation_target
-            "异常处理延续",
-        "Layout": "布局",
-        "Hashes": "哈希",
-        "Exceptions": "异常",
-        "Relocations": "重定位",
-        "Choose Columns": "选择列",
-        "Inactive columns:": "未显示的列:",
-        "Show >": "显示 >",
-        "< Hide": "< 隐藏",
-        "Move up": "上移",
-        "Move down": "下移",
-        "Active columns:": "显示的列:",
-        "Select the columns that will appear in the list.": "选择要在列表中显示的列。",
-        "Headers": "头部",
-        "CLR Imports": "CLR 导入项",
-        "Volatile Metadata": "易失性元数据",
-        "CLR Tables": "CLR 表",
-    },
-                                                                [
-        ('"File",IDC_FILE', '"文件",IDC_FILE'),
-    ]),
-    #################################################################################
-    # Install & update & uninstall tool: CONST_PATH_SETUP_TOOL_SRC
-    # Status: Completed
-    (f"{CONST_PATH_SETUP_TOOL_SRC}/extract.c", "utf-8", {
-        "Extracting: ": "正在复制: ",
-        "Progress: ": "进度: ",
-        " of ": "，总计: "
-    }, []),
-    (f"{CONST_PATH_SETUP_TOOL_SRC}/main.c", "utf-8", {
-        # config.pszContent = (
-            "- Process Hacker was renamed System Informer.\n": "- Process Hacker 已更名为 System Informer\n",
-            "- Process Hacker does not support Windows 10 or 11.\n": "- Process Hacker 不支持 Windows 10/11\n",
-            "- Process Hacker will not be updated.\n": "- Process Hacker 不会获得最新更新\n",
-            "- Process Hacker will not be uninstalled.\n\n": "- Process Hacker 将不会被卸载\n\n",
-            "This update will now install System Informer.\n\nPlease remember to uninstall Process Hacker. Thanks <3":
-                "本次更新将安装 System Informer。\n\n建议在安装完成后卸载 Process Hacker。",
-        # )
-        "Initializing...": "正在初始化...",
-        # PhShowInformation2 (
-            "Process Hacker was renamed System Informer.\n": "Process Hacker 已更名为 System Informer\n",
-            "The legacy version of Process Hacker is no longer maintained and will not receive updates.\r\n\r\n":
-                "Process Hacker 已停止维护，不会再收到最新更新。\r\n\r\n",
-            "The updater is now installing System Informer. The Process Hacker installation must be manually uninstalled":
-                "更新程序正在安装 System Informer，Process Hacker 需用户手动卸载",
-        # )
-        "System Informer - Setup": "System Informer 安装程序",
-    }, []),
-    (f"{CONST_PATH_SETUP_TOOL_SRC}/startpage.c", "utf-8", {
-        "Setup failed with an error.": "安装程序出现错误。",
-        "%s\r\n\r\nSelect Close to exit setup.": pre_format_string("%s\r\n\r\n点击\"关闭\"退出安装程序"),
-        "Select Close to exit setup.": pre_format_string("点击 \"关闭\" 退出安装程序"),
-        "Install": "安装",
-        "A free, powerful, multi-purpose tool that helps you monitor system resources, "
-            "debug software and detect malware.":
-            "一款免费、开源、功能强大、用途广泛的工具，可帮助您监控系统资源、调试软件和检测恶意软件。",
-        " complete.": " 已完成",
-        "Start program when setup exits": "启动 System Informer",
-        "Installation Folder:\r\n\r\n%s": "安装目录: \r\n\r\n%s",
-        "Browse": "浏览",
-        "Next": "下一步",
-        "Setup Options": "安装选项",
-        pre_format_string("Installation Folder:\r\n\r\nSelect \"Browse\" to continue."):
-            pre_format_string("安装目录: \r\n\r\n选择 \"浏览\" 以继续。"),
-        "Change directory": "更改目录",
-        "Continue": "继续",
-        "WARNING": "警告",
-        "The selected installation directory already contains files and data. ":
-            "选定的安装目录已包含文件和数据。",
-        "If you continue this directory and files will be deleted.\r\n\r\nDo you want to change the directory?":
-            "如果继续操作，此目录及其中的文件将被删除。\r\n\r\n您要更改目录吗?",
-        "Preparing to install...": "准备安装...",
-    }, []),
-    (f"{CONST_PATH_SETUP_TOOL_SRC}/uninstall.c", "utf-8", {
-        "System Informer has been uninstalled.": "已卸载 System Informer。",
-        "A reboot is required to complete the uninstall.": "卸载完成后需重启计算机。",
-        "Click close to exit setup.": pre_format_string("单击 \"关闭\" 退出卸载程序。"),
-        "Uninstalling System Informer...": "正在卸载 System Informer...",
-        "Uninstall failed with an error.": "卸载过程中出现错误。",
-        "Click retry to try again or close to exit setup.":
-            pre_format_string("单击 \"重试\" 重新尝试卸载，或单击 \"关闭\" 退出卸载程序。"),
-        "Uninstall": "卸载",
-        "Are you sure you want to uninstall System Informer?": "您确定要卸载 System Informer 吗?",
-        "Remove application settings": "删除应用程序配置",
-    }, []),
-    (f"{CONST_PATH_SETUP_TOOL_SRC}/update.c", "utf-8", {
-        "Updating to version %lu.%lu.%lu.%lu...": "正在更新到版本 %lu.%lu.%lu.%lu...",
-        "Update complete.": "更新完毕。",
-        "Select Close to exit.": pre_format_string("单击 \"关闭\" 退出安装程序。"),
-        "Retry": "重试",
-        "Close": "关闭",
-        "Error updating to the latest version.": "更新到最新版本时出错。",
-    }, []),
-    (f"{CONST_PATH_SETUP_TOOL_SRC}/version.rc", "utf-8", {
-        "System Informer - Setup": "System Informer 安装程序",
-        "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
-                # xref: "{CONST_PATH_SYSTEM_INFORMER_SRC}/version.rc" above
-            "版权所有 (c) Winsider Seminars & Solutions, Inc. 保留所有权利。"
-    }, []),
 ]
