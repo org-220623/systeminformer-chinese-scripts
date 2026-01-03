@@ -28,6 +28,8 @@
 - `mdump.c`
 - files between up and down haven't translated.
 - `SystemInformer.rc`
+- files between up and down haven't translated.
+- `version.rc`
 
 #### 工具
 
@@ -46,7 +48,7 @@
 - `startpage.c`
 - `uninstall.c`
 - `util.c` (没有要翻译的条目)
-- `version.rc` (延迟翻译)
+- `version.rc`
 - `update.c` 
 
 #### 插件
