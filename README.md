@@ -2,10 +2,10 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。
 
-# 远程仓库
+## 远程仓库
 
 1. GitLab (Origin): https://gitlab.com/anonymous9075331734/systeminformer-chinese
-2. Gitea (有时推送会失效): https://gitea.com/anonymous9075331734/systeminformer-chinese
+2. Gitea (有时推送会失败): https://gitea.com/anonymous9075331734/systeminformer-chinese
 3. GitHub (大陆已被 GFW, 不推荐国内访问): https://github.com/org-220623/systeminformer-chinese-scripts
 4. Gitee (推荐国内访问): https://gitee.com/MICRO201014_admin/systeminformer-chinese
 5. Jihu GitLab (未计划)
