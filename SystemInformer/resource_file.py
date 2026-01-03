@@ -222,7 +222,7 @@ DATA: translation_data_type = [
         "System": "系统",
         "Processes": "进程",
         "Uptime": "运行时间",
-        "&Show one graph per CPU": "每个 CPU 显示一个图表(&S)",
+        "&Show one graph per CPU": "每 CPU 显示一个图表",
         "Context switches delta": "上下文切换增量",
         "Interrupts delta": "中断增量",
         "DPCs delta": "DPC 增量",

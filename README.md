@@ -8,7 +8,6 @@
 
 ### todo
 
-- itemtips.c
 - jobprp.c
 - And more...
 
@@ -16,10 +15,10 @@
 
 #### 主程序 (`SystemInformer/*`)
 
-- `SystemInformer/phsvc/*` (没有要翻译的条目)
-- `SystemInformer/sdk/*` (没有要翻译的条目)
+- `phsvc/*` (没有要翻译的条目)
+- `sdk/*` (没有要翻译的条目)
 - And more
-- `infodlg.c`
+- `itemtips.c`
 - files between up and down have been not translated yet
 - `mdump.c`
 - `SystemInformer.rc`
