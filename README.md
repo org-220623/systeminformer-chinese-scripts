@@ -8,8 +8,6 @@
 
 ### todo
 
-- infodlg.c
-- informer.c
 - itemtips.c
 - jobprp.c
 - And more...
@@ -20,32 +18,9 @@
 
 - `SystemInformer/phsvc/*` (没有要翻译的条目)
 - `SystemInformer/sdk/*` (没有要翻译的条目)
-- `colmgr.c` (没有要翻译的条目)
-- `about.c`
-- `actions.c`
-- `admintask.c`
-- `affinity.c`
-- `anawait.c`
-- `appsup.c`
-- `chcol.c` (没有要翻译的条目)
-- `chdlg.c` (没有要翻译的条目)
-- `chproc.c`
-- `colmgr.c` (没有要翻译的条目)
-- `colsetmgr.c`
-- `dbgcon.c`
-- `delayhook.c`
-- `delayload.c` (没有要翻译的条目)
-- `devprv.c`
-- `extmgr.c` (没有要翻译的条目)
-- `findobj.c`
-- `gdihndl.c`
-- `heapinfo.c`
-- `hidnproc.c`
-- `hndllist.c`
-- `hndlmenu.c`
-- `hndlprp.c`
-- `hndlprv.c`
-- `hndlstat.c`
+- And more
+- `infodlg.c`
+- files between up and down have been not translated yet
 - `mdump.c`
 - `SystemInformer.rc`
 
