@@ -9,8 +9,25 @@
 
 ### todo
 
-- ksisup.c from line 315
-- log.c pending
+- ksisup.c 从第 315 行开始
+- log.c 延迟翻译
+- memedit.c
+- memlist.c
+- memlists.c
+- memmod.c
+- memprot.c
+- memprv.c
+- memrslt.c
+- memsrch.c
+- memsrcht.c
+- miniinfo.c
+- modlist.c
+- modprv.c
+- mtgndlg.c
+- mwpgdev.c
+- mwpgnet.c
+- mwpgproc.c
+- mwpgsrv.c
 - And more...
 
 ### 已完成的文件
@@ -19,15 +36,15 @@
 
 - `phsvc/*` (没有要翻译的条目)
 - `sdk/*` (没有要翻译的条目)
-- And more
+- 省略
 - `ksidbg.c` (暂不翻译)
-- And more **but log.c hasn't been translated**.
+- 省略 **(log.c 未翻译)**.
 - `main.c` (已初步完成，可能要再次修改)
 - `mainwnd.c`
 - `mdump.c`
-- files between up and down haven't translated.
+- 中间的文件未翻译
 - `SystemInformer.rc`
-- files between up and down haven't translated.
+- 中间的文件未翻译
 - `version.rc`
 
 #### 工具
