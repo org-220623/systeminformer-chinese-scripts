@@ -1172,6 +1172,5 @@ DATA: translation_data_type = [
         "    Process is power throttling (efficiency).\n": "    进程正在进行效率优化。\n",
         "Flags:\n": "标志:\n",
         "Description:\n    ": "描述:\n    ",
-        # Line 479
     }, []),
 ]
