@@ -11,7 +11,6 @@
 
 - ksisup.c from line 315
 - log.c pending
-- mainwnd.c from line 3873
 - And more...
 
 ### 已完成的文件
@@ -24,7 +23,7 @@
 - `ksidbg.c` (暂不翻译)
 - And more **but log.c hasn't been translated**.
 - `main.c` (已初步完成，可能要再次修改)
-- files between up and down haven't translated.
+- `mainwnd.c`
 - `mdump.c`
 - files between up and down haven't translated.
 - `SystemInformer.rc`

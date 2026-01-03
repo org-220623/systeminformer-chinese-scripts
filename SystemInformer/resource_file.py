@@ -271,7 +271,7 @@ DATA: translation_data_type = [
         "Pagefile writes delta": "页面文件写入增量",
         "Page reads delta": "页面读取增量",
         "Mapped writes delta": "映射写入增量",
-        "Modified pagefile": "已修改页面文件",
+        "Modified pagefile": "已修改页面",
         "&More": "更多",
         "Reserved": "保留",
         "Mapped IO": "映射 I/O",
@@ -378,7 +378,7 @@ DATA: translation_data_type = [
         "Remove": "移除",
         "Auditing": "审核",
     },
-                                                                            [
+    [
         ('CAPTION "Job"', 'CAPTION "作业"'),
         ('"File",IDC_FILE', '"文件",IDC_FILE'),
         ('"Process",IDC_PROCESS', '"进程",IDC_PROCESS'),
@@ -389,6 +389,14 @@ DATA: translation_data_type = [
         ('CAPTION "Semaphore"', 'CAPTION "信号量"'),
         ('CAPTION "Timer"', 'CAPTION "计时器"'),
         ('"Section",IDC_SECTION', '"节区",IDC_SECTION'),
+        ('"Limit",IDC_STATIC,7,31,15,8', '"Limit",IDC_STATIC,7,31,18,8'), # len("限制") * height
+        ('"Limit",IDC_STATIC,7,78,15,8', '"Limit",IDC_STATIC,7,78,18,8'),
+        ('"Limit",IDC_STATIC,7,135,15,8', '"Limit",IDC_STATIC,7,135,18,8'),
+        ('"Cache WS",IDC_STATIC,120,41,34,8', '"Cache WS",IDC_STATIC,120,41,45,8'), # len("缓存工作集") * height
+        ('"Kernel WS",IDC_STATIC,120,51,34,8', '"Kernel WS",IDC_STATIC,120,51,45,8'),
+        ('"Driver WS",IDC_STATIC,120,61,33,8', '"Driver WS",IDC_STATIC,120,61,45,8'),
+        ('"Bad",IDC_STATIC,7,60,13,8', '"Bad",IDC_STATIC,7,60,20,8'),
+        ('"Uptime",IDC_STATIC,7,58,23,8', '"Uptime",IDC_STATIC,7,58,35,8'),
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/version.rc", "utf-8-sig", {
         "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
