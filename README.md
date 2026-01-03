@@ -4,11 +4,16 @@
 
 ## 进度信息
 
-提示：`static_assert` 提示信息一律不翻译。
+1. 提示：`static_assert` 提示信息一律不翻译。
+2. 本项目仅处理 `SystemInformer/*`、`tools/*` 和 `plugins/*` 下的内容，`kphlib/*`、`phlib/*` 和 `KSystemInformer/*` 下的内容未计划处理。
 
 ### todo
 
-- jobprp.c
+- ksisup.c
+- log.c
+- logwnd.c
+- main.c
+- mainwnd.c
 - And more...
 
 ### 已完成的文件
@@ -18,7 +23,8 @@
 - `phsvc/*` (没有要翻译的条目)
 - `sdk/*` (没有要翻译的条目)
 - And more
-- `itemtips.c`
+- `ksidbg.c` (暂不翻译)
+- `ksyscall.c` (没有要翻译的条目)
 - files between up and down have been not translated yet
 - `mdump.c`
 - `SystemInformer.rc`

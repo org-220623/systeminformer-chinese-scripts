@@ -1228,4 +1228,15 @@ DATA: translation_data_type = [
         Context->Context
         );''')
     ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/kdump.c", "utf-8", {
+        "Size: ": "大小: ",
+        "Initializing...": "初始化中...",
+        "Live kernel dump has been created.": "已创建活动内核转储。",
+        "Unable to save the live kernel dump.": "无法保存活动内核转储。",
+        "Processing live kernel dump...": "正在处理活动内核转储...",
+        "Dump files (*.dmp)": "转储文件 (*.dmp)",
+        "All files (*.*)": "所有文件 (*.*)",
+        "kerneldump": "内核转储",
+        "Unable to create live kernel dump.": "无法创建活动内核转储",
+    }, []),
 ]
