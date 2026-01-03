@@ -10,8 +10,8 @@
 ### todo
 
 - ksisup.c from line 315
-- log.c
-- mainwnd.c
+- log.c pending
+- mainwnd.c from line 3873
 - And more...
 
 ### 已完成的文件
@@ -22,9 +22,11 @@
 - `sdk/*` (没有要翻译的条目)
 - And more
 - `ksidbg.c` (暂不翻译)
-- `ksyscall.c` (没有要翻译的条目)
-- files between up and down have been not translated yet
+- And more **but log.c hasn't been translated**.
+- `main.c` (已初步完成，可能要再次修改)
+- files between up and down haven't translated.
 - `mdump.c`
+- files between up and down haven't translated.
 - `SystemInformer.rc`
 
 #### 工具
