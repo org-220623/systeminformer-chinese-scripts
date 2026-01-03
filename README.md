@@ -2,6 +2,17 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。
 
+# 远程仓库
+
+1. GitLab (Origin): https://gitlab.com/anonymous9075331734/systeminformer-chinese
+2. Gitea (有时推送会失效): https://gitea.com/anonymous9075331734/systeminformer-chinese
+3. GitHub (大陆已被 GFW, 不推荐国内访问): https://github.com/org-220623/systeminformer-chinese-scripts
+4. Gitea (推荐国内访问): https://gitee.com/MICRO201014_admin/systeminformer-chinese
+5. Jihu GitLab (未计划)
+6. Codeberg (未计划)
+7. Riseup (未计划)
+8. GitCode / AtomGit (未计划)
+
 ## 进度信息
 
 1. 提示：`static_assert` 提示信息一律不翻译。
