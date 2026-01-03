@@ -9,10 +9,8 @@
 
 ### todo
 
-- ksisup.c
+- ksisup.c from line 315
 - log.c
-- logwnd.c
-- main.c
 - mainwnd.c
 - And more...
 

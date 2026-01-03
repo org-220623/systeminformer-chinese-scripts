@@ -1,4 +1,5 @@
 from Config.debug_file import DEBUG_FILE
+from Payload.misc_functions import get_translation_item_total_count
 from Payload.objtype import TranslateFileObject
 from sys import argv
 
@@ -11,6 +12,8 @@ TRANSLATION_DATA = (
         Tools.DATA +
         SystemInformer.DATA
 )
+
+get_translation_item_total_count(TRANSLATION_DATA)
 
 if __name__ == '__main__':
     if len(argv) == 2:
