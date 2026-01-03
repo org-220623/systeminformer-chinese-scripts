@@ -1,5 +1,5 @@
 from Config.static_data_type import data_list_type, raw_data_list_type
-from misc_functions import format_string, check_symbols
+from Payload.misc_functions import format_string, check_symbols
 from Config.not_translate_data import SHOULD_NOT_TRANSLATE_STRING_LIST
 
 
@@ -26,7 +26,7 @@ class TranslateFileObject:
         Main procedure
         :return: None
         """
-        print(f"正在处理文件：{self.file_path}，编码：{self.encoding}")
+        print(f"正在处理文件：{self.file_path}，编码：{self.encoding.replace("utf-8-sig", "utf-8-bom").upper()}")
         with open(self.file_path, "r+", encoding=self.encoding) as file:
             file_data = file.read()
             ##########################################################

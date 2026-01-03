@@ -1,7 +1,7 @@
 from Config.const_values import (
     CONST_PATH_SETUP_TOOL_SRC,
 )
-from misc_functions import pre_format_string
+from Payload.misc_functions import pre_format_string
 from Config.static_data_type import translation_data_type
 
 DATA: translation_data_type = [

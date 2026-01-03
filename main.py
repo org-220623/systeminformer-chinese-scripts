@@ -1,15 +1,15 @@
-from Config.const_values import DEBUG_FILE
-from objtype import TranslateFileObject
+from Config.debug_file import DEBUG_FILE
+from Payload.objtype import TranslateFileObject
 from sys import argv
 
 # import data
-import _data_systeminformer_c
+import SystemInformer
 import Tools
 
 # create global data structure
 TRANSLATION_DATA = (
         Tools.DATA +
-        _data_systeminformer_c.DATA
+        SystemInformer.DATA
 )
 
 if __name__ == '__main__':
