@@ -22,8 +22,6 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- memlist.c
-- memlists.c
 - memmod.c
 - memprot.c
 - memprv.c
@@ -51,7 +49,8 @@
 - 已翻译，省略 **(log.c 未翻译)**.
 - `main.c` (已初步完成，可能要再次修改)
 - `mainwnd.c`
-- `mdump.c`
+- 已翻译，省略
+- `memlists.c`
 - 中间的文件未翻译
 - `SystemInformer.rc`
 - 中间的文件未翻译
