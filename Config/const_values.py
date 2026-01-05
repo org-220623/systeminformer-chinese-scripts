@@ -1,3 +1,6 @@
+# 配置文件
+
+########################################################################################
 # 定义字符串常量 (CONST_STRING_*)
 CONST_STRING_ELLIPSIS = "..."
 CONST_STRING_COLON = ":"
@@ -6,8 +9,10 @@ CONST_STRING_CRLF_NEWLINE = "\r\n"
 CONST_STRING_LEFT_BRACKET = "[ "
 CONST_STRING_RIGHT_BRACKET = " ]"
 
+########################################################################################
 # 定义目录路径常量 (CONST_PATH_*)
 CONST_PATH_SYSTEM_INFORMER_SRC = "SystemInformer"
+CONST_PATH_SYSTEM_INFORMER_INC = f"{CONST_PATH_SYSTEM_INFORMER_SRC}/include"
 # 工具目录
 CONST_PATH_TOOLS_DIRECTORY = "tools"
 CONST_PATH_PEVIEW_TOOL_SRC = f"{CONST_PATH_TOOLS_DIRECTORY}/peview"
