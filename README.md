@@ -22,11 +22,6 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- memprv.c
-- memrslt.c
-- memsrch.c
-- memsrcht.c
-- miniinfo.c
 - modlist.c
 - modprv.c
 - mtgndlg.c
