@@ -1527,4 +1527,30 @@ DATA: translation_data_type = [
         "Empty &all": "清空全部",
         "Unable to empty the memory list.": "无法清空内存列表。",
     }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/memmod.c", "utf-8", {
+        "Resolving symbols...": "正在解析符号...",
+        "Index": "索引",
+        "ImageBase": "映像基址",
+        "Offset": "偏移",
+        "Address": "地址",
+        "Symbol": "符号",
+        "Unable to perform the scan": "无法执行扫描",
+        "&Copy": "复制(&C)",
+        "Unable to open the process.": "无法打开进程。",
+
+    }, [
+        ('PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 100, L"File")',
+         'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 100, L"文件")'),
+    ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/memprot.c", "utf-8", {
+        "Possible values:\r\n": "可能的值:\r\n",
+        "Modifiers:\r\n": "修改器:\r\n",
+        "Unable to change memory protection": "无法更改内存保护选项",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/memprv.c", "utf-8", {
+        "Unknown": "未知",
+        "Private": "私有",
+        "Mapped": "已映射",
+        "Image": "映像",
+    }, []),
 ]
