@@ -22,13 +22,13 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- modlist.c
-- modprv.c
-- mtgndlg.c
-- mwpgdev.c
-- mwpgnet.c
-- mwpgproc.c
-- mwpgsrv.c
+- netlist.c
+- netprv.c
+- netstk.c
+- netsup.c
+- notifico.c
+- notiftoast.cpp
+- ntobjprp.c
 - And more...
 
 ### 已完成的文件
@@ -43,7 +43,7 @@
 - `main.c` (已初步完成，可能要再次修改)
 - `mainwnd.c`
 - 已翻译，省略
-- `memlists.c`
+- `mwpgsrv.c`
 - 中间的文件未翻译
 - `SystemInformer.rc`
 - 中间的文件未翻译
