@@ -1,5 +1,5 @@
 # 本文件存储 System Informer 源码汉化数据。
-# 作者：anonymous9075 (anonymous9075331734@proton.me)
+# 作者: anonymous9075 (anonymous9075331734@proton.me)
 
 from Config.const_values import CONST_PATH_SYSTEM_INFORMER_SRC
 from Config.global_dict import GLOBAL_DICT
