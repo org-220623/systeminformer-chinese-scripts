@@ -22,12 +22,6 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- netlist.c
-- netprv.c
-- netstk.c
-- netsup.c
-- notifico.c
-- notiftoast.cpp
 - ntobjprp.c
 - And more...
 
