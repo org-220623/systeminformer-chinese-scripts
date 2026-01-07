@@ -1728,8 +1728,8 @@ DATA: translation_data_type = [
         "Module Tampering protection is enabled.": "模块防篡改保护已启用。",
         "Indirect branch prediction": "间接分支预测",
         "Protects against sibling hardware threads (hyperthreads) from interfering with indirect branch predictions.":
-            "防止同级硬件线程（超线程）干扰间接分支预测。",
-        "Dynamic code (downgrade)": "动态代码（降级）",
+            "防止同级硬件线程 (超线程) 干扰间接分支预测。",
+        "Dynamic code (downgrade)": "动态代码 (降级)",
         "Allows a broker to downgrade the dynamic code policy for a process.": "允许代理降低进程的动态代码策略。",
         "Speculative store bypass": "推测性存储绕过",
         "Disables spectre mitigations for the process.": "禁用该进程的 Spectre 缓解措施。",
