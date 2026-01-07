@@ -12,4 +12,3 @@ git push gitee
 git push gitlab
 git push gitea
 git restore .
-pause
