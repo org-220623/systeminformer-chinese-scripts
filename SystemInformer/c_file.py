@@ -1989,6 +1989,14 @@ DATA: translation_data_type = [
         "Port scalability": "端口可扩展性",
         "Reuse unicast port": "重用单播端口",
         "Exclusive address use": "独占地址使用",
+        "IP-level options": "IP 级别选项",
+        "Header included": "包含的头部",
+        "Type-of-service": "服务类型",
+        "Unicast TTL": "单播 TTL",
+        "Multicast interface": "多播接口",
+        "Multicast TTL": "多播 TTL",
+        "Multicast loopback": "多播环回",
+        # 1984
     }, [
         ('PhAddListViewItem(Context->ListViewHandle, MAXINT, L"Session", info)',
          'PhAddListViewItem(Context->ListViewHandle, MAXINT, L"会话", info)'),
