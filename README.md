@@ -22,7 +22,30 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- ntobjprp.c
+- options.c
+- pagfiles.c
+- plugin.c
+- plugman.c
+- procgrp.c
+- procmtgn.c
+- procprp.c
+- procprv.c
+- procrec.c
+- proctree.c
+- prpgenv.c
+- prpggen.c
+- prpghndl.c
+- prpgjob.c
+- prpgmem.c
+- prpgmod.c
+- prpgperf.c
+- prpgsrv.c
+- prpgstat.c
+- prpgthrd.c
+- prpgtok.c
+- prpgvdm.c
+- prpgwmi.c
+- runas.c
 - And more...
 
 ### 已完成的文件
@@ -37,7 +60,9 @@
 - `main.c` (已初步完成，可能要再次修改)
 - `mainwnd.c`
 - 已翻译，省略
-- `mwpgsrv.c`
+- `ntobjprp.c`
+- 中间的文件未翻译
+- `searchbox.c` (没有要翻译的条目)
 - 中间的文件未翻译
 - `SystemInformer.rc`
 - 中间的文件未翻译
