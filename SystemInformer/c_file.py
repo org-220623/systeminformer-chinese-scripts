@@ -1362,7 +1362,7 @@ DATA: translation_data_type = [
         "COM Launch Permissions": "COM 启动权限",
         "COM Launch Restrictions": "COM 启动限制",
         "Current Window Desktop": "当前窗口所在桌面",
-        "Current Window Station": "当前窗口站",
+        "Current Window Station": "当前窗口站",  # haha, 当前窗口站的高级安全设置！
         "User list...": "用户列表...",
         "&Log\bCtrl+L": "日志(&L)\bCtrl+L",
         "Debu&g console": "调试控制台(&G)",
