@@ -18,23 +18,34 @@ def print_info():
 
 print_info()
 
-while True:
-    command = input("=" * 30 + "\nEnter command: ").strip()
-    if command in ["cls", "clear"]:
-        os.system("cls")
-        print_info()
-        continue
-    try:
-        file = data[command]
-        if isinstance(file, str):
-            os.system("misc\\Batch\\" + file)
-        elif isinstance(file, list):
-            for i in file:
-                if isinstance(i, str):
-                    os.system("misc\\Batch\\" + i)
-                else:
-                    print("Unknown type. [0x1]")
-        else:
-            print("Unknown type. [0x2]")
-    except Exception as error:
-        print("Unknown command.")
+try:
+    while True:
+        command = input("=" * 30 + "\nEnter command: ").strip()
+        if command in ["cls", "clear"]:
+            os.system("cls")
+            print_info()
+            continue
+        if command in ["quit", "exit", "die"]:
+            exit()
+        try:
+            file = data[command]
+            if isinstance(file, str):
+                os.system("misc\\Batch\\" + file)
+            elif isinstance(file, list):
+                for i in file:
+                    if isinstance(i, str):
+                        os.system("misc\\Batch\\" + i)
+                    else:
+                        print("Unknown type. [0x1]")
+            else:
+                print("Unknown type. [0x2]")
+        except Exception as error:
+            print("Unknown command.")
+except KeyboardInterrupt:
+    exit()
+except SystemError:
+    exit()
+except SystemExit:
+    exit()
+else:
+    exit()
