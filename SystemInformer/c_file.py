@@ -2239,7 +2239,6 @@ DATA: translation_data_type = [
         "Power usage": "电源用量",
         "Temperature": "温度",
         "Fan RPM": "风扇转速 (转每分)",
-        # 3345
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
          'PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
