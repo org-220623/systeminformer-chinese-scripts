@@ -2148,18 +2148,18 @@ DATA: translation_data_type = [
         "Do you want to restart System Informer now?":
             "是否立即重启 System Informer?",
         "WARNING: You have not installed System Informer into a secure location.":
-            "警告：您尚未将 System Informer 安装到安全的文件系统位置。",
+            "警告: 您尚未将 System Informer 安装到安全的文件系统位置。",
         "%s is not recommended when running System Informer from outside a secure location (e.g. Program Files).\r\n\r\nAre you sure you want to continue?":
             "从非安全位置 (例如 Program Files 文件夹) 运行 System Informer 时，不建议使用 %s。\r\n\r\n确定要继续吗?",
         "Name": "名称",
         "Unable to configure this option.": "无法配置此选项。",
         "You need to enable at minimum one tray icon (View menu > Tray Icons) before enabling the hide option.":
             "您必须至少启用一个托盘图标 (“查看”菜单 > “托盘图标”)，然后才能启用隐藏选项。",
-        "Unable to enable option start as admin.": pre_format_string("无法启用\"以管理员身份运行\"选项。"),
+        "Unable to enable option start as admin.": r"无法启用\"以管理员身份运行\"选项。",
         "You need to enable this option with administrative privileges.":
             "您需要使用管理员权限启用此选项。",
-        "Enabling the 'start as admin' option": pre_format_string("正在启用\"以管理员身份启动\"选项"),
-        "Unable to enable start as admin.": pre_format_string("无法启用\"以管理员身份运行\"选项。"),
+        "Enabling the 'start as admin' option": r"正在启用\"以管理员身份启动\"选项",
+        "Unable to enable start as admin.": r"无法启用\"以管理员身份运行\"选项。",
         "Setting Editor": "设置编辑器",
         "Value": "值",
         "Default": "默认",
