@@ -2187,6 +2187,31 @@ DATA: translation_data_type = [
         "Processes running under WOW64, i.e. 32-bit.": "在 WOW64 (即 32 位) 下运行的进程。",
         "Debugged processes": "被调试进程",
         "Processes that are currently being debugged.": "当前正在调试的进程。",
+        "Elevated processes": "优先级提升进程",
+        "UIAccess processes": "UIAccess 进程",
+        "Pico processes": "Pico 进程",
+        # 别名：沉浸式进程（Windows 8）、现代化进程（Modern Process），
+        # UAP (Universal Application Platform) 进程，详细信息见《深入解析 Windows 操作系统》（第七版，卷 1）
+        "Immersive processes and DLLs": "UWP 进程和 DLL",
+        "Processes with full privileges on a system with UAC enabled.":
+            "在启用了 UAC 的系统上具有完全权限的进程。",
+        "Processes with UIAccess privileges.": "具有 UIAccess 权限的进程。",
+        "Processes that belong to the Windows subsystem for Linux.":
+            "属于适用于 Linux 的 Windows 子系统 (WSL) 的进程。",
+        "Processes and DLLs that belong to a Modern UI app.":
+            "属于 Modern UI 应用的进程和 DLL。",
+        "Suspended processes and threads": "已挂起的进程和线程",
+        "Processes and threads that are suspended from execution.":
+            "已暂停执行的进程和线程。",
+        "Partially suspended processes and threads": "部分挂起的进程和线程",
+        "Processes and threads that are partially suspended from execution.":
+            "部分暂停执行的进程和线程。",
+        ".NET processes and DLLs": ".NET 进程和 DLL",
+        ".NET (i.e. managed) processes and DLLs.": ".NET (托管) 进程和 DLL。",
+        "Packed processes": "打包的进程",
+        "Executables are sometimes \\\"packed\\\" to reduce their size.":
+            "可执行文件有时会被 \\\"打包\\\" 以减小其大小。",
+        "Low process image coherency": "低进程映像一致性",
         # 3345
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
