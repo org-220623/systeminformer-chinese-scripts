@@ -49,7 +49,7 @@
 
 ### 已完成的文件
 
-#### 主程序 (`SystemInformer/*`)
+#### 主程序 (`SystemInformer/*`) (正在进程)
 
 - `phsvc/*` (没有要翻译的条目)
 - `sdk/*` (没有要翻译的条目)
@@ -69,11 +69,11 @@
 
 #### 工具
 
-##### PEView 工具 (`tools/peview/*`)
+##### PEView 工具 (`tools/peview/*`) (未完成，挂起)
 
 - `peview.rc`
 
-##### SetupTool (`tools/CustomSetupTool/*`)（已初步完成）
+##### SetupTool (`tools/CustomSetupTool/*`) (已初步完成)
 
 - `extract.c`
 - `install.c` (没有要翻译的条目)
