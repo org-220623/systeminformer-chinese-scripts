@@ -2246,4 +2246,107 @@ DATA: translation_data_type = [
          r'"可执行文件有时会被 \"打包\" 以减小其大小。"'),
         (r'"&Copy\bCtrl+C"', r'"复制(&C)\bCtrl+C"'),
     ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/pagfiles.c", "utf-8", {
+        "File name": "文件名",
+        "Usage": "用量",
+        "Peak usage": "用量峰值",
+        "Total": "总计",
+        "Minimum": "最小值",
+        "Maximum": "最大值",
+        "Unable to query pagefile information.": "无法查询页面文件信息。",
+        "&Copy": "复制(&C)",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/plugin.c", "utf-8", {
+        "An unknown error occurred.": "出现未知错误。",
+        "Unable to load the following plugin(s)": "无法加载以下插件",
+        "%ls plugin registering": "已注册 %ls 个插件",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/plugman.c", "utf-8", {
+        "Plugin": "插件",
+        "Author": "作者",
+        "Version": "版本",
+        "Disabled Plugins (%lu)": "已禁用插件 (%lu)",
+        "Uninstall": "卸载",
+        "Disable": "禁用",
+        "Properties": "属性",
+        "Changes may require a restart to take effect...":
+            "需要重启以应用更改...",
+        "Unable to create the window.": "无法创建窗口。",
+        "Plugins are not enabled.": "插件未启用。",
+        "To use plugins enable them in Options and restart System Informer.":
+            "要使用插件，请在“选项”中启用它们并重启 System Informer。",
+        "(unnamed)": "(未命名)",
+        "Unknown": "未知",
+        "Property": "属性",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/procmtgn.c", "utf-8", {
+        " (permanent)": " (永久)",
+        "Data Execution Prevention (DEP) is%s enabled for this process.\r\n":
+            "此进程已%s启用数据执行保护 (DEP)。\r\n",
+        " permanently": "永久",
+        "ATL thunk emulation is disabled.\r\n": "ATL 形式转换模拟已禁用。\r\n",
+        "high entropy, ": "高熵, ",
+        "force relocate, ": "强制重定位, ",
+        "disallow stripped, ": "禁止剥离, ",
+        "Address Space Layout Randomization is enabled for this process.\r\n":
+            "此进程已启用地址空间布局随机化。\r\n",
+        "High entropy randomization is enabled.\r\n":
+            "已启用高熵随机化。\r\n",
+        "All images are being forcibly relocated (regardless of whether they support ASLR).\r\n":
+            "所有映像都将被强制重新定位 (无论它们是否支持 ASLR)。\r\n",
+        "Images with stripped relocation data are disallowed.\r\n":
+            "不允许使用剥离重定位数据的映像。\r\n",
+        "Dynamic code prohibited": "禁止使用动态代码",
+        "Dynamically loaded code is not allowed to execute.\r\n":
+            "不允许执行动态加载的代码。\r\n",
+        "Dynamic code prohibited (per-thread)":
+            "禁止动态代码 (按线程)",
+        "Allows individual threads to opt out of the restrictions on dynamic code generation.\r\n":
+            "允许各个线程选择退出动态代码生成的限制。\r\n",
+        "Dynamic code downgradable": "动态代码可降级",
+        "Allow non-AppContainer processes to modify all of the dynamic code settings for the calling process, including relaxing dynamic code restrictions after they have been set.\r\n":
+            "允许非 AppContainer 进程修改调用进程的所有动态代码设置，包括放宽已设置的动态代码限制。\r\n",
+        "Strict handle checks": "严格句柄检查",
+        "An exception is raised when an invalid handle is used by the process.\r\n":
+            "当进程使用无效句柄时，将引发异常。\r\n",
+        "Win32k system calls disabled": "禁用 Win32k 系统调用",
+        "Win32k (GDI/USER) system calls are not allowed.\r\n":
+            "不允许使用 Win32k (GDI/USER) 系统调用。\r\n",
+        "Win32k system calls (Audit)": "Win32k 系统调用 (审核)",
+        "Win32k (GDI/USER) system calls will trigger an ETW event.\r\n":
+            "Win32k (GDI/USER) 系统调用将触发 ETW 事件。\r\n",
+        "Extension points disabled": "禁用扩展点",
+        "Legacy extension point DLLs cannot be loaded into the process. NOTE: Processes with uiAccess=true will automatically bypass this policy and inject legacy extension point DLLs regardless.\r\n":
+            "旧版扩展点 DLL 无法加载到此进程中。注意：uiAccess=true 的进程将自动绕过此策略并注入旧版扩展点 DLL。\r\n",
+        "Strict ": "严格 ",
+        "Audit ": "审核 ",
+        "XF Guard": "XFG",
+        "CF Guard": "CFG",
+        "Extended Control Flow Guard (XFG) is enabled for the process.\r\n":
+            "旧版扩展点 DLL 无法加载到此进程中。注意：此进程已启用扩展控制流保护 (XFG)。\r\n",
+        "Audit XFG : XFG is running in audit mode.\r\n":
+            "审计 XFG：XFG 正在以审计模式运行。\r\n",
+        "Strict XFG : only XFG modules can be loaded.\r\n":
+            "严格 XFG：仅可加载 XFG 模块。\r\n",
+        "Dll Exports can be marked as XFG invalid targets.\r\n":
+            "DLL 导出可能被标记为 XFG 无效目标。\r\n",
+        "Control Flow Guard (CFG) is enabled for the process.\r\n":
+            "此进程已启用控制流保护 (CFG)。\r\n",
+        "Strict CFG : only CFG modules can be loaded.\r\n":
+            "严格 CFG：仅可加载 CFG 模块。\r\n",
+        "Dll Exports can be marked as CFG invalid targets.\r\n":
+            "DLL 导出可以标记为无效的 CFG 目标。\r\n",
+        "Signatures restricted (": "限制签名 (",
+        "Microsoft only, ": "仅 Microsoft, ",
+        "Store only, ": "仅 MS Store, ",
+        "Image signature restrictions are enabled for this process.\r\n":
+            "此进程已启用映像签名限制。\r\n",
+        "Only Microsoft signatures are allowed.\r\n":
+            "仅允许 Microsoft 签名。\r\n",
+        "Only Windows Store signatures are allowed.\r\n":
+            "仅允许 Windows 应用商店签名。\r\n",
+        "This is an opt-in restriction.\r\n":
+            "这是一项可选的限制。\r\n",
+        # 380
+    }, []),
 ]
