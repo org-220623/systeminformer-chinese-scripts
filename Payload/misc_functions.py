@@ -25,7 +25,8 @@ def format_string(string: str):
             .replace("\t", "\\t")
             .replace("\r", "\\r")
             .replace("\0", "\\0")
-            .replace("\b", "\\b") + "\"")
+            .replace("\b", "\\b")
+            .replace("\\", "\\\\") + "\"")
 
 def check_symbols(old: str, new: str):
         """
