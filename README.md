@@ -1,6 +1,6 @@
 # System Informer 汉化项目
 
-这是一个用于汉化 System Informer 字符串资源的脚本。
+这是一个用于汉化 System Informer 字符串资源的脚本。（正在施工）
 
 ## 远程仓库
 
