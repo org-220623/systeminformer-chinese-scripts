@@ -2209,12 +2209,14 @@ DATA: translation_data_type = [
         ".NET processes and DLLs": ".NET 进程和 DLL",
         ".NET (i.e. managed) processes and DLLs.": ".NET (托管) 进程和 DLL。",
         "Packed processes": "打包的进程",
-        "Executables are sometimes \\\"packed\\\" to reduce their size.":
+        r"Executables are sometimes \"packed\" to reduce their size.":
             "可执行文件有时会被 \\\"打包\\\" 以减小其大小。",
         "Low process image coherency": "低进程映像一致性",
         # 3345
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
          'PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
+        (r'"Executables are sometimes \"packed\" to reduce their size."',
+         r'"可执行文件有时会被 \"打包\" 以减小其大小。"'),
     ]),
 ]
