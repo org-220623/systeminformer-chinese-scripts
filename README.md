@@ -22,7 +22,6 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- options.c
 - pagfiles.c
 - plugin.c
 - plugman.c
