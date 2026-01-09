@@ -13,7 +13,7 @@ def pre_format_string(string: str):
     :param string: 原字符串
     :return: 预格式化后的字符串
     """
-    return string.replace("\"", "\\\"")
+    return string.replace("\"", r"\"")
 
 def format_string(string: str):
     """
@@ -25,8 +25,7 @@ def format_string(string: str):
             .replace("\t", "\\t")
             .replace("\r", "\\r")
             .replace("\0", "\\0")
-            .replace("\b", "\\b")
-            .replace("\\", "\\\\") + "\"")
+            .replace("\b", "\\b") + "\"")
 
 def check_symbols(old: str, new: str):
         """

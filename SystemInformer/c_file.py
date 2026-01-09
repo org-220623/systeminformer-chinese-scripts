@@ -2175,8 +2175,8 @@ DATA: translation_data_type = [
         "Processes running under the same user account as System Informer.":
             "与 System Informer 使用同一用户帐户运行的进程。",
         "System processes": "系统进程",
-        "Processes running under the NT AUTHORITY\\SYSTEM user account.":
-            "以 NT AUTHORITY\\SYSTEM 用户帐户运行的进程。",
+        r"Processes running under the NT AUTHORITY\\SYSTEM user account.":
+            r"以 NT AUTHORITY\\SYSTEM 用户帐户运行的进程。",
         "Service processes": "服务进程",
         "Background processes": "后台进程",
         "Processes which host one or more services.": "承载一个或多个服务的进程。",
