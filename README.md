@@ -59,7 +59,7 @@
 - `main.c` (已初步完成，可能要再次修改)
 - `mainwnd.c`
 - 已翻译，省略
-- `ntobjprp.c`
+- `options.c`
 - 中间的文件未翻译
 - `searchbox.c` (没有要翻译的条目)
 - 中间的文件未翻译
