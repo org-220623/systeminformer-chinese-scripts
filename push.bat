@@ -7,9 +7,13 @@ git push gitea
 cd ..
 git add .python.patch
 git commit -m "update submodule"
-git push --all --delete --prune origin
-git push --all --delete --prune gitee
-git push --all --delete --prune gitlab
-git push --all --delete --prune gitea
+git push --delete --prune origin
+git push --delete --prune gitee
+git push --delete --prune gitlab
+git push --delete --prune gitea
+git push --all origin
+git push --all gitee
+git push --all gitlab
+git push --all gitea
 git restore .
 pause
