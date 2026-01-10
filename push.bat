@@ -7,10 +7,10 @@ git push gitea
 cd ..
 git add .python.patch
 git commit -m "update submodule"
-git push --delete --prune origin
-git push --delete --prune gitee
-git push --delete --prune gitlab
-git push --delete --prune gitea
+git push --prune origin
+git push --prune gitee
+git push --prune gitlab
+git push --prune gitea
 git push --all origin
 git push --all gitee
 git push --all gitlab
