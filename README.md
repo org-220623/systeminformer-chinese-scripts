@@ -2,11 +2,11 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。（正在施工）
 
-## 跟踪情况
+## 说明
 
-622d8eb511519cf07f59060992dc5a73e165198f
+System Informer 的 UI 语言资源并非集中管理，而是分散在源码树各处，搜索和修改需要花费很多时间。本项目在完善数据过程中会不断在 README.md (主要) 和 GitHub Issue (对于特定任务) 中更新项目进展状况。欢迎志愿者参与其中并提出项目存在的问题！
 
-## 远程仓库
+## 远程仓库信息
 
 1. GitLab (Origin): https://gitlab.com/anonymous9075331734/systeminformer-chinese
 2. Gitea (有时推送会失败): https://gitea.com/anonymous9075331734/systeminformer-chinese
@@ -21,6 +21,11 @@
 
 1. 提示：`static_assert` 提示信息一律不翻译。
 2. 本项目仅处理 `SystemInformer/*`、`tools/*` 和 `plugins/*` 下的内容，`kphlib/*`、`phlib/*` 和 `KSystemInformer/*` 下的内容未计划处理。
+
+### 跟踪情况
+
+1. 622d8eb511519cf07f59060992dc5a73e165198f
+2. [https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits](https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits) 可能不会及时更新，优先以第一项为准。
 
 ### todo
 
@@ -115,7 +120,3 @@ python main.py
 ```
 
 然后重新构建程序即可。
-
-### 已追踪提交情况
-
-请见 [GitLab Wiki](https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits)。
