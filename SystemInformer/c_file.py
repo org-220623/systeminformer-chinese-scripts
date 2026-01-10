@@ -1279,6 +1279,7 @@ DATA: translation_data_type = [
         "Command line options:": "命令行选项:",
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mainwnd.c", "utf-8", {
+        "&Priority": "优先级(&P)",
         " (Administrator)": " (管理员)",
         "Processes": "进程",
         "Services": "服务",
