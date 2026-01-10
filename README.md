@@ -2,6 +2,10 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。（正在施工）
 
+## 跟踪情况
+
+869df66a0e641f157a5be7ad5211600cc98b9183
+
 ## 远程仓库
 
 1. GitLab (Origin): https://gitlab.com/anonymous9075331734/systeminformer-chinese

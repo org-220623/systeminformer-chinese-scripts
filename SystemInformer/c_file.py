@@ -428,6 +428,8 @@ DATA: translation_data_type = [
         "Group %hu": "组 %hu",
         "%s (%lu threads)": "%s (%lu 个线程)",
         "Unable to query the current affinity.": "无法查询当前处理器相关性。",
+        "Unable to change affinity settings.": "无法更改处理器相关性设置。", 
+        "You must select at least one CPU.": "您必须至少选择一个 CPU。", 
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/anawait.c", "utf-8", {
         "Unable to open the process.": "无法打开进程。",
