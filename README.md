@@ -22,10 +22,6 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- procmtgn.c
-- procprp.c
-- procprv.c
-- procrec.c
 - proctree.c
 - prpgenv.c
 - prpggen.c
