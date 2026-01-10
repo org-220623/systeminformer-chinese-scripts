@@ -22,10 +22,6 @@
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- prpggen.c
-- prpghndl.c
-- prpgjob.c
-- prpgmem.c
 - prpgmod.c
 - prpgperf.c
 - prpgsrv.c
