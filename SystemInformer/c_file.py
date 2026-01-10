@@ -1750,6 +1750,7 @@ DATA: translation_data_type = [
         "&Copy\bCtrl+C": "复制(&C)\bCtrl+C",
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mwpgproc.c", "utf-8", {
+        "&Priority": "优先级(&P)",
         "Processes": "进程",
         "&Collapse all": "全部收起(&C)",
         "&Expand all": "全部展开(&E)",
