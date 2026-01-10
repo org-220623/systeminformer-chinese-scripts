@@ -2165,7 +2165,7 @@ DATA: translation_data_type = [
         "Setting Editor": "设置编辑器",
         "Value": "值",
         "Default": "默认",
-        "Search settings...": "正在搜索设置...",
+        "Search settings...": "搜索设置...",
         "Hide modified": "隐藏已修改",
         "Hide default": "隐藏默认",
         "Highlight modified": "高亮显示已修改",
