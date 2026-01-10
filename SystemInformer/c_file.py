@@ -2424,7 +2424,8 @@ DATA: translation_data_type = [
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/procprv.c", "utf-8", {
         "DPCs": "DPC",
-        "Interrupts": "中断",
+        # "Interrupts": "中断",
+        # 中断是进程名称，不能翻译。
         "Adding process item: %ls (%lu)": "正在添加进程项: %ls (%lu)",
         "Removing process item: %ls (%lu)": "正在移除进程项：%ls (%lu)",
         "Process query stage 1: %ls (%lu)": "进程查询阶段 1：%ls (%lu)",
