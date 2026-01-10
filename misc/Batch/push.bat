@@ -4,6 +4,7 @@ git push origin
 git push gitee
 git push github
 git push gitea
+git push jihulab
 cd ..
 git add .python.patch
 git commit -m "update submodule"
