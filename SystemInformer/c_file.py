@@ -489,6 +489,7 @@ DATA: translation_data_type = [
         "An unknown error occurred.": "发生未知错误。",
         " (64-bit)": " (64 位)",
         " (32-bit)": " (32 位)",
+        "Unable to locate the application directory.": "无法定位应用程序目录。", 
         # -------------------------------------------------------------------------------
         # Main Windows -> Processes Table -> Menu Items
         "Size column to fit": "调整列宽以适应屏幕", # sizeColumnToFitMenuItem
