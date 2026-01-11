@@ -2958,4 +2958,12 @@ DATA: translation_data_type = [
         ('PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_USER, TRUE, L"User"',
          'PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_USER, TRUE, L"用户"'),
     ]),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/runas.c", "utf-8", {
+        "Batch": "批处理",
+        "Interactive": "交互式",
+        "Network": "网络",
+        "New credentials": "新凭据",
+        "Service": "服务",
+
+    }, []),
 ]
