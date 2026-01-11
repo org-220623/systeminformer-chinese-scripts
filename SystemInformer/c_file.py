@@ -1359,7 +1359,7 @@ DATA: translation_data_type = [
         "Current Power Scheme": "当前电源方案",
         "Service Control Manager": "服务控制管理器",
         "Terminal Server Listener": "终端服务器监听器",
-        "WMI Root Namespace": "WMI 根命名空间",
+        "WMI Root Namespace": "WMI 根名称空间",
         "COM Access Permissions": "COM 访问权限",
         "COM Access Restrictions": "COM 访问限制",
         "COM Launch Permissions": "COM 启动权限",
@@ -2902,4 +2902,60 @@ DATA: translation_data_type = [
         "Highlight gui": "高亮显示 GUI 线程",
         "Save...": "保存...",
     }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/prpgvdm.c", "utf-8", {
+        "Module name": "模块名",
+        "File name": "文件名",
+        "Thread Id": "线程 ID",
+        "Task Id": "任务 ID",
+        "Terminate": "终止",
+        "Open &file location": "打开文件所在位置(&F)",
+        "&Inspect": "检查(&I)",
+        "&Copy": "复制(&C)",
+        "Unable to terminate the task.": "无法结束任务。",
+        "Make sure the Explorer executable file is present.": "请确保资源管理器可执行文件存在。",
+        "Make sure the PE Viewer executable file is present.": "请确保 PE Viewer 可执行文件存在。",
+    }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/prpgwmi.c", "utf-8", {
+        # todo line 199
+        #     querySelectString = PhFormatString(
+        #             L"%s %s %s %s %s %s = %s",
+        #             L"SELECT",
+        #             L"Namespace,Provider,User,__RELPATH",
+        #             L"FROM",
+        #             L"Msft_Providers",
+        #             L"WHERE",
+        #             L"HostProcessIdentifier",
+        #             ProcessIdString
+        #             );
+        #   and more...
+        "Statistics for %s: \r\n\r\n": "%s 的统计数据: \r\n\r\n",
+        "Default Namespace": "默认名称空间",
+        "Unable to query provider information:\n": "无法查询提供程序信息:\n",
+        "Unknown error.": "未知错误。",
+        "Unable to perform the operation.": "无法执行操作。",
+        "&Suspend": "挂起(&S)",
+        "Res&ume": "恢复(&U)",
+        "Un&load": "卸载(&L)",
+        "&Inspect": "检查(&I)",
+        "S&tatistics": "统计数据(&T)",
+        "Open &file location": "打开文件所在位置(&F)",
+        "&Copy": "复制(&C)",
+        # todo 1076 Suspend
+        #      1088 Resume
+        #      1100 Unload
+        "Make sure the PE Viewer executable file is present.": "请确保 PE Viewer 可执行文件存在。",
+        "Make sure the Explorer executable file is present.": "请确保资源管理器可执行文件存在。",
+        "File name": "文件名",
+        "Search WMI Providers (Ctrl+K)": "搜索 WMI 提供程序 (Ctrl+K)",
+        "There are no providers to display.": "没有要显示的提供程序。",
+        "Hide default namespace": "隐藏默认名称空间",
+        "Highlight default namespace": "高亮显示默认名称空间",
+    }, [
+        ('PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_PROVIDER, TRUE, L"Provider"',
+         'PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_PROVIDER, TRUE, L"提供程序"'),
+        ('PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_NAMESPACE, TRUE, L"Namespace"',
+         'PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_NAMESPACE, TRUE, L"名称空间"'),
+        ('PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_USER, TRUE, L"User"',
+         'PhAddTreeNewColumn(Context->TreeNewHandle, PROCESS_WMI_COLUMN_ITEM_USER, TRUE, L"用户"'),
+    ]),
 ]
