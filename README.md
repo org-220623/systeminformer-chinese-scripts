@@ -24,7 +24,7 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 ### 跟踪情况
 
-1. 622d8eb511519cf07f59060992dc5a73e165198f
+1. 0eced1e94e5eb6921ff89da3efcb82f6a22e9be8
 2. [https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits](https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits) 可能不会及时更新，优先以第一项为准。
 
 ### todo
