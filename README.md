@@ -31,7 +31,6 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- runas.c
 - sessmsg.c
 - sessprp.c
 - sessshad.c

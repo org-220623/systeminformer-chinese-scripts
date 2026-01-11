@@ -2964,6 +2964,17 @@ DATA: translation_data_type = [
         "Network": "网络",
         "New credentials": "新凭据",
         "Service": "服务",
-
+        "Unable to start the program.": "无法启动程序。",
+        "Unable to start the execution alias with a process token.": "无法使用进程令牌启动执行别名。",
+        "Programs (*.exe;*.pif;*.com;*.bat)": "应用程序 (*.exe;*.pif;*.com;*.bat)",
+        "All files (*.*)": "所有文件 (*.*)",
+        "WARNING: This will grant Everyone access to the current window station and desktop.": "警告：这将授予 Everyone (任何用户) 对当前窗口工作站和桌面的访问权限。",
+        "Are you sure you want to continue?": "您确定要继续吗?",
+        "Unable to execute the command.": "无法执行命令。",
+        "Executable files (*.exe;*.pif;*.com;*.bat;*.cmd)": "可执行文件 (*.exe;*.pif;*.com;*.bat;*.cmd)",
+        "Loading package information...": "正在加载软件包信息...",
+        "Package": "包",
+        "Version": "版本",
+        "Search Packages": "搜索软件包",
     }, []),
 ]
