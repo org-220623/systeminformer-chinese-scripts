@@ -45,14 +45,7 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 - `ksidbg.c` (暂不翻译)
 - 中间已翻译的文件已省略，**(log.c 未翻译)**。
 - `main.c` (已初步完成，可能要再次修改)
-- `mainwnd.c`
-- 中间已翻译的文件已省略...
-- `options.c`
-- 中间的文件未翻译
-- `searchbox.c` (没有要翻译的条目)
-- 中间的文件未翻译
-- `SystemInformer.rc`
-- 中间的文件未翻译
+- 中间已翻译的文件已省略 (`tokprp.c` 和 `usrlist.c` 除外)...
 - `version.rc`
 
 #### 工具
