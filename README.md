@@ -31,10 +31,6 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 - ksisup.c 从第 315 行开始
 - log.c 延迟翻译
-- thrdlist.c
-- thrdprv.c
-- thrdstk.c
-- thrdstks.c
 - tokprp.c
 - usrlist.c
 - 下一步：测试，修改；翻译 PEView
