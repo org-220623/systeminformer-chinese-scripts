@@ -19,7 +19,7 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 ## 进度信息
 
-1. 提示：`static_assert` 提示信息一律不翻译。
+1. 提示：`static_assert` 提示信息一律不处理。
 2. 本项目仅处理 `SystemInformer/*`、`tools/*` 和 `plugins/*` 下的内容，`kphlib/*`、`phlib/*` 和 `KSystemInformer/*` 下的内容未计划处理。
 
 ### 跟踪情况
@@ -30,8 +30,7 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 ### todo
 
 - ksisup.c 从第 315 行开始
-- log.c 延迟翻译
-- tokprp.c
+- log.c 计划处理
 - usrlist.c
 - 处理 PEView 根目录下的源文件；
 - 处理 11 个插件；
@@ -41,13 +40,14 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 #### 主程序 (`SystemInformer/*`) (正在进行)
 
-- `phsvc/*` (没有要翻译的条目)
-- `sdk/*` (没有要翻译的条目)
-- 中间已翻译的文件已省略...
-- `ksidbg.c` (暂不翻译)
-- 中间已翻译的文件已省略，**(log.c 未翻译)**。
+- `phsvc/*` (没有要处理的条目)
+- `sdk/*` (没有要处理的条目)
+- 中间已处理的文件已省略...
+- `ksidbg.c` (暂不处理)
+- 中间已处理的文件已省略，**(log.c 未处理)**。
 - `main.c` (已初步完成，可能要再次修改)
-- 中间已翻译的文件已省略 (`tokprp.c` 和 `usrlist.c` 除外)...
+- `tokprp.c` (已初步完成，可能要再次修改)
+- 中间已处理的文件已省略 (`usrlist.c` 除外)...
 - `version.rc`
 
 #### 工具
@@ -59,14 +59,14 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 ##### SetupTool (`tools/CustomSetupTool/*`) (已初步完成)
 
 - `extract.c`
-- `install.c` (没有要翻译的条目)
+- `install.c` (没有要处理的条目)
 - `main.c`
-- `resource.h` (没有要翻译的条目)
-- `resource.rc` (没有要翻译的条目)
-- `setup.h` (没有要翻译的条目)
+- `resource.h` (没有要处理的条目)
+- `resource.rc` (没有要处理的条目)
+- `setup.h` (没有要处理的条目)
 - `startpage.c`
 - `uninstall.c`
-- `util.c` (没有要翻译的条目)
+- `util.c` (没有要处理的条目)
 - `version.rc`
 - `update.c` 
 
