@@ -3,10 +3,10 @@
 
 from Config.const_values import CONST_PATH_SYSTEM_INFORMER_SRC
 from Config.global_dict import GLOBAL_DICT
-from Config.static_data_type import translation_data_type
+from Config.static_data_type import TranslationDataType
 from Payload.misc_functions import pre_format_string
 
-DATA: translation_data_type = [
+DATA: TranslationDataType = [
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mdump.c", "utf-8", {       # File complete.
         "Dump files (*.dmp)": "转储文件 (*.dmp)", 
         "All files (*.*)": "所有文件 (*.*)", 
@@ -57,6 +57,7 @@ DATA: translation_data_type = [
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/actions.c", "utf-8", {
         "Continue": "继续",
+        "Do you want to ": "您确定要",
         "You will need to provide administrator permission. ": "您需要提供管理员权限。 ",
         "Click Continue to complete this operation.": pre_format_string("点击\"继续\"完成此操作。"),
         "Unable to lock the computer.": "无法锁定计算机。",
@@ -105,7 +106,7 @@ DATA: translation_data_type = [
         "Terminating a process will cause unsaved data to be lost.":
             "结束进程会导致未保存的数据丢失。",
         "Unable to terminate ": "无法结束 ",
-        " and its descendants": " 及其子进程",
+        " and its descendants": " 及其子进程吗",
         "Terminating a process tree will cause the process and its descendants to be terminated.":
             "结束进程树将导致该进程及其所有子进程被终止。",
         "Unable to enumerate processes": "无法枚举进程",

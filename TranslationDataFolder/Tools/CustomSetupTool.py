@@ -2,9 +2,9 @@ from Config.const_values import (
     CONST_PATH_SETUP_TOOL_SRC,
 )
 from Payload.misc_functions import pre_format_string
-from Config.static_data_type import translation_data_type
+from Config.static_data_type import TranslationDataType
 
-DATA: translation_data_type = [
+DATA: TranslationDataType = [
     (f"{CONST_PATH_SETUP_TOOL_SRC}/extract.c", "utf-8", {
         "Extracting: ": "正在复制: ",
         "Progress: ": "进度: ",

@@ -1,7 +1,7 @@
 from Config.const_values import CONST_PATH_PEVIEW_TOOL_SRC
-from Config.static_data_type import translation_data_type
+from Config.static_data_type import TranslationDataType
 
-DATA: translation_data_type = [
+DATA: TranslationDataType = [
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peview.rc", "utf-8", {
         "Properties": "属性",
         "Close": "关闭",

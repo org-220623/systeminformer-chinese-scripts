@@ -1,7 +1,7 @@
 from Config.const_values import CONST_PATH_SYSTEM_INFORMER_INC
-from Config.static_data_type import translation_data_type
+from Config.static_data_type import TranslationDataType
 
-DATA: translation_data_type = [
+DATA: TranslationDataType = [
     (f"{CONST_PATH_SYSTEM_INFORMER_INC}/ksisup.h", "utf-8", {
         "Kernel driver not connected": "内核驱动程序未连接",
     }, [

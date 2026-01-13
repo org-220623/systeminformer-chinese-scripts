@@ -3,7 +3,7 @@ from Config.const_values import (
     CONST_STRING_RIGHT_BRACKET,
     CONST_STRING_CRLF_NEWLINE,
 )
-from Config.static_data_type import translation_data_type
+from Config.static_data_type import TranslationDataType
 
 
 def pre_format_string(string: str):
@@ -60,7 +60,7 @@ def check_symbols(old: str, new: str):
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
 
-def get_translation_item_total_count(obj_in: translation_data_type):
+def get_translation_item_total_count(obj_in: TranslationDataType):
     result = 0
     for file_entry in obj_in:
         result += (len(file_entry[2].keys()) + len(file_entry[3]))

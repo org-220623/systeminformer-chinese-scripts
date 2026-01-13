@@ -4,13 +4,13 @@ from Payload.objtype import TranslateFileObject
 from sys import argv
 
 # import data
-import SystemInformer
-import Tools
+from TranslationDataFolder import Phlib, Tools, SystemInformer
 
 # create global data structure
 TRANSLATION_DATA = (
         Tools.DATA +
-        SystemInformer.DATA
+        SystemInformer.DATA +
+        Phlib.DATA
 )
 
 get_translation_item_total_count(TRANSLATION_DATA)

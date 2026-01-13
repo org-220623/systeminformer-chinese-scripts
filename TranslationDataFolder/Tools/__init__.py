@@ -1,4 +1,4 @@
-from Tools import CustomSetupTool, PEView
+from . import CustomSetupTool, PEView
 
 DATA = (
         CustomSetupTool.DATA +
