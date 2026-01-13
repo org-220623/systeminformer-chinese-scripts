@@ -4,7 +4,7 @@ from Payload.objtype import TranslateFileObject
 from sys import argv
 
 # import data
-from TranslationDataFolder import Phlib, Tools, SystemInformer
+from TranslationDataFolder.lang_2052 import Phlib, Tools, SystemInformer
 
 # create global data structure
 TRANSLATION_DATA = (
