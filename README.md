@@ -29,6 +29,13 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 ### todo
 
+- https://github.com/org-220623/systeminformer-chinese/commit/db4c6f3c79df0a758cf7d12e95b43bb46a427760
+- https://github.com/org-220623/systeminformer-chinese/commit/db1cadc16b59aa3ba37fe11e2c218734212d0c24
+- https://github.com/org-220623/systeminformer-chinese/commit/5d72e6ae0590de86ec51fc26311ca9afeab3cff9
+- https://github.com/org-220623/systeminformer-chinese/commit/d2cfd7f1fb9728053d7c5a9ff86e03207ab5c387
+- https://github.com/org-220623/systeminformer-chinese/commit/29a65fb94a82239e92a554ad4f49e53047711c20
+- https://github.com/org-220623/systeminformer-chinese/commit/a62a76ddc033a1c16cd4e8a923ef9e8abfc8563e
+
 - ksisup.c 从第 315 行开始
 - log.c 计划处理
 - usrlist.c
