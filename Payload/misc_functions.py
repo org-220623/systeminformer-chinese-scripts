@@ -5,6 +5,8 @@ from Config.const_values import (
 )
 from Config.static_data_type import TranslationDataType
 
+def do_nothing_x(x0):
+    ...
 
 def pre_format_string(string: str):
     """

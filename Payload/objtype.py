@@ -1,5 +1,5 @@
 from Config.static_data_type import data_list_type, raw_data_list_type
-from Payload.misc_functions import format_string, check_symbols
+from Payload.misc_functions import format_string, check_symbols, do_nothing_x
 from Config.not_translate_data import SHOULD_NOT_TRANSLATE_STRING_LIST
 
 
@@ -27,32 +27,36 @@ class TranslateFileObject:
         :return: None
         """
         print(f"正在处理文件：{self.file_path}，编码：{self.encoding.replace("utf-8-sig", "utf-8-bom").upper()}")
-        with open(self.file_path, "r+", encoding=self.encoding) as file:
-            file_data = file.read()
-            ##########################################################
-            # 处理跨行或上下文相关的文本内容
-            if len(self.raw_dict) != 0:
-                for _object in self.raw_dict:
-                    old_item = _object[0]
-                    new_item = _object[1]
-                    file_data = file_data.replace(
-                        old_item, # 不需要格式化
-                        new_item
-                    )
-            ##########################################################
-            # 处理上下文无关的文本内容
-            if len(self.data_dict) != 0:
-                for old_item in self.data_dict:
-                    if old_item in SHOULD_NOT_TRANSLATE_STRING_LIST:
-                        print(f"发现无法处理的条目：{old_item}")
-                        continue
-                    new_item = self.data_dict[old_item]
-                    check_symbols(old_item, new_item)
-                    file_data = file_data.replace(
-                        format_string(old_item),
-                        format_string(new_item)
-                    )
-            ##########################################################
-            file.seek(0)
-            file.write(file_data)
-            file.truncate()
+        try:
+            with open(self.file_path, "r+", encoding=self.encoding) as file:
+                file_data = file.read()
+                ##########################################################
+                # 处理跨行或上下文相关的文本内容
+                if len(self.raw_dict) != 0:
+                    for _object in self.raw_dict:
+                        old_item = _object[0]
+                        new_item = _object[1]
+                        file_data = file_data.replace(
+                            old_item, # 不需要格式化
+                            new_item
+                        )
+                ##########################################################
+                # 处理上下文无关的文本内容
+                if len(self.data_dict) != 0:
+                    for old_item in self.data_dict:
+                        if old_item in SHOULD_NOT_TRANSLATE_STRING_LIST:
+                            print(f"发现无法处理的条目：{old_item}")
+                            continue
+                        new_item = self.data_dict[old_item]
+                        check_symbols(old_item, new_item)
+                        file_data = file_data.replace(
+                            format_string(old_item),
+                            format_string(new_item)
+                        )
+                ##########################################################
+                file.seek(0)
+                file.write(file_data)
+                file.truncate()
+        except Exception as x:  # 由于旧版的 System Informer 没有 usrlist.c 故忽略此类错误。
+            do_nothing_x(x)     # 占位，以后 x 可能有用。
+            print(f"\t无法打开文件: {self.file_path}")
