@@ -3000,7 +3000,6 @@ DATA: translation_data_type = [
         "Name": "名称",
         "Value": "值",
         "User": "用户",
-        "Profile": "资料",
         "User name": "用户名",
         "Session ID": "会话 ID",
         "State": "状态",
@@ -3016,7 +3015,10 @@ DATA: translation_data_type = [
         "Home directory": "主目录",
         "Profile directory": "资料目录",
         "&Copy": "复制(&C)",
-    }, []),
+    }, [
+        ('PhAddListViewGroup(context->ListViewHandle, 1, L"Profile"',
+         'PhAddListViewGroup(context->ListViewHandle, 1, L"资料"'),
+    ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/sessshad.c", "utf-8", {
         "Unable to shadow session.": "无法进行会话跟踪。",
         "You cannot remote control the current session.": "您无法远程控制当前会话。",
