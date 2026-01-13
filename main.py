@@ -3,15 +3,8 @@ from Payload.misc_functions import get_translation_item_total_count
 from Payload.objtype import TranslateFileObject
 from sys import argv
 
-# import data
-from TranslationDataFolder.lang_2052 import Phlib, Tools, SystemInformer
-
-# create global data structure
-TRANSLATION_DATA = (
-        Tools.DATA +
-        SystemInformer.DATA +
-        Phlib.DATA
-)
+# 导入全局数据结构
+from TranslationDataFolder.lang_2052 import DATA as TRANSLATION_DATA
 
 get_translation_item_total_count(TRANSLATION_DATA)
 
