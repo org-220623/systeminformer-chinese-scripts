@@ -29,16 +29,15 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 ### todo
 
-- `SystemInformer/ksisup.c` 从第 315 行开始
-- `SystemInformer/log.c` 计划处理
 - 处理 PEView 根目录下的源文件；
 - 处理 11 个插件；
-- 测试，修改，跟踪上游更新并计划发布版本 (是不是言之过早了?)...
 
 ### 已完成的文件
 
-#### 主程序 (`SystemInformer/*`) (正在进行)
+#### 主程序 (`SystemInformer/*`) (已初步完成，挂起)
 
+- `SystemInformer/ksisup.c` 从第 315 行开始, 挂起
+- `SystemInformer/log.c` 计划处理，挂起
 - `phsvc/*` (没有要处理的条目)
 - `sdk/*` (没有要处理的条目)
 - 中间已处理的文件已省略...
@@ -50,23 +49,13 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 #### 工具
 
-##### PEView 工具 (`tools/peview/*`) (未完成，挂起)
+##### PEView 工具 (`tools/peview/*`) (正在进行)
 
 - `peview.rc`
 
-##### SetupTool (`tools/CustomSetupTool/*`) (已初步完成)
+##### 已全部完成的模块（进度信息已省略）
 
-- `extract.c`
-- `install.c` (没有要处理的条目)
-- `main.c`
-- `resource.h` (没有要处理的条目)
-- `resource.rc` (没有要处理的条目)
-- `setup.h` (没有要处理的条目)
-- `startpage.c`
-- `uninstall.c`
-- `util.c` (没有要处理的条目)
-- `version.rc`
-- `update.c` 
+- SetupTool (`tools/CustomSetupTool/*`) (已初步完成)
 
 #### 插件
 
@@ -106,3 +95,7 @@ python main.py
 ```
 
 然后重新构建程序即可。
+
+### 许可证
+
+[MIT](LICENSE)
