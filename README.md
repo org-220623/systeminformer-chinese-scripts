@@ -29,8 +29,8 @@ System Informer 的 UI 语言资源并非集中管理，而是分散在源码树
 
 ### todo
 
-- ksisup.c 从第 315 行开始
-- log.c 计划处理
+- `SystemInformer/ksisup.c` 从第 315 行开始
+- `SystemInformer/log.c` 计划处理
 - 处理 PEView 根目录下的源文件；
 - 处理 11 个插件；
 - 测试，修改，跟踪上游更新并计划发布版本 (是不是言之过早了?)...
