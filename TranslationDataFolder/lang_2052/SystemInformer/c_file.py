@@ -3489,7 +3489,7 @@ DATA: TranslationDataType = [
         "LUIDs": "LUID",
         "Memory": "内存",
         "Properties": "属性",
-        "Impersonation level": "模拟标签",
+        "Impersonation level": "模拟级别",
         "Token LUID": "令牌 LUID",
         "Authentication LUID": "认证 LUID",
         "ModifiedId LUID": "已修改 LUID",
@@ -3519,7 +3519,7 @@ DATA: TranslationDataType = [
         "Invalid": "无效",
         "String": "字符串",
         "Boolean": "布尔值",
-        "Octet string": "八位字符串",
+        "Octet string": "八位字符串",  # todo "八位" or "八进制"？
         "(Unknown)": "(未知)",
         "Mandatory, ": "强制, ",
         "Disabled, ": "禁用, ",
@@ -3533,7 +3533,7 @@ DATA: TranslationDataType = [
         "(Invalid SID)": "(无效 SID)",
         "True": "是",
         "False": "否",
-        "(Octet string)": "(八位字符串)",
+        "(Octet string)": "(八位字符串)", # todo "八位" or "八进制"？
         "Shared token": "已共享令牌",
         "Trusted": "受信任",
         "Service": "服务",
