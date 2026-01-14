@@ -1,6 +1,6 @@
 # System Informer 汉化项目
 
-这是一个用于汉化 System Informer 字符串资源的脚本。（正在施工）
+这是一个用于汉化 System Informer 字符串资源的脚本。（正在休息）
 
 ## 说明
 
@@ -29,7 +29,7 @@ https://github.com/org-220623/systeminformer-chinese/commit/de05627298d7b866c70b
 
 ### todo
 
-- 处理 PEView 根目录下的源文件；
+- 处理 PEView 根目录下的源文件（待定）；
 - 处理 11 个插件（待定）；
 
 ### 已完成的文件
