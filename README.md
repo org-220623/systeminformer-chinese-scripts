@@ -25,8 +25,7 @@
 
 ### 跟踪情况
 
-1. cea1ea5fde69a3a3ffaa58c22d21b008ca3e44fb
-2. [https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits](https://gitlab.com/anonymous9075331734/systeminformer-chinese/-/wikis/internal/tracked-commits) 可能不会及时更新，优先以第一项为准。
+https://github.com/org-220623/systeminformer-chinese/commit/de05627298d7b866c70bea59a2dc2f862052ffe1
 
 ### todo
 
