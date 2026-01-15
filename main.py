@@ -3,7 +3,7 @@ from Payload.misc_functions import get_translation_item_total_count
 from Payload.objtype import TranslateFileObject
 from sys import argv
 
-# 导入全局数据结构
+# 导入全局数据结构（简体中文，LanguageID = 2052）
 from TranslationDataFolder.lang_2052 import DATA as TRANSLATION_DATA
 
 get_translation_item_total_count(TRANSLATION_DATA)
