@@ -57,7 +57,8 @@ https://github.com/org-220623/systeminformer-chinese/commit/de05627298d7b866c70b
 
 ##### PEView 工具 (`tools/peview/*`) (正在进行)
 
-- `peview.rc`
+- 开头已处理的文件已省略...
+- delayhook.c
 
 ##### 已全部完成的模块（进度信息已省略）
 
