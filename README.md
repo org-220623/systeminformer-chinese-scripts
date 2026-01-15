@@ -2,6 +2,12 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。（正在休息）
 
+## [`Winsiderss/SystemInformer`](https://github.com/winsiderss/systeminformer) 上与 i18n 相关的 issue
+
+1. https://github.com/winsiderss/systeminformer/issues/302
+2. https://github.com/winsiderss/systeminformer/issues/1219
+3. https://github.com/winsiderss/systeminformer/issues/1301
+
 ## 说明
 
 1. System Informer 的 UI 语言资源并非集中管理，而是分散在源码树各处，搜索和修改需要花费很多时间。本项目在完善数据过程中会不断在 README.md (主要) 和 GitHub Issue (对于特定任务) 中更新项目进展状况。
