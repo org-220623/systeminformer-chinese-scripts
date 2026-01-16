@@ -129,8 +129,8 @@ DATA: TranslationDataType = [
         "Debugging a process may result in loss of data.": "调试进程可能会导致数据丢失。",
         # todo: line 2767
         "Unable to locate the debugger.": "无法定位调试器。",
-        "reduce the working set of": "减少以下进程的工作集占用：",
-        "empty the working set of": "清空以下进程的工作集占用：",
+        "reduce the working set of": "减少以下进程的工作集占用: ",
+        "empty the working set of": "清空以下进程的工作集占用: ",
         # static CONST TASKDIALOG_BUTTON TaskDialogRadioButtonArray[] =
         # {
             # SystemActivityModerationStateSystemManaged
@@ -152,24 +152,24 @@ DATA: TranslationDataType = [
             "当可执行文件被删除或上次执行时间超过 7 天时，Windows 会自动移除系统管理的活动审核设置。\r\n\r\n",
         "Image: %s\r\nUpdated: %s": "映像: %s\r\n已更新: %s",
         "%s ago (%s)": "%s 前 (%s)",
-        "set background activity moderation for": "为以下进程设置后台活动调节：",
-        "set virtualization for": "为以下进程启用虚拟化：",
-        "set critical status for": "为以下进程启用关键状态：",
-        "set Eco mode for": "为以下进程启用节能模式：",
+        "set background activity moderation for": "为以下进程设置后台活动调节: ",
+        "set virtualization for": "为以下进程启用虚拟化: ",
+        "set critical status for": "为以下进程启用关键状态: ",
+        "set Eco mode for": "为以下进程启用节能模式: ",
         "create execution required state for": "为以下进程创建执行所需状态",
         "Unable to detach the debugger.": "无法断开与调试器的连接。",
         "The process is not being debugged.": "该进程未进行调试。",
         "detach debugger from": "断开调试器与以下进程的连接",
         "DLL files (*.dll)": "DLL 文件 (*.dll)",
         "All files (*.*)": "所有文件 (*.*)",
-        "load the DLL into": "加载 DLL 至以下进程：",
-        "Unable to set the I/O priority of ": "无法为以下进程设置 I/O 优先级：",
-        "set the I/O priority of": "为以下进程设置 I/O 优先级：",
-        "set the page priority of": "为以下进程设置页面优先级：",
-        "Unable to set the priority class of ": "无法为以下进程设置优先级类：",
-        "set the priority class of": "为以下进程设置优先级类：",
-        "change boost priority of": "为以下进程更改优先级提升值：",
-        "set the boost priority of": "为以下进程设置优先级提升值：",
+        "load the DLL into": "加载 DLL 至以下进程: ",
+        "Unable to set the I/O priority of ": "无法为以下进程设置 I/O 优先级: ",
+        "set the I/O priority of": "为以下进程设置 I/O 优先级: ",
+        "set the page priority of": "为以下进程设置页面优先级: ",
+        "Unable to set the priority class of ": "无法为以下进程设置优先级类: ",
+        "set the priority class of": "为以下进程设置优先级类: ",
+        "change boost priority of": "为以下进程更改优先级提升值: ",
+        "set the boost priority of": "为以下进程设置优先级提升值: ",
         "the selected service": "已选中的服务",
         "the selected services": "已选中的服务",
         "Close": "关闭",
@@ -204,7 +204,7 @@ DATA: TranslationDataType = [
             "NOTE: This feature may not work correctly on your "
                 "version of Windows and some programs may restrict "
                 "access or ban your account.":
-            "卸载模块可能会导致进程崩溃。注意：此功能可能无法在您的 Windows "
+            "卸载模块可能会导致进程崩溃。注意: 此功能可能无法在您的 Windows "
             "版本上正常运行，某些程序可能会限制访问或封禁您的帐户。",
         "Unloading a driver may cause system instability.":
             "卸载驱动程序可能会导致系统不稳定。",
@@ -394,7 +394,7 @@ DATA: TranslationDataType = [
             'PhpShowErrorService(WindowHandle, L"删除", Service, status, 0)'
         ), (
             'PhpShowErrorThread(WindowHandle, L"change priority of", Threads[i], status, 0)',
-            'PhpShowErrorThread(WindowHandle, L"为以下线程更改优先级：", Threads[i], status, 0)'
+            'PhpShowErrorThread(WindowHandle, L"为以下线程更改优先级: ", Threads[i], status, 0)'
         ), (
             'PhpShowErrorThread(WindowHandle, L"set the priority of", Thread, status, 0)',
             'PhpShowErrorThread(WindowHandle, L"为以下线程设置优先级", Thread, status, 0)'
@@ -408,10 +408,10 @@ DATA: TranslationDataType = [
             'verb = L"释放"'
         ), (
             'PhpShowErrorHandle(WindowHandle, L"set attributes of", NULL, Handle, status, 0)',
-            'PhpShowErrorHandle(WindowHandle, L"设置以下句柄的属性：", NULL, Handle, status, 0)'
+            'PhpShowErrorHandle(WindowHandle, L"设置以下句柄的属性: ", NULL, Handle, status, 0)'
         ), (
             'PhpShowErrorProcess(WindowHandle, L"flush the process heap(s) of", Processes[i], status, 0)',
-            'PhpShowErrorProcess(WindowHandle, L"刷新以下进程的堆：", Processes[i], status, 0)'
+            'PhpShowErrorProcess(WindowHandle, L"刷新以下进程的堆: ", Processes[i], status, 0)'
         )
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/admintask.c", "utf-8", {
@@ -582,8 +582,8 @@ DATA: TranslationDataType = [
     #     "\nBuckets:\n": "\n桶:\n",
     #     "\nExpected lookup misses: %lu\n": "\n预期查找未命中: %lu\n",
     #     "Leak at 0x%Ix (%Iu bytes). Stack trace:\n": "泄漏发生在 0x%Ix (%Iu 字节)，堆栈跟踪:\n",
-    #     "[fail]: writers active in read zone!\n": "[失败]：读取区域中有处于活动状态的写入区域!\n",  # todo
-    #     "[fail]: readers active in write zone!\n": "[失败]：写入区域中有处于活动状态的读取区域!\n", # todo
+    #     "[fail]: writers active in read zone!\n": "[失败]: 读取区域中有处于活动状态的写入区域!\n",  # todo
+    #     "[fail]: readers active in write zone!\n": "[失败]: 写入区域中有处于活动状态的读取区域!\n", # todo
     #     "[null] %s: %ums\n": "[空] %s: %ums\n", # and line 586: L"[strs] %s: %ums\n"
     #     pre_format_string("Press Ctrl+C or type \"exit\" to close the debug console. "
     #                       "Type \"help\" for a list of commands.\n"):
@@ -638,7 +638,7 @@ DATA: TranslationDataType = [
     #     "Unable to initialize heap debugging. Make sure that you are using Windows 7 or above.":
     #         "无法初始化堆调试。请确保您使用的是 Windows 7 或更高版本。",
     #     "Warning: user-mode stack trace database is not enabled. Stack traces will not be displayed.\n":
-    #         "警告：用户模式堆栈跟踪数据库未启用。堆栈跟踪将不会显示。\n",
+    #         "警告: 用户模式堆栈跟踪数据库未启用。堆栈跟踪将不会显示。\n",
     #     "\nNumber of leaks: %lu (%lu displayed)\n": "\n泄漏数量: %lu (%lu 已显示)\n",
     #     "Number of bytes must be 256 or smaller.\n": "字节数必须小于或等于 256。\n",
     #     "Error reading address near %Ix.\n": "读取地址 %Ix 附近时出错。\n",
@@ -1263,7 +1263,7 @@ DATA: TranslationDataType = [
         "Unable to create the window.": "无法创建窗口。",
         "Found previous instance window: %ls (%p)": "找到之前的实例窗口: %ls (%p)",
         "Foreground previous instance: %lu": "前一个实例: %lu",
-        "Foreground previous instance: %lu (%lu attempts)": "前一个实例: %lu (尝试次数：%lu)",
+        "Foreground previous instance: %lu (%lu attempts)": "前一个实例: %lu (尝试次数: %lu)",
         "Activate previous instance": "激活前一个实例",
         "Activate previous instance: %!STATUS!": "激活前一个实例: %!STATUS!",
         "Full\nA complete dump of the process, rarely needed most of the time.":
@@ -2198,7 +2198,7 @@ DATA: TranslationDataType = [
         "Elevated processes": "提升进程",
         "UIAccess processes": "UIAccess 进程",
         "Pico processes": "Pico 进程",
-        # 别名：沉浸式进程（Windows 8）、现代化进程（Modern Process），
+        # 别名: 沉浸式进程（Windows 8）、现代化进程（Modern Process），
         # UAP (Universal Application Platform) 进程，详细信息见《深入解析 Windows 操作系统》（第七版，卷 1）
         "Immersive processes and DLLs": "UWP 进程和 DLL",
         "Processes with full privileges on a system with UAC enabled.":
@@ -2325,23 +2325,23 @@ DATA: TranslationDataType = [
             "Win32k (GDI/USER) 系统调用将触发 ETW 事件。\r\n",
         "Extension points disabled": "禁用扩展点",
         "Legacy extension point DLLs cannot be loaded into the process. NOTE: Processes with uiAccess=true will automatically bypass this policy and inject legacy extension point DLLs regardless.\r\n":
-            "旧版扩展点 DLL 无法加载到此进程中。注意：uiAccess=true 的进程将自动绕过此策略并注入旧版扩展点 DLL。\r\n",
+            "旧版扩展点 DLL 无法加载到此进程中。注意: uiAccess=true 的进程将自动绕过此策略并注入旧版扩展点 DLL。\r\n",
         "Strict ": "严格 ",
         "Audit ": "审核 ",
         "XF Guard": "XFG",
         "CF Guard": "CFG",
         "Extended Control Flow Guard (XFG) is enabled for the process.\r\n":
-            "旧版扩展点 DLL 无法加载到此进程中。注意：此进程已启用扩展控制流防护 (XFG)。\r\n",
+            "旧版扩展点 DLL 无法加载到此进程中。注意: 此进程已启用扩展控制流防护 (XFG)。\r\n",
         "Audit XFG : XFG is running in audit mode.\r\n":
-            "审计 XFG：XFG 正在以审计模式运行。\r\n",
+            "审计 XFG: XFG 正在以审计模式运行。\r\n",
         "Strict XFG : only XFG modules can be loaded.\r\n":
-            "严格 XFG：仅可加载 XFG 模块。\r\n",
+            "严格 XFG: 仅可加载 XFG 模块。\r\n",
         "Dll Exports can be marked as XFG invalid targets.\r\n":
             "DLL 导出可能被标记为 XFG 无效目标。\r\n",
         "Control Flow Guard (CFG) is enabled for the process.\r\n":
             "此进程已启用控制流防护 (CFG)。\r\n",
         "Strict CFG : only CFG modules can be loaded.\r\n":
-            "严格 CFG：仅可加载 CFG 模块。\r\n",
+            "严格 CFG: 仅可加载 CFG 模块。\r\n",
         "Dll Exports can be marked as CFG invalid targets.\r\n":
             "DLL 导出可以标记为无效的 CFG 目标。\r\n",
         "Signatures restricted (": "限制签名 (",
@@ -2395,15 +2395,15 @@ DATA: TranslationDataType = [
         "The CPU verifies function return addresses at runtime by employing a hardware-enforced shadow stack.\r\n":
             "CPU 通过使用硬件强制执行的影子堆栈，在运行时验证函数返回地址。\r\n",
         "Audit Stack protection : log ROP failures to event log.\r\n":
-            "审计堆栈保护：将 ROP 失败记录到事件日志中。\r\n",
+            "审计堆栈保护: 将 ROP 失败记录到事件日志中。\r\n",
         "Strict Stack protection : any detected ROP will cause the process to terminate.\r\n":
-            "严格的堆栈保护：任何检测到的 ROP 操作都会导致进程终止。\r\n",
+            "严格的堆栈保护: 任何检测到的 ROP 操作都会导致进程终止。\r\n",
         "Audit Set Context IP validation : log modifications of context IP to event log.\r\n":
-            "审核集上下文 IP 验证：将上下文 IP 的修改记录到事件日志中。\r\n",
+            "审核集上下文 IP 验证: 将上下文 IP 的修改记录到事件日志中。\r\n",
         "Set Context IP validation : any detected modification of context IP will cause the process to terminate.\r\n":
-            "设置上下文 IP 验证：任何检测到的上下文 IP 修改都将导致进程终止。\r\n",
+            "设置上下文 IP 验证: 任何检测到的上下文 IP 修改都将导致进程终止。\r\n",
         "Audit Block non CET binaries : log attempts to load binaries without CET support.\r\n":
-            "审核阻止非 CET 二进制文件：记录尝试加载不支持 CET 的二进制文件的尝试。\r\n",
+            "审核阻止非 CET 二进制文件: 记录尝试加载不支持 CET 的二进制文件的尝试。\r\n",
         "Block binaries without CET support\r\n": "阻止不支持 CET 的二进制文件。\r\n",
         "Block binaries without CET support or without EH continuation metadata.\r\n":
             "阻止不支持 CET 或缺少 EH 延续元数据的二进制文件。\r\n",
@@ -2497,14 +2497,14 @@ DATA: TranslationDataType = [
         # "Interrupts": "中断",
         # 中断是进程名称，不能翻译。
         "Adding process item: %ls (%lu)": "正在添加进程项: %ls (%lu)",
-        "Removing process item: %ls (%lu)": "正在移除进程项：%ls (%lu)",
-        "Process query stage 1: %ls (%lu)": "进程查询阶段 1：%ls (%lu)",
+        "Removing process item: %ls (%lu)": "正在移除进程项: %ls (%lu)",
+        "Process query stage 1: %ls (%lu)": "进程查询阶段 1: %ls (%lu)",
         "Interrupts and DPCs": "中断和 DPC",
-        "Process query stage 2: %ls (%lu)": "进程查询阶段 2：%ls (%lu)",
+        "Process query stage 2: %ls (%lu)": "进程查询阶段 2: %ls (%lu)",
         "Unknown time": "未知时间",
-        "Process provider run count: %lu": "进程提供程序运行计数：%lu",
+        "Process provider run count: %lu": "进程提供程序运行计数: %lu",
         "Failed to enumerate processes: %lu %!STATUS!":
-            "枚举进程失败：%lu %!STATUS!",
+            "枚举进程失败: %lu %!STATUS!",
         "Unknown": "未知",
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/procrec.c", "utf-8", {
@@ -3042,7 +3042,7 @@ DATA: TranslationDataType = [
         "Unable to start the execution alias with a process token.": "无法使用进程令牌启动执行别名。",
         "Programs (*.exe;*.pif;*.com;*.bat)": "应用程序 (*.exe;*.pif;*.com;*.bat)",
         "All files (*.*)": "所有文件 (*.*)",
-        "WARNING: This will grant Everyone access to the current window station and desktop.": "警告：这将授予 Everyone (任何用户) 对当前窗口工作站和桌面的访问权限。",
+        "WARNING: This will grant Everyone access to the current window station and desktop.": "警告: 这将授予 Everyone (任何用户) 对当前窗口工作站和桌面的访问权限。",
         "Are you sure you want to continue?": "您确定要继续吗?",
         "Unable to execute the command.": "无法执行命令。",
         "Executable files (*.exe;*.pif;*.com;*.bat;*.cmd)": "可执行文件 (*.exe;*.pif;*.com;*.bat;*.cmd)",
@@ -3232,8 +3232,8 @@ DATA: TranslationDataType = [
         "Last system call": "最近一次系统调用",
         "Last status code": "最近一次状态代码",
         "Timeline": "时间线",
-        "COM apartment": "COM Apartment", # 这里有不同的、非官方的翻译：“公寓”和“套间”
-        # 详细信息参见：
+        "COM apartment": "COM Apartment", # 这里有不同的、非官方的翻译: “公寓”和“套间”
+        # 详细信息参见: 
         # 1. https://learn.microsoft.com/en-us/windows/win32/com/processes--threads--and-apartments
         # 2. https://chat.deepseek.com/share/4zmsdgm7um8q2wl0ct
         # 3. https://zhuanlan.zhihu.com/p/135313476
@@ -3667,7 +3667,7 @@ DATA: TranslationDataType = [
         "Failed logon attempts since": "自上次登录尝试以来失败的次数",
         "Last successful logon": "上次成功登录",
         "Last failed logon": "上次登录失败",
-        "Longon script": "登陆脚本",  # 源代码拼写错误：PH_USER_LIST_COLUMN_PROFILE_PATH
+        "Longon script": "登陆脚本",  # 源代码拼写错误: PH_USER_LIST_COLUMN_PROFILE_PATH
         "Logon script": "登陆脚本",
         "Profile path": "资料路径",
         "Home directory": "主目录",
