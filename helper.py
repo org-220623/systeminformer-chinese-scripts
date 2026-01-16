@@ -29,6 +29,8 @@ try:
             exit()
         try:
             file = data[command]
+            if command in ["burl", "0"]:
+                os.system(r"..\build\build_thirdparty.cmd")
             if isinstance(file, str):
                 os.system("misc\\Batch\\" + file)
             elif isinstance(file, list):
