@@ -31,7 +31,7 @@
 
 ### 跟踪情况
 
-https://github.com/org-220623/systeminformer-chinese/commit/de05627298d7b866c70bea59a2dc2f862052ffe1
+930b924be22cb2909fd0f696a84598649f2be46c
 
 ### todo
 
