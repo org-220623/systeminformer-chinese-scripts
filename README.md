@@ -1,6 +1,6 @@
 # System Informer 汉化项目
 
-这是一个用于汉化 System Informer 字符串资源的脚本。（正在进行）
+这是一个用于汉化 System Informer 字符串资源的脚本。（正在摆烂）
 
 ## [`Winsiderss/SystemInformer`](https://github.com/winsiderss/systeminformer) 上与 i18n 相关的 issue
 
@@ -10,8 +10,7 @@
 
 ## 说明
 
-1. System Informer 的 UI 语言资源并非集中管理，而是分散在源码树各处，搜索和修改需要花费很多时间。本项目在完善数据过程中会不断在 README.md (主要) 和 GitHub Issue (对于特定任务) 中更新项目进展状况。
-2. 本人没有精力完成所有 11 个插件的翻译工作，故欢迎志愿者踊跃 PR 或 Fork 项目自己维护。
+本项目因工程量太大，作者无心维护，故存档。想继续维护的欢迎 Fork。
 
 ## 远程仓库信息
 
@@ -35,8 +34,8 @@
 
 ### todo
 
-- 处理 PEView 根目录下的源文件（待定）；
-- 处理 11 个插件（待定）；
+- ~~处理 PEView 根目录下的源文件（待定）~~；
+- ~~处理 11 个插件（待定）~~；
 
 ### 已完成的文件
 
@@ -54,7 +53,7 @@
 
 #### 工具
 
-##### PEView 工具 (`tools/peview/*`) (正在进行)
+##### PEView 工具 (`tools/peview/*`) (~~正在进行~~)
 
 - 开头已处理的文件已省略...
 - `exlfimports.c`
@@ -106,4 +105,4 @@ python main.py
 
 [MIT](LICENSE)
 
-P.S. 金玉其外，败絮其中
+P.S. **金玉其外，败絮其中**
