@@ -58,7 +58,7 @@
 ##### PEView 工具 (`tools/peview/*`) (正在进行)
 
 - 开头已处理的文件已省略...
-- delayhook.c
+- `exlfimports.c`
 
 ##### 已全部完成的模块（进度信息已省略）
 

@@ -19,7 +19,7 @@ DATA: TranslationDataType = [
         "fortnights": "两星期",
         "week": "周",
         "weeks": "周",
-        "%u %s and %u %s": "%u %s 和 %u %s",
+        "%u %s and %u %s": "%u %s %u %s",
         "day": "天",
         "days": "天",
         "hour": "小时",

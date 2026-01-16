@@ -82,4 +82,41 @@ DATA: TranslationDataType = [
         "Unable to register window class.": "无法注册窗口类。",
         "Unable to commit detours transaction.": "无法提交绕行事务。",
     }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/disimp.c", "utf-8", {
+        "<ordinal:%llu>": "<序数:%llu>",
+        "<unknown>": "<未知>",
+        "Call VA": "调用 VA",
+        "Target": "目标",
+        "String/Ordinal": "字符串/序数",
+        "IAT Slot": "IAT 槽",
+    }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/ehcontprp.c", "utf-8", {
+        "(unnamed)": "(未命名)",
+        "Symbol": "符号",
+    }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/exlfdynamic.c", "utf-8", {
+        "Tag": "标签",
+        "Value": "值",
+    }, [
+        ('PhAddListViewColumn(lvHandle, 2, 2, 2, LVCFMT_LEFT, 150, L"Type"', 'PhAddListViewColumn(lvHandle, 2, 2, 2, LVCFMT_LEFT, 150, L"类型"'),
+    ]),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/exlfexports.c", "utf-8", {
+        "Name": "名称",
+        "Size": "大小",
+        "Binding": "绑定",
+        "Visibility": "可见性",
+    }, [
+        ('PhAddListViewColumn(lvHandle, 4, 4, 4, LVCFMT_LEFT, 80, L"Type"', 'PhAddListViewColumn(lvHandle, 4, 4, 4, LVCFMT_LEFT, 80, L"类型"'),
+        ('PhAddListViewColumn(lvHandle, 7, 7, 7, LVCFMT_LEFT, 80, L"Section"', 'PhAddListViewColumn(lvHandle, 7, 7, 7, LVCFMT_LEFT, 80, L"节区"'),
+    ]),
+(f"{CONST_PATH_PEVIEW_TOOL_SRC}/exlfimports.c", "utf-8", {
+        "Name": "名称",
+        "Size": "大小",
+        "Binding": "绑定",
+        "Visibility": "可见性",
+        "Module": "模块",
+    }, [
+        ('PhAddListViewColumn(lvHandle, 3, 3, 3, LVCFMT_LEFT, 100, L"Type"', 'PhAddListViewColumn(lvHandle, 3, 3, 3, LVCFMT_LEFT, 100, L"类型"'),
+        ('PhAddListViewColumn(lvHandle, 6, 6, 6, LVCFMT_LEFT, 80, L"Section"', 'PhAddListViewColumn(lvHandle, 6, 6, 6, LVCFMT_LEFT, 80, L"节区"'),
+    ]),
 ]
