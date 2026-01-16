@@ -80,6 +80,6 @@ DATA: TranslationDataType = [
     ]),
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/delayhook.c", "utf-8", {
         "Unable to register window class.": "无法注册窗口类。",
-        "Unable to commit detours transaction.": "无法提交绕行交易。",
+        "Unable to commit detours transaction.": "无法提交绕行事务。",
     }, []),
 ]

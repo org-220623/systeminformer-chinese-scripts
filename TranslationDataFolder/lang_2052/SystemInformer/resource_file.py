@@ -212,7 +212,7 @@ DATA: TranslationDataType = [
         "Remote Control": "远程控制",
         "To end the remote control session, press this key and the modifiers selected below:":
             "要结束远程控制会话，请按此键以及下面选择的组合键:",
-        "Capabilities": "兼容性",
+        "Capabilities": "能力",
         "Attributes": "属性",
         "CPU name": "CPU 名称",
         "Panel layout": "面板布局",

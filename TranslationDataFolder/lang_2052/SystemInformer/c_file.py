@@ -3417,7 +3417,7 @@ DATA: TranslationDataType = [
         "Resource": "资源",
         "There are no attributes to display.": "没有要显示的参数。",
         "There are no claims to display.": "没有要显示的内容。",
-        "There are no capabilities to display.": "没有要显示的功能。",
+        "There are no capabilities to display.": "没有要显示的能力。",
         "Unable to duplicate the token.": "无法复制令牌。",
         "Enabled (as a group)": "已启用 (作为组)",
         "Enabled": "已启用",
@@ -3680,4 +3680,63 @@ DATA: TranslationDataType = [
         "Unable to locate routines.": "无法定位例程。",
         "Unable to create the window.": "无法创建窗口。",
     }, []),
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/ksisup.c", "utf-8", {
+        "    - not securely created\r\n": "    - 未安全创建\r\n",
+        "    - unverified primary image\r\n": "    - 未验证主要映像\r\n",
+        "    - inactive protections\r\n": "    - 未激活保护\r\n",
+        "    - unsigned images (likely an unsigned plugin)\r\n": "    - 未签名映像 (可能是未签名插件)\r\n",
+        "    - process is being debugged\r\n": "    - 进程正在被调试\r\n",
+        "    - tampered primary image\r\n": "    - 已修改主要映像\r\n",
+        "You will be unable to use more advanced features, view details about system processes or terminate malicious software.": "您将无法使用更高级的功能，查看系统进程的详细信息或终止恶意软件。",
+        "Access to the kernel driver is restricted.": "内核驱动程序的访问权限已受到限制。",
+        "Unknown error.": "未知错误。",
+        "Unknown": "未知",
+        "Process State ": "进程状态 ",
+        "Windows Kernel ": "Windows 内核 ",
+        "Driver warnings are disabled.": "驱动程序警告已禁用。",
+        "Unable to load kernel driver": "无法加载内核驱动程序",
+        "The dynamic configuration was not found.": "未找到动态配置。",
+        "Failed to access the dynamic configuration.": "访问动态配置时出现错误。",
+        "The kernel driver was not found.": "未找到内核驱动程序。",
+        "Try again with alternate driver load method?": "请尝试使用其他驱动程序加载方式?",
+        "Kernel driver loaded": "已加载内核驱动程序",
+        "Unable to load the kernel driver service.": "无法加载内核驱动程序服务。",
+        "Unable to restart.": "无法重新启动。",
+        "Unable to create the window.": "无法创建窗口。",
+        "Initializing System Informer kernel driver...": "正在初始化 System Informer 内核驱动程序...",
+        "The last System Informer update requires a reboot.": "需重新启动 System Informer 以应用最新更新。",
+        "The kernel driver is not supported on this architecture.": "内核驱动程序不支持此架构。",
+        "Platform support pending review.": "平台支持待审核。",
+        "Kernel version not supported": "内核版本不受支持",
+        "Checking for pending platform update...": "正在检查待处理的平台更新...",
+    }, [
+        ('''L"The kernel driver is not yet supported on this kernel "
+                L"version. For the latest kernel support switch to the Canary "
+                L"update channel (Help > Check for updates > Canary > Check)."''',
+         'L"此内核版本尚不支持内核驱动程序。要获得最新的内核支持，请切换到 Canary 更新通道（帮助 > 检查更新 > Canary > 检查）。"'),
+        ('''L"The kernel driver is not yet supported on this kernel "
+                L"version. Request support by submitting a GitHub issue with "
+                L"the Windows Kernel version."''',
+         'L"此内核版本尚不支持内核驱动程序。请提交 GitHub issue 并注明 Windows 内核版本，以请求支持。"'),
+        ('''L"The kernel driver was successfully loaded using an alternate "
+                L"method. The settings used to load the driver have been saved. "
+                L"You can revert these settings in the advanced options."''',
+         'L"内核驱动程序已使用备用方法成功加载。用于加载驱动程序的设置已保存。您可以在高级选项中恢复这些设置。"'),
+        ('''L"The kernel driver is not supported on this Windows version, the "
+            L"minimum supported version is Windows 10."''',
+         'L"此 Windows 版本不支持内核驱动程序，最低支持版本为 Windows 10。"'),
+        ('''L"The kernel driver is not supported under Wow64, use the native "
+            "binary instead."''',
+         'L"Wow64 不支持内核驱动程序，请改用本地二进制文件。"'),
+        ('''L"Your kernel version is pending review on the development branch. "
+                        L"Your kernel will be supported in the next build!"''',
+         'L"您的内核版本正在开发分支上等待审核。您的内核将在下一个版本中得到支持！"'),
+        ('''L"This kernel version is not yet supported. "
+                            L"Your kernel version is pending review review on the development branch."''',
+         'L"此内核版本尚不受支持。您的内核版本正在开发分支上等待审核。"'),
+        ('''L"This kernel version is not yet supported. "
+                            L"For the latest kernel support switch to the Canary update channel "
+                            L"(Help > Check for updates > Canary > Check)."''',
+         'L"此内核版本尚不受支持。要获得最新的内核支持，请切换到 Canary 更新通道（帮助 > 检查更新 > Canary > 检查）。"'),
+    ]),
 ]
