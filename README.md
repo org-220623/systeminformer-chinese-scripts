@@ -42,7 +42,6 @@
 
 #### 主程序 (`SystemInformer/*`) (已初步完成，挂起)
 
-- `SystemInformer/ksisup.c` 从第 315 行开始, 挂起
 - `SystemInformer/log.c` 计划处理，挂起
 - `phsvc/*` (没有要处理的条目)
 - `sdk/*` (没有要处理的条目)
