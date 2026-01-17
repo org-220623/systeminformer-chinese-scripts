@@ -33,4 +33,16 @@ DATA: TranslationDataType = [
         "a very short time": "非常短的时间",
         # Line 3201
     }, []),
+    (f"{CONST_PATH_PHLIB_SRC}/searchbox.c", "utf-8", {
+        # file completed
+        "Undo": "撤销",
+        "Cut": "剪切",
+        "Copy": "复制",
+        "Paste": "粘贴",
+        "Delete": "删除",
+        "Select All": "全选",
+        "Regular Expression": "使用正则表达式",
+        "Match Case": "区分大小写",
+        "Clear Search": "清空搜索框内容",
+    }, []),
 ]

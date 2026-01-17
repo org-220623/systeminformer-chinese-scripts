@@ -139,7 +139,7 @@ DATA: TranslationDataType = [
         "Option": "选项",
         "Search engine:": "搜索引擎:",
         "PE viewer:": "PE 查看器:",
-        "Max. size unit:": "最大大小单元:",
+        "Max. size unit:": "最大单位:",
         "Icon processes:": "图标处理:",
         "Font...": "字体...",
         "Monospace...": "等宽字体...",
