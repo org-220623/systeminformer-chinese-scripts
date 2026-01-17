@@ -250,6 +250,17 @@ DATA: TranslationDataType = [
         "Unable to open the process": "无法打开进程",
         "Setting handle attributes requires a connection to the kernel driver.":
             "设置句柄属性需要连接到内核驱动程序。",
+        r"\U0001FA9F WinDbg\nGraphical debugger for both user-mode and kernel-mode debugging.": r"\U0001FA9F WinDbg\n图形化调试器，支持用户模式和内核模式调试。",
+        r"\U0001FA9F WinDbg (Preview)\nModern graphical debugger for both user-mode and kernel-mode debugging.": r"\U0001FA9F WinDbg (UWP)\n现代图形化调试器，支持用户模式和内核模式调试。",
+        r"\U0001F4D8 Visual Studio 2026\nFull-featured IDE with integrated debugging.": r"\U0001F4D8 Visual Studio 2026\n功能齐全的集成开发环境，带有集成调试功能。",
+        r"\U0001F4D8 Visual Studio 2022\nFull-featured IDE with integrated debugging.": r"\U0001F4D8 Visual Studio 2022\n功能齐全的集成开发环境，带有集成调试功能。",
+        r"\U0001F4FA CDB\nCommand-line debugger for user-mode applications.": r"\U0001F4FA CDB\n用于用户模式应用程序的命令行调试器。",
+        r"\U0001F4FA KD\nKernel debugger for low-level system debugging.": r"\U0001F4FA KD\n用于底层系统调试的内核调试器。",
+        r"\U0001F4FA NTSD\nLegacy command-line debugger similar to CDB.": r"\U0001F4FA NTSD\n类似于 CDB 的传统命令行调试器。",
+        r"\U00002699 (System Default)\n%s": r"\U00002699 (系统默认)\n%s",
+        r"\U00002699 System Default\nNo debugger configured in AeDebug registry key.": r"\U00002699 系统默认\nAeDebug 注册表项中未配置调试器。",
+        "Select a system debugger to use for this process:": "选择要用于此进程的系统调试器:",
+        "You can choose from the installed debugging tools below.": "您可以从下方已安装的调试工具中进行选择。",
     },
                                                                     [
         (
