@@ -2169,7 +2169,7 @@ DATA: TranslationDataType = [
         "WARNING: You have not installed System Informer into a secure location.":
             "警告: 您尚未将 System Informer 安装到安全的文件系统位置。",
         "%s is not recommended when running System Informer from outside a secure location (e.g. Program Files).\r\n\r\nAre you sure you want to continue?":
-            "从非安全位置 (例如 Program Files 文件夹) 运行 System Informer 时，不建议使用 %s。\r\n\r\n确定要继续吗?",
+            "从非安全位置 (例如 Program Files 文件夹) 运行 System Informer 时，不建议%s。\r\n\r\n确定要继续吗?",
         "Name": "名称",
         "Unable to configure this option.": "无法配置此选项。",
         "You need to enable at minimum one tray icon (View menu > Tray Icons) before enabling the hide option.":
