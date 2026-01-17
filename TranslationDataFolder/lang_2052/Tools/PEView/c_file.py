@@ -149,5 +149,33 @@ DATA: TranslationDataType = [
     }, [
         ('PhAddListViewColumn(lvHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"Type"', 'PhAddListViewColumn(lvHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"类型"'),
     ]),
-    # todo expprp.c and more...
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/expprp.c", "utf-8", {
+        "There are no exports to display.": "没有要显示的导出项。",
+        "Loading exports from image...": "正在从映像加载导出项...",
+        "Search Exports (Ctrl+K)": "搜索导出项 (Ctrl+K)",
+        "Copy": "复制",
+        "Yes": "是",
+        "Name": "名称",
+        "Ordinal": "序数",
+        "Hint": "提示",
+        "Forwarded name": "转发名称",
+        "Symbol name": "符号名称",
+        "Undecorated name": "未修饰名称",
+        "CFG export suppression": "CFG 输出抑制",
+        "(unnamed)": "(未命名)",
+    }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/hashprp.c", "utf-8", {
+        "ERROR": "错误",
+        "Name": "名称",
+        "Hash": "哈希",
+        "File hashes": "文件哈希",
+        "Import hashes": "导入哈希",
+        "Fuzzy hashes": "模糊哈希",
+        "Authenticode hashes": "Authenticode 哈希",
+        "Page hashes (WDAC)": "页面哈希 (WDAC)",
+        "Page hashes (Authenticode)": "页面哈希 (Authenticode)",
+        "Generating hashes...": "正在生成哈希...",
+        # todo 尾部
+    }, []),
+    # todo impprp.c and more...
 ]
