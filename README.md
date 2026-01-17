@@ -36,7 +36,6 @@
 
 ### todo
 
-- 处理 `{CONST_PATH_PHLIB_SRC}/secdata.c`；
 - 处理 PEView；
 - 处理 11 个插件（待定）；
 
