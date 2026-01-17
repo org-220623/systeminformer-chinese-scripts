@@ -2257,6 +2257,7 @@ DATA: TranslationDataType = [
         "Power usage": "电源用量",
         "Temperature": "温度",
         "Fan RPM": "风扇转速 (转每分)",
+        "Enable plugins": "启用插件",
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
          'PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
