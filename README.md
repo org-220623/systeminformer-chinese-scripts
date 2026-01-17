@@ -9,6 +9,7 @@
 1. https://github.com/winsiderss/systeminformer/issues/302
 2. https://github.com/winsiderss/systeminformer/issues/1219
 3. https://github.com/winsiderss/systeminformer/issues/1301
+4. AND AND AND MORE
 
 ## 说明
 
