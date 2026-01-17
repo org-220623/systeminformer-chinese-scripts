@@ -1,6 +1,6 @@
 # System Informer 汉化项目
 
-这是一个用于汉化 System Informer 字符串资源的脚本。（正在摆烂）
+这是一个用于汉化 System Informer 字符串资源的脚本。（随时准备摆烂）
 
 ## [`Winsiderss/SystemInformer`](https://github.com/winsiderss/systeminformer) 上与 i18n 相关的 issue
 
@@ -10,7 +10,7 @@
 
 ## 说明
 
-本项目因工程量太大，作者无心维护，故存档。想继续维护的欢迎 Fork。
+本项目因工程量太大，作者可能随时放弃维护并存档，想坚持到底的欢迎 Fork。
 
 ## 远程仓库信息
 
