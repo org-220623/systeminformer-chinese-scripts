@@ -34,8 +34,9 @@
 
 ### todo
 
-- ~~处理 PEView 根目录下的源文件（待定）~~；
-- ~~处理 11 个插件（待定）~~；
+- 处理 `{CONST_PATH_PHLIB_SRC}/secdata.c`；
+- 处理 PEView；
+- 处理 11 个插件（待定）；
 
 ### 已完成的文件
 
@@ -53,7 +54,7 @@
 
 #### 工具
 
-##### PEView 工具 (`tools/peview/*`) (~~正在进行~~)
+##### PEView 工具 (`tools/peview/*`) (正在进行)
 
 - 开头已处理的文件已省略...
 - `exlfimports.c`
