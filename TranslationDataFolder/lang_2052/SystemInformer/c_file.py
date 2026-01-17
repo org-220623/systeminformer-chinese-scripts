@@ -2178,7 +2178,7 @@ DATA: TranslationDataType = [
         "Highlight default": "高亮显示默认",
         "&Reset": "重置(&R)",
         "&Copy\bCtrl+C": "复制(&C)\bCtrl+C",
-        # "Use": "使用", # test 01
+        # "Use": "使用", # 该条目不能更改，否则会导致空指针引用。
         "Own processes": "当前用户进程",
         "GUI threads": "GUI 线程",
         "Relocated DLLs": "重定位 DLL",
