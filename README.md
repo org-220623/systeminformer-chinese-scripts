@@ -4,6 +4,8 @@
 
 ## [`Winsiderss/SystemInformer`](https://github.com/winsiderss/systeminformer) 上与 i18n 相关的 issue
 
+从官方的态度和计划看，未来很长一段时间都不会有 i18n, 所以要么学会英语，要么学会搜索，要么学会劳动。
+
 1. https://github.com/winsiderss/systeminformer/issues/302
 2. https://github.com/winsiderss/systeminformer/issues/1219
 3. https://github.com/winsiderss/systeminformer/issues/1301
