@@ -2208,39 +2208,39 @@ DATA: TranslationDataType = [
         # "Packed processes": "打包的进程", 
         # "Low process image coherency": "低进程映像一致性", 
         # -----------------------------------------------------------------------------
-        "Processes running under the same user account as System Informer.":
-            "与 System Informer 使用同一用户帐户运行的进程。",
-        r"Processes running under the NT AUTHORITY\\SYSTEM user account.":
-            r"以 NT AUTHORITY\\SYSTEM 用户帐户运行的进程。",
-        "Processes which host one or more services.": "承载一个或多个服务的进程。",
-        "Processes with a background scheduling priority.": "具有后台调度优先级的进程。",
-        "Processes associated with a job.": "与作业关联的进程。",
-        "Processes running under WOW64, i.e. 32-bit.": "在 WOW64 (即 32 位) 下运行的进程。",
-        "Processes that are currently being debugged.": "当前正在调试的进程。",
-        "Processes with full privileges on a system with UAC enabled.":
-            "在启用了 UAC 的系统上具有完全权限的进程。",
-        "Processes with UIAccess privileges.": "具有 UIAccess 权限的进程。",
-        "Processes that belong to the Windows subsystem for Linux.":
-            "属于适用于 Linux 的 Windows 子系统 (WSL) 的进程。",
-        "Processes and DLLs that belong to a Modern UI app.":
-            "属于 Modern UI 应用的进程和 DLL。",
-        "Processes and threads that are suspended from execution.":
-            "已暂停执行的进程和线程。",
-        "Processes and threads that are partially suspended from execution.":
-            "部分暂停执行的进程和线程。",
-        ".NET (i.e. managed) processes and DLLs.": ".NET (托管) 进程和 DLL。",
-        "The image file backing the process has low coherency when compared to the mapped image.":
-            "与映射映像相比，支持进程的映像文件一致性较低。",
-        "Threads that have made at least one GUI-related system call.": "至少进行过一次与 GUI 相关的系统调用的线程。",
-        "DLLs that were not loaded at their preferred image bases.": "未加载到其首选映像基础的 DLL。",
-        "Handles that are protected from being closed.": "受保护无法关闭的句柄。",
-        "Processes with built-in protection levels.": "具有内置保护级别的进程。",
-        "Handles that can be inherited by child processes.": "可被子进程继承的句柄。",
-        "Processes that are protected by handle object callbacks.": "受句柄对象回调保护的进程。",
-        "Services and DLLs which are not digitally signed.": "未进行数字签名的服务和 DLL。",
-        "Services which have been disabled.": "已禁用的服务。",
-        "Services that are not running.": "未运行的服务。",
-        "Processes and threads with power efficiency.": "设置节能模式的进程和线程。",
+        # "Processes running under the same user account as System Informer.":
+        #     "与 System Informer 使用同一用户帐户运行的进程。",
+        # r"Processes running under the NT AUTHORITY\\SYSTEM user account.":
+        #     r"以 NT AUTHORITY\\SYSTEM 用户帐户运行的进程。",
+        # "Processes which host one or more services.": "承载一个或多个服务的进程。",
+        # "Processes with a background scheduling priority.": "具有后台调度优先级的进程。",
+        # "Processes associated with a job.": "与作业关联的进程。",
+        # "Processes running under WOW64, i.e. 32-bit.": "在 WOW64 (即 32 位) 下运行的进程。",
+        # "Processes that are currently being debugged.": "当前正在调试的进程。",
+        # "Processes with full privileges on a system with UAC enabled.":
+        #     "在启用了 UAC 的系统上具有完全权限的进程。",
+        # "Processes with UIAccess privileges.": "具有 UIAccess 权限的进程。",
+        # "Processes that belong to the Windows subsystem for Linux.":
+        #     "属于适用于 Linux 的 Windows 子系统 (WSL) 的进程。",
+        # "Processes and DLLs that belong to a Modern UI app.":
+        #     "属于 Modern UI 应用的进程和 DLL。",
+        # "Processes and threads that are suspended from execution.":
+        #     "已暂停执行的进程和线程。",
+        # "Processes and threads that are partially suspended from execution.":
+        #     "部分暂停执行的进程和线程。",
+        # ".NET (i.e. managed) processes and DLLs.": ".NET (托管) 进程和 DLL。",
+        # "The image file backing the process has low coherency when compared to the mapped image.":
+        #     "与映射映像相比，支持进程的映像文件一致性较低。",
+        # "Threads that have made at least one GUI-related system call.": "至少进行过一次与 GUI 相关的系统调用的线程。",
+        # "DLLs that were not loaded at their preferred image bases.": "未加载到其首选映像基础的 DLL。",
+        # "Handles that are protected from being closed.": "受保护无法关闭的句柄。",
+        # "Processes with built-in protection levels.": "具有内置保护级别的进程。",
+        # "Handles that can be inherited by child processes.": "可被子进程继承的句柄。",
+        # "Processes that are protected by handle object callbacks.": "受句柄对象回调保护的进程。",
+        # "Services and DLLs which are not digitally signed.": "未进行数字签名的服务和 DLL。",
+        # "Services which have been disabled.": "已禁用的服务。",
+        # "Services that are not running.": "未运行的服务。",
+        # "Processes and threads with power efficiency.": "设置节能模式的进程和线程。",
         "CPU kernel": "CPU 内核模式",
         "CPU user": "CPU 用户模式",
         "Private bytes": "私有字节",
@@ -2251,8 +2251,8 @@ DATA: TranslationDataType = [
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
          'PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
-        (r'"Executables are sometimes \"packed\" to reduce their size."',
-         r'"可执行文件有时会被 \"打包\" 以减小其大小。"'),
+        # (r'"Executables are sometimes \"packed\" to reduce their size."',
+        #  r'"可执行文件有时会被 \"打包\" 以减小其大小。"'),
         (r'"&Copy\bCtrl+C"', r'"复制(&C)\bCtrl+C"'),
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/pagfiles.c", "utf-8", {
