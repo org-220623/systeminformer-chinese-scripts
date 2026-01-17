@@ -3,7 +3,7 @@ git add .
 git commit -m "update data"
 git push gitee
 git push github
-git push gitea
+git push codeberg
 git push jihulab
 cd ..
 git add .python.patch
