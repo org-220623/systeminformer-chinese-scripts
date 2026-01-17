@@ -2,6 +2,7 @@ from Config.const_values import CONST_PATH_PHLIB_SRC
 from Config.static_data_type import TranslationDataType
 
 DATA: TranslationDataType = [
+    # util.c 正在进行翻译
     (f"{CONST_PATH_PHLIB_SRC}/util.c", "utf-8", {
         "Cancel": "取消",
         "Do you want to ": "你确定要",
@@ -33,8 +34,8 @@ DATA: TranslationDataType = [
         "a very short time": "非常短的时间",
         # Line 3201
     }, []),
+    # searchbox.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/searchbox.c", "utf-8", {
-        # file completed
         "Undo": "撤销",
         "Cut": "剪切",
         "Copy": "复制",
@@ -45,6 +46,7 @@ DATA: TranslationDataType = [
         "Match Case": "区分大小写",
         "Clear Search": "清空搜索框内容",
     }, []),
+    # symprv.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/symprv.c", "utf-8", {
         "Loading symbols for ": "正在加载以下模块的符号: ",
         "image": "映像",
@@ -63,6 +65,7 @@ DATA: TranslationDataType = [
         "Has exception handler (0x%p), ": "有异常头 (0x%p), ",
         "OptimizedForSpeed, ": "已针对速度优化, ",
     }, []),
+    # secdata.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/secdata.c", "utf-8", {
         "Synchronize": "同步",
         "Delete": "删除",
@@ -297,6 +300,7 @@ DATA: TranslationDataType = [
         "Activate local": "激活本地",
         "Activate remote": "激活远程",
     }, []),
+    # svcsup.c 正在进行翻译
     (f"{CONST_PATH_PHLIB_SRC}/svcsup.c", "utf-8", {
         "Unknown": "未知",
         "Stopped": "已停止",
@@ -330,4 +334,10 @@ DATA: TranslationDataType = [
     }, [
         ('SREF(L"Driver"', 'SREF(L"驱动程序"'),
     ]),
+    # extlv.c 已完成
+    (f"{CONST_PATH_PHLIB_SRC}/extlv.c", "utf-8", {
+        "Size column to fit": "调整列宽以适应屏幕",
+        "Size all columns to fit": "调整所有列宽以适应屏幕",
+        "Reset sort": "重置排序",
+    }, []),
 ]
