@@ -247,8 +247,8 @@ DATA: TranslationDataType = [
         "Unable to open the process": "无法打开进程",
         "Setting handle attributes requires a connection to the kernel driver.":
             "设置句柄属性需要连接到内核驱动程序。",
-        r"\U0001FA9F WinDbg\nGraphical debugger for both user-mode and kernel-mode debugging.": r"\U0001FA9F WinDbg\n图形化调试器，支持用户模式和内核模式调试。",
-        r"\U0001FA9F WinDbg (Preview)\nModern graphical debugger for both user-mode and kernel-mode debugging.": r"\U0001FA9F WinDbg (UWP)\n现代图形化调试器，支持用户模式和内核模式调试。",
+        r"\U0001FA9F WinDbg\nGraphical debugger for both user-mode and kernel-mode debugging.": r"\U0001F4D8 WinDbg\n图形化调试器，支持用户模式和内核模式调试。", # 显示成方块？？
+        r"\U0001FA9F WinDbg (Preview)\nModern graphical debugger for both user-mode and kernel-mode debugging.": r"\U0001F4D8 WinDbg (UWP)\n现代图形化调试器，支持用户模式和内核模式调试。",
         r"\U0001F4D8 Visual Studio 2026\nFull-featured IDE with integrated debugging.": r"\U0001F4D8 Visual Studio 2026\n功能齐全的集成开发环境，带有集成调试功能。",
         r"\U0001F4D8 Visual Studio 2022\nFull-featured IDE with integrated debugging.": r"\U0001F4D8 Visual Studio 2022\n功能齐全的集成开发环境，带有集成调试功能。",
         r"\U0001F4FA CDB\nCommand-line debugger for user-mode applications.": r"\U0001F4FA CDB\n用于用户模式应用程序的命令行调试器。",
