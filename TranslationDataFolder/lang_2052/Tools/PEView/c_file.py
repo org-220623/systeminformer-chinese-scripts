@@ -242,5 +242,11 @@ DATA: TranslationDataType = [
         "Search Layout (Ctrl+K)": "搜索布局 (Ctrl+K)",
         "Copy": "复制",
     }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/ldprp.c", "utf-8", {
+        "Instrumented, ": "已检测, ",
+        "Instrumented (Write), ": "已检测 (写入), ",
+        "Function table, ": "函数列表, ", # todo 函数 or 功能？
+        "Unused security cookie, ": "未使用的安全 Cookie, ",
+    }, []),
     # todo ldprp.c and more...
 ]
