@@ -2117,7 +2117,7 @@ DATA: TranslationDataType = [
         "Enable warnings": "启用警告",
         "Enable kernel-mode driver": "启用内核模式驱动程序",
         "Enable monospace fonts": "启用等宽字体",
-        "Enable plugins": "启用插件",
+        "Enable Plugins": "启用插件",
         "Enable undecorated symbols": "启用未修饰符号",
         "Enable AVX extensions (experimental)": "启用 AVX 扩展 (实验性功能)",
         "Enable AVX extensions": "启用 AVX 扩展",
@@ -2279,7 +2279,7 @@ DATA: TranslationDataType = [
             "需要重启以应用更改...",
         "Unable to create the window.": "无法创建窗口。",
         "Plugins are not enabled.": "插件未启用。",
-        "To use plugins enable them in Options and restart System Informer.":
+        "To use Plugins enable them in Options and restart System Informer.":
             "要使用插件，请在“选项”中启用它们并重启 System Informer。",
         "(unnamed)": "(未命名)",
         "Unknown": "未知",

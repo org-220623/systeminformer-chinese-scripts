@@ -109,7 +109,7 @@ DATA: TranslationDataType = [
         ('PhAddListViewColumn(lvHandle, 4, 4, 4, LVCFMT_LEFT, 80, L"Type"', 'PhAddListViewColumn(lvHandle, 4, 4, 4, LVCFMT_LEFT, 80, L"类型"'),
         ('PhAddListViewColumn(lvHandle, 7, 7, 7, LVCFMT_LEFT, 80, L"Section"', 'PhAddListViewColumn(lvHandle, 7, 7, 7, LVCFMT_LEFT, 80, L"节区"'),
     ]),
-(f"{CONST_PATH_PEVIEW_TOOL_SRC}/exlfimports.c", "utf-8", {
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/exlfimports.c", "utf-8", {
         "Name": "名称",
         "Size": "大小",
         "Binding": "绑定",
@@ -119,4 +119,35 @@ DATA: TranslationDataType = [
         ('PhAddListViewColumn(lvHandle, 3, 3, 3, LVCFMT_LEFT, 100, L"Type"', 'PhAddListViewColumn(lvHandle, 3, 3, 3, LVCFMT_LEFT, 100, L"类型"'),
         ('PhAddListViewColumn(lvHandle, 6, 6, 6, LVCFMT_LEFT, 80, L"Section"', 'PhAddListViewColumn(lvHandle, 6, 6, 6, LVCFMT_LEFT, 80, L"节区"'),
     ]),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/exlfprp.c", "utf-8", {
+        "***ERROR***": "***错误***",
+        "No type": "无类型",
+        "Common": "公共",
+        # todo line 20 switch...case...
+        "Local": "本地",
+        "Global": "全局",
+        "Weak": "弱",
+        "Unique": "唯一",
+        "Default": "默认",
+        "Internal": "内部",
+        "Hidden": "隐藏",
+        "Protected": "保护",
+        "Loading...": "加载中...",
+        "Relocatable": "可重定位",
+        "Dynamic": "动态",
+        "Executable": "可执行",
+        "ERROR": "错误",
+        "Allocated, ": "已分配, ",
+        "Read-only, ": "只读, ",
+        "Code, ": "代码, ",
+        "Data, ": "数据, ",
+        "(None)": "(无)",
+        "Name": "名称",
+        "Offset": "偏移",
+        "Size": "大小",
+        "Flags": "标志",
+    }, [
+        ('PhAddListViewColumn(lvHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"Type"', 'PhAddListViewColumn(lvHandle, 1, 1, 1, LVCFMT_LEFT, 80, L"类型"'),
+    ]),
+    # todo expprp.c and more...
 ]

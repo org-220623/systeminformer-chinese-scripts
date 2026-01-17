@@ -199,7 +199,7 @@ DATA: TranslationDataType = [
             "在摘要视图中显示提交用量而不是物理内存",
         "Plugins": "插件",
         "Changes may require a restart to take effect.": "更改可能需要重启才能生效。",
-        "Disabled plugins (0)": "已禁用插件 (0)",
+        "Disabled Plugins (0)": "已禁用插件 (0)",
         "Handle Statistics": "句柄统计数据",
         "Handle": "句柄",
         "Process Record": "进程记录",
