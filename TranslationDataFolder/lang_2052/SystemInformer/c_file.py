@@ -2179,6 +2179,7 @@ DATA: TranslationDataType = [
         "&Reset": "重置(&R)",
         "&Copy\bCtrl+C": "复制(&C)\bCtrl+C",
         # "Use": "使用", # 该条目不能更改，否则会导致空指针引用。
+                        # https://github.com/org-220623/systeminformer-chinese-scripts/issues/4
         "Own processes": "当前用户进程",
         "GUI threads": "GUI 线程",
         "Relocated DLLs": "重定位 DLL",
