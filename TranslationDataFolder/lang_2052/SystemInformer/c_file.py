@@ -122,9 +122,6 @@ DATA: TranslationDataType = [
         "Freezing does not persist after exiting System Informer.":
             "退出 System Informer 后，冻结过程会终止。",
         "thaw": "解冻",
-        "The process will be restarted with the same command line, ":
-            "该进程将使用相同的命令行重新启动， ",
-        "working directory and privileges.": "工作目录和权限。",
         "debug": "调试",
         "Debugging a process may result in loss of data.": "调试进程可能会导致数据丢失。",
         # todo: line 2767
@@ -423,7 +420,8 @@ DATA: TranslationDataType = [
         ), (
             'PhpShowErrorProcess(WindowHandle, L"flush the process heap(s) of", Processes[i], status, 0)',
             'PhpShowErrorProcess(WindowHandle, L"刷新以下进程的堆: ", Processes[i], status, 0)'
-        )
+        ), ('''L"The process will be restarted with the same command line, "
+            L"working directory and privileges."''', 'L"该进程将使用相同的命令行、工作目录和权限重新启动。"')
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/admintask.c", "utf-8", {
         "Run as admin task": "以管理员身份运行任务",
