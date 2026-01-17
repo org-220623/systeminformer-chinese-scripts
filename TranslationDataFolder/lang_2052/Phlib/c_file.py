@@ -324,7 +324,7 @@ DATA: TranslationDataType = [
         "Disabled": "禁用",
         "Ignore": "忽略",
         "Normal": "正常",
-        "Severe": "严格", # todo 严格 or 严重？
+        "Severe": "严重", # todo 严格 or 严重？
         "Critical": "关键",
         # Line 254
     }, [
