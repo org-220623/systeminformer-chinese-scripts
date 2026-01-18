@@ -2414,7 +2414,7 @@ DATA: TranslationDataType = [
             "审核阻止非 CET 二进制文件: 记录尝试加载不支持 CET 的二进制文件的尝试。\r\n",
         "Block binaries without CET support\r\n": "阻止不支持 CET 的二进制文件。\r\n",
         "Block binaries without CET support or without EH continuation metadata.\r\n":
-            "阻止不支持 CET 或缺少 EH 延续元数据的二进制文件。\r\n",
+            "阻止不支持 CET 或缺少 异常处理延续元数据的二进制文件。\r\n",
         "Junction redirection protection / Audit": "连接重定向保护/审核",
         "Prevents the process from following filesystem junctions created by non-admin users and logs the attempt.\r\nLogs attempts by the process to follow filesystem junctions created by non-admin users.\r\n":
             "阻止进程跟随非管理员用户创建的文件系统连接点，并记录此尝试。\r\n记录进程跟随非管理员用户创建的文件系统连接点的尝试。\r\n",
@@ -3423,7 +3423,7 @@ DATA: TranslationDataType = [
         "Mandatory": "强制性",
         "Use for deny only": "仅用于拒绝",
         "Resource": "资源",
-        "There are no attributes to display.": "没有要显示的参数。",
+        "There are no attributes to display.": "没有要显示的属性。",
         "There are no claims to display.": "没有要显示的内容。",
         "There are no capabilities to display.": "没有要显示的能力。",
         "Unable to duplicate the token.": "无法复制令牌。",
