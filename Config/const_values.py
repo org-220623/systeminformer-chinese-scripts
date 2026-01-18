@@ -8,6 +8,7 @@ CONST_STRING_LF_NEWLINE = "\n"
 CONST_STRING_CRLF_NEWLINE = "\r\n"
 CONST_STRING_LEFT_BRACKET = "[ "
 CONST_STRING_RIGHT_BRACKET = " ]"
+CONST_STRING_NOT_TRANSLATE_PREFIX = "敏感词:"
 
 ########################################################################################
 # 定义目录路径常量 (CONST_PATH_*)

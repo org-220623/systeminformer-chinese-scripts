@@ -1,4 +1,4 @@
-from Config.const_values import CONST_PATH_PEVIEW_TOOL_SRC
+from Config.const_values import CONST_PATH_PEVIEW_TOOL_SRC, CONST_STRING_NOT_TRANSLATE_PREFIX
 from Config.static_data_type import TranslationDataType
 
 DATA: TranslationDataType = [
@@ -1160,7 +1160,21 @@ DATA: TranslationDataType = [
     }, []),
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/versioninfoprp.c", "utf-8", {
         # todo: warning:
-        #  严重警告：该文件中的 “name” ""
+        #  严重警告：该文件中的 “Properties” "DisplayName" "PublisherDisplayName"
+        #                   "Logo" "build:Metadata" "Name" "Value" "Version"
+        #  等 xml 节点标签属于敏感词，翻译时需避开相关代码，加上上下文信息。
+        # -------------------------------------------------------------------------------
+        # 定义敏感词信息
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Properties": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}DisplayName": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}PublisherDisplayName": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Logo": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}build:Metadata": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Name": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Value": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Version": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Translation": "",
+        # -------------------------------------------------------------------------------
         "Debug, ": "调试版本, ",
         "Pre-release, ": "预览版本, ",
         "Patched, ": "已修改, ",
@@ -1168,15 +1182,37 @@ DATA: TranslationDataType = [
         "INFOINFERRED, ": "信息已推断, ",   # todo: 存疑
         "Special build, ": "特殊版本, ",
         "Unknown": "未知",
-        "16-bit Presentation Manager": "16 位演示管理器",
-        "32-bit Presentation Manager": "32 位演示管理器",
-        # todo  以下内容可能不需要翻译   line 249
-        #               if (name && value && (
-        #                         PhEqualBytesZ(name, "DisplayName", TRUE) ||
-        #                         PhEqualBytesZ(name, "PublisherDisplayName", TRUE) ||
-        #                         PhEqualBytesZ(name, "Logo", TRUE)
-        #                         ))
-
-    }, []),
+        "16-bit Presentation Manager": "16 位演示管理器",  # todo: 存疑
+        "32-bit Presentation Manager": "32 位演示管理器",  # todo: 存疑
+        "Unknown (0)": "未知 (0)",
+        " on ": " 对于 ", # todo: 存疑
+        "Unknown, ": "未知, ",
+        "Application, ": "应用程序, ",
+        "Driver, ": "驱动程序, ",
+        "Font, ": "字体, ",
+        "Static library, ": "静态库, ",
+        "Signature": "签名",
+        "Struct version": "结构版本",
+        "File version": "文件版本",
+        "Product version": "产品版本",
+        "FileFlagsMask": "文件标志掩码",
+        "FileFlags": "文件标志",
+        "FileOS": "文件 OS",
+        "FileType": "文件类型",
+        "FileSubtype": "文件子类型",
+        "FileDate": "文件日期",
+        # todo 473 StringFileInfo
+        # line 492 if (NT_SUCCESS(PhGetFileVersionVarFileInfoValueZ(
+        #   versionInfo, L"Translation", &codePage, &codePageLength)))
+        # 中的 Translation 疑似敏感词
+    }, [
+        ('PvAddVersionInfoItem(ListViewHandle, &count, 2, L"Translation"', 'PvAddVersionInfoItem(ListViewHandle, &count, 2, L"翻译"'),
+        ('PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 200, L"Name"', 'PhAddListViewColumn(context->ListViewHandle, 1, 1, 1, LVCFMT_LEFT, 200, L"名称"'),
+        ('PhAddListViewColumn(context->ListViewHandle, 2, 2, 2, LVCFMT_LEFT, 250, L"Value"', 'PhAddListViewColumn(context->ListViewHandle, 2, 2, 2, LVCFMT_LEFT, 250, L"值"'),
+        ('PhAddListViewGroup(context->ListViewHandle, 0, L"FixedFileInfo"', 'PhAddListViewGroup(context->ListViewHandle, 0, L"文件信息 (已固定)"'),
+        ('PhAddListViewGroup(context->ListViewHandle, 1, L"StringFileInfo"', 'PhAddListViewGroup(context->ListViewHandle, 1, L"文件信息 (字符串)"'),
+        ('PhAddListViewGroup(context->ListViewHandle, 2, L"VarFileInfo"', 'PhAddListViewGroup(context->ListViewHandle, 2, L"文件信息 (变量)"'),
+        ('PhAddListViewGroup(context->ListViewHandle, 3, L"AppxManifest"', 'PhAddListViewGroup(context->ListViewHandle, 3, L"UWP 程序包清单"'),
+    ]),
     # todo secprp.c and more...
 ]
