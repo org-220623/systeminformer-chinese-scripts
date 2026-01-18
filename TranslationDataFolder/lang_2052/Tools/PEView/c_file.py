@@ -573,6 +573,7 @@ DATA: TranslationDataType = [
         "Maximum extra paragraphs needed": "所需的最大额外段落数",
         "Initial (relative) SS value": "初始（相对）SS 值",
         "Initial SP value": "初始 SP 值",
+        # line 729
     }, []),
-    # todo pechpeprp.c and more...
+    # todo peheaderprp.c and more...
 ]
