@@ -3190,7 +3190,7 @@ DATA: TranslationDataType = [
         "Enabled": "已启用",
         "Disabled / Hyper-V": "已禁用 / Hyper-V",
         "Disabled": "已禁用",
-        "Not capable": "不兼容",
+        "Not capable": "不支持",  # todo 不支持 or 无(额外)功能
         # todo 1987 E-Core
         # todo 1992 P-Core
     }, []),

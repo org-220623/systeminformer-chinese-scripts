@@ -62,6 +62,11 @@ def check_symbols(old: str, new: str):
             print(f"\t新字符串包含中文圆括号："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
+        if old[0] == "(" and old[-1] == ")":
+            if new[0] != "(" or new[-1] != ")":
+                print(f"\t新字符串开头和末尾未遵循原字符串圆括号格式："
+                      f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                      f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
 
 def get_translation_item_total_count(obj_in: TranslationDataType):
     result = 0
