@@ -115,6 +115,6 @@ python main.py --nodebug
 
 ### 许可证
 
-无许可证，想做什么都行。
+MIT
 
 P.S. **金玉其外，败絮其中**
