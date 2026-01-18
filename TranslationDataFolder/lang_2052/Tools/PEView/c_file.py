@@ -83,12 +83,16 @@ DATA: TranslationDataType = [
         "Unable to commit detours transaction.": "无法提交绕行事务。",
     }, []),
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/disimp.c", "utf-8", {
+        # todo 翻译不完整，其中有很多 dprintf 未翻译
         "<ordinal:%llu>": "<序数:%llu>",
         "<unknown>": "<未知>",
         "Call VA": "调用 VA",
         "Target": "目标",
         "String/Ordinal": "字符串/序数",
         "IAT Slot": "IAT 槽",
+        "<invalid>": "无效",
+        "<result of %s>": "<%s 的结果>",
+        "<result of 0x%llx>": "<0x%llx 的结果>",
     }, []),
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/ehcontprp.c", "utf-8", {
         "(unnamed)": "(未命名)",
