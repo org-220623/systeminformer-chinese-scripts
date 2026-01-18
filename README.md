@@ -24,8 +24,7 @@
 1. Gitea (有时推送会失败): https://gitea.com/anonymous9075331734/systeminformer-chinese
 2. GitHub (大陆已被 GFW, 不推荐国内访问): https://github.com/org-220623/systeminformer-chinese-scripts
 3. Gitee (推荐国内访问): https://gitee.com/MICRO201014_admin/systeminformer-chinese
-4. Codeberg (仅存储脚本仓库): https://codeberg.org/anonymous9075331734/systeminformer-chinese-scripts
-5. Jihu GitLab (推荐国内访问): https://jihulab.com/anonymous9075331734/systeminformer-chinese
+4. Jihu GitLab (推荐国内访问): https://jihulab.com/anonymous9075331734/systeminformer-chinese
 
 ### 复刻源码仓库
 
