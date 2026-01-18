@@ -927,5 +927,11 @@ DATA: TranslationDataType = [
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/processes.c", "utf-8", {
         "Name": "名称",
     }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/propstore.c", "utf-8", {
+        "Unknown": "未知",
+        "Name": "名称",
+        "Value": "值",
+        "Description": "描述",
+    }, []),
     # todo peheaderprp.c and more...
 ]
