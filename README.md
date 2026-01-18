@@ -45,7 +45,18 @@
 
 ### todo
 
-- 处理 11 个插件；
+- 处理 11 个插件，顺序：
+   - ExtendedTools
+   - DotNetTools
+   - ExtendedNotifications
+   - ExtendedServices
+   - HardwareDevices
+   - NetworkTools
+   - OnlineChecks
+   - ToolStatus
+   - Updater
+   - UserNotes
+   - WindowExplorer
 - 重审 `actions.c` 的翻译；
 
 ### 已完成的文件
