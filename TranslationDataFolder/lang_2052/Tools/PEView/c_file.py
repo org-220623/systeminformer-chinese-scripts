@@ -1174,6 +1174,10 @@ DATA: TranslationDataType = [
         f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Value": "",
         f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Version": "",
         f"{CONST_STRING_NOT_TRANSLATE_PREFIX}Translation": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}FixedFileInfo": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}StringFileInfo": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}VarFileInfo": "",
+        f"{CONST_STRING_NOT_TRANSLATE_PREFIX}AppxManifest": "",
         # -------------------------------------------------------------------------------
         "Debug, ": "调试版本, ",
         "Pre-release, ": "预览版本, ",
@@ -1214,5 +1218,10 @@ DATA: TranslationDataType = [
         ('PhAddListViewGroup(context->ListViewHandle, 2, L"VarFileInfo"', 'PhAddListViewGroup(context->ListViewHandle, 2, L"文件信息 (变量)"'),
         ('PhAddListViewGroup(context->ListViewHandle, 3, L"AppxManifest"', 'PhAddListViewGroup(context->ListViewHandle, 3, L"UWP 程序包清单"'),
     ]),
-    # todo secprp.c and more...
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/volatileprp.c", "utf-8", {
+        "(unnamed)": "(未命名)",
+        "Symbol": "符号",
+        "Volatile Range Table": "易失性范围表",
+        "Volatile RVA Table": "易失性 RVA 表",
+    }, []),
 ]
