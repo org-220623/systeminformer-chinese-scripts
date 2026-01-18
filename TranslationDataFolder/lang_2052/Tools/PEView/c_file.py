@@ -1084,5 +1084,99 @@ DATA: TranslationDataType = [
         "Count": "计数",
         "Product": "产品",
     }, []),
-    # todo peheaderprp.c and more...
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/secprp.c", "utf-8", {
+        "Name": "名称",
+        "Issuer": "发行方", # todo ??
+        "From": "源",
+        "To": "目标",
+        "Thumbprint": "指纹",
+        "Size": "大小",
+        "Algorithm": "算法",
+        "Image": "映像",
+        "Chained": "链式",
+        "Nested": "嵌套",
+        "%s (%s ago)": "%s (%s 以前)",
+        "Size: %s (Certs: %s)": "大小: %s (证书: %s)",
+        "Search Certificates (Ctrl+K)": "搜索证书 (Ctrl+K)",
+        "View certificate...": "查看证书...",
+        "Save certificate...": "保存证书...",
+        "Copy": "复制",
+    }, [
+        ('PhAddTreeNewColumn(Context->TreeNewHandle, PV_CERTIFICATE_TREE_COLUMN_NAME_TYPE, TRUE, L"Type"', 'PhAddTreeNewColumn(Context->TreeNewHandle, PV_CERTIFICATE_TREE_COLUMN_NAME_TYPE, TRUE, L"类型"'),
+    ]),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/settings.c", "utf-8", {
+        "PE View's settings file is corrupt. Do you want to reset it?": "PE View 的设置文件已损坏。是否要重置?",
+        "If you select No, the settings system will not function properly.": r"如果选择 \"否\"，设置系统将无法正常工作。",
+    }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/streams.c", "utf-8", {
+        "Readonly, ": "只读, ",
+        "Hidden, ": "隐藏, ",
+        "Directory, ": "目录, ",
+        "Archive, ": "存档, ",
+        "Device, ": "设备, ",
+        "Normal, ": "正常, ",
+        "Temporary, ": "临时, ",
+        "Sparse, ": "稀疏, ",
+        "Reparse point, ": "重分析点, ",  # todo 重分析点 or 重解析点
+        #  详见 NTFS.sys 和 Windows Internals Part 2 打包的应用程序 和 NTFS 文件系统 对应章节
+        "Compressed, ": "已压缩, ",
+        "Offline, ": "离线, ",
+        "Not indexed, ": "未索引, ",
+        "Encrypted, ": "已加密, ",
+        "Integiry, ": "完整性",  # todo 疑似拼写错误
+        "Integrity, ": "完整性",
+        "Virtual, ": "虚拟, ",
+        "No scrub, ": "未清理, ",
+        "Extended attributes, ": "扩展属性, ",
+        "Pinned, ": "已固定, ",
+        "Unpinned, ": "未固定, ",
+        "Recall on opened, ": "打开时重调用, ",  # todo 什么意思？ ”重调用“ or "回传"？
+        "Recall on data, ": "数据重调用, ",
+        "System, ": "系统, ",
+        "Name": "名称",
+        "Size": "大小",
+        "Attributes": "属性",
+        "&Copy": "复制(&C)",
+    }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/strings.c", "utf-8", {
+        "There are no strings to display.": "没有要显示的字符串。",
+        "Loading strings from image...": "正在从映像加载字符串...",
+        "Length": "长度",
+        "String": "字符串",
+        "Invalid minimum length": "无效的最小长度",
+        "Search Strings (Ctrl+K)": "搜索字符串 (Ctrl+K)",
+        "Copy": "复制",
+        "Extended character set": "扩展字符集",
+        "Skip .text section": "跳过 .text 节区",
+        "Skip high entropy sections": "跳过高熵节区",
+        "Minimum length...": "最小长度...",
+        "Refresh": "刷新",
+    }, [
+        ('PhAddTreeNewColumnEx2(TreeNewHandle, PV_STRINGS_TREE_COLUMN_ITEM_SECTION, TRUE, L"Section"', 'PhAddTreeNewColumnEx2(TreeNewHandle, PV_STRINGS_TREE_COLUMN_ITEM_SECTION, TRUE, L"节区"'),
+        ('PhAddTreeNewColumnEx2(TreeNewHandle, PV_STRINGS_TREE_COLUMN_ITEM_TYPE, TRUE, L"Type"', 'PhAddTreeNewColumnEx2(TreeNewHandle, PV_STRINGS_TREE_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
+    ]),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/tlsprp.c", "utf-8", {
+        "Symbol": "符号",
+    }, []),
+    (f"{CONST_PATH_PEVIEW_TOOL_SRC}/versioninfoprp.c", "utf-8", {
+        # todo: warning:
+        #  严重警告：该文件中的 “name” ""
+        "Debug, ": "调试版本, ",
+        "Pre-release, ": "预览版本, ",
+        "Patched, ": "已修改, ",
+        "Private build, ": "私有构建, ",
+        "INFOINFERRED, ": "信息已推断, ",   # todo: 存疑
+        "Special build, ": "特殊版本, ",
+        "Unknown": "未知",
+        "16-bit Presentation Manager": "16 位演示管理器",
+        "32-bit Presentation Manager": "32 位演示管理器",
+        # todo  以下内容可能不需要翻译   line 249
+        #               if (name && value && (
+        #                         PhEqualBytesZ(name, "DisplayName", TRUE) ||
+        #                         PhEqualBytesZ(name, "PublisherDisplayName", TRUE) ||
+        #                         PhEqualBytesZ(name, "Logo", TRUE)
+        #                         ))
+
+    }, []),
+    # todo secprp.c and more...
 ]
