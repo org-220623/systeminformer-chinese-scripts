@@ -13,26 +13,8 @@
 
 ## 说明
 
-本项目因工程量太大，作者随时可能放弃维护并存档，想坚持到底的欢迎 Fork。
-
-## 远程仓库信息
-
-备注：脚本仓库完全独立于 System Informer 源码仓库，本人复刻的源码仓库仅用来跟踪上游更新。
-
-### 脚本仓库
-
-1. Gitea (有时推送会失败): https://gitea.com/anonymous9075331734/systeminformer-chinese
-2. GitHub (大陆已被 GFW, 不推荐国内访问): https://github.com/org-220623/systeminformer-chinese-scripts
-3. Gitee (推荐国内访问): https://gitee.com/MICRO201014_admin/systeminformer-chinese
-4. Jihu GitLab (推荐国内访问): https://jihulab.com/anonymous9075331734/systeminformer-chinese
-
-### 复刻源码仓库
-
-备注：复刻源码仓库中的子模块为 GitLab 仓库，但本人使用的香港代理节点导致 GitLab 账户将于 2026 年 3 月删除，因此本人不再维护 GitLab 中的所有仓库。
-
-1. GitHub (用于同步): https://github.com/org-220623/systeminformer-chinese
-2. Gitee (镜像): https://gitee.com/MICRO201014_admin/systeminformer-chinese-mirror
-3. Gitea (镜像，有时推送会失败): https://gitea.com/anonymous9075331734/systeminformer-chinese-src
+1. 本项目因工程量太大，作者随时可能放弃维护并存档，想坚持到底的欢迎 Fork。
+2. 脚本仓库完全独立于 System Informer 源码仓库，本人复刻的源码仓库仅用来跟踪上游更新。
 
 ## 进度信息
 
