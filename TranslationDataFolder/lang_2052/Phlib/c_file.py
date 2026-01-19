@@ -62,7 +62,7 @@ DATA: TranslationDataType = [
         "Has SEH, ": "有 SEH, ",
         "Has SecurityChecks, ": "有安全检查, ",
         "Has CFG, ": "有 CFG, ",
-        "Has exception handler (0x%p), ": "有异常头 (0x%p), ",
+        "Has exception handler (0x%p), ": "有异常处理程序 (0x%p), ",
         "OptimizedForSpeed, ": "已针对速度优化, ",
     }, []),
     # secdata.c 已完成

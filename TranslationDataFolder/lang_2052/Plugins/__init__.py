@@ -14,15 +14,5 @@ ToolStatus,
 )
 
 DATA: TranslationDataType = (
-    DotNetTools.DATA +
-    ExtendedTools.DATA +
-    ExtendedServices.DATA +
-    ExtendedNotifications.DATA +
-    WindowsExplorer.DATA +
-    NetworkTools.DATA +
-    Updater.DATA +
-    UserNotes.DATA +
-    OnlineChecks.DATA +
-    HardwareDevices.DATA +
-    ToolStatus.DATA
+    ExtendedTools.DATA
 )

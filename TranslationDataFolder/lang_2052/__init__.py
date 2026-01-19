@@ -4,5 +4,5 @@ DATA = (
     Phlib.DATA
     + SystemInformer.DATA
     + Tools.DATA
-    # + Plugins.DATA
+    + Plugins.DATA
 )
