@@ -115,7 +115,7 @@
 ```bash
 git clone https://github.com/winsiderss/systeminformer.git
 cd systeminformer
-git clone https://gitlab.com/anonymous9075331734/systeminformer-chinese
+git clone https://gitee.com/MICRO201014_admin/systeminformer-chinese
 cd systeminformer-chinese
 python main.py --nodebug
 ```
