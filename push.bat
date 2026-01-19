@@ -1,6 +1,5 @@
 git add .
 git commit -m "update data"
-git push gitee --force
 git push origin
 cd ..
 git add .i18n
