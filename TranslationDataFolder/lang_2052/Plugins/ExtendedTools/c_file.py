@@ -342,6 +342,12 @@ DATA: TranslationDataType = [
         "&Go to process...": "转到进程(&G)...",
         "&Go to thread...": "转到线程(&G)...",
         "&Open file location": "打开文件所在位置(&O)",
+        "Sh&ow drive volume": "显示驱动器卷(&O)",
+        "&Security\bCtrl+Enter": "安全(&S)\bCtrl+Enter",
+        "Copy Object &Address\bCtrl+Shift+C": "复制对象地址(&A)\bCtrl+Shift+C",
+        "Copy &Full Name\bCtrl+Alt+C": "复制全名(&F)\bCtrl+Alt+C",
+        "&Copy\bCtrl+C": "复制(&C)\bCtrl+C",
+        "Unable to create the window.": "无法创建窗口。",
     }, [
         ('sectionType = L"File"', 'sectionType = L"文件"'),
         ('PhAddListViewColumn(context->ListViewHandle, ETOBLVC_TYPE, ETOBLVC_TYPE, ETOBLVC_TYPE, LVCFMT_LEFT, 150, L"Type"',
