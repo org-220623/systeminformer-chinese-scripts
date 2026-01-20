@@ -772,7 +772,7 @@ DATA: TranslationDataType = [
         "Normal, ": "正常, ",
         "Temporary, ": "临时, ",
         "Sparse, ": "稀疏, ",
-        "Reparse point, ": "重分析点, ",   # todo 重分析点 or 重解析点
+        "Reparse point, ": "重解析点, ",
                                         #  详见 NTFS.sys 和 Windows Internals Part 2 打包的应用程序 和 NTFS 文件系统 对应章节
         "Compressed, ": "已压缩, ",
         "Offline, ": "离线, ",
@@ -1117,7 +1117,7 @@ DATA: TranslationDataType = [
         "Normal, ": "正常, ",
         "Temporary, ": "临时, ",
         "Sparse, ": "稀疏, ",
-        "Reparse point, ": "重分析点, ",  # todo 重分析点 or 重解析点
+        "Reparse point, ": "重解析点, ",
         #  详见 NTFS.sys 和 Windows Internals Part 2 打包的应用程序 和 NTFS 文件系统 对应章节
         "Compressed, ": "已压缩, ",
         "Offline, ": "离线, ",
