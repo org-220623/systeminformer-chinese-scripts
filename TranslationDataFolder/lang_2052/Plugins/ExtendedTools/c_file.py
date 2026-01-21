@@ -630,6 +630,13 @@ DATA: TranslationDataType = [
         "Handles": "句柄", # todo or 把手
         "Low-profile desktop": "低型台式机",
         "Pizza box": "Pizza Box", # todo
+        "None": "无",
+        "Locked out": "已锁出",
+        "Enabled": "已启用",
+        "Chassis": "机箱",
+        "Safe": "安全",
+        "Warning": "警告",
+        "Portable": "便携式",
         # Line 562
     }, [
         ('SIP(L"Device"', 'SIP(L"设备"'),
@@ -637,5 +644,7 @@ DATA: TranslationDataType = [
         ('ET_SMBIOS_UINT32IX(L"Handle"', 'ET_SMBIOS_UINT32IX(L"句柄"'),
         ('ET_SMBIOS_GROUP(L"System"', 'ET_SMBIOS_GROUP(L"系统"'),
         ('SIP(L"Desktop"', 'SIP(L"台式机"'),
+        ('ET_SMBIOS_ENUM(L"Type"', 'ET_SMBIOS_ENUM(L"类型"'),
+        ('ET_SMBIOS_BOOLEAN(L"Locked"', 'ET_SMBIOS_BOOLEAN(L"锁定"'),
     ]),
 ]
