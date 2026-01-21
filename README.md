@@ -27,15 +27,15 @@
 
 ### todo
 
-- 处理 11 个插件，顺序：
-   - ExtendedTools
+- 处理 11 个插件：
+   - ExtendedTools (正在进行)
    - DotNetTools
    - ExtendedNotifications
    - ExtendedServices
    - HardwareDevices
    - NetworkTools
    - OnlineChecks
-   - ToolStatus
+   - ToolStatus (正在进行)
    - Updater
    - UserNotes
    - WindowExplorer
