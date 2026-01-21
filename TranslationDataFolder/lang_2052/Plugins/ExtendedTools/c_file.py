@@ -609,7 +609,29 @@ DATA: TranslationDataType = [
         "Removable": "可移除",
         "Replaceable": "可更换",
         "Hot swappable": "可热插拔",
-        # Line 475
+        "Server blade": "服务器主板",
+        "Connectivity switch": "连接交换机",  # todo or 连接开关
+        "System management module": "系统管理模块",
+        "Processor module": "处理器模块",
+        "I/O module": "I/O 模块",
+        "Memory module": "内存模块",
+        "Daughter board": "子板",
+        "Motherboard": "母板",
+        "Processor memory module": "处理器内存模块",
+        "Processor I/O module": "处理器 I/O 模块",
+        "Interconnect": "互连",
+        "Baseboard": "基板",
+        "Product": "产品",
+        "Asset tag": "资产标签",
+        "Features": "功能",
+        "Location": "位置",
+        "Chassis handle": "机箱把手",
+        "Board type": "主板类型",
+        "Handles": "句柄", # todo or 把手
+        "Desktop": "台式机",
+        "Low-profile desktop": "低型台式机",
+        "Pizza box": "Pizza Box", # todo
+        # Line 562
     }, [
         ('SIP(L"Device"', 'SIP(L"设备"'),
         ('SIP(L"Partition"', 'SIP(L"分区"'),
