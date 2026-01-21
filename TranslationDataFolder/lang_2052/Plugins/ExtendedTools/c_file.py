@@ -628,7 +628,6 @@ DATA: TranslationDataType = [
         "Chassis handle": "机箱把手",
         "Board type": "主板类型",
         "Handles": "句柄", # todo or 把手
-        "Desktop": "台式机",
         "Low-profile desktop": "低型台式机",
         "Pizza box": "Pizza Box", # todo
         # Line 562
@@ -637,5 +636,6 @@ DATA: TranslationDataType = [
         ('SIP(L"Partition"', 'SIP(L"分区"'),
         ('ET_SMBIOS_UINT32IX(L"Handle"', 'ET_SMBIOS_UINT32IX(L"句柄"'),
         ('ET_SMBIOS_GROUP(L"System"', 'ET_SMBIOS_GROUP(L"系统"'),
+        ('SIP(L"Desktop"', 'SIP(L"台式机"'),
     ]),
 ]
