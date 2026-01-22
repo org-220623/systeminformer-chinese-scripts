@@ -787,7 +787,19 @@ DATA: TranslationDataType = [
         "Error correction type": "纠错类型",
         "System cache type": "系统缓存类型",
         "Associativity": "关联性",
-        # Line 1311 - 3989
+        "Mini centronics": "迷你 centronics",
+        "Proprietary": "专有",
+        "DB-25 pin male": "DB-25 公头针脚",
+        "DB-25 pin female": "DB-25 母头针脚",
+        "DB-15 pin male": "DB-15 公头针脚",
+        "DB-15 pin female": "DB-15 母头针脚",
+        "DB-9 pin male": "DB-9 公头针脚",
+        "DB-9 pin female": "DB-9 母头针脚",
+        "50-pin miniSCSI": "50 针 miniSCSI",
+        "Mini-DIN": "迷你 DIN",
+        "Micro-DIN": "微型 DIN",
+        "Infrared": "红外线",
+        # Line 1333 - 3989
     }, [
         ('SIP(L"Device"', 'SIP(L"设备"'),
         ('SIP(L"Partition"', 'SIP(L"分区"'),
