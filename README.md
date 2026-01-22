@@ -35,7 +35,7 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
    - HardwareDevices
    - NetworkTools
    - OnlineChecks
-   - ToolStatus (正在进行)
+   - ToolStatus
    - Updater
    - UserNotes
    - WindowExplorer
