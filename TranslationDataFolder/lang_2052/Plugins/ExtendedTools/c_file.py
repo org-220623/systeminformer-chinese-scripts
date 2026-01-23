@@ -1108,7 +1108,18 @@ DATA: TranslationDataType = [
         "32-bit": "32 位",
         "16-bit": "16 位",
         "Successive": "连续",
-        # Line 1480 - 3315
+        "Granularity": "粒度",
+        "Vendor syndrome": "厂商综合特征",
+        "Threshold handle": "阈值处理",
+        "Management device threshold": "管理设备阈值",
+        "Lower threshold non-critical": "非关键低阈值",
+        "Upper threshold non-critical": "非关键高阈值",
+        "Lower threshold critical": "关键低阈值",
+        "Upper threshold critical": "关键高阈值",
+        "Lower threshold non-recoverable": "不可恢复低阈值",
+        "Upper threshold non-recoverable": "不可恢复高阈值",
+        "System boot": "系统引导",
+        # Line 1480 - 3162
     }, [
         ('SIP(L"Device"', 'SIP(L"设备"'),
         ('SIP(L"Partition"', 'SIP(L"分区"'),
