@@ -28,14 +28,14 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
 ### todo
 
 - 处理 11 个插件：
-   - ExtendedTools (正在进行)
+   - ExtendedTools (已完成)
    - DotNetTools
    - ExtendedNotifications
    - ExtendedServices
    - HardwareDevices
    - NetworkTools
    - OnlineChecks
-   - ToolStatus
+   - ToolStatus (已完成)
    - Updater
    - UserNotes
    - WindowExplorer

@@ -2806,7 +2806,7 @@ DATA: TranslationDataType = [
         "No Signature": "未签名",
         "Expired": "已过期",
         "Revoked": "已撤销",
-        "Trusted": "已信任",
+        "Trusted": "受信任",
         "Bad": "损坏",
         "Text files (*.txt;*.log)": "文本文件 (*.txt;*.log)",
         "Comma-separated values (*.csv)": "CSV 文件 (*.csv)",
