@@ -1092,7 +1092,7 @@ DATA: TranslationDataType = [
         "Battery": "电池",
         "Switching": "切换",
         "Linear": "线性",
-        "Wide range": "广泛",
+        "Wide range": "宽范围",
         "Auto-switch": "自动切换",
         "Manual": "手动",
         "Register spacing": "寄存器间距",
