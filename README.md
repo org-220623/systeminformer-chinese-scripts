@@ -28,17 +28,17 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
 ### todo
 
 - 处理 11 个插件：
-   - ExtendedTools (已完成)
+   - HardwareDevices
+   - WindowExplorer
    - DotNetTools
    - ExtendedNotifications
    - ExtendedServices
-   - HardwareDevices
    - NetworkTools
    - OnlineChecks
-   - ToolStatus (已完成)
    - Updater
    - UserNotes
-   - WindowExplorer
+   - ExtendedTools (已完成)
+   - ToolStatus (已完成)
 - 重审 `actions.c` 的翻译；
 
 ### 已完成的文件
