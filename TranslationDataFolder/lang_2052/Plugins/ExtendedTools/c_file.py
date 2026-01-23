@@ -1084,7 +1084,7 @@ DATA: TranslationDataType = [
     }, [
         ('SIP(L"Device"', 'SIP(L"设备"'),
         ('SIP(L"Partition"', 'SIP(L"分区"'),
-        ('ET_SMBIOS_UINT32IX(L"Handle"', 'ET_SMBIOS_UINT32IX(L"处理"'),
+        ('ET_SMBIOS_UINT32IX(L"Handle"', 'ET_SMBIOS_UINT32IX(L"句柄"'),
         ('ET_SMBIOS_GROUP(L"System"', 'ET_SMBIOS_GROUP(L"系统"'),
         ('SIP(L"Desktop"', 'SIP(L"台式机"'),
         ('ET_SMBIOS_ENUM(L"Type"', 'ET_SMBIOS_ENUM(L"类型"'),
