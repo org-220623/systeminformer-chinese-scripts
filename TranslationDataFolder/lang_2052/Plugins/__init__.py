@@ -15,5 +15,6 @@ from . import (
 
 DATA: TranslationDataType = (
     ExtendedTools.DATA +
-    ToolStatus.DATA
+    ToolStatus.DATA +
+    HardwareDevices.DATA
 )

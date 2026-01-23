@@ -989,7 +989,7 @@ DATA: TranslationDataType = [
         "Make sure the Explorer executable file is present.": "请确保资源管理器可执行文件存在。",
         "Unable to open the file location.": "无法打开文件所在位置。",
         "The object is unnamed.": "对象未命名。",
-        "Unable to open key.": "无法打开键。",
+        "Unable to open key.": "无法打开注册表键。",
         "Unable to show the process properties.": "无法显示进程属性。",
         "The process does not exist.": "进程不存在。",
         "Unable to map a view of the section.": "无法映射节区视图。",
