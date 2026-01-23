@@ -97,7 +97,7 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
 ```bash
 git clone https://github.com/winsiderss/systeminformer.git
 cd systeminformer
-git clone https://gitee.com/MICRO201014_admin/systeminformer-chinese
+git clone https://github.com/org-220623/systeminformer-chinese-scripts.git .i18n
 cd systeminformer-chinese
 python main.py --nodebug
 ```
