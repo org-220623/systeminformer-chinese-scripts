@@ -27,7 +27,7 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
 
 ### todo
 
-- 处理 11 个插件：
+- 处理 11 个插件中未完成的 9 个：
    - HardwareDevices
    - WindowExplorer
    - DotNetTools
