@@ -196,6 +196,7 @@ DATA: TranslationDataType = [
         "Package documentation": "程序包文档",
         "Package icon": "程序包图标",
         "Package branding icon": "程序包品牌图标",
+        "GPU physical adapter index": "GPU 物理适配器索引",
         # Line 1198
     }, [
         ('PhDevicePropertyDriver, L"Driver"', 'PhDevicePropertyDriver, L"驱动程序"'),
