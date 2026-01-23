@@ -141,7 +141,7 @@ DATA: TranslationDataType = [
         "Crypto": "加密",
         "Video Codec": "视频编解码",
         "ERROR (%lu)": "错误 (%lu)",
-        # waitchain.c todo
-        # wswatch.c todo
     }, []),
+    # waitchain.c todo
+    # wswatch.c todo
 ]
