@@ -29,11 +29,11 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
 
 - 处理 11 个插件中未完成的 9 个：
    - HardwareDevices
-   - WindowExplorer
    - DotNetTools
+   - NetworkTools
+   - WindowExplorer
    - ExtendedNotifications
    - ExtendedServices
-   - NetworkTools
    - OnlineChecks
    - Updater
    - UserNotes
