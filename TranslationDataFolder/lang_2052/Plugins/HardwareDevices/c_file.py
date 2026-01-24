@@ -247,7 +247,14 @@ DATA: TranslationDataType = [
         "Container local machine": "容器: 本机",
         "Container metadata path": "容器: 元数据路径",
         "Container metadata search in progress": "容器: 正在进行元数据搜索",
-        # Line 1230
+        "Container not interesting for display": "容器: 不用于显示",
+        "Container launch on connect": "容器: 连接时启动",
+        "Container launch from explorer": "容器: 从资源管理器启动",
+        "Container baseline experience ID": "容器: 基线体验 ID",
+        "Container uniquely identifiable": "容器: 唯一标识符",
+        "Container association": "容器: 关联",
+        "Container description": "容器: 描述",
+        # Line 1252
     }, [
         ('PhDevicePropertyDriver, L"Driver"', 'PhDevicePropertyDriver, L"驱动程序"'),
         ('PhDevicePropertyDevType, L"Type"', 'PhDevicePropertyDevType, L"类型"'),
