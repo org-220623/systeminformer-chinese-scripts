@@ -678,7 +678,15 @@ DATA: TranslationDataType = [
         "Load friction count": "负载摩擦次数",
         "Load/unload cycle count": "加载/卸载循环次数",
         "Load in time": "加载时间",
-        # Line 1087 - 1130
+        "Torque amplification count": "扭矩放大次数",
+        "Power off retract cycle": "断电回抽周期",
+        "GMR head amplitude": "GMR 磁头振幅",
+        "Drive temperature": "驱动器温度",
+        "Endurance remaining": "剩余耐久度",
+        "SSD media wearout indicator": "SSD 介质损耗指示器",
+        "SSD erase count": "SSD 擦除次数",
+        "Good block count and system(free) block count": "有效块数和系统 (空闲) 块数",
+        # Line 1102 - 1130
     }, []),
     # todo powergraph.c and after
 ]
