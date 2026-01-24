@@ -537,7 +537,6 @@ DATA: TranslationDataType = [
         "Native802_15_": "原生 802.15_",
     }, []),
     (f"{CONST_PATH_PLUGIN_HARDWAREDEVICES}/netdetails.c", "utf-8", {
-        "Adapter": "适配器",
         "Unicast": "单播",
         "Broadcast": "广播",
         "Multicast": "多播",
@@ -578,7 +577,10 @@ DATA: TranslationDataType = [
         "Value": "值",
         "&Copy": "复制(&C)",
         "Unable to create the window.": "无法创建窗口。",
-    }, []),
+    }, [
+        ('PhAddListViewGroup(ListViewHandle, NETADAPTER_DETAILS_CATEGORY_ADAPTER, L"Adapter"',
+         'PhAddListViewGroup(ListViewHandle, NETADAPTER_DETAILS_CATEGORY_ADAPTER, L"适配器"'),
+    ]),
     (f"{CONST_PATH_PLUGIN_HARDWAREDEVICES}/netgraph.c", "utf-8", {
         "Disconnected": "已断开连接",
         "Listening": "正在监听",
