@@ -238,18 +238,19 @@ DATA: TranslationDataType = [
         "Container encrypted": "容器: 已加密",
         "Container authenticated": "容器: 已认证",
         "Container connected": "容器: 已连接",
-        "Container paired": "Container 已配对",
-        "Container icon": "Container 图标",
-        "Container version": "Container 版本",
-        "Container last seen": "Container 最后出现于",
-        "Container last connected": "Container 最后连接于",
-        "Container show in disconnected state": "Container 显示为断开连接状态",
-        "Container local machine": "Container 本机",
-        "Container metadata path": "Container 元数据路径",
+        "Container paired": "容器: 已配对",
+        "Container icon": "容器: 图标",
+        "Container version": "容器: 版本",
+        "Container last seen": "容器: 最后出现于",
+        "Container last connected": "容器: 最后连接于",
+        "Container show in disconnected state": "容器: 显示为断开连接状态",
+        "Container local machine": "容器: 本机",
+        "Container metadata path": "容器: 元数据路径",
+        "Container metadata search in progress": "容器: 正在进行元数据搜索",
         # Line 1230
     }, [
         ('PhDevicePropertyDriver, L"Driver"', 'PhDevicePropertyDriver, L"驱动程序"'),
         ('PhDevicePropertyDevType, L"Type"', 'PhDevicePropertyDevType, L"类型"'),
-        ('')
+        ('PhDevicePropertyContainerIsMetadataChecksum, L"Metadata checksum"', 'PhDevicePropertyContainerIsMetadataChecksum, L"容器: 元数据校验和"'),
     ]),
 ]
