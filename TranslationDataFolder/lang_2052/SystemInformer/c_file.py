@@ -1348,7 +1348,7 @@ DATA: TranslationDataType = [
         "System &information\bCtrl+I": "系统信息(&I)\bCtrl+I",
         "&Tray icons": "托盘图标(&T)",
         "<section placeholder>": "<节占位符>",
-        "&Always on top": "窗口置顶(&A)",
+        "&Always on top": "始终置顶(&A)",
         "&Opacity": "透明度(&O)",
         "&Opaque": "不透明(&O)",
         "&Refresh\bF5": "刷新(&R)\bF5",

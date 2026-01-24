@@ -1,4 +1,5 @@
 from Config.const_values import CONST_PATH_PLUGIN_DOTNETTOOLS
+from Config.global_dict import GLOBAL_DICT
 from Config.static_data_type import TranslationDataType
 
 DATA: TranslationDataType = [
@@ -133,5 +134,9 @@ DATA: TranslationDataType = [
     }, []),
     (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/treeext.c", "utf-8", {
         "AppDomain": "应用程序域",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/version.rc", "utf-8", {
+        "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
+            GLOBAL_DICT["Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved."],
     }, []),
 ]

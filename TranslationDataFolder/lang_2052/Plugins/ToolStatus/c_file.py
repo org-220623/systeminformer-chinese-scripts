@@ -130,7 +130,7 @@ DATA: TranslationDataType = [
         "Find window": "查找窗口",
         "Find window and thread": "查找窗口和线程",
         "Find window and kill": "查找窗口并关闭",
-        "Always on top": "置于顶层",
+        "Always on top": "始终置顶",
         "Computer": "计算机",
         "Show details for all processes": "显示所有进程详细信息",
         "ERROR": "错误",

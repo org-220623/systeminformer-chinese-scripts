@@ -18,5 +18,6 @@ DATA: TranslationDataType = (
     ToolStatus.DATA +
     HardwareDevices.DATA +
     NetworkTools.DATA +
-    DotNetTools.DATA
+    DotNetTools.DATA +
+    WindowsExplorer.DATA
 )
