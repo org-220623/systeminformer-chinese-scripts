@@ -27,7 +27,7 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 7 个：
+- 处理 11 个插件中未完成的 6 个：
    - WindowExplorer
    - ExtendedNotifications
    - ExtendedServices
