@@ -397,6 +397,9 @@ DATA: TranslationDataType = [
         ('"Driver WS",IDC_STATIC,120,61,33,8', '"Driver WS",IDC_STATIC,120,61,45,8'),
         ('"Bad",IDC_STATIC,7,60,13,8', '"Bad",IDC_STATIC,7,60,20,8'),
         ('"Uptime",IDC_STATIC,7,58,23,8', '"Uptime",IDC_STATIC,7,58,35,8'),
+        ('"Title:",IDC_STATIC,7,8,17,8', '"Title:",IDC_STATIC,7,8,27,8'),
+        ('"Text:",IDC_STATIC,7,24,18,8', '"Text:",IDC_STATIC,7,24,28,8'),
+        ('"Icon:",IDC_STATIC,7,107,18,8', '"Icon:",IDC_STATIC,7,107,28,8'),
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/version.rc", "utf-8-sig", {
         "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
