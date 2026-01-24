@@ -628,7 +628,9 @@ DATA: TranslationDataType = [
         "Current helium level": "当前 Helium 等级",
         "Helium condition lower": "Helium 条件下限",
         "Helium condition upper": "Helium 条件上限",
-        # Line 987
+        "Unknown": "未知",
+        "NAND writes": "NAND 写入",
+        # Line 987 - 1130
     }, []),
     # todo powergraph.c and after
 ]
