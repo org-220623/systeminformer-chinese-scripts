@@ -27,8 +27,7 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 8 个：
-   - NetworkTools
+- 处理 11 个插件中未完成的 7 个：
    - DotNetTools
    - WindowExplorer
    - ExtendedNotifications
@@ -38,6 +37,7 @@
    - UserNotes
    - ExtendedTools (已完成)
    - HardwareDevices (已完成)
+   - NetworkTools (已完成)
    - ToolStatus (已完成)
 - 重审 `actions.c` 的翻译；
 - 持续跟踪并完成 GitHub Issue 中的任务。
