@@ -254,7 +254,17 @@ DATA: TranslationDataType = [
         "Container uniquely identifiable": "容器: 唯一标识符",
         "Container association": "容器: 关联",
         "Container description": "容器: 描述",
-        # Line 1252
+        "Container description other": "容器: 描述其他",
+        "Container has problem": "容器: 出现问题",
+        "Container shared device": "容器: 共享设备",
+        "Container network device": "容器: 网络设备",
+        "Container default device": "容器: 默认设备",
+        "Container metadata cabinet": "容器: 元数据柜",
+        "Container requires pairing elevation": "容器: 需要配对提升",
+        "Container experience ID": "容器: 体验 ID",
+        "Container category": "容器: 类别",
+        "Container category description": "容器: 类别描述",
+        # Line 1262
     }, [
         ('PhDevicePropertyDriver, L"Driver"', 'PhDevicePropertyDriver, L"驱动程序"'),
         ('PhDevicePropertyDevType, L"Type"', 'PhDevicePropertyDevType, L"类型"'),
