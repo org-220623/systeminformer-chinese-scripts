@@ -699,7 +699,6 @@ DATA: TranslationDataType = [
         "Minimum spares remaining": "剩余最小备用容量",
         "Newly added bad flash block": "新增坏闪存块",
         "Free fall protection": "自由落体保护",
-        # Line 1102 - 1130
     }, []),
     # todo powergraph.c and after
 ]

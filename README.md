@@ -28,7 +28,6 @@
 ### todo
 
 - 处理 11 个插件中未完成的 9 个：
-   - HardwareDevices
    - DotNetTools
    - NetworkTools
    - WindowExplorer
@@ -38,6 +37,7 @@
    - Updater
    - UserNotes
    - ExtendedTools (已完成)
+   - HardwareDevices (已完成)
    - ToolStatus (已完成)
 - 重审 `actions.c` 的翻译；
 - 持续跟踪并完成 GitHub Issue 中的任务。
