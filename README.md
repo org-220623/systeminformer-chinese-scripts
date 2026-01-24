@@ -40,6 +40,7 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
    - ExtendedTools (已完成)
    - ToolStatus (已完成)
 - 重审 `actions.c` 的翻译；
+- 持续跟踪并完成 GitHub Issue 中的任务。
 
 ### 已完成的文件
 
@@ -80,7 +81,7 @@ a7166e5ca1c7a2926625447a472a51da1be31fc3
 
 ### 汉化脚本项目依赖
 
-- Python 3.*（建议使用 3.10 及以上版本）
+- Python 3.*（建议使用 3.12 及以上版本）
 
 ## 用法
 
