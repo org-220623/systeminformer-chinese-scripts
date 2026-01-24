@@ -282,7 +282,19 @@ DATA: TranslationDataType = [
         "PCI current speed and mode":                "PCI: 当前速度和模式",
         "PCI base class":                            "PCI: 基类",
         "PCI sub class":                             "PCI: 子类",
-        # Line 1287
+        "Refresh": "刷新",
+        "Refresh automatically": "自动刷新",
+        "Show disconnected devices": "显示已断开连接设备",
+        "Show software components": "显示软件组件",
+        "Show device interfaces": "显示设备接口",
+        "Show disabled device interfaces": "显示已禁用设备接口",
+        "Sort child devices": "显示子设备",
+        "Sort root devices": "显示根设备",
+        "Highlight upper filtered": "高亮显示上层筛选器",
+        "Highlight lower filtered": "高亮显示下层筛选器",
+        "Collapse all": "全部收起",
+        "Expand all": "全部展开",
+        # Line 1287 - 1314
     }, [
         ('PhDevicePropertyDriver, L"Driver"', 'PhDevicePropertyDriver, L"驱动程序"'),
         ('PhDevicePropertyDevType, L"Type"', 'PhDevicePropertyDevType, L"类型"'),
