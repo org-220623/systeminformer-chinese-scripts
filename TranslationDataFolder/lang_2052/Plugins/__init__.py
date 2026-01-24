@@ -17,5 +17,6 @@ DATA: TranslationDataType = (
     ExtendedTools.DATA +
     ToolStatus.DATA +
     HardwareDevices.DATA +
-    NetworkTools.DATA
+    NetworkTools.DATA +
+    DotNetTools.DATA
 )
