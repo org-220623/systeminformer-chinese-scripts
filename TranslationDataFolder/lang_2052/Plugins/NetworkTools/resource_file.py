@@ -23,6 +23,21 @@ DATA: TranslationDataType = [
         "Refresh": "刷新",
         "Save": "保存",
         "Cancel": "取消",
-        # Line 85
+        "Pinging X with X bytes of data:": "正在 Ping X 具有 X 字节的数据:",
+        "PingGraphLayout": "Ping 图表布局",
+        "Ping statistics": "Ping 统计信息",
+        "Average: 0.00 ms": "平均延迟: 0.00 ms",
+        "Pings sent: 0": "已发送: 0",
+        "Bad replies: 0": "无效回复: 0",
+        "Minimum: 0.00 ms": "最小值: 0.00 ms",
+        "Pings lost: 0 (0%)": "丢失: 0 (0%)",
+        "Anon replies: 0": "匿名回复: 0",
+        "Maximum: 0.00 ms": "最大值: 0.00 ms",
+        "Deviation: 0.00 ms": "偏差: 0.00 ms",
+        "Tracing route to xyz...": "正在追踪到 xyz 的路由...",
+        "Update MaxMind License Key": "更新 MaxMind 许可证密钥",
+        "Paste the license key below:": "在下方粘贴许可证密钥:",
+        r'Checkout <a href=""https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key"">How-to-generate-a-license-key</a>':
+            r'查看 <a href=""https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key"">如何生成许可证密钥</a>'
     }, []),
 ]
