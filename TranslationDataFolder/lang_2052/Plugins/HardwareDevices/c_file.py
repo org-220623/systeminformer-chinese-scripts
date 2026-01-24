@@ -221,7 +221,16 @@ DATA: TranslationDataType = [
         "PCI current speed and mode": "PCI: 当前速度和模式",
         "PCI base class": "PCI: 基类",
         "PCI sub class": "PCI: 子类",
-        # Line 1219
+        "Interface friendly name": "接口: 显示名称",
+        "Interface enabled": "接口: 已启用",
+        "Interface class GUID": "接口: 类 GUID",
+        "Interface reference": "接口: 引用",
+        "Interface restricted": "接口: 限制",
+        "Interface unrestricted application capabilities": "接口: 不受限制的应用程序功能",
+        "Interface schematic name": "接口: 原图名称",
+        "Interface class default interface": "接口: 类默认接口",
+        "Interface class name": "接口: 类名称",
+        # Line 1230
     }, [
         ('PhDevicePropertyDriver, L"Driver"', 'PhDevicePropertyDriver, L"驱动程序"'),
         ('PhDevicePropertyDevType, L"Type"', 'PhDevicePropertyDevType, L"类型"'),
