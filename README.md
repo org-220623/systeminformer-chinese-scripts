@@ -27,7 +27,7 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 9 个：
+- 处理 11 个插件中未完成的 8 个：
    - DotNetTools
    - NetworkTools
    - WindowExplorer
