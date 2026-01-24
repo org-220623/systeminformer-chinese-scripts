@@ -419,7 +419,15 @@ DATA: TranslationDataType = [
         "Percentage used": "已用百分比",
         "Data read": "读取数据",
         "Data written": "写入数据",
-        
-        # Line 38 - 244
+        "Host read commands": "主机读取命令",
+        "Host write commands": "主机写入命令",
+        "Controller busy time": "控制器繁忙时间",
+        "Power cycles": "电源循环次数",
+        "Power on hours": "通电时间",
+        "Unsafe shutdowns": "不安全关机次数",
+        "Media and data integrity errors": "介质和数据完整性错误",
+        "Error information log entries": "错误信息日志条目",
+        "Warning composite temperature time": "警告复合温度时间",
+        "Critical composite temperature time": "关键复合温度时间",
     }, []),
 ]
