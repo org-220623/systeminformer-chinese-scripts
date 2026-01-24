@@ -62,7 +62,11 @@ DATA: TranslationDataType = [
         "Toolbar": "工具栏",
         "Toolbar and Status Bar": "工具栏和状态栏",
         "Adds a Toolbar, Status Bar and Search box.": "添加工具栏、状态栏和搜索框。",
-    }, []),
+    }, [
+        ('''optionsEntry->CreateSection(
+        L"ToolStatus"''', '''optionsEntry->CreateSection(
+        L"工具栏和状态栏"'''),
+    ]),
     (f"{CONST_PATH_PLUGIN_TOOLSTATUS}/options.c", "utf-8", {
         "None": "无",
         "CPU usage": "CPU 用量",

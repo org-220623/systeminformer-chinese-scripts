@@ -28,8 +28,8 @@
 ### todo
 
 - 处理 11 个插件中未完成的 8 个：
-   - DotNetTools
    - NetworkTools
+   - DotNetTools
    - WindowExplorer
    - ExtendedNotifications
    - ExtendedServices

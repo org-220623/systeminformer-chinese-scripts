@@ -240,7 +240,11 @@ DATA: TranslationDataType = [
         "Send bytes delta": "发送字节增量",
         "Extended Tools": "扩展工具",  # info->DisplayName
         "Extended functionality for Windows 7 and above, including ETW, GPU, Disk and Firewall monitoring tabs.": "Windows 7 及更高版本扩展功能，包括 ETW、GPU、磁盘和防火墙监控选项卡。",
-    }, []),
+    }, [
+        ('''optionsEntry->CreateSection(
+            L"ExtendedTools"''', '''optionsEntry->CreateSection(
+            L"扩展工具"'''),
+    ]),
     (f"{CONST_PATH_PLUGIN_EXTENDEDTOOLS}/modsrv.c", "utf-8", {
         "Unable to query module references.": "无法查询模块引用。",
         "This module was not referenced by a service.": "此模块未被任何服务引用。",
