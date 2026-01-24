@@ -19,7 +19,7 @@
 ## 进度信息
 
 1. 提示：`static_assert` 提示信息一律不处理。
-2. 本项目仅处理 `SystemInformer/*`、`tools/*` 和 `plugins/*` 下的内容，`kphlib/*`、`phlib/*` 和 `KSystemInformer/*` 下的内容未计划处理。
+2. 本项目仅处理 `SystemInformer/*`、`tools/*` 和 `plugins/*` 下的内容，以及 `phlib/*` 下与 UI 有关的内容，`kphlib/*` 和 `KSystemInformer/*` 下的内容未计划处理。
 
 ### 跟踪情况
 
