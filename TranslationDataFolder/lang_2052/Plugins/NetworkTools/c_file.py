@@ -28,7 +28,6 @@ DATA: TranslationDataType = [
         "Geoip database not found.": "未找到 GeoIP 数据库。",
         "Network Tools": "网络工具",
         "Provides ping, traceroute and whois for network connections.": "提供网络连接的 Ping、跟踪路由和 Whois 查询。",
-        # Line 452
     }, [
         ('''optionsEntry->CreateSection(
         L"NetworkTools"''', '''optionsEntry->CreateSection(
