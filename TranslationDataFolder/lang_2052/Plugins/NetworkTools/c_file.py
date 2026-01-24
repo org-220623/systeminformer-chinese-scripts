@@ -21,6 +21,13 @@ DATA: TranslationDataType = [
         "Remote service": "远程服务",
         "Total bytes in": "入站字节总计",
         "Total bytes out": "出站字节总计",
+        "Packet loss": "丢包",
+        "Jitter (ms)": "抖动 (毫秒)",
+        "Latency (ms)": "延迟 (毫秒)",
+        "Extended TCP statistics are disabled": "扩展 TCP 统计信息已禁用",
+        "Geoip database not found.": "未找到 GeoIP 数据库。",
+        "Network Tools": "网络工具",
+        "Provides ping, traceroute and whois for network connections.": "提供网络连接的 Ping、跟踪路由和 Whois 查询。",
         # Line 452
     }, [
         ('''optionsEntry->CreateSection(
