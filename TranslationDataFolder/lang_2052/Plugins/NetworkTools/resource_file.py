@@ -19,6 +19,10 @@ DATA: TranslationDataType = [
         "MaxMind GeoLite License Key:": "MaxMind GeoLite 许可证密钥:",
         "Download update": "下载更新",
         "GeoLite Update": "GeoLite 更新",
+        "Close": "关闭",
+        "Refresh": "刷新",
+        "Save": "保存",
+        "Cancel": "取消",
         # Line 85
     }, []),
 ]
