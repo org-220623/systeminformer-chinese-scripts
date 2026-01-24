@@ -110,7 +110,7 @@ DATA: TranslationDataType = [
         "Send bytes delta": "发送字节增量",
         "Total bytes delta": "总字节增量",
         "Firewall status": "防火墙状态",
-        "Receive rate": "接受速率",
+        "Receive rate": "接收速率",
         "Send rate": "发送速率",
         "Total rate": "总速率",
         "Unknown": "未知",
