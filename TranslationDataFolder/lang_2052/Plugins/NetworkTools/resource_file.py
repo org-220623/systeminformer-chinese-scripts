@@ -34,7 +34,7 @@ DATA: TranslationDataType = [
         "Anon replies: 0": "匿名回复: 0",
         "Maximum: 0.00 ms": "最大值: 0.00 ms",
         "Deviation: 0.00 ms": "偏差: 0.00 ms",
-        "Tracing route to xyz...": "正在追踪到 xyz 的路由...",
+        "Tracing route to xyz...": "正在跟踪路由 xyz...",
         "Update MaxMind License Key": "更新 MaxMind 许可证密钥",
         "Paste the license key below:": "在下方粘贴许可证密钥:",
         r'Checkout <a href=""https://support.maxmind.com/hc/en-us/articles/4407111582235-Generate-a-License-Key"">How-to-generate-a-license-key</a>':
