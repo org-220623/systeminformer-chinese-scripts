@@ -630,7 +630,22 @@ DATA: TranslationDataType = [
         "Helium condition upper": "Helium 条件上限",
         "Unknown": "未知",
         "NAND writes": "NAND 写入",
-        # Line 987 - 1130
+        "Available reserved space": "可用预留空间",
+        "SSD program fail count": "SSD 程序失败次数",
+        "SSD erase fail count": "SSD 擦除失败次数",
+        "SSD wear leveling count": "SSD 磨损均衡次数",
+        "Unexpected power loss": "意外断电",
+        "Power loss protection failure": "断电保护失效",
+        "Erase fail count": "擦除故障次数",
+        "Wear range delta": "磨损范围增量",
+        "Used reserved block count": "已用保留块数",
+        "Used reserved block total": "已用保留块总数",
+        "Unused reserved block total": "未使用保留块总数",
+        "SSD program fail count total": "SSD 程序故障总数",
+        "Erase fail count (Samsung)": "擦除失败次数 (三星)",
+        "SATA downshift error count": "SATA 降级错误次数",
+        "End to end error": "端到端错误",
+        # Line 1017 - 1130
     }, []),
     # todo powergraph.c and after
 ]
