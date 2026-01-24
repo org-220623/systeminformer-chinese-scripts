@@ -596,5 +596,39 @@ DATA: TranslationDataType = [
         "Connected": "已连接",
         "Closing": "正在关闭",
     }, []),
+    (f"{CONST_PATH_PLUGIN_HARDWAREDEVICES}/powergraph.c", "utf-8", {
+        "Unknown": "未知",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_HARDWAREDEVICES}/poweroptions.c", "utf-8", {
+        "Unknown device": "未知设备",
+        "RAPL Drives": "RAPL 驱动器",
+        "Disconnected": "已断开连接",
+        "Listening": "正在监听",
+        "Connected": "已连接",
+        "Closing": "正在关闭",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_HARDWAREDEVICES}/prpsh.c", "utf-8", {
+        "Options": "选项",
+        "Close": "关闭",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_HARDWAREDEVICES}/storage.c", "utf-8", {
+        "Read error rate": "读取错误率",
+        "Throughput performance": "吞吐量性能",
+        "Spin up time": "启动时间",
+        "Start stop count": "启动/停止次数",
+        "Reallocated sensors count": "重新分配传感器计数",
+        "Read channel margin": "读取通道裕量",
+        "Seek error rate": "寻道错误率",
+        "Seek time performance": "寻道时间性能",
+        "Power on hours": "通电时间",
+        "Spin retry count": "自旋重试次数",
+        "Calibration retry count": "校准重试次数",
+        "Power cycle count": "电源循环次数",
+        "Soft read error rate": "软读取错误率",
+        "Current helium level": "当前 Helium 等级",
+        "Helium condition lower": "Helium 条件下限",
+        "Helium condition upper": "Helium 条件上限",
+        # Line 987
+    }, []),
     # todo powergraph.c and after
 ]
