@@ -138,7 +138,7 @@ DATA: TranslationDataType = [
         "Resolving....": "正在解析...",
         "Make sure the PE Viewer executable file is present.": "请确保 PE Viewer 可执行文件存在。",
         "&Ping": "Ping(&P)",
-        "&Traceroute": "路由跟踪(&T)",
+        "&Traceroute": "跟踪路由(&T)",
         "&Whois": "Whois(&W)",   # https://zh.wikipedia.org/wiki/WHOIS
         "Open &file location\bEnter": "打开文件所在位置(&F)\bEnter",
         "&Inspect": "检查(&I)",
