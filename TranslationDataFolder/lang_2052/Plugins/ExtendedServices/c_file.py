@@ -71,5 +71,37 @@ DATA: TranslationDataType = [
         "Attempting to stop %s...": "正在尝试停止 %s...",
         "Attempting to start %s...": "正在尝试启动 %s...",
     }, []),
-    # svcpnp.c and later
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/svcpnp.c", "utf-8", {
+        "Failed to change the device state.": "更改设备状态失败。",
+        "Failed to restart the device.": "重启设备失败。",
+        "Failed to uninstall the device.": "卸载设备失败。",
+        "Failed to locate the device.": "无法找到设备。",
+        "Enable": "启用",
+        "Disable": "禁用",
+        "Restart": "重新启动",
+        "Uninstall": "卸载",
+        "Open key": "转到注册表键",
+        "Hardware": "硬件",
+        "Software": "软件",
+        "User": "用户",
+        "Config": "配置信息",
+        "Properties": "属性",
+        "PnP Devices": "PnP 设备",
+        "Connected": "已连接",
+        "Disconnected": "已断开连接",
+        "This service has registered the following PnP devices:": "此服务已注册以下即插即用设备:",
+        "This service type doesn't support PnP devices.": "此服务类型不支持即插即用 (PnP) 设备。",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/trigger.c", "utf-8", {
+        "Device interface arrival": "设备接口到达",
+        "IP address availability": "IP 地址可用性",
+        "Domain join": "加入域",
+        "Firewall port event": "防火墙端口事件",
+        "Group policy": "组策略",
+        "Network endpoint": "网络端点",
+        "Custom system state change": "自定义系统状态更改",
+        "Custom": "自定义",
+        # Line 89
+    }, []),
+    # trigger.c and later
 ]
