@@ -946,7 +946,7 @@ DATA: TranslationDataType = [
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/hidnproc.c", "utf-8", {
         "%u zombie process(es), %u terminated process(es).": "%u 个僵尸进程, %u 个已终止进程。",
-        "Brute force": "暴力破解",
+        "Brute force": "强制扫描",
         "CSR handles": "CSR 句柄",
         "ETW handles": "ETW 句柄",
         "Process handles": "进程句柄",
@@ -959,7 +959,7 @@ DATA: TranslationDataType = [
         "All files (*.*)": "所有文件 (*.*)",
         "Zombie Processes.txt": "僵尸进程.txt",
         "Method: ": "方法: ",
-        "Brute Force\r\n": "暴力破解\r\n",
+        "Brute Force\r\n": "强制扫描\r\n",
         "CSR Handles\r\n": "CSR 句柄\r\n",
         "Zombie: %u\r\nTerminated: %u\r\n\r\n": "僵尸进程: %u\r\n已结束进程: %u\r\n\r\n",
         "[Zombie] ": "[僵尸进程] ",
