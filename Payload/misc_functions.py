@@ -43,7 +43,8 @@ def check_symbols(old: str, new: str):
             print(f"\t新字符串末尾未使用英文冒号："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
-        # {
+        # -----------------------------------------------------------------------------------------------
+        # 换行问题
         if old[-1] == "\n" and new [-1] != "\n":
             print(f"\t新字符串末尾未换行："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
@@ -53,7 +54,7 @@ def check_symbols(old: str, new: str):
             print(f"\t新字符串末尾未使用 CR+LF 换行符："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
-        # }
+        # -----------------------------------------------------------------------------------------------
         if old[len(old) - 3:] == "..." and new[len(new) - 3:] != "...":
             print(f"\t新字符串末尾未使用英文省略号："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
