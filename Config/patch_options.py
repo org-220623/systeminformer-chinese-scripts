@@ -1,3 +1,3 @@
 from Config.static_data_type import TranslateDotNetCounters
 
-OPTIONS_TRANSLATE_DOTNET_COUNTERS: TranslateDotNetCounters = TranslateDotNetCounters.FullTranslate
+OPTIONS_TRANSLATE_DOTNET_COUNTERS: TranslateDotNetCounters = TranslateDotNetCounters.PartialTranslateAddHeader

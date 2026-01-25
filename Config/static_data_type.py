@@ -12,4 +12,5 @@ class TranslateDotNetCounters(Enum):
     AddHeader = 1
     FullTranslate = 2
     PartialTranslate = 3
+    PartialTranslateAddHeader = 4
 # ----------------------------------------------------------------------------------
