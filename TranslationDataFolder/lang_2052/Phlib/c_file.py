@@ -33,11 +33,7 @@ DATA: TranslationDataType = [
         "milliseconds": "毫秒",
         "a very short time": "非常短的时间",
         "Unable to execute the program.": "无法执行程序。", 
-        # Line 3201
-        # -----------------------------------------------------
-        # Line 5917 The location could not be found.
-        "The location could not be found.": "无法找到位置。", 
-        # -----------------------------------------------------
+        "The location could not be found.": "无法找到位置。",
     }, []),
     # searchbox.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/searchbox.c", "utf-8", {
