@@ -100,6 +100,10 @@ DATA: TranslationDataType = [
     }, []),
 ]
 
+########################################################################################################
+# .NET 计数器翻译选项处理数据和代码
+# 针对的文件：`{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c`
+# ------------------------------------------------------------------------------------------------------
 # 非特殊格式名称（不带 # 或 %）计数器翻译
 if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate or
     OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.PartialTranslate or
@@ -135,7 +139,7 @@ if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate o
         "Channels": "频道",
         "Contexts": "上下文",
     }, []))
-
+# ------------------------------------------------------------------------------------------------------
 # 特殊格式名称计数器翻译
 # 最好不要选择 TranslateDotNetCounters.FullTranslate 选项，虽然看着顺眼，但是会丢失很多信息。
 if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
@@ -173,7 +177,7 @@ if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
         "# Link Time Checks": "链接时检查次数",
         "% Time in RT checks": "运行时检查时间占比",
     }, []))
-
+# ------------------------------------------------------------------------------------------------------
 # 对一般格式的计数器添加头部信息而不翻译, 仅 TranslateDotNetCounters.AddHeader 启用时可用。
 if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader:
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
@@ -207,7 +211,7 @@ if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader:
         "Channels": "计数器: Channels",
         "Contexts": "计数器: Contexts",
     }, []))
-
+# ------------------------------------------------------------------------------------------------------
 # 对特殊格式的计数器添加头部信息而不翻译, 在 AddHeader 和 PartialTranslateAddHeader 启用时都可用。
 if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader or
         OPTIONS_TRANSLATE_DOTNET_COUNTERS.PartialTranslateAddHeader):
@@ -245,3 +249,4 @@ if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader or
         "# Link Time Checks": "计数器: # Link Time Checks",
         "% Time in RT checks": "计数器: % Time in RT checks",
     }, []))
+########################################################################################################
