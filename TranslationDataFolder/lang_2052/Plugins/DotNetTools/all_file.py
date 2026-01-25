@@ -135,7 +135,20 @@ if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate o
             "Total Bytes Allocated (since start)": "已分配总字节数 (从启动)",
         }, []))
 # 特殊格式名称计数器翻译
+# 最好不要选择 TranslateDotNetCounters.FullTranslate 选项，虽然看着顺眼，但是会丢失很多信息。
 if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
         "# Gen 0 Collections": "第 0 代垃圾回收",
+        "# Gen 1 Collections": "第 1 代垃圾回收",
+        "# Gen 2 Collections": "第 2 代垃圾回收",
+        "# GC Handles": "垃圾回收句柄",
+        "# Induced GC": "GC.Collect 垃圾回收峰值",
+        "% Time in GC": "垃圾回收时间百分比",
+        "# Bytes in all Heaps": "所有堆字节总计",
+        "# Total Committed Bytes": "已提交字节总计",
+        "# Total Reserved Bytes": "已保留字节总计",
+        "# of Pinned Objects": "已固定对象数量",
+        "# of Sink Blocks in use": "正在使用同步块数量",
+        "# of Exceptions Thrown": "抛出的异常数量",
+        "# of Filters Executed": "执行的筛选器数量"
     }, []))
