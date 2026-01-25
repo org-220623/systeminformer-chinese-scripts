@@ -46,8 +46,6 @@
 
 #### 主程序 (`SystemInformer/*`) (已初步完成，挂起)
 
-- `SystemInformer/log.c` 计划处理，挂起
-- `SystemInformer/ksidbg.c` 计划处理，挂起
 - `phsvc/*` (暂时没有要处理的条目)
 - `sdk/*` (暂时没有要处理的条目)
 - 中间已处理的文件已省略...
