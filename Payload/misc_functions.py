@@ -67,7 +67,7 @@ def check_symbols(old: str, new: str):
                 print(f"\t新字符串开头和末尾未遵循原字符串圆括号格式："
                       f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                       f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
-        if old[-1] == "." and new[-1] == "." and old[:len(old) - 3] == "...":
+        if old[-1] == "." and new[-1] == "." and old[:len(old) - 3] != "...":
             print(f"\t新字符串未翻译中文句号："
                   f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
