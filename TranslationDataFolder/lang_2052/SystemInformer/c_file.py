@@ -293,26 +293,26 @@ DATA: TranslationDataType = [
             L"virtualization for the process",
             L"Enabling or disabling virtualization for a process may "
             L"alter its functionality and produce undesirable effects."''',
-            '''L"为进程",
-            L"启用虚拟化",
+            '''L"设置",
+            L"进程虚拟化选项",
             L"为进程启用或禁用虚拟化可能"
             L"改变其功能并产生不良影响。"'''
         ), ('''L"enable",
                 L"critical status on the process",
                 L"If the process ends, the operating system will shut down immediately."''',
-            '''L"为该进程",
-                L"启用关键状态",
+            '''L"启用",
+                L"进程关键状态",
                 L"如果此类进程结束，操作系统将立即关闭。"'''
         ), ('''L"disable",
                 L"critical status on the process"''',
-            '''L"为该进程",
-                L"禁用关键状态"'''
+            '''L"禁用",
+                L"进程关键状态"'''
         ), (
             '''L"enable",
                     L"Eco mode for this process",
                     L"Eco mode will lower process priority and improve power efficiency but may cause instability in some processes."''',
-            '''L"为该进程",
-                    L"启用节能模式",
+            '''L"启用",
+                    L"进程节能模式",
                     L"节能模式会降低进程优先级并提高电源效率，但可能会导致某些进程不稳定。"'''
         ), (
             '''L"change the execution required state",
