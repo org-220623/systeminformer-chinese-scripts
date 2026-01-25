@@ -21,5 +21,6 @@ DATA: TranslationDataType = (
     DotNetTools.DATA +
     WindowsExplorer.DATA +
     ExtendedNotifications.DATA +
-    ExtendedServices.DATA
+    ExtendedServices.DATA +
+    Updater.DATA
 )
