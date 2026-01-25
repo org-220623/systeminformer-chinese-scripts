@@ -20,10 +20,10 @@
 
 - 处理 11 个插件中未完成的 3 个：
    - OnlineChecks
-   - Updater
    - UserNotes
    - ExtendedTools (已完成)
    - HardwareDevices (已完成)
+   - Updater (已完成)
    - ExtendedServices (已完成)
    - ExtendedNotifications (已完成)
    - WindowExplorer (已完成)

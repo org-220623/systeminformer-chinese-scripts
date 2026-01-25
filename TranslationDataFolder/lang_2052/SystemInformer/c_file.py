@@ -19,7 +19,7 @@ DATA: TranslationDataType = [
         "The 32-bit version of System Informer could not be located.":
             "找不到 32 位版本的 System Informer。", 
         "A 64-bit dump will be created instead. Do you want to continue?":
-            "将改为创建 64 位转储文件。是否继续？", 
+            "将改为创建 64 位转储文件。是否继续?",
         "Unable to create kernel minidump.": 
             "无法创建内核小型转储文件。", 
         "Kernel minidump of processes require administrative privileges. ": 
@@ -780,7 +780,7 @@ DATA: TranslationDataType = [
             "由于系统上的句柄总数过大，无法搜索句柄。",
         "Please check if there are any processes with an extremely large number of handles open.":
             "请检查是否存在打开句柄数量异常庞大的进程。",
-        "Unable to create the window.": "无法创建窗口。"
+        "Unable to create the window.": "无法创建窗口。",
     },
                                                                     [
         (
