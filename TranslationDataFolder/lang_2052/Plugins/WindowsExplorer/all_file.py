@@ -125,7 +125,20 @@ DATA: TranslationDataType = [
         "Extended styles": "扩展风格",
         "Monitor": "显示器",
         "Top level": "顶部等级",
-        # Line 1358 - 1387
+        "Window procedure": "窗口过程",
+        "Window extra bytes": "窗口扩展字节",
+        "Menu name": "菜单名称",
+        "Background brush": "背景画刷",
+        "Cursor handle": "光标句柄",
+        "Small icon handle": "小图标句柄",
+        "Large icon handle": "大图标句柄",
+        "Band": "波段",
+        "Cloaked": "已隐藏",
+        "DPI Context": "DPI 上下文",
+        "Automation server": "自动化服务器",
+        "Dialog control ID": "对话框控制 ID",
+        "Dialog procedure": "对话框过程",
+        "Window message-only": "仅窗口消息",
     }, [
         ('''case ZBID_DESKTOP:
                 string = L"Desktop"''', '''case ZBID_DESKTOP:
