@@ -86,8 +86,8 @@
 ```bash
 git clone https://github.com/winsiderss/systeminformer.git
 cd systeminformer
-git clone https://github.com/org-220623/systeminformer-chinese-scripts.git .i18n
-cd .i18n
+git clone https://github.com/org-220623/systeminformer-chinese-scripts.git chs_l10n
+cd chs_l10n
 python main.py --nodebug
 ```
 
