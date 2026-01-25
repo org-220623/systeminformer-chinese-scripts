@@ -409,7 +409,7 @@ DATA: TranslationDataType = [
             'PhpShowErrorThread(WindowHandle, L"为以下线程更改优先级: ", Threads[i], status, 0)'
         ), (
             'PhpShowErrorThread(WindowHandle, L"set the priority of", Thread, status, 0)',
-            'PhpShowErrorThread(WindowHandle, L"为以下线程设置优先级", Thread, status, 0)'
+            'PhpShowErrorThread(WindowHandle, L"为以下线程设置优先级: ", Thread, status, 0)'
         ), (
             '''L". Make sure System Informer is running with "
                     L"administrative privileges."''',
