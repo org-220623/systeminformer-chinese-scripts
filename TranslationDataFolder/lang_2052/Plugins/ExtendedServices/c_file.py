@@ -165,5 +165,9 @@ DATA: TranslationDataType = [
         r"The trigger type \"%s\" does not allow data items to be configured.": r"触发器类型 \"%s\" 不允许配置数据项。",
         "If you continue, they will be removed.": "如果继续，这些依赖项将被移除。",
     }, []),
-    # trigger.c and later
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/triggpg.c", "utf-8", {
+        "Unable to query service trigger information.": "无法查询服务触发器信息。",
+        "Unknown error.": "未知错误。",
+        "Unable to change service trigger information.": "无法更改服务触发信息。",
+    }, []),
 ]
