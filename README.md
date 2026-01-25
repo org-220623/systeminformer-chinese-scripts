@@ -27,14 +27,14 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 5 个：
-   - ExtendedNotifications
+- 处理 11 个插件中未完成的 4 个：
    - ExtendedServices
    - OnlineChecks
    - Updater
    - UserNotes
    - ExtendedTools (已完成)
    - HardwareDevices (已完成)
+   - ExtendedNotifications (已完成)
    - WindowExplorer (已完成)
    - DotNetTools (已完成)
    - NetworkTools (已完成)
