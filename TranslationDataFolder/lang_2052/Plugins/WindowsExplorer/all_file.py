@@ -115,7 +115,17 @@ DATA: TranslationDataType = [
         "Unable to add window property.": "无法添加窗口属性。",
         "The property name is empty.": "属性名称为空。",
         "Property Editor": "属性编辑器",
-        # Line 1349 - 1387
+        "Rectangle": "矩形",
+        "Normal rectangle": "普通矩形",
+        "Client rectangle": "客户端矩形",
+        "Menu handle": "菜单句柄",
+        "User data": "用户数据",
+        "Window text": "窗口文本",
+        "Window handle": "窗口句柄",
+        "Extended styles": "扩展风格",
+        "Monitor": "显示器",
+        "Top level": "顶部等级",
+        # Line 1358 - 1387
     }, [
         ('''case ZBID_DESKTOP:
                 string = L"Desktop"''', '''case ZBID_DESKTOP:
