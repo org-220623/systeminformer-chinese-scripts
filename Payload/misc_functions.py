@@ -8,6 +8,7 @@ from Config.static_data_type import TranslationDataType
 
 # noinspection PyUnusedLocal
 def do_nothing_x(x0):
+    """什么也不做？那写这个函数干啥？？"""
     ...
 
 def pre_format_string(string: str):
