@@ -110,7 +110,10 @@ DATA: TranslationDataType = [
         "Domain: Leave": "域: 离开",
         "Domain: Unknown": "域: 未知",
         "Firewall port": "防火墙端口",
-        # Line 99
+        "Firewall port: Open": "防火墙端口: 打开",
+        "Firewall port: Close": "防火墙端口: 关闭",
+        "Firewall port: Unknown": "防火墙端口: 未知",
+        # Line 102
     }, []),
     # trigger.c and later
 ]
