@@ -86,21 +86,6 @@ DATA: TranslationDataType = [
         ".NET CLR Memory": ".NET CLR 内存",
         ".NET CLR Remoting": ".NET CLR 远程",
         ".NET CLR Security": ".NET CLR 安全性",
-        # -------------------------------------------------------------------------
-
-        # ------------------------------------------------------------------
-        # 特殊格式计数器
-        # "# Gen 0 Collections": "0 代垃圾回收",
-        # "# Gen 1 Collections": "1 代垃圾回收",
-        # "# Gen 2 Collections": "2 代垃圾回收",
-        # "Total # of Load Failures": "加载失败类总计",
-        # "Total # of Contentions": "托管锁竞争条件总计",
-        # "# GC Handles": "GC 句柄",
-        # "# Induced GC": "诱导 GC",
-        # "% Time in GC": "GC 时间百分比",
-        # ------------------------------------------------------------------
-        # Line 265 - 579
-        # ------------------------------------------------------------------
         "&Copy": "复制(&C)",
         "Counter": "计数器",
         "Value": "值",
@@ -119,8 +104,7 @@ DATA: TranslationDataType = [
 
 if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate or
         OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.PartialTranslate):
-    DATA.append(
-        (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
+    DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
             "Promoted Memory from Gen 0": "0 代提升内存",
             "Promoted Memory from Gen 1": "1 代提升内存",
             "Promoted Finalization-Memory from Gen 0": "0 代终结内存提升",
@@ -148,5 +132,4 @@ if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate o
             "Jit Failures": "JIT 失败计数",
             "Total Bytes Allocated for Large Objects (since start)": "大型对象分配总字节数 (从启动)",
             "Total Bytes Allocated (since start)": "已分配总字节数 (从启动)",
-        }, [])
-    )
+        }, []))
