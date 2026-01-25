@@ -39,7 +39,6 @@
    - DotNetTools (已完成)
    - NetworkTools (已完成)
    - ToolStatus (已完成)
-- 重审 `actions.c` 的翻译；
 - 持续跟踪并完成 GitHub Issue 中的任务。
 
 ### 已完成的文件
