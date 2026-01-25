@@ -389,6 +389,8 @@ DATA: TranslationDataType = [
         ('CAPTION "Semaphore"', 'CAPTION "信号量"'),
         ('CAPTION "Timer"', 'CAPTION "计时器"'),
         ('"Section",IDC_SECTION', '"节区",IDC_SECTION'),
+        # -------------------------------------------------------------------------------------------------------
+        # 调整文本位置和宽高，而非翻译文本的条目
         ('"Limit",IDC_STATIC,7,31,15,8', '"Limit",IDC_STATIC,7,31,18,8'), # len("限制") * height
         ('"Limit",IDC_STATIC,7,78,15,8', '"Limit",IDC_STATIC,7,78,18,8'),
         ('"Limit",IDC_STATIC,7,135,15,8', '"Limit",IDC_STATIC,7,135,18,8'),
@@ -405,6 +407,7 @@ DATA: TranslationDataType = [
         ('"User:",IDC_TOKENUSER,7,7,18,8', '"User:",IDC_TOKENUSER,7,7,26,8'),
         ('"User:",IDC_STATIC,15,19,18,8', '"User:",IDC_STATIC,15,19,26,8'),
         ('"Peak job usage",IDC_STATIC,15,151,52,8', '"Peak job usage",IDC_STATIC,15,151,58,8'),
+        # -------------------------------------------------------------------------------------------------------
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/version.rc", "utf-8-sig", {
         "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
