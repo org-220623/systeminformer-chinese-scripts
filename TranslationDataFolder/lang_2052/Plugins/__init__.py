@@ -23,5 +23,6 @@ DATA: TranslationDataType = (
     ExtendedNotifications.DATA +
     ExtendedServices.DATA +
     Updater.DATA +
-    OnlineChecks.DATA
+    OnlineChecks.DATA +
+    UserNotes.DATA
 )

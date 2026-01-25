@@ -30,7 +30,7 @@ DATA: TranslationDataType = [
         "Enable GPU/NPU fahrenheit temperature": "启用 GPU/NPU 华氏温度",
         "Enable FPS monitoring": "启用 FPS 监控",
         r'Note: FPS monitoring requires either administrative privileges or the current user a member of the ""Performance Log Users"" group.':
-            r'注意：FPS 监控需要管理员权限，或者当前用户必须是 ""性能日志用户"" 组的成员。',
+            r'注意: FPS 监控需要管理员权限，或者当前用户必须是 ""性能日志用户"" 组的成员。',
         "WS Watch": "工作集监视",
         "Working set watch allows you to monitor page faults that occur in a process. You must enable WS watch for the process to start the monitoring. Once WS watch is enabled, it cannot be disabled.":
             "工作集监视允许您监控进程中发生的页面错误。您必须为进程启用工作集监视才能开始监控。工作集监视一旦启用，便无法禁用。",
