@@ -9,12 +9,12 @@
 1. https://github.com/winsiderss/systeminformer/issues/302
 2. https://github.com/winsiderss/systeminformer/issues/1219
 3. https://github.com/winsiderss/systeminformer/issues/1301
-4. AND AND AND MORE
+4. 还有更多...
 
 ## 说明
 
 1. 本项目因工程量太大，作者随时可能放弃维护并存档，想坚持到底的欢迎 Fork。
-2. 脚本仓库完全独立于 System Informer 源码仓库，本人复刻的源码仓库仅用来跟踪上游更新。
+2. 脚本仓库完全独立于 System Informer 源码仓库，本人复刻的源码仓库仅用来跟踪上游更新和测试构建，你可以在本人复刻的源码仓库中找到很多 `test/************` 分支。
 
 ## 进度信息
 
