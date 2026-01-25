@@ -5,6 +5,8 @@ from Config.const_values import (
 )
 from Config.static_data_type import TranslationDataType
 
+
+# noinspection PyUnusedLocal
 def do_nothing_x(x0):
     ...
 
