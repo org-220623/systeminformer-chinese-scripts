@@ -174,7 +174,7 @@ DATA: TranslationDataType = [
         "Attempting to ": "正在尝试",
         " Are you sure you want to continue?": "您确定要继续吗?",
         "Initializing...": "初始化中...",
-        "Unable to %s %s.": "无法%s %s.",
+        "Unable to %s %s.": "无法%s %s。",
         "Unable to start ": "无法启动 ",
         "Unable to continue ": "无法继续运行 ",
         "Unable to pause ": "无法挂起 ",

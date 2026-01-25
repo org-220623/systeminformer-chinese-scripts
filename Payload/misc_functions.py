@@ -68,9 +68,10 @@ def check_symbols(old: str, new: str):
                       f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                       f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
         if old[-1] == "." and new[-1] == "." and old[len(old) - 3:] != "...":
-            print(f"\t新字符串未翻译中文句号："
-                  f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
-                  f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
+            if old.strip() != "Copyright (c) Winsider Seminars && Solutions, Inc.":
+                print(f"\t新字符串未翻译中文句号："
+                      f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
+                      f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
 
 def get_translation_item_total_count(obj_in: TranslationDataType):
     result = 0
