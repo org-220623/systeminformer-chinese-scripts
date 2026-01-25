@@ -150,5 +150,17 @@ if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
         "# of Pinned Objects": "已固定对象数量",
         "# of Sink Blocks in use": "正在使用同步块数量",
         "# of Exceptions Thrown": "抛出的异常数量",
-        "# of Filters Executed": "执行的筛选器数量"
+        "# of Filters Executed": "执行的筛选器数量",
+        "# of Finallys Executed": "执行的 Finally 操作数量",
+        "# of CCWs": "COM 可调用包装器数量",
+        "# of Stubs": "存根数量",
+        "# of Marshalling": "编组数量",
+        "# of TLB imports / sec": "每秒 TLB 导入次数",
+        "# of TLB exports / sec": "每秒 TLB 导出次数",
+        "# of Methods Jitted": "已即时编译方法数量",
+        "# of IL Bytes Jitted": "已即时编译 IL 字节数",
+        "Total # of IL Bytes Jitted": "已即时编译 IL 字节数总计",
+        "% Time in Jit": "即时编译时间百分比",
+        "Total # of Load Failures": "加载失败总计",
+        "Total # of Contentions": "竞争条件总计",
     }, []))

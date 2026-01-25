@@ -99,7 +99,7 @@ DATA: TranslationDataType = [
         "Sends": "发送",
         "Send bytes": "发送字节",
         "Handles": "句柄",
-        "Total handles found:": "找到句柄总数:",
+        "Total handles found:": "找到句柄总计:",
         "By address:": "通过地址:",
         "By name:": "通过名称:",
         "Desktops": "桌面",

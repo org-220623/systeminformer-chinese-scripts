@@ -105,7 +105,7 @@ DATA: TranslationDataType = [
         "Release": "释放",
         "Statistics": "统计数据",
         "Active processes": "活动进程数",
-        "Total processes": "进程总数",
+        "Total processes": "进程总计",
         "Terminated due to job limits": "因作业限制已终止",
         "Time": "时间",
         "User time": "用户时间",
