@@ -148,4 +148,12 @@ DATA: TranslationDataType = [
         ('PhAddListViewGroupItem(ListViewHandle, WINDOW_PROPERTIES_CATEGORY_GENERAL, WINDOW_PROPERTIES_INDEX_THREAD, L"Thread"',
          'PhAddListViewGroupItem(ListViewHandle, WINDOW_PROPERTIES_CATEGORY_GENERAL, WINDOW_PROPERTIES_INDEX_THREAD, L"线程"'),
     ]),
+    (f"{CONST_PATH_PLUGIN_WINDOWSEXPLORER}/wndtree.c", "utf-8", {
+        "Class": "名称",
+        "Text": "文本",
+        "Module": "模块",
+    }, [
+        ('PhAddTreeNewColumn(TreeNewHandle, WEWNTLC_HANDLE, TRUE, L"Handle"', 'PhAddTreeNewColumn(TreeNewHandle, WEWNTLC_HANDLE, TRUE, L"句柄"'),
+        ('PhAddTreeNewColumn(TreeNewHandle, WEWNTLC_THREAD, TRUE, L"Thread"', 'PhAddTreeNewColumn(TreeNewHandle, WEWNTLC_THREAD, TRUE, L"线程"'),
+    ]),
 ]
