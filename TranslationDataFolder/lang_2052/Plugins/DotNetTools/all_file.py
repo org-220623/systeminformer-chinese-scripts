@@ -102,15 +102,16 @@ DATA: TranslationDataType = [
     }, []),
 ]
 
+# 非特殊格式名称（不带 # 或 %）计数器翻译
 if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate or
         OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.PartialTranslate):
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
-            "Promoted Memory from Gen 0": "0 代提升内存",
-            "Promoted Memory from Gen 1": "1 代提升内存",
-            "Promoted Finalization-Memory from Gen 0": "0 代终结内存提升",
-            "Gen 0 Heap Size": "0 代堆大小",
-            "Gen 1 Heap Size": "1 代堆大小",
-            "Gen 2 Heap Size": "2 代堆大小",
+            "Promoted Memory from Gen 0": "第 0 代提升内存",
+            "Promoted Memory from Gen 1": "第 1 代提升内存",
+            "Promoted Finalization-Memory from Gen 0": "第 0 代终结内存提升",
+            "Gen 0 Heap Size": "第 0 代堆大小",
+            "Gen 1 Heap Size": "第 1 代堆大小",
+            "Gen 2 Heap Size": "第 2 代堆大小",
             "Large Object Heap Size": "大对象堆大小",
             "Finalization Survivors": "终结器存活对象",
             "Stack Walk Depth": "栈步行深度",
@@ -133,3 +134,8 @@ if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate o
             "Total Bytes Allocated for Large Objects (since start)": "大型对象分配总字节数 (从启动)",
             "Total Bytes Allocated (since start)": "已分配总字节数 (从启动)",
         }, []))
+# 特殊格式名称计数器翻译
+if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
+    DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
+        "# Gen 0 Collections": "第 0 代垃圾回收",
+    }, []))
