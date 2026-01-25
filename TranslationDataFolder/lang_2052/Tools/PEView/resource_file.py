@@ -35,7 +35,7 @@ DATA: TranslationDataType = [
         "Pids": "PID",
         "Dynamic": "动态",
         "Tls": "TLS",
-        "Max. size unit:": "最大大小单元:",
+        "Max. size unit:": "最大单位:",
         "Font...": "字体...",
         "Application font:": "应用程序字体:",
         "Symbol path:": "符号路径:",
