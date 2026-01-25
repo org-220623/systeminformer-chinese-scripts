@@ -96,5 +96,3 @@ python main.py --nodebug
 ### 许可证
 
 MIT
-
-P.S. **金玉其外，败絮其中**
