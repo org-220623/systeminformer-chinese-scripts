@@ -318,8 +318,8 @@ DATA: TranslationDataType = [
             '''L"change the execution required state",
             PhaConcatStrings2(L"of ", Process->ProcessName->Buffer)->Buffer,
             L"The process continues to run instead of being suspended or terminated by process lifetime management (PLM)."''',
-            '''L"更改进程 ",
-            PhaConcatStrings2(Process->ProcessName->Buffer, L" 的执行所需状态")->Buffer,
+            '''L"更改",
+            PhaConcatStrings2(Process->ProcessName->Buffer, L" 进程的执行所需状态")->Buffer,
             L"该进程会继续运行，而不是被进程生命周期管理模块 (PLM) 挂起或终止。"'''
         ), (
             'Config.pszMainInstruction = PhaConcatStrings(3, L"Do you want to ", action->Buffer, L"?")->Buffer',
