@@ -49,4 +49,27 @@ DATA: TranslationDataType = [
         "Do you want to continue?": "你确定要继续吗?",
         "Unable to change service information.": "无法更改服务信息。",
     }, []),
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/recovery.c", "utf-8", {
+        "Take no action": "不执行操作",
+        "Restart the service": "重启服务",
+        "Restart the computer": "重启计算机",
+        "Run a program": "运行程序",
+        "Own restart": "自行重启",
+        "Unable to query service recovery information.": "无法查询服务恢复信息。",
+        "The service has %lu failure actions configured, but this program only supports editing 3. ": "该服务已配置 %lu 个故障操作，但此程序仅支持编辑 3 个。",
+        "If you save the recovery information using this program, the additional failure actions will be lost.": "如果您使用此程序保存恢复信息，则其他故障操作将会丢失。",
+        "Unknown error.": "未知错误。",
+        "Executable files (*.exe;*.cmd;*.bat)": "可执行文件 (*.exe;*.cmd;*.bat)",
+        "All files (*.*)": "所有文件 (*.*)",
+        "Unable to change service recovery information.": "无法更改服务恢复信息。",
+        "(unknown)": "(未知)",
+        "Your computer is connected to the computer named %s. ": "您的计算机已连接到名为 %s 的计算机。",
+        "The %s service on %s has ended unexpectedly. ": "%s 服务 (位于 %s) 已意外终止。",
+        "%s will restart automatically, and then you can reestablish the connection.": "%s 将自动重启，然后您可以重新建立连接。",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/srvprgrs.c", "utf-8", {
+        "Attempting to stop %s...": "正在尝试停止 %s...",
+        "Attempting to start %s...": "正在尝试启动 %s...",
+    }, []),
+    # svcpnp.c and later
 ]
