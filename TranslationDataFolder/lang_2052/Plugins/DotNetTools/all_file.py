@@ -1,6 +1,7 @@
 from Config.const_values import CONST_PATH_PLUGIN_DOTNETTOOLS
 from Config.global_dict import GLOBAL_DICT
-from Config.static_data_type import TranslationDataType
+from Config.static_data_type import TranslationDataType, TranslateDotNetCounters
+from Config.patch_options import OPTIONS_TRANSLATE_DOTNET_COUNTERS
 
 DATA: TranslationDataType = [
     (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/asmpage.c", "utf-8", {
@@ -86,33 +87,7 @@ DATA: TranslationDataType = [
         ".NET CLR Remoting": ".NET CLR 远程",
         ".NET CLR Security": ".NET CLR 安全性",
         # -------------------------------------------------------------------------
-        "Promoted Memory from Gen 0": "0 代提升内存",
-        "Promoted Memory from Gen 1": "1 代提升内存",
-        "Promoted Finalization-Memory from Gen 0": "0 代终结内存提升",
-        "Gen 0 Heap Size": "0 代堆大小",
-        "Gen 1 Heap Size": "1 代堆大小",
-        "Gen 2 Heap Size": "2 代堆大小",
-        "Large Object Heap Size": "大对象堆大小",
-        "Finalization Survivors": "终结器存活对象",
-        "Stack Walk Depth": "栈步行深度",
-        "Total Runtime Checks": "运行时检查总计",
-        "Context-Bound Classes Loaded": "已加载上下文绑定类",
-        "Context Proxies": "上下文代理",
-        "Total Remote Calls": "远程调用总计",
-        "Queue Length Peak": "队列长度峰值",
-        "Current Queue Length": "当前队列长度",
-        "Total Appdomains Unloaded": "已卸载应用程序域总计",
-        "Bytes in Loader Heap": "加载器堆大小",
-        "Assembly Search Length": "程序集搜索长度",
-        "Total Assemblies": "程序集总计",
-        "Current Assemblies": "当前程序集",
-        "Total Appdomains": "应用程序域总计",
-        "Current Appdomains": "当前应用程序域",
-        "Total Classes Loaded": "已加载类总计",
-        "Current Classes Loaded": "当前已加载类",
-        "Jit Failures": "JIT 失败计数",
-        "Total Bytes Allocated for Large Objects (since start)": "大型对象分配总字节数 (从启动)",
-        "Total Bytes Allocated (since start)": "已分配总字节数 (从启动)",
+
         # ------------------------------------------------------------------
         # 特殊格式计数器
         # "# Gen 0 Collections": "0 代垃圾回收",
@@ -141,3 +116,37 @@ DATA: TranslationDataType = [
             GLOBAL_DICT["Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved."],
     }, []),
 ]
+
+if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate or
+        OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.PartialTranslate):
+    DATA.append(
+        (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
+            "Promoted Memory from Gen 0": "0 代提升内存",
+            "Promoted Memory from Gen 1": "1 代提升内存",
+            "Promoted Finalization-Memory from Gen 0": "0 代终结内存提升",
+            "Gen 0 Heap Size": "0 代堆大小",
+            "Gen 1 Heap Size": "1 代堆大小",
+            "Gen 2 Heap Size": "2 代堆大小",
+            "Large Object Heap Size": "大对象堆大小",
+            "Finalization Survivors": "终结器存活对象",
+            "Stack Walk Depth": "栈步行深度",
+            "Total Runtime Checks": "运行时检查总计",
+            "Context-Bound Classes Loaded": "已加载上下文绑定类",
+            "Context Proxies": "上下文代理",
+            "Total Remote Calls": "远程调用总计",
+            "Queue Length Peak": "队列长度峰值",
+            "Current Queue Length": "当前队列长度",
+            "Total Appdomains Unloaded": "已卸载应用程序域总计",
+            "Bytes in Loader Heap": "加载器堆大小",
+            "Assembly Search Length": "程序集搜索长度",
+            "Total Assemblies": "程序集总计",
+            "Current Assemblies": "当前程序集",
+            "Total Appdomains": "应用程序域总计",
+            "Current Appdomains": "当前应用程序域",
+            "Total Classes Loaded": "已加载类总计",
+            "Current Classes Loaded": "当前已加载类",
+            "Jit Failures": "JIT 失败计数",
+            "Total Bytes Allocated for Large Objects (since start)": "大型对象分配总字节数 (从启动)",
+            "Total Bytes Allocated (since start)": "已分配总字节数 (从启动)",
+        }, [])
+    )
