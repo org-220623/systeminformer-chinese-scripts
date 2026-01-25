@@ -95,7 +95,7 @@ DATA: TranslationDataType = [
         "Unable to logoff the session": "无法注销会话",
         " and ": " 和 ",
         "the selected processes": "已选中的进程",
-        "You are about to ": "你即将",
+        "You are about to ": "您即将",
         " one or more system processes.": "一个或多个系统进程。",
         "terminate": "结束",
         " one or more critical processes. This will shut down the operating system immediately.":
@@ -172,7 +172,7 @@ DATA: TranslationDataType = [
         "Close": "关闭",
         "Unable to %s services:": "无法%s服务:",
         "Attempting to ": "正在尝试",
-        " Are you sure you want to continue?": " 你确定要继续吗?",
+        " Are you sure you want to continue?": "您确定要继续吗?",
         "Initializing...": "初始化中...",
         "Unable to %s %s.": "无法%s %s.",
         "Unable to start ": "无法启动 ",
@@ -258,6 +258,10 @@ DATA: TranslationDataType = [
         r"\U00002699 System Default\nNo debugger configured in AeDebug registry key.": r"\U00002699 系统默认\nAeDebug 注册表项中未配置调试器。",
         "Select a system debugger to use for this process:": "选择要用于此进程的系统调试器:",
         "You can choose from the installed debugging tools below.": "您可以从下方已安装的调试工具中进行选择。",
+        "disable": "禁用",
+        "Eco mode for this process": "进程节能模式",
+        "Eco mode will lower process priority and improve power efficiency but may cause instability in some processes.":
+            "节能模式会降低进程优先级并提高电源效率，但可能会导致某些进程不稳定。",
     },
                                                                     [
         (
@@ -323,7 +327,7 @@ DATA: TranslationDataType = [
             L"该进程会继续运行，而不是被进程生命周期管理模块 (PLM) 挂起或终止。"'''
         ), (
             'Config.pszMainInstruction = PhaConcatStrings(3, L"Do you want to ", action->Buffer, L"?")->Buffer',
-            'Config.pszMainInstruction = PhaConcatStrings(3, L"你想要", action->Buffer, L"吗?")->Buffer'
+            'Config.pszMainInstruction = PhaConcatStrings(3, L"您确定要", action->Buffer, L"吗?")->Buffer'
         ), (
             '''L"start",
             L"Starting a service might prevent the system from functioning properly."''',
@@ -2471,7 +2475,7 @@ DATA: TranslationDataType = [
         "Activity moderation": "活动审核",
         "&Critical": "关键(&C)",
         "&Detach from debugger": "断开与调试器的连接(&D)",
-        "Efficiency mode": "效能模式",
+        "Efficiency mode": "节能模式",
         "Execution required": "执行要求",
         "GDI &handles...": "GDI 对象句柄(&H)...",
         "Heaps...": "堆...",

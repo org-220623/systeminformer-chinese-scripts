@@ -45,7 +45,7 @@ DATA: TranslationDataType = [
         "Select a privilege to add:": "选择要添加的特权:",
         "The selected privilege has already been added.": "所选特权已添加。",
         "Setting service protection will prevent the service from being controlled, modified, or deleted.": "设置服务保护将防止服务被控制、修改或删除。",
-        "Do you want to continue?": "你确定要继续吗?",
+        "Do you want to continue?": "您确定要继续吗?",
         "Unable to change service information.": "无法更改服务信息。",
     }, []),
     (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/recovery.c", "utf-8", {
