@@ -1,0 +1,52 @@
+from Config.const_values import CONST_PATH_PLUGIN_EXTENDEDSERVICES
+from Config.global_dict import GLOBAL_DICT
+from Config.static_data_type import TranslationDataType
+
+DATA: TranslationDataType = [
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/depend.c", "utf-8", {
+        "This service depends on the following services:": "此服务依赖于以下服务:",
+        "Unable to enumerate dependencies: ": "无法枚举依赖项: ",
+        "Unknown error.": "未知错误。",
+        "The following services depend on this service:": "以下服务依赖于此服务:",
+        "Unable to enumerate dependents: ": "无法枚举依赖项: ",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/main.c", "utf-8", {
+        "Unable to restart %s": "无法重新启动 %s",
+        "Ser&vices": "服务(&V)",
+        "Ser&vice (%s)": "服务 (%s)(&V)",
+        "&Go to service": "转到服务(&G)",
+        "Sta&rt": "启动(&R)",
+        "&Continue": "继续运行(&C)",
+        "&Pause": "暂停(&P)",
+        "St&op": "停止(&O)",
+        "Dependencies": "依赖项",
+        "Dependents": "依赖项",
+        "Triggers": "触发器",
+        "Package": "程序包",
+        "Other": "其他",
+        "R&estart": "重新启动(&E)",
+        "Extended Services": "扩展服务",
+        "Extends service management capabilities.": "扩展服务管理功能。",
+    }, []),
+    (f"{CONST_PATH_PLUGIN_EXTENDEDSERVICES}/other.c", "utf-8", {
+        "None": "无",
+        "Restricted": "受限",
+        "Unrestricted": "未受限",
+        "Full (Windows)": "完全 (Windows)",
+        "Light (Windows)": "轻量 (Windows)",
+        "Light (Antimalware)": "轻量 (反恶意软件)",
+        "Light (StoreApp)": "轻量 (商店应用)",
+        "Unknown": "未知",
+        "Name": "名称",
+        "Display name": "显示名称",
+        "Unable to query service information.": "无法查询服务信息。",
+        "Unknown error.": "未知错误。",
+        "Unable to open LSA policy": "无法打开 LSA 策略",
+        "Add privilege": "添加特权",
+        "Select a privilege to add:": "选择要添加的特权:",
+        "The selected privilege has already been added.": "所选特权已添加。",
+        "Setting service protection will prevent the service from being controlled, modified, or deleted.": "设置服务保护将防止服务被控制、修改或删除。",
+        "Do you want to continue?": "你确定要继续吗?",
+        "Unable to change service information.": "无法更改服务信息。",
+    }, []),
+]
