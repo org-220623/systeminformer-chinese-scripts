@@ -18,18 +18,6 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 1 个：
-   - UserNotes
-   - ExtendedTools (已完成)
-   - HardwareDevices (已完成)
-   - OnlineChecks (已完成)
-   - Updater (已完成)
-   - ExtendedServices (已完成)
-   - ExtendedNotifications (已完成)
-   - WindowExplorer (已完成)
-   - DotNetTools (已完成)
-   - NetworkTools (已完成)
-   - ToolStatus (已完成)
 - 持续跟踪并完成 GitHub Issue 中的任务。
 
 ### 已完成的文件
@@ -56,7 +44,7 @@
 
 #### 插件
 
-正在进行，进度见上。
+已全部完成。
 
 ## 依赖
 
