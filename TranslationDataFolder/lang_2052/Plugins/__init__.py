@@ -22,5 +22,6 @@ DATA: TranslationDataType = (
     WindowsExplorer.DATA +
     ExtendedNotifications.DATA +
     ExtendedServices.DATA +
-    Updater.DATA
+    Updater.DATA +
+    OnlineChecks.DATA
 )

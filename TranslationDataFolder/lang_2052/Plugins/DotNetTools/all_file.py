@@ -1,7 +1,7 @@
 from Config.const_values import CONST_PATH_PLUGIN_DOTNETTOOLS
 from Config.global_dict import GLOBAL_DICT
-from Config.static_data_type import TranslationDataType, TranslateDotNetCounters
-from Config.patch_options import OPTIONS_TRANSLATE_DOTNET_COUNTERS
+from Config.static_data_type import TranslationDataType, EnumTranslateDotNetCounters
+from Config.patch_options import OPTION_TRANSLATE_DOTNET_COUNTERS
 
 DATA: TranslationDataType = [
     (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/asmpage.c", "utf-8", {
@@ -105,9 +105,9 @@ DATA: TranslationDataType = [
 # 针对的文件：`{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c`
 # ------------------------------------------------------------------------------------------------------
 # 非特殊格式名称（不带 # 或 %）计数器翻译
-if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate or
-    OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.PartialTranslate or
-    OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.PartialTranslateAddHeader):
+if (OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.FullTranslate or
+    OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.PartialTranslate or
+    OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.PartialTranslateAddHeader):
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
         "Promoted Memory from Gen 0": "第 0 代提升内存",
         "Promoted Memory from Gen 1": "第 1 代提升内存",
@@ -142,7 +142,7 @@ if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate o
 # ------------------------------------------------------------------------------------------------------
 # 特殊格式名称计数器翻译
 # 最好不要选择 TranslateDotNetCounters.FullTranslate 选项，虽然看着顺眼，但是会丢失很多信息。
-if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
+if OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.FullTranslate:
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
         "# Gen 0 Collections": "第 0 代垃圾回收",
         "# Gen 1 Collections": "第 1 代垃圾回收",
@@ -179,7 +179,7 @@ if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.FullTranslate:
     }, []))
 # ------------------------------------------------------------------------------------------------------
 # 对一般格式的计数器添加头部信息而不翻译, 仅 TranslateDotNetCounters.AddHeader 启用时可用。
-if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader:
+if OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.AddHeader:
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
         "Promoted Memory from Gen 0": "计数器: Promoted Memory from Gen 0",
         "Promoted Memory from Gen 1": "计数器: Promoted Memory from Gen 1",
@@ -213,8 +213,8 @@ if OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader:
     }, []))
 # ------------------------------------------------------------------------------------------------------
 # 对特殊格式的计数器添加头部信息而不翻译, 在 AddHeader 和 PartialTranslateAddHeader 启用时都可用。
-if (OPTIONS_TRANSLATE_DOTNET_COUNTERS == TranslateDotNetCounters.AddHeader or
-        OPTIONS_TRANSLATE_DOTNET_COUNTERS.PartialTranslateAddHeader):
+if (OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.AddHeader or
+        OPTION_TRANSLATE_DOTNET_COUNTERS.PartialTranslateAddHeader):
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
         "# Gen 0 Collections": "计数器: # Gen 0 Collections",
         "# Gen 1 Collections": "计数器: # Gen 1 Collections",

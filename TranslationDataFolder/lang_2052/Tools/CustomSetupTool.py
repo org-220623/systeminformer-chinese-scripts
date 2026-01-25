@@ -19,7 +19,7 @@ DATA: TranslationDataType = [
         "This update will now install System Informer.\n\nPlease remember to uninstall Process Hacker. Thanks <3":
             "本次更新将安装 System Informer。\n\n建议在安装完成后卸载 Process Hacker。",
         # )
-        "Initializing...": "正在初始化...",
+        "Initializing...": "初始化中...",
         # PhShowInformation2 (
         "Process Hacker was renamed System Informer.\n": "Process Hacker 已更名为 System Informer\n",
         "The legacy version of Process Hacker is no longer maintained and will not receive updates.\r\n\r\n":

@@ -148,7 +148,7 @@ DATA: TranslationDataType = [
             "deleted or was last executed more than 7 days ago.\r\n\r\n":
             "当可执行文件被删除或上次执行时间超过 7 天时，Windows 会自动移除系统管理的活动审核设置。\r\n\r\n",
         "Image: %s\r\nUpdated: %s": "映像: %s\r\n已更新: %s",
-        "%s ago (%s)": "%s 前 (%s)",
+        "%s ago (%s)": "%s 以前 (%s)",
         "set background activity moderation for": "为以下进程设置后台活动调节: ",
         "set virtualization for": "为以下进程启用虚拟化: ",
         "set critical status for": "为以下进程启用关键状态: ",

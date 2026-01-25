@@ -49,7 +49,7 @@ DATA: TranslationDataType = [
         r"This product includes GeoLite2 data created by MaxMind, available from <a href=\"https://www.maxmind.com\">https://www.maxmind.com</a>\r\n\r\nSelect download to continue.":
             r"本产品包含 MaxMind 创建的 GeoLite2 数据，可从 <a href=\"https://www.maxmind.com\">https://www.maxmind.com</a> 获取。\r\n\r\n单击 \"下载\" 以继续。",
         "Downloading": "正在下载",
-        r"Downloaded: ~ of ~ (~%%)\r\nSpeed: ~/s": r"已下载: ~ of ~ (~%%)\r\n速度: ~/s",
+        r"Downloaded: ~ of ~ (~%%)\r\nSpeed: ~/s": r"已下载: ~ 共 ~ (~%%)\r\n速度: ~/s",
         "The GeoLite database has been updated.": "GeoLite 数据库已更新。",
         "Please restart System Informer for the changes to take effect...": "请重启 System Informer 以使更改生效...",
         "Error downloading GeoLite database.": "下载 GeoLite 数据库时出错。",
@@ -97,7 +97,7 @@ DATA: TranslationDataType = [
         "Downloading GeoLite2-%s...": "正在下载 GeoLite2-%s...",
         "Downloaded: ": "已下载: ",
         "%)\r\nSpeed: ": "%)\r\n速度: ",
-        "Initializing...": "正在初始化...",
+        "Initializing...": "初始化中...",
         "The GeoLite updater doesn't support legacy versions of Windows.": "GeoLite 更新程序不支持旧版 Windows 系统。",
         "Network Tools - GeoLite Updater": "网络工具 - GeoLite 更新程序",
         "Unable to download GeoLite database updates.": "无法下载 GeoLite 数据库更新。",
