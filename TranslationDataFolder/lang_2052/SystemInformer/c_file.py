@@ -2214,7 +2214,7 @@ DATA: TranslationDataType = [
         "Partially suspended processes and threads": "部分挂起的进程和线程",
         ".NET processes and DLLs": ".NET 进程和 DLL",
         "Packed processes": "打包的进程",
-        "Low process image coherency": "低进程映像一致性",
+        "Low process image coherency": "低映像一致性进程",
         "Processes running under the same user account as System Informer.":
             "与 System Informer 使用同一用户帐户运行的进程。",
         r"Processes running under the NT AUTHORITY\\SYSTEM user account.":
