@@ -18,11 +18,11 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 2 个：
-   - OnlineChecks
+- 处理 11 个插件中未完成的 1 个：
    - UserNotes
    - ExtendedTools (已完成)
    - HardwareDevices (已完成)
+   - OnlineChecks (已完成)
    - Updater (已完成)
    - ExtendedServices (已完成)
    - ExtendedNotifications (已完成)
