@@ -2,7 +2,7 @@ from Config.const_values import CONST_PATH_PHLIB_SRC
 from Config.static_data_type import TranslationDataType
 
 DATA: TranslationDataType = [
-    # util.c 正在进行翻译
+    # util.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/util.c", "utf-8", {
         "Cancel": "取消",
         "Do you want to ": "您确定要",
