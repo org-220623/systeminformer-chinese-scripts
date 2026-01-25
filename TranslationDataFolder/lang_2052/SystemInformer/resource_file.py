@@ -401,7 +401,10 @@ DATA: TranslationDataType = [
         ('"Text:",IDC_STATIC,7,24,18,8', '"Text:",IDC_STATIC,7,24,28,8'),
         ('"Icon:",IDC_STATIC,7,107,18,8', '"Icon:",IDC_STATIC,7,107,28,8'),
         ('"PE viewer:",IDC_STATIC,7,23,35,8', '"PE viewer:",IDC_STATIC,7,23,48,8'), 
-        ('"Graph history length:",IDC_STATIC,106,56,69,8', '"Graph history length:",IDC_STATIC,121,56,54,8')
+        ('"Graph history length:",IDC_STATIC,106,56,69,8', '"Graph history length:",IDC_STATIC,121,56,54,8'),
+        ('"User:",IDC_TOKENUSER,7,7,18,8', '"User:",IDC_TOKENUSER,7,7,26,8'),
+        ('"User:",IDC_STATIC,15,19,18,8', '"User:",IDC_STATIC,15,19,26,8'),
+        ('"Peak job usage",IDC_STATIC,15,151,52,8', '"Peak job usage",IDC_STATIC,15,151,58,8'),
     ]),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/version.rc", "utf-8-sig", {
         "Copyright (c) Winsider Seminars & Solutions, Inc.  All rights reserved.":
