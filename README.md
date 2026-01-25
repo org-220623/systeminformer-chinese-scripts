@@ -18,7 +18,7 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 3 个：
+- 处理 11 个插件中未完成的 2 个：
    - OnlineChecks
    - UserNotes
    - ExtendedTools (已完成)
