@@ -27,8 +27,7 @@
 
 ### todo
 
-- 处理 11 个插件中未完成的 6 个：
-   - WindowExplorer
+- 处理 11 个插件中未完成的 5 个：
    - ExtendedNotifications
    - ExtendedServices
    - OnlineChecks
@@ -36,6 +35,7 @@
    - UserNotes
    - ExtendedTools (已完成)
    - HardwareDevices (已完成)
+   - WindowExplorer (已完成)
    - DotNetTools (已完成)
    - NetworkTools (已完成)
    - ToolStatus (已完成)
