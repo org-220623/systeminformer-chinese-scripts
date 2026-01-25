@@ -85,24 +85,19 @@ DATA: TranslationDataType = [
         ".NET CLR Memory": ".NET CLR 内存",
         ".NET CLR Remoting": ".NET CLR 远程",
         ".NET CLR Security": ".NET CLR 安全性",
+        # -------------------------------------------------------------------------
         "Promoted Memory from Gen 0": "0 代提升内存",
         "Promoted Memory from Gen 1": "1 代提升内存",
         "Promoted Finalization-Memory from Gen 0": "0 代终结内存提升",
-        "Process ID": "进程 ID",
         "Gen 0 Heap Size": "0 代堆大小",
         "Gen 1 Heap Size": "1 代堆大小",
         "Gen 2 Heap Size": "2 代堆大小",
         "Large Object Heap Size": "大对象堆大小",
         "Finalization Survivors": "终结器存活对象",
-        "&Copy": "复制(&C)",
-        "Counter": "计数器",
-        "Value": "值",
         "Stack Walk Depth": "栈步行深度",
         "Total Runtime Checks": "运行时检查总计",
-        "Contexts": "上下文",
         "Context-Bound Classes Loaded": "已加载上下文绑定类",
         "Context Proxies": "上下文代理",
-        "Channels": "频道",
         "Total Remote Calls": "远程调用总计",
         "Queue Length Peak": "队列长度峰值",
         "Current Queue Length": "当前队列长度",
@@ -131,6 +126,12 @@ DATA: TranslationDataType = [
         # ------------------------------------------------------------------
         # Line 265 - 579
         # ------------------------------------------------------------------
+        "&Copy": "复制(&C)",
+        "Counter": "计数器",
+        "Value": "值",
+        "Channels": "频道",
+        "Contexts": "上下文",
+        "Process ID": "进程 ID",
     }, []),
     (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/treeext.c", "utf-8", {
         "AppDomain": "应用程序域",
