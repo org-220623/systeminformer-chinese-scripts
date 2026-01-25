@@ -32,6 +32,7 @@ DATA: TranslationDataType = [
         "millisecond": "毫秒",
         "milliseconds": "毫秒",
         "a very short time": "非常短的时间",
+        "Unable to execute the program.": "无法执行程序。", 
         # Line 3201
         # -----------------------------------------------------
         # Line 5917 The location could not be found.
