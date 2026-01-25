@@ -101,7 +101,16 @@ DATA: TranslationDataType = [
         "Network endpoint": "网络端点",
         "Custom system state change": "自定义系统状态更改",
         "Custom": "自定义",
-        # Line 89
+        "IP address": "IP 地址",
+        "IP address: First arrival": "IP 地址: 初次到达",
+        "IP address: Last removal": "IP 地址: 最后移除",
+        "IP address: Unknown": "IP 地址: 未知",
+        "Domain": "域",
+        "Domain: Join": "域: 加入",
+        "Domain: Leave": "域: 离开",
+        "Domain: Unknown": "域: 未知",
+        "Firewall port": "防火墙端口",
+        # Line 99
     }, []),
     # trigger.c and later
 ]
