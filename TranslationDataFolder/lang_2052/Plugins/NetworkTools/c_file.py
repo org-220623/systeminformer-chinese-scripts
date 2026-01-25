@@ -59,7 +59,7 @@ DATA: TranslationDataType = [
         "Please check the Options > Network Tools > GeoLite ID or Key are configured before downloading geoLite updates.": "请在下载 GeoLite 更新之前，检查“选项”>“网络工具”>“GeoLite ID 或密钥”是否已配置。",
     }, []),
     (f"{CONST_PATH_PLUGIN_NETWORKTOOLS}/ping.c", "utf-8", {
-        "Pinging %s with %lu bytes of data...": "正在 Ping %s 具有 %lu 字节的数据:",
+        "Pinging %s with %lu bytes of data...": "正在 Ping %s 具有 %lu 字节的数据...",
         "Average: %.2f ms": "平均延迟: %.2f ms",
         "Minimum: %.2f ms": "最小值: %.2f ms",
         "Maximum: %.2f ms": "最大值: %.2f ms",
