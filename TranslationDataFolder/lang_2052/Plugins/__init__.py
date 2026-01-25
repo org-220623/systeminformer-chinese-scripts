@@ -19,5 +19,6 @@ DATA: TranslationDataType = (
     HardwareDevices.DATA +
     NetworkTools.DATA +
     DotNetTools.DATA +
-    WindowsExplorer.DATA
+    WindowsExplorer.DATA +
+    ExtendedNotifications.DATA
 )
