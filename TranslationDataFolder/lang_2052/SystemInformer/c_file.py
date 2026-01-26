@@ -2678,7 +2678,7 @@ DATA: TranslationDataType = [
         "&Copy": "复制(&C)",
         "Name": "名称",
         "Value": "值",
-        "Search Environment (Ctrl+K)": "搜索运行环境信息 (Ctrl+K)",
+        "Search Environment (Ctrl+K)": "搜索环境信息 (Ctrl+K)",
         "Hide process": "隐藏进程",
         "Hide user": "隐藏用户",
         "Hide system": "隐藏系统",
