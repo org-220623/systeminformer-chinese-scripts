@@ -24,7 +24,7 @@ DATA: TranslationDataType = [
         "Browse...": "选择...",
         "Append /fail=%1% to pass the fail count to the program.": "添加 /fail=%1% 以将失败计数传递给程序。",
         "Subsequent failures:": "后续失败:",
-        "Restart the computer after:": "在此之后重启计算机:",
+        "Restart the computer after:": "重启计算机于:",
         "Before restarting, send this message to computers on the network:": "重启前将此消息发送到网络上的计算机:",
         "Use default message": "使用默认消息",
         "OK": "确定",
@@ -71,5 +71,6 @@ DATA: TranslationDataType = [
         ('"First failure:",IDC_STATIC,7,8,40,8', '"First failure:",IDC_STATIC,7,8,49,8'),
         ('"days",IDC_STATIC,130,74,16,8', '"天后",IDC_STATIC,130,74,20,8'),
         ('"minutes",IDC_RESTARTSERVICEAFTER_MINUTES,130,90,26,8', '"分钟后",IDC_RESTARTSERVICEAFTER_MINUTES,130,90,30,8'),
+        ('"minutes",IDC_STATIC,147,8,26,8', '"分钟后",IDC_STATIC,147,8,30,8')
     ]),
 ]
