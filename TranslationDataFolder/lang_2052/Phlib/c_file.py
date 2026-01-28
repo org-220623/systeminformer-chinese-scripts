@@ -343,4 +343,8 @@ DATA: TranslationDataType = [
         "Size all columns to fit": "调整所有列宽以适应屏幕",
         "Reset sort": "重置排序",
     }, []),
+    # guisup.c 正在进行
+    (f"{CONST_PATH_PHLIB_SRC}/guisup.c", "utf-8", {
+        "Close": "关闭",
+    }, []),
 ]
