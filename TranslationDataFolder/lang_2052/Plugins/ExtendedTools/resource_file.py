@@ -104,6 +104,9 @@ DATA: TranslationDataType = [
         "By name:": "通过名称:",
         "Desktops": "桌面",
     }, [
-        ('')
+        ('"Limit",IDC_STATIC,8,22,15,8', '"Limit",IDC_STATIC,8,22,20,8'),
+        ('"Limit",IDC_STATIC,130,23,15,8', '"Limit",IDC_STATIC,130,23,20,8'),
+        ('"Limit",IDC_STATIC,8,22,15,8', '"Limit",IDC_STATIC,8,22,20,8'),
+        ('"Limit",IDC_STATIC,130,23,15,8', '"Limit",IDC_STATIC,130,23,20,8'),
     ]),
 ]
