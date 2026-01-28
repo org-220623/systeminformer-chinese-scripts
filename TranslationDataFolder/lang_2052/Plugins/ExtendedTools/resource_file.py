@@ -103,5 +103,7 @@ DATA: TranslationDataType = [
         "By address:": "通过地址:",
         "By name:": "通过名称:",
         "Desktops": "桌面",
-    }, []),
+    }, [
+        ('')
+    ]),
 ]
