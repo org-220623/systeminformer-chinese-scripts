@@ -404,7 +404,12 @@ DATA: TranslationDataType = [
         ('"Icon:",IDC_STATIC,7,107,18,8', '"Icon:",IDC_STATIC,7,107,28,8'),
         ('"PE viewer:",IDC_STATIC,7,23,35,8', '"PE viewer:",IDC_STATIC,7,23,48,8'), 
         ('"Graph history length:",IDC_STATIC,106,56,69,8', '"Graph history length:",IDC_STATIC,121,56,54,8'),
-        ('"User:",IDC_TOKENUSER,7,7,18,8', '"User:",IDC_TOKENUSER,7,7,26,8'),
+        # ---
+        ('"User:",IDC_TOKENUSER,7,7,18,8', '"User:",IDC_TOKENUSER,7,5,26,8'),
+        ('IDC_USER,48,7,205,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER', 'IDC_USER,48,5,205,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER'),
+        ('"User SID:",IDC_TOKENSID,7,18,32,8', '"User SID:",IDC_TOKENSID,7,16,32,8'),
+        ('IDC_USERSID,48,18,205,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER', 'IDC_USERSID,48,16,205,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER'),
+        # ---
         ('"User:",IDC_STATIC,15,19,18,8', '"User:",IDC_STATIC,15,19,26,8'),
         ('"Peak job usage",IDC_STATIC,15,151,52,8', '"Peak job usage",IDC_STATIC,15,151,58,8'),
         # -------------------------------------------------------------------------------------------------------
