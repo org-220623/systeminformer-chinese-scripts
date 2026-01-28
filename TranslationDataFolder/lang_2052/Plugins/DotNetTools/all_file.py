@@ -89,7 +89,6 @@ DATA: TranslationDataType = [
         "&Copy": "复制(&C)",
         "Counter": "计数器",
         "Value": "值",
-        "Process ID": "进程 ID",
     }, []),
     (f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/treeext.c", "utf-8", {
         "AppDomain": "应用程序域",
@@ -138,6 +137,7 @@ if (OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.FullTranslat
         "Total Bytes Allocated (since start)": "已分配总字节数 (从启动)",
         "Channels": "频道",
         "Contexts": "上下文",
+        "Process ID": "进程 ID",
     }, []))
 # ------------------------------------------------------------------------------------------------------
 # 特殊格式名称计数器翻译
@@ -210,6 +210,7 @@ if OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.AddHeader:
         "Total Bytes Allocated (since start)": "计数器: Total Bytes Allocated (since start)",
         "Channels": "计数器: Channels",
         "Contexts": "计数器: Contexts",
+        "Process ID": "计数器: Process ID",
     }, []))
 # ------------------------------------------------------------------------------------------------------
 # 对特殊格式的计数器添加头部信息而不翻译, 在 AddHeader 和 PartialTranslateAddHeader 启用时都可用。
