@@ -59,7 +59,7 @@ def check_symbols(old: str, new: str):
                   f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
         # -----------------------------------------------------------------------------------------------
         if old[len(old) - 3:] == "..." and new[len(new) - 3:] != "...":
-            if old != "Note: You can also download GeoLite updates from the Main menu > Tools > Network Tools > Update GeoLite...":
+            if old not in ["Note: You can also download GeoLite updates from the Main menu > Tools > Network Tools > Update GeoLite...", ]:
                 print(f"\t新字符串末尾未使用英文省略号："
                       f"{CONST_STRING_LEFT_BRACKET}{old}{CONST_STRING_RIGHT_BRACKET}，"
                       f"{CONST_STRING_LEFT_BRACKET}{new}{CONST_STRING_RIGHT_BRACKET}")
