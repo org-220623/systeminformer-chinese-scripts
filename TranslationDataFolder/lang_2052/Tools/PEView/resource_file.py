@@ -45,8 +45,8 @@ DATA: TranslationDataType = [
         "Directories": "文件夹",
         "ProdID": "产品 ID",  # todo: 查明此条目的含义
         "Checksum:": "校验和:",
-        "Hash (raw):": "哈希值 (二进制):",
-        "Hash:": "哈希值:",
+        "Hash (raw):": "原始哈希:",
+        "Hash:": "哈希:",
         "Production ID": "产品 ID",
         "Debug": "调试",
         "Sections": "节区",
@@ -70,8 +70,11 @@ DATA: TranslationDataType = [
         "CLR Imports": "CLR 导入项",
         "Volatile Metadata": "易失性元数据",
         "CLR Tables": "CLR 表",
+        "Load config": "加载配置",
     },
      [
          ('"File",IDC_FILE', '"文件",IDC_FILE'),
+         ('CAPTION "GetProcAddress"', 'CAPTION "获取过程地址"'),
+         ('CAPTION "Loadlibrary"', 'CAPTION "加载库"'),
      ]),
 ]
