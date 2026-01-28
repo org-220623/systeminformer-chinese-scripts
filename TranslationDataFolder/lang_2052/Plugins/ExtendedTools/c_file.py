@@ -203,7 +203,7 @@ DATA: TranslationDataType = [
     (f"{CONST_PATH_PLUGIN_EXTENDEDTOOLS}/main.c", "utf-8", {
         "System": "系统",
         "&System": "系统(&S)",
-        "Poo&l Table": "缓冲池列表(&L)",
+        "Poo&l Table": "池表(&L)",
         "&Object Manager": "对象管理器(&O)",
         "SM&BIOS": "SMBIOS(&B)",
         "Firm&ware Table": "固件表(&W)",
