@@ -16,8 +16,8 @@ DATA: TranslationDataType = [
         "years": "年",
         "month": "个月",
         "months": "个月",
-        "fortnight": "两星期",
-        "fortnights": "两星期",
+        "fortnight": "个两星期",  # todo 此处不符合中文和美式英文表达习惯
+        "fortnights": "个两星期",
         "week": "周",
         "weeks": "周",
         "%u %s and %u %s": "%u %s %u %s",
