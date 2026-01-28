@@ -3185,7 +3185,7 @@ DATA: TranslationDataType = [
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/syssccpu.c", "utf-8", {
         ", Core ": ", 核心 ",
-        ", Socket ": ", 套接字 ",
+        ", Socket ": ", 插槽 ",
         ", Group ": ", 组 ",
         ", Node ": ", 节点 ",
         "Parked\n": "已停用\n",
