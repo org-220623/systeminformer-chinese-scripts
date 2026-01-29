@@ -2,6 +2,10 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。
 
+## 软件下载
+
+https://github.com/org-220623/si-chs-builds/releases/latest
+
 ## 说明
 
 1. 本项目因工程量太大，作者随时可能放弃维护并存档，想坚持到底的欢迎 Fork。
