@@ -1,6 +1,26 @@
 from Config.const_values import CONST_PATH_PHLIB_SRC
 from Config.static_data_type import TranslationDataType
 
+# ------------------------
+# 未列出的未开始
+# ------------------------
+# todo 正在进行：
+#    guisup.c
+#    svcsup.c
+# ------------------------
+# 已完成
+# appruntime.c
+# extlv.c
+# hndlinfo.c
+# lsasup.c
+# nativetoken.c
+# searchbox.c
+# secdata.c
+# secedit.c
+# symprv.c
+# util.c
+# ------------------------
+
 DATA: TranslationDataType = [
     # util.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/util.c", "utf-8", {
@@ -303,7 +323,7 @@ DATA: TranslationDataType = [
         "Activate local": "激活本地",
         "Activate remote": "激活远程",
     }, []),
-    # svcsup.c 正在进行翻译
+    # svcsup.c 正在进行
     (f"{CONST_PATH_PHLIB_SRC}/svcsup.c", "utf-8", {
         "Unknown": "未知",
         "Stopped": "已停止",
@@ -346,5 +366,63 @@ DATA: TranslationDataType = [
     # guisup.c 正在进行
     (f"{CONST_PATH_PHLIB_SRC}/guisup.c", "utf-8", {
         "Close": "关闭",
+    }, []),
+    # appruntime.c 已完成
+    (f"{CONST_PATH_PHLIB_SRC}/appruntime.c", "utf-8", {
+        "Unknown": "未知",
+    }, []),
+    # hndlinfo.c 已完成
+    (f"{CONST_PATH_PHLIB_SRC}/hndlinfo.c", "utf-8", {
+        "terminated process": "已终止的进程",
+        "terminated thread": "已终止的线程",
+        "Terminated ": "已终止 ",
+        # "Terminated": "已终止",
+        "terminated ": "已终止 ",
+        "Unnamed file: ": "未命名文件: ",
+        "(No processes)": "(无进程)",
+        "Unknown": "未知",
+        "Commit": "提交",
+        "Image": "映像",
+        "Reserve": "保留",
+        " (Primary)": " (主要)",
+        " (Impersonation)": " (模拟)",
+        "Client: ": "客户端: ",
+        "Connection to ": "连接至 ",
+        "Refused ": "已拒绝 ",
+        "Closed ": "已关闭 ",
+        "Disconnected ": "已断开连接 ",
+        "Pending ": "已挂起 ",
+        "Server: ": "服务端: ",
+        " Connection from ": " 连接自 ",
+        "Connection: ": "连接: ",
+        " on ": " 位于 ",
+    }, [
+        ('''else if (basicInfo.AllocationAttributes & SEC_FILE)
+                    sectionType = L"File"''', '''else if (basicInfo.AllocationAttributes & SEC_FILE)
+                    sectionType = L"文件"'''),
+    ]),
+    # lsasup.c 已完成
+    (f"{CONST_PATH_PHLIB_SRC}/lsasup.c", "utf-8", {
+        # todo line 794    return L"Local";
+        # todo line 820 - 849
+        "Unknown": "未知",
+    }, []),
+    # nativetoken.c 已完成
+    (f"{CONST_PATH_PHLIB_SRC}/nativetoken.c", "utf-8", {
+        # todo line 1977 - 1999
+        # todo line 2090 - 2106
+        "Unknown": "未知",
+        # todo line 2231 - 2243
+    }, []),
+    # secedit.c 已完成
+    (f"{CONST_PATH_PHLIB_SRC}/secedit.c", "utf-8", {
+        "Unknown": "未知",
+        "This namespace only": "仅限此命名空间",
+        "This namespace and subnamespaces": "此命名空间和子命名空间",
+        "Subnamespaces only": "仅限子命名空间",
+        "This folder only": "仅限此文件夹",
+        "This folder, subfolders and files": "此文件夹、子文件夹和文件",
+        "Subfolders and files only": "仅限子文件夹和文件",
+        # todo 942 - 953
     }, []),
 ]
