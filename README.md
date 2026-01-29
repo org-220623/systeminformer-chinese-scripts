@@ -59,31 +59,33 @@ https://github.com/org-220623/si-chs-builds/releases/latest
    - 使用 C++ 的桌面开发
    - 单个组件 -> 编译器、生成工具和运行时 -> Spectre 缓解库（最新）（x64/x86 和 ARM64/ARM64EC）
 
-### 汉化脚本项目依赖
+以上信息可能过时，详细信息请参考 System Informer 仓库说明中的“[构建项目](https://github.com/winsiderss/systeminformer?tab=readme-ov-file#building-the-project)”章节和 [build/README.md](https://github.com/winsiderss/systeminformer/blob/master/build/README.md)。
+
+### 汉化脚本依赖
 
 - Python 3.*（建议使用 3.12 及以上版本）
 
 ## 用法
 
-### 构建 System Informer
-
-请参考 System Informer 仓库说明中的“[构建项目](https://github.com/winsiderss/systeminformer?tab=readme-ov-file#building-the-project)”章节和 [build/README.md](https://github.com/winsiderss/systeminformer/blob/master/build/README.md)。
-
-使用 Visual Studio 2026 并运行 `build_init.cmd` 或 `build_tools.cmd` 构建 `CustomBuildTool` 会提示“找不到链接库”，需通过打开 `tools/CustomBuildTool/CustomBuildTool.sln` 在 Visual Studio 中构建。建议使用 Visual Studio 2022 以避免此问题。
-
-### 汉化项目
-
-执行如下命令：
+执行如下命令或操作：
 
 ```bash
-git clone https://github.com/winsiderss/systeminformer.git
+git clone https://github.com/winsiderss/systeminformer.git systeminformer
 cd systeminformer
+build\build_init.cmd
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 由于 System Informer 主开发分支情况并不稳定，有可能出现构建失败的情况，因此请按照下述列表切换至某次特定提交。
+# 切换提交的语法为（用下面列表中你想构建的版本的提交哈希替换 "<commit-hash>"，此时仓库进入分离头指针 (detached head) 状态，无法进行提交操作）：
+#       git checkout <commit-hash> 
+# 如果你想切换至某次提交并在此之上创建新的分支（这样可以创建新的提交），请执行以下操作（使用你想创建的分支名称替换 "<new-branch-name>"，你想构建的版本的提交哈希替换 "<commit-hash>"）：
+#       git checkout -b <new-branch-name> <commit-hash>
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 git clone https://github.com/org-220623/systeminformer-chinese-scripts.git chs_l10n
-cd chs_l10n
-python main.py --nodebug
+cd chs_l10n && python main.py --nodebug
+cd ..\build && build_release.cmd
 ```
 
-然后重新构建程序即可。或者也可以克隆本人复刻的包含现有子模块的源码仓库。
+构建的可直接执行二进制文件位于根目录下 `/bin/<计算机架构>/`，安装包、符号文件和 binlog 位于 `/build/output/`。
 
 ### 许可证
 
