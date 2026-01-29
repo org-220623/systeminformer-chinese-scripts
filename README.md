@@ -87,6 +87,14 @@ cd ..\build && build_release.cmd
 
 构建的可直接执行二进制文件位于根目录下 `/bin/<计算机架构>/`，安装包、符号文件和 binlog 位于 `/build/output/`。
 
+### 版本和提交哈希
+
+以下数据来源于 [System Informer 预发行版构建仓库](https://github.com/winsiderss/si-builds) 和 System Informer 正式版本二进制文件信息。
+
+| 版本 | 哈希 |
+|--|--|
+| v3.4.26017.1750 (预发行) | 533bf1b384a8eaa80ae5004078e82ab0609fb3fe |
+
 ## 许可证
 
 MIT
