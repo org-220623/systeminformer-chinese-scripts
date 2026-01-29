@@ -87,6 +87,6 @@ cd ..\build && build_release.cmd
 
 构建的可直接执行二进制文件位于根目录下 `/bin/<计算机架构>/`，安装包、符号文件和 binlog 位于 `/build/output/`。
 
-### 许可证
+## 许可证
 
 MIT
