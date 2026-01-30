@@ -1436,7 +1436,8 @@ DATA: TranslationDataType = [
         "Unable to edit the memory region.": "无法编辑内存区域。",
         "Unable to read memory": "无法读取内存",
         "Unable to open the process": "无法打开进程",
-        "%u bytes per row": "每行 %u 字节",
+        "%u bytes per row": "%u 字节每行",  # 此处的翻译有点别扭，但是必须保持 %u 第一位，否则更改选项会失效（源码设计问题，典型的前后端不分）
+                                            # https://github.com/org-220623/systeminformer-chinese-scripts/issues/24
         "Binary files (*.bin)": "二进制文件 (*.bin)",
         "All files (*.*)": "所有文件 (*.*)",
         "Unable to create the file": "无法创建文件",
