@@ -19,4 +19,9 @@ class EnumTranslateMalwareScanningWebsite(Enum):
     # 处理恶意软件扫描网站
     NotTranslate = 0
     ToServiceName = 1
+
+class EnumTranslateMandatoryLevel(Enum):
+    # 处理强制完整性级别
+    NotTranslate = 0
+    DynamicSubViewTranslate = 1
 # ----------------------------------------------------------------------------------

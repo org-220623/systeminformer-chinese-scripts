@@ -1,5 +1,6 @@
 from Config.const_values import CONST_PATH_PHLIB_SRC
-from Config.static_data_type import TranslationDataType
+from Config.static_data_type import TranslationDataType, EnumTranslateMandatoryLevel
+from Config.patch_options import OPTION_TRANSLATE_MANDATORY_LEVEL
 
 # ------------------------
 # 未列出的未开始
@@ -425,16 +426,26 @@ DATA: TranslationDataType = [
         "Subfolders and files only": "仅限子文件夹和文件",
         # todo 942 - 953
     }, []),
-    (f"{CONST_PATH_PHLIB_SRC}/guisuplistview.cpp", "utf-8", {}, [ # 动态替换字符串，因为实在找不到了。
-        # issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
-        ('''VOID PhSetListViewSubItem(
-    _In_ HWND ListViewHandle,
+    # guisuplistview.cpp 保留，待检查，未开始。
+    (f"{CONST_PATH_PHLIB_SRC}/guisuplistview.cpp", "utf-8", {}, []),
+]
+
+#################################################################################################################
+if OPTION_TRANSLATE_MANDATORY_LEVEL == EnumTranslateMandatoryLevel.DynamicSubViewTranslate:
+    DATA.append(
+        (f"{CONST_PATH_PHLIB_SRC}/guisuplistview.cpp", "utf-8", {}, [  # 动态替换字符串，因为实在找不到了。
+            # issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
+            (
+'''VOID PhSetIListViewSubItem(
+    _In_ IListView* ListView,
     _In_ LONG Index,
     _In_ LONG SubItemIndex,
     _In_ PCWSTR Text
     )
-{''', '''VOID PhSetListViewSubItem(
-    _In_ HWND ListViewHandle,
+{''',
+
+'''VOID PhSetIListViewSubItem(
+    _In_ IListView* ListView,
     _In_ LONG Index,
     _In_ LONG SubItemIndex,
     _In_ PCWSTR Text
@@ -480,6 +491,5 @@ DATA: TranslationDataType = [
         Text = L"自定义强制性级别";
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-''')
-    ]),
-]
+'''),]))
+#################################################################################################################
