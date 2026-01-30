@@ -18,7 +18,7 @@ https://github.com/org-220623/si-chs-builds/releases/latest
 
 ### 跟踪情况
 
-d5609eb7f522ee59a255de754eb76bf61df5452a
+a1a7dd3f393b69ce5fc5d9d31957bc8d398ba098
 
 ### todo
 
