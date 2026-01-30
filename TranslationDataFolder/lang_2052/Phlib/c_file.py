@@ -426,6 +426,7 @@ DATA: TranslationDataType = [
         # todo 942 - 953
     }, []),
     (f"{CONST_PATH_PHLIB_SRC}/guisuplistview.cpp", "utf-8", {}, [ # 动态替换字符串，因为实在找不到了。
+        # issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
         ('''VOID PhSetListViewSubItem(
     _In_ HWND ListViewHandle,
     _In_ LONG Index,
@@ -440,7 +441,7 @@ DATA: TranslationDataType = [
     )
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // 此段代码由 ANONYMOUS9075331734 插入。
+    // 此段代码由 ANONYMOUS9075331734 插入。Issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
     CONST PCWSTR ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL = L"High Mandatory Level";
     CONST PCWSTR ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL = L"Medium Mandatory Level";
     CONST PCWSTR ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL = L"Low Mandatory Level";
