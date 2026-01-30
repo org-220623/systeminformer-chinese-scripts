@@ -63,7 +63,7 @@ DATA: TranslationDataType = [
     }, []),
     (f"{CONST_PATH_PLUGIN_EXTENDEDTOOLS}/firmware_editor.c", "utf-8", {
         "Unable to query the EFI variable.": "无法查询 EFI 变量。",
-        "%u bytes per row": "每行 %u 字节",
+        "%u bytes per row": "%u 字节每行",
         "Binary files (*.bin)": "二进制文件 (*.bin)",
         "All files (*.*)": "所有文件 (*.*)",
         "Unable to create the file": "无法创建文件",
