@@ -3,7 +3,8 @@
 
 from Config.const_values import CONST_PATH_SYSTEM_INFORMER_SRC
 from Config.global_dict import GLOBAL_DICT
-from Config.static_data_type import TranslationDataType
+from Config.static_data_type import TranslationDataType, EnumTranslateSecurityEditorMandatoryLevel
+from Config.patch_options import OPTION_TRANSLATE_SECURITY_EDITOR_MANDATORY_LEVEL
 from Payload.misc_functions import pre_format_string
 
 DATA: TranslationDataType = [
@@ -3844,3 +3845,257 @@ DATA: TranslationDataType = [
         "Unknown": "未知",
     }, []),
 ]
+
+if OPTION_TRANSLATE_SECURITY_EDITOR_MANDATORY_LEVEL == EnumTranslateSecurityEditorMandatoryLevel.EnumWindowAndSubwindowTranslate:
+    DATA.append(
+    (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/main.c", "utf-8", {}, [
+
+#####################################################################
+(
+'''static PH_AUTO_POOL BaseAutoPool;
+
+INT WINAPI wWinMain(
+    _In_ HINSTANCE Instance,
+    _In_opt_ HINSTANCE PrevInstance,
+    _In_ PWSTR CmdLine,
+    _In_ INT CmdShow
+    )
+{''',
+# 旧字符串 ============================================ 新字符串
+'''static PH_AUTO_POOL BaseAutoPool;
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// 以下代码由 ANONYMOUS9075331734 插入
+// 全局变量定义
+wchar_t Zyx220623_szSearchStringBuffer[256] = L"...";
+wchar_t Zyx220623_szReplaceStringBuffer[256] = L"...";
+HANDLE Zyx220623_hReplaceThreadHandle = NULL;
+BOOL Zyx220623_isReplaceThreadRunning = FALSE;
+
+// 回调函数声明
+BOOL CALLBACK Zyx220623_EnumChildWindowsProc(HWND hwndChild, LPARAM lParam);
+BOOL CALLBACK Zyx220623_EnumWindowsProc(HWND hwnd, LPARAM lParam);
+DWORD WINAPI Zyx220623_ReplaceThreadProc(LPVOID lpParameter);
+BOOL Zyx220623_StartTextReplaceThread();
+BOOL Zyx220623_StopTextReplaceThread();
+
+typedef struct _Zyx220623_ReplaceTextStruct {
+    wchar_t SearchString[256];
+    wchar_t ReplaceString[256];
+} Zyx220623_ReplaceTextStruct, *pZyx220623_ReplaceTextStruct;
+
+Zyx220623_ReplaceTextStruct Zyx220623_GlobalReplaceStructList[] = {
+    {.SearchString = L"High Mandatory Level", .ReplaceString = L"高强制性级别"},
+    {.SearchString = L"Medium Mandatory Level", .ReplaceString = L"中强制性级别"},
+    {.SearchString = L"Low Mandatory Level", .ReplaceString = L"低强制性级别"},
+    {.SearchString = L"Medium+ Mandatory Level", .ReplaceString = L"中强制性级别"},
+    {.SearchString = L"Medium + Mandatory Level", .ReplaceString = L"中强制性级别"},
+    {.SearchString = L"System Mandatory Level", .ReplaceString = L"系统强制性级别"},
+    {.SearchString = L"Protected Mandatory Level", .ReplaceString = L"受保护强制性级别"},
+    {.SearchString = L"Custom Mandatory Level", .ReplaceString = L"自定义强制性级别"},
+};
+INT Zyx220623_GlobalReplaceStructListLength = sizeof(Zyx220623_GlobalReplaceStructList) / sizeof(Zyx220623_ReplaceTextStruct);
+
+// 定义
+BOOL Zyx220623_ReplaceWindowText(HWND hwnd)
+{
+    int nLength = GetWindowTextLengthW(hwnd);
+    if (nLength == 0)
+        return FALSE;
+
+    wchar_t* pszText = (wchar_t*)malloc((nLength + 1) * sizeof(wchar_t));
+    if (!pszText)
+        return FALSE;
+
+    GetWindowTextW(hwnd, pszText, nLength + 1);
+
+    pZyx220623_ReplaceTextStruct CurrentReplaceStruct;
+    for (int i = 0; i < Zyx220623_GlobalReplaceStructListLength; i++)
+    {
+        CurrentReplaceStruct = &(Zyx220623_GlobalReplaceStructList[i]);
+        wcscpy_s(Zyx220623_szSearchStringBuffer, _countof(Zyx220623_szSearchStringBuffer), CurrentReplaceStruct->SearchString);
+        wcscpy_s(Zyx220623_szReplaceStringBuffer, _countof(Zyx220623_szReplaceStringBuffer), CurrentReplaceStruct->ReplaceString);
+        wchar_t* pFound = wcsstr(pszText, Zyx220623_szSearchStringBuffer);
+        if (pFound != NULL)
+        {
+            wchar_t szNewText[1024] = { 0 };
+            size_t nPrefixLen = pFound - pszText;
+            wcsncpy_s(szNewText, _countof(szNewText), pszText, nPrefixLen);
+            wcscat_s(szNewText, _countof(szNewText), Zyx220623_szReplaceStringBuffer);
+            wcscat_s(szNewText, _countof(szNewText), pFound + wcslen(Zyx220623_szSearchStringBuffer));
+            SetWindowTextW(hwnd, szNewText);
+        }
+    }
+
+    free(pszText);
+    return TRUE;
+}
+
+BOOL CALLBACK Zyx220623_EnumChildWindowsProc(HWND hwndChild, LPARAM lParam)
+{
+    Zyx220623_ReplaceWindowText(hwndChild);
+    EnumChildWindows(hwndChild, Zyx220623_EnumChildWindowsProc, 0);
+
+    return TRUE;
+}
+
+BOOL CALLBACK Zyx220623_EnumWindowsProc(HWND hwnd, LPARAM lParam)
+{
+    Zyx220623_ReplaceWindowText(hwnd);
+    EnumChildWindows(hwnd, Zyx220623_EnumChildWindowsProc, 0);
+
+    return TRUE;
+}
+
+DWORD WINAPI Zyx220623_ReplaceThreadProc(LPVOID lpParameter)
+{
+    Zyx220623_isReplaceThreadRunning = TRUE;
+
+    while (TRUE) EnumWindows(Zyx220623_EnumWindowsProc, 0);
+
+    Zyx220623_isReplaceThreadRunning = FALSE;
+    return 0;
+}
+
+BOOL Zyx220623_StartTextReplaceThread()
+{
+    if (Zyx220623_isReplaceThreadRunning)
+    {
+        return FALSE;
+    }
+    Zyx220623_hReplaceThreadHandle = CreateThread(NULL, 0, Zyx220623_ReplaceThreadProc, NULL, 0, NULL);
+
+    if (Zyx220623_hReplaceThreadHandle == NULL)
+    {
+        return FALSE;
+    }
+    return TRUE;
+}
+
+BOOL Zyx220623_StopTextReplaceThread()
+{
+    if (!Zyx220623_isReplaceThreadRunning || Zyx220623_hReplaceThreadHandle == NULL)
+        return TRUE;
+
+    TerminateThread(Zyx220623_hReplaceThreadHandle, 0);
+
+    CloseHandle(Zyx220623_hReplaceThreadHandle);
+    Zyx220623_hReplaceThreadHandle = NULL;
+    Zyx220623_isReplaceThreadRunning = FALSE;
+    return TRUE;
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+
+INT WINAPI wWinMain(
+    _In_ HINSTANCE Instance,
+    _In_opt_ HINSTANCE PrevInstance,
+    _In_ PWSTR CmdLine,
+    _In_ INT CmdShow
+    )
+{'''),
+#####################################################################
+(
+'''INT WINAPI wWinMain(
+    _In_ HINSTANCE Instance,
+    _In_opt_ HINSTANCE PrevInstance,
+    _In_ PWSTR CmdLine,
+    _In_ INT CmdShow
+    )
+{
+    LONG result;
+#ifdef DEBUG
+    PHP_BASE_THREAD_DBG dbg;
+#endif
+
+    if (!NT_SUCCESS(PhInitializePhLib(L"System Informer")))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeDirectoryPolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeExceptionPolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeExecutionPolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeNamespacePolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeComPolicy()))
+        return 1;
+
+    PhpProcessStartupParameters();
+    PhpEnablePrivileges();
+
+    if (PhStartupParameters.RunAsServiceMode)''',
+# 旧字符串 ============================================ 新字符串
+'''INT WINAPI wWinMain(
+    _In_ HINSTANCE Instance,
+    _In_opt_ HINSTANCE PrevInstance,
+    _In_ PWSTR CmdLine,
+    _In_ INT CmdShow
+    )
+{
+    LONG result;
+#ifdef DEBUG
+    PHP_BASE_THREAD_DBG dbg;
+#endif
+
+    if (!NT_SUCCESS(PhInitializePhLib(L"System Informer")))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeDirectoryPolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeExceptionPolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeExecutionPolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeNamespacePolicy()))
+        return 1;
+    if (!NT_SUCCESS(PhInitializeComPolicy()))
+        return 1;
+
+    PhpProcessStartupParameters();
+    PhpEnablePrivileges();
+    /////////////////////////////////////////////////////////////////////////////////////////
+    // 以下代码由 ANONYMOUS9075331734 插入
+    Zyx220623_StartTextReplaceThread();
+    /////////////////////////////////////////////////////////////////////////////////////////
+
+    if (PhStartupParameters.RunAsServiceMode)'''),
+#####################################################################
+('''PhEnableTerminationPolicy(TRUE);
+
+    PhDrainAutoPool(&BaseAutoPool);
+
+    result = PhMainMessageLoop();
+
+    PhEnableTerminationPolicy(FALSE);
+
+    if (PhEnableKsiSupport)
+    {
+        PhCleanupKsi();
+    }
+
+    PhExitApplication(result);
+    return result;
+}''',
+# 旧字符串 ============================================ 新字符串
+'''    PhEnableTerminationPolicy(TRUE);
+
+    PhDrainAutoPool(&BaseAutoPool);
+
+    result = PhMainMessageLoop();
+
+    PhEnableTerminationPolicy(FALSE);
+
+    if (PhEnableKsiSupport)
+    {
+        PhCleanupKsi();
+    }
+
+    PhExitApplication(result);
+    /////////////////////////////////////////////////////////////////////////////////////////
+    // 以下代码由 ANONYMOUS9075331734 插入
+    Zyx220623_StopTextReplaceThread();
+    /////////////////////////////////////////////////////////////////////////////////////////
+    return result;
+}'''),
+#####################################################################
+    ]),
+)
