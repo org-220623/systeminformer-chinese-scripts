@@ -692,7 +692,7 @@ DATA: TranslationDataType = [
         ('PhAddListViewColumn(context->ListViewHandle, 5, 5, 5, LVCFMT_LEFT, 100, L"Section"', 'PhAddListViewColumn(context->ListViewHandle, 5, 5, 5, LVCFMT_LEFT, 100, L"节区"'),
     ]),
     (f"{CONST_PATH_PEVIEW_TOOL_SRC}/peprp.c", "utf-8", {
-        "%s (%s ago)": "%s (%s 之前)",
+        "%s (%s ago)": "%s (%s 以前)",
         "No Padding, ": "未填充, ",
         "Code, ": "代码, ",
         "Initialized data, ": "已初始化数据, ",
