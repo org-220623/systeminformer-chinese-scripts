@@ -1298,6 +1298,8 @@ DATA: TranslationDataType = [
         "If you select No, the settings system will not function properly.":
             "如果选择“否”，设置系统将无法正常运行。",
         "Command line options:": "命令行选项:",
+        "Unable to load the settings file.": "无法加载设置文件。",
+        "Unable to convert settings to json format.": "无法将设置文件转换为 JSON 格式。",
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/mainwnd.c", "utf-8", {
         "&Priority": "优先级(&P)",
