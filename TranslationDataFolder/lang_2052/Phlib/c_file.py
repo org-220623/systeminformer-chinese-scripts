@@ -491,5 +491,63 @@ if OPTION_TRANSLATE_MANDATORY_LEVEL == EnumTranslateMandatoryLevel.DynamicSubVie
         Text = L"自定义强制性级别";
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-'''),]))
+'''),
+            (
+'''VOID PhSetListViewSubItem(
+    _In_ HWND ListViewHandle,
+    _In_ LONG Index,
+    _In_ LONG SubItemIndex,
+    _In_ PCWSTR Text
+    )
+{''',
+
+'''VOID PhSetListViewSubItem(
+    _In_ HWND ListViewHandle,
+    _In_ LONG Index,
+    _In_ LONG SubItemIndex,
+    _In_ PCWSTR Text
+    )
+{
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // 此段代码由 ANONYMOUS9075331734 插入。Issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
+    CONST PCWSTR ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL = L"High Mandatory Level";
+    CONST PCWSTR ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL = L"Medium Mandatory Level";
+    CONST PCWSTR ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL = L"Low Mandatory Level";
+    CONST PCWSTR ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL = L"Untrusted Mandatory Level";
+    CONST PCWSTR ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL = L"Protected Mandatory Level";
+    CONST PCWSTR ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL = L"System Mandatory Level";
+    CONST PCWSTR ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium + Mandatory Level";
+    CONST PCWSTR ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium+ Mandatory Level";
+    CONST PCWSTR ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL = L"Custom Mandatory Level";
+
+    if (!wcsncmp(Text, ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL))) {
+        Text = L"高强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL))) {
+        Text = L"中强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL))) {
+        Text = L"低强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL))) {
+        Text = L"不受信任强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL))) {
+        Text = L"受保护强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL))) {
+        Text = L"系统强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL, wcslen(ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL))) {
+        Text = L"中+强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL, wcslen(ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL))) {
+        Text = L"中+强制性级别";
+    }
+    else if (!wcsncmp(Text, ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL, wcslen(ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL))) {
+        Text = L"自定义强制性级别";
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+''')
+        ]))
 #################################################################################################################
