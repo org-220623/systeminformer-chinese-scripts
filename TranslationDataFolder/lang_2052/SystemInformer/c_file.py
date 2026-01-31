@@ -3954,7 +3954,11 @@ DWORD WINAPI Zyx220623_ReplaceThreadProc(LPVOID lpParameter)
 {
     Zyx220623_isReplaceThreadRunning = TRUE;
 
-    while (TRUE) EnumWindows(Zyx220623_EnumWindowsProc, 0);
+    while (TRUE) 
+    {
+        EnumWindows(Zyx220623_EnumWindowsProc, 0);
+        Sleep(5);
+    }
 
     Zyx220623_isReplaceThreadRunning = FALSE;
     return 0;
