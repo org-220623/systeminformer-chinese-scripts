@@ -453,15 +453,15 @@ if OPTION_TRANSLATE_MANDATORY_LEVEL == EnumTranslateMandatoryLevel.DynamicSubVie
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // 此段代码由 ANONYMOUS9075331734 插入。Issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
-    CONST PCWSTR ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL = L"High Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL = L"Medium Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL = L"Low Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL = L"Untrusted Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL = L"Protected Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL = L"System Mandatory Level";
-    CONST PCWSTR ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium + Mandatory Level";
-    CONST PCWSTR ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium+ Mandatory Level";
-    CONST PCWSTR ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL = L"Custom Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL = L"High Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL = L"Medium Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL = L"Low Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL = L"Untrusted Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL = L"Protected Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL = L"System Mandatory Level";
+    PCWSTR ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium + Mandatory Level";
+    PCWSTR ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium+ Mandatory Level";
+    PCWSTR ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL = L"Custom Mandatory Level";
 
     if (!wcsncmp(Text, ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL))) {
         Text = L"高强制性级别";
@@ -510,15 +510,15 @@ if OPTION_TRANSLATE_MANDATORY_LEVEL == EnumTranslateMandatoryLevel.DynamicSubVie
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // 此段代码由 ANONYMOUS9075331734 插入。Issue: https://github.com/org-220623/systeminformer-chinese-scripts/issues/23
-    CONST PCWSTR ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL = L"High Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL = L"Medium Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL = L"Low Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL = L"Untrusted Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL = L"Protected Mandatory Level";
-    CONST PCWSTR ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL = L"System Mandatory Level";
-    CONST PCWSTR ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium + Mandatory Level";
-    CONST PCWSTR ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium+ Mandatory Level";
-    CONST PCWSTR ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL = L"Custom Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL = L"High Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_MEDIUM_MANDATORY_LEVEL = L"Medium Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_LOW_MANDATORY_LEVEL = L"Low Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_UNTRUSTED_MANDATORY_LEVEL = L"Untrusted Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_PROTECTED_MANDATORY_LEVEL = L"Protected Mandatory Level";
+    PCWSTR ZYX220623_PCWSTR_SYSTEM_MANDATORY_LEVEL = L"System Mandatory Level";
+    PCWSTR ZYX220623_MEDIUM_SPACE_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium + Mandatory Level";
+    PCWSTR ZYX220623_MEDIUM_PLUS_SYSTEM_MANDATORY_LEVEL = L"Medium+ Mandatory Level";
+    PCWSTR ZYX220623_CUSTOM_SYSTEM_MANDATORY_LEVEL = L"Custom Mandatory Level";
 
     if (!wcsncmp(Text, ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL, wcslen(ZYX220623_PCWSTR_HIGH_MANDATORY_LEVEL))) {
         Text = L"高强制性级别";
