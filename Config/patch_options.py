@@ -23,4 +23,4 @@ OPTION_TRANSLATE_HANDLE_PAGE_MANDATORY_LEVEL: EnumTranslateInHandleSecurityPrope
 # 警告: 涉及本地线程创建、窗口枚举、动态字符串替换
 # 受影响的源代码文件和过程: SystemInformer/main.c -> wWinMain
 OPTION_TRANSLATE_SECURITY_EDITOR_MANDATORY_LEVEL: EnumTranslateSecurityEditorMandatoryLevel =\
-    EnumTranslateSecurityEditorMandatoryLevel.EnumWindowAndSubwindowTranslate
+    EnumTranslateSecurityEditorMandatoryLevel.NotTranslate
