@@ -4076,7 +4076,7 @@ INT WINAPI wWinMain(
     return result;
 }''',
 # 旧字符串 ============================================ 新字符串
-'''    PhEnableTerminationPolicy(TRUE);
+'''PhEnableTerminationPolicy(TRUE);
 
     PhDrainAutoPool(&BaseAutoPool);
 
