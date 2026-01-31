@@ -3888,11 +3888,12 @@ Zyx220623_ReplaceTextStruct Zyx220623_GlobalReplaceStructList[] = {
     {.SearchString = L"High Mandatory Level", .ReplaceString = L"高强制性级别"},
     {.SearchString = L"Medium Mandatory Level", .ReplaceString = L"中强制性级别"},
     {.SearchString = L"Low Mandatory Level", .ReplaceString = L"低强制性级别"},
-    {.SearchString = L"Medium+ Mandatory Level", .ReplaceString = L"中强制性级别"},
-    {.SearchString = L"Medium + Mandatory Level", .ReplaceString = L"中强制性级别"},
+    {.SearchString = L"Medium+ Mandatory Level", .ReplaceString = L"中+强制性级别"},
+    {.SearchString = L"Medium + Mandatory Level", .ReplaceString = L"中+强制性级别"},
     {.SearchString = L"System Mandatory Level", .ReplaceString = L"系统强制性级别"},
     {.SearchString = L"Protected Mandatory Level", .ReplaceString = L"受保护强制性级别"},
     {.SearchString = L"Custom Mandatory Level", .ReplaceString = L"自定义强制性级别"},
+    {.SearchString = L"Untrusted Mandatory Level", .ReplaceString = L"不受信任强制性级别"}, 
 };
 INT Zyx220623_GlobalReplaceStructListLength = sizeof(Zyx220623_GlobalReplaceStructList) / sizeof(Zyx220623_ReplaceTextStruct);
 
