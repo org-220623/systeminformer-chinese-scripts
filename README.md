@@ -2,10 +2,6 @@
 
 这是一个用于汉化 System Informer 字符串资源的脚本。
 
-## 需要帮助的议题
-
-1. [#23: `句柄属性窗口 -> 权限/审核 -> 安全信息/审核信息` 和 `对象高级安全设置 -> 完整性级别` 下的 `*** Mandatory Level` （强制性级别）字符串翻译问题](https://github.com/org-220623/systeminformer-chinese-scripts/issues/23)
-
 ## 软件下载
 
 https://github.com/org-220623/si-chs-builds/releases/latest
