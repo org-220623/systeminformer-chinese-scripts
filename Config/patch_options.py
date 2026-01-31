@@ -22,6 +22,7 @@ OPTION_TRANSLATE_HANDLE_PAGE_MANDATORY_LEVEL: EnumTranslateInHandleSecurityPrope
 # 处理安全编辑器页面中的强制完整性级别全局选项
 # 警告: 涉及本地线程创建、窗口枚举、动态字符串替换
 # CPU 占用率会增加约 1 倍
+# 已应用的缓解措施：每次循环休眠 50 ms
 # 受影响的源代码文件和过程: SystemInformer/main.c -> wWinMain
 OPTION_TRANSLATE_SECURITY_EDITOR_MANDATORY_LEVEL: EnumTranslateSecurityEditorMandatoryLevel =\
     EnumTranslateSecurityEditorMandatoryLevel.NotTranslate
