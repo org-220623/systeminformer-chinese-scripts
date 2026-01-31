@@ -513,6 +513,7 @@ DATA: TranslationDataType = [
         # -------------------------------------------------------------------------------
         pre_format_string("Copy \""): pre_format_string("复制 \""),
         "Unable to execute the program.": "无法执行程序。",
+        "None": "无",
     },
                                                                    [
         ('''static CONST PH_KEY_VALUE_PAIR PhProtectedTypeStrings[] =

@@ -414,6 +414,10 @@ DATA: TranslationDataType = [
         # todo line 2090 - 2106
         "Unknown": "未知",
         # todo line 2231 - 2243
+        "None": "无",
+        "Full": "完全",
+        "Lite": "轻量",
+        " (None)": " (无)",
     }, []),
     # secedit.c 已完成
     (f"{CONST_PATH_PHLIB_SRC}/secedit.c", "utf-8", {
@@ -428,6 +432,10 @@ DATA: TranslationDataType = [
     }, []),
     # guisuplistview.cpp 保留，待检查，未开始。
     (f"{CONST_PATH_PHLIB_SRC}/guisuplistview.cpp", "utf-8", {}, []),
+    (f"{CONST_PATH_PHLIB_SRC}/nativesocket.c", "utf-8", {
+        "N/A (transport is not TDI)": "N/A (传输非 TDI)",
+        "None": "无",
+    }, []),
 ]
 
 #################################################################################################################
