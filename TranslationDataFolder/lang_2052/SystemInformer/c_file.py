@@ -2265,6 +2265,7 @@ DATA: TranslationDataType = [
         "Temperature": "温度",
         "Fan RPM": "风扇转速 (转每分)",
         "Enable plugins": "启用插件",
+        "Enable process monitor (experimental)": "启用进程监视器 (实验性功能)",
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
          'PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
@@ -3312,6 +3313,7 @@ DATA: TranslationDataType = [
         "ASTA-to-ASTA exempt in doubt": "ASTA 到 ASTA 的豁免状态存疑",
         "Bridge STA": "桥接 STA",
         "NTA initializing": "NTA 正在初始化",
+        "Kernel stack usage": "内核栈用量",
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/thrdprv.c", "utf-8", {
         "Real-time": "实时",
