@@ -215,7 +215,7 @@ if OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.AddHeader:
 # ------------------------------------------------------------------------------------------------------
 # 对特殊格式的计数器添加头部信息而不翻译, 在 AddHeader 和 PartialTranslateAddHeader 启用时都可用。
 if (OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.AddHeader or
-        OPTION_TRANSLATE_DOTNET_COUNTERS.PartialTranslateAddHeader):
+        OPTION_TRANSLATE_DOTNET_COUNTERS == EnumTranslateDotNetCounters.PartialTranslateAddHeader):
     DATA.append((f"{CONST_PATH_PLUGIN_DOTNETTOOLS}/perfpage.c", "utf-8", {
         "# Gen 0 Collections": "计数器: # Gen 0 Collections",
         "# Gen 1 Collections": "计数器: # Gen 1 Collections",
