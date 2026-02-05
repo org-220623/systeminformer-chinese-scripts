@@ -2266,6 +2266,7 @@ DATA: TranslationDataType = [
         "Fan RPM": "风扇转速 (转每分)",
         "Enable plugins": "启用插件",
         "Enable process monitor (experimental)": "启用进程监视器 (实验性功能)",
+        "Enable low-latency mode (experimental)": "启用低延迟模式 (实验性功能)",
     }, [
         ('PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"Type"',
          'PhAddTreeNewColumnEx(Context->TreeNewHandle, PH_OPTIONS_ADVANCED_COLUMN_ITEM_TYPE, TRUE, L"类型"'),
