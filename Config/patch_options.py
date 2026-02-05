@@ -7,7 +7,7 @@ from Config.static_data_type import (
 
 # 处理 .NET 计数器全局选项
 # 受影响的插件: DotNetTools (.NET 工具)
-OPTION_TRANSLATE_DOTNET_COUNTERS: EnumTranslateDotNetCounters = EnumTranslateDotNetCounters.AddHeader
+OPTION_TRANSLATE_DOTNET_COUNTERS: EnumTranslateDotNetCounters = EnumTranslateDotNetCounters.NotTranslate
 
 # 处理恶意软件扫描网站名称的全局选项
 # 受影响的插件: OnlineChecks
