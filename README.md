@@ -18,36 +18,11 @@ https://github.com/org-220623/si-chs-builds/releases/latest
 
 ### 跟踪情况
 
-7117fec29c3b66d4e0ccdd503cba31717ad034fa
+1a2d84bd98167e5de5035cd8e084e56d1f3dfb12
 
 ### todo
 
-- 持续跟踪并完成 GitHub Issue 中的任务。
-
-### 已完成的文件
-
-#### 主程序 (`SystemInformer/*`) (已初步完成，挂起)
-
-- `phsvc/*` (暂时没有要处理的条目)
-- `sdk/*` (暂时没有要处理的条目)
-- 中间已处理的文件已省略...
-- `main.c` (已初步完成，可能要再次修改)
-- `tokprp.c` (已初步完成，可能要再次修改)
-- 末尾已处理的文件已省略...
-
-#### 工具
-
-##### PEView 工具 (`tools/peview/*`) (已初步完成，挂起)
-
-- 已全部完成，持续跟踪上游更新...
-
-##### 已全部完成的模块（进度信息已省略）
-
-- SetupTool (`tools/CustomSetupTool/*`) (已初步完成)
-
-#### 插件
-
-已全部完成。
+- 持续跟踪上游提交并完成 GitHub Issue 中的任务。
 
 ## 依赖
 
