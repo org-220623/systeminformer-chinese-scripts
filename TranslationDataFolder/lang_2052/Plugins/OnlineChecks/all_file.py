@@ -11,6 +11,7 @@ DATA: TranslationDataType = [
         "Upload file to &Filescan...": "上传文件至 FileScan(&F)...",
         "Upload file to &Hybrid-Analysis...": "上传文件至 Hybrid Analysis(&H)...",
         "Upload file to &VirusTotal...": "上传文件至 VirusTotal(&V)...",
+        "&Upload file to VirusTotal...": "上传文件至 VirusTotal(&U)...", 
         "Upload file to &Jotti...": "上传文件至 Jotti(&J)...",
         "Upload unknown files to VirusTotal...": "上传未知文件至 VirusTotal...",
         "Sen&d to": "发送到(&D)",
