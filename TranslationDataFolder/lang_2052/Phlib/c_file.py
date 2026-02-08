@@ -67,6 +67,7 @@ DATA: TranslationDataType = [
         "Delete": "删除",
         "Select All": "全选",
         "Regular Expression": "使用正则表达式",
+        "Use Regular Expression": "使用正则表达式",
         "Match Case": "区分大小写",
         "Clear Search": "清空搜索框内容",
     }, []),
