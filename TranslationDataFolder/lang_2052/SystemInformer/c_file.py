@@ -3225,6 +3225,7 @@ DATA: TranslationDataType = [
         "no driver": "无驱动",
     }, []),
     (f"{CONST_PATH_SYSTEM_INFORMER_SRC}/thrdlist.c", "utf-8", {
+        "Start address": "起始地址", 
         "Cycles delta": "周期增量",
         "Start address (Win32)": "起始地址 (Win32)",
         "Priority (symbolic)": "优先级 (符号)",
