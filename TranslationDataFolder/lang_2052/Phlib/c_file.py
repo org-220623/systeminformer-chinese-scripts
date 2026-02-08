@@ -379,6 +379,7 @@ DATA: TranslationDataType = [
         "Terminated ": "已终止 ",
         # "Terminated": "已终止",
         "unknown process": "未知进程", 
+        "Unknown process": "未知进程", 
         "unnamed thread": "未命名线程", 
         "terminated ": "已终止 ",
         "Unnamed file: ": "未命名文件: ",
