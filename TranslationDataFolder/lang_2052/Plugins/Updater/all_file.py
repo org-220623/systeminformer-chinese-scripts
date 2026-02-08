@@ -99,7 +99,7 @@ DATA: TranslationDataType = [
         "Hash check failed. Click Retry to download the update again.": "哈希校验失败。单击“重试”重新下载更新。",
         "Click Retry to download the channel again.": "单击“重试”重新从更新通道下载数据。",
         "Click Retry to download the update again.": "单击“重试”重新下载更新。",
-        "Pre-release build: v%s\r\n\r\n<A HREF=\"changelog.txt\">View changelog</A>": "预发布版本: v%s\r\n\r\n<A HREF=\"changelog.txt\">查看更新日志</A>", 
+        r"Pre-release build: v%s\r\n\r\n<A HREF=\"changelog.txt\">View changelog</A>": r"预发布版本: v%s\r\n\r\n<A HREF=\"changelog.txt\">查看更新日志</A>", 
     }, []),
     (f"{CONST_PATH_PLUGIN_UPDATER}/updater.c", "utf-8", {
         "Unable to execute the setup.": "无法执行安装程序。",
