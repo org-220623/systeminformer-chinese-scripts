@@ -4,10 +4,7 @@
 
 ## 软件下载
 
-| 发行通道 (版本) | 下载链接 |
-| -- | -- |
-| 正式版 (v3.2.25011.2103) | https://github.com/org-220623/si-chs-builds/releases/tag/release%2Fv3.2.25011.2103%2F0002 |
-| 开发版 (test/202602060956) | https://github.com/org-220623/si-chs-builds/releases/tag/test%2F202602060956 |
+请跳转至 https://github.com/org-220623/si-chs-builds 了解详细信息。
 
 ## 说明
 
