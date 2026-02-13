@@ -110,6 +110,9 @@ DATA: TranslationDataType = [
     (f"{CONST_PATH_PLUGIN_ONLINECHECKS}/virustotal.c", "utf-8", {
         "%s ago (%s)": "%s 以前 (%s)",
     }, []),
+    (f"{CONST_PATH_PLUGIN_ONLINECHECKS}/api.c", "utf-8", {
+        "%s ago (%s)": "%s 以前 (%s)",
+    }, []),
 ]
 
 #######################################################################################
