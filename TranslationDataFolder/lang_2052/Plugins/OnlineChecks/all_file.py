@@ -27,6 +27,7 @@ DATA: TranslationDataType = [
         "Options": "选项",
         "Enable VirusTotal scanning": "启用 VirusTotal 扫描",
         "Enable VirusTotal detection highlighting": "启用 VirusTotal 检测结果高亮显示",
+        "Enable scanning": "启用扫描",
         "API key:": "API 密钥:",
         "Change": "更改",
         "Update Key": "更新密钥",
