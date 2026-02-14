@@ -18,6 +18,7 @@ DATA: TranslationDataType = [
         "Scanning disabled": "扫描已禁用",
         "Online Checks": "在线检查",
         "Allows files to be checked with online services.": "允许使用在线服务检查文件。",
+        "Scan with": "使用指定服务扫描", 
     }, [
         ('''optionsEntry->CreateSection(
         L"OnlineChecks"''', '''optionsEntry->CreateSection(
@@ -28,6 +29,7 @@ DATA: TranslationDataType = [
         "Enable VirusTotal scanning": "启用 VirusTotal 扫描",
         "Enable VirusTotal detection highlighting": "启用 VirusTotal 检测结果高亮显示",
         "Enable scanning": "启用扫描",
+        "Enable auto scanning": "启用自动扫描", 
         "API key:": "API 密钥:",
         "Change": "更改",
         "Update Key": "更新密钥",
